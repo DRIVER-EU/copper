@@ -12,7 +12,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 })
 export class ApplicationModule {
 
-  readonly configFolder: string = process.env.LAYER_SERVER_CONFIG_FOLDER || './../../../configs/tests/';
+  readonly configFolder: string = process.env.LAYER_SERVER_CONFIG_FOLDER || './../../../configs/layers/';
 
   constructor(private readonly layerService: LayerService) {
     const folder = path.join(__dirname, this.configFolder);
