@@ -55,7 +55,7 @@
   </v-toolbar>
   <v-list>
     <template v-for="(item, index) in capObjects" >
-      <v-list-tile :key="item.sent" avatar class="cap-object-tile" @click="capSelect(item)">
+      <v-list-tile :key="item.identifier" avatar class="cap-object-tile" @click="capSelect(item)">
         <v-list-tile-avatar>
           <img :src="item.avatar" />
         </v-list-tile-avatar>
