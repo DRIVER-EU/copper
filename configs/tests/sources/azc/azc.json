@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Plaats": "Den Haag",
+        "Lat": 52.079674,
+        "Lon": 4.342734,
+        "Naam": "Den Haag",
+        "Type": "Noodopvang",
+        "Opvangplaatsen": 600,
+        "Straat": "Anna van Hannoverstaat",
+        "Huisnummer": 4,
+        "Postcode": "2595BJ",
+        "Telefoon": null,
+        "Email": "denhaag@coa.nl",
+        "Noodopvang": "Ja",
+        "Beschrijving": "In het voormalige ministerie van Sociale Zaken en Werkgelegenheid t.o. Station Den Haag NOI wordt noodopvang voor asielzoekers gerealiseerd. Naar verwachting zullen de bewoners vanaf 9-11 instromen. De noodopvang is tot 1-1-2016 geopend. De locatie biedt plaats aan 600 bewoners.",
+        "Huisletter": null,
+        "Beschikbaar tot": "Fri Jan 01 2016 01:00:00 GMT+0100 (W. Europe Standard Time)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.34273444340405,
+          52.0796740094185
+        ]
+      },
+      "id": "59e8e180-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Plaats": "Rijswijk",
+        "Lat": 52.034182,
+        "Lon": 4.314097,
+        "Naam": "Rijswijk (Centraal Bureau)",
+        "Type": "Centraal Bureau",
+        "Opvangplaatsen": 0,
+        "Straat": "Sir Winston Churchilllaan",
+        "Huisnummer": 366,
+        "Postcode": "2285SJ",
+        "Telefoon": "088-7157000",
+        "Email": null,
+        "Noodopvang": "Nee",
+        "Beschrijving": "Het hoofdkantoor van het COA (Centraal Bureau) staat in Rijswijk. Hier is geen opvanglocatie gevestigd. Naast het kantoor in Rijswijk is er een dependancekantoor in Meppel, waar de bewonersadministratie wordt uitgevoerd.",
+        "Huisletter": "a",
+        "Beschikbaar tot": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.31409737770389,
+          52.0341821756037
+        ]
+      },
+      "id": "59e8e181-2f0f-11e9-b758-db375abde619"
+    }
+  ]
+}

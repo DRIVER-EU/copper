@@ -1,0 +1,53 @@
+{
+  "name": "@driver/cscop-server",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Arnoud de Jong",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "link": "yarn link",
+    "linkserver": "yarn link @csnext/cs-layer-server",
+    "dev:compile": "tsc -w",
+    "clean": "del-cli dist",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@csnext/cs-layer-server": "0.0.106",    
+    "dbgeo": "^1.1.0",
+    "wkx": "^0.4.6",
+    "apollo-server-express": "^2.4.0",
+    "pg-query-stream":"^1.1.2",
+    "@macrostrat/dbgeo-stream": "^1.0.0",
+    "lockfile":"^1.0.4",
+    "express": "^4.16.4",
+    "@nestjs/core": "^5.7.2",
+    "@nestjs/common": "^5.7.2",
+    "@nestjs/swagger": "^2.5.1",
+    "@nestjs/websockets":"^5.7.2",
+    "@nestjs/graphql": "^5.5.2",
+    "socket.io": "^2.2.0",
+    "@mapbox/togeojson": "^0.16.0", 
+    "rxjs": "^6.4.0",
+    "lodash": "^4.17.11",
+    "reflect-metadata": "^0.1.13",
+    "uuid": "^3.3.2",
+    "pg": "^7.8.0",
+    "arangojs": "^6.10.0",
+    "node-test-bed-adapter":"^0.7.4",
+    "type-graphql": "^0.16.0"
+  },
+  "devDependencies": {      
+    "@types/pg": "^7.4.12",
+    "@types/lodash":"^4.14.121",
+    "@types/lockfile":"^1.0.1",
+    "typescript": "^3.3.3",
+    "@types/express": "^4.16.1",
+    "@types/node": "^10.12.24",
+    "del-cli": "^1.1.0",
+    "@types/mapbox-gl": "^0.51.4"
+  }
+}

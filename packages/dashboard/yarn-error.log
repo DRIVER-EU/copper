@@ -1,0 +1,96 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\jongapjd\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js link @csnext/cs-timeline
+
+PATH: 
+  C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\arnoud\actueel\driver\copper\packages\dashboard\node_modules\.bin;C:\arnoud\actueel\driver\copper\packages\dashboard\node_modules\.bin;C:\arnoud\actueel\driver\copper\packages\node_modules\.bin;C:\arnoud\actueel\driver\copper\node_modules\.bin;C:\arnoud\actueel\driver\node_modules\.bin;C:\arnoud\actueel\node_modules\.bin;C:\arnoud\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs;C:\Users\jongapjd\AppData\Local\Temp\yarn--1550135379923-0.006740126031231863;C:\arnoud\actueel\driver\copper\node_modules\.bin;C:\Users\jongapjd\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\arnoud\actueel\driver\copper\node_modules\.bin;C:\Users\jongapjd\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\jongapjd\AppData\Local\Temp\yarn--1550135372956-0.1488544678274939;C:\arnoud\actueel\driver\copper\node_modules\.bin;C:\Users\jongapjd\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\arnoud\actueel\driver\copper\node_modules\.bin;C:\Users\jongapjd\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\jongapjd\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs;C:\tools\Cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\tools\Cmder\vendor\conemu-maximus5;C:\tools\Cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\Python37\Scripts\;C:\Python37\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\OpenSSH-Win64;C:\Program Files\PuTTY\;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\nodejs\;C:\Users\jongapjd\AppData\Local\Microsoft\WindowsApps;C:\tools\Cmder;C:\Users\jongapjd\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\jongapjd\.platformio\penv\Scripts;C:\Users\jongapjd\AppData\Local\atom\bin;C:\Users\jongapjd\AppData\Roaming\npm
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  11.6.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, lstat 'C:\arnoud\actueel\driver\copper\packages\dashboard\node_modules\@csnext\cs-timeline'
+
+npm manifest: 
+  {
+    "name": "cscop",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve --modern",
+      "build": "vue-cli-service build --modern",
+      "linkcs": "yarn link @csnext/cs-client && yarn link @csnext/cs-split-panel && yarn link @csnext/cs-map && yarn link @csnext/cs-timeline && yarn link @csnext/cs-core  && yarn link @csnext/cs-form",
+      "unlinkcs": "yarn unlink @csnext/cs-core && yarn unlink @csnext/cs-client && yarn unlink @csnext/cs-split-panel && yarn unlink @csnext/cs-map && yarn unlink @csnext/cs-timeline",
+      "dev": "yarn serve",
+      "clean": "del-cli dist"
+    },
+    "dependencies": {
+      "@csnext/cs-client": "^0.0.106-beta.5+3d3ed91",
+      "@csnext/cs-core": "^0.0.106-beta.5+3d3ed91",
+      "@csnext/cs-split-panel": "^0.0.106-beta.5+3d3ed91",
+      "@csnext/cs-timeline": "^0.0.106-beta.5+3d3ed91",
+      "@csnext/cs-map": "^0.0.106-beta.5+3d3ed91",
+      "@csnext/cs-form": "^0.0.106-beta.5+3d3ed91",
+      "@mapbox/mapbox-gl-draw": "^1.1.1",
+      "class-transformer": "^0.2.0",
+      "geojson": "^0.5.0",
+      "axios": "~0.18.0",
+      "chroma-js": "^2.0.2",
+      "date-fns": "^1.30.1",
+      "mapbox-gl": "^0.53.0",
+      "source-map-support": "^0.5.10",
+      "vue": "^2.6.6",
+      "vue-class-component": "^6.3.2",
+      "vue-markdown": "^2.2.4",
+      "vue-property-decorator": "^7.3.0",
+      "vue-router": "^3.0.2",
+      "vuetify": "^1.5.1",
+      "vue2-perfect-scrollbar": "^1.2.0",
+      "core-js": "^2.6.4",
+      "timeline-plus": "https://github.com/rinzeb/timeline-plus/releases/download/v2.3.1-beta.1/timeline-plus-2.3.1.tgz",
+      "handlebars": "^4.1.0"
+    },
+    "devDependencies": {
+      "@types/socket.io-client": "^1.4.32",
+      "@csnext/vue-cli-plugin-cs": "^0.0.106-beta.5+3d3ed91",
+      "@types/chroma-js": "^1.4.1",
+      "@vue/cli-plugin-babel": "^3.4.0",
+      "@vue/cli-plugin-typescript": "^3.4.0",
+      "@vue/babel-preset-app": "^3.4.0",
+      "@vue/cli-service": "^3.4.0",
+      "dojo-typings": "^1.11.9",
+      "raw-loader": "^1.0.0",
+      "typescript": "^3.3.3",
+      "vue-template-compiler": "^2.6.6",
+      "@types/node": "^11.9.3",
+      "@types/vue-markdown": "^2.2.1",
+      "@types/mapbox-gl": "^0.51.4",
+      "babel-runtime": "^6.26.0"
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ],
+    "build": {
+      "files": [
+        "dist/**/*",
+        "node_modules/**/*",
+        "package.json",
+        "dist/**/*",
+        "node_modules/**/*",
+        "package.json"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

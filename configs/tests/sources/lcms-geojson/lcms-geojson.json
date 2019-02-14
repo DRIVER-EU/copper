@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "bbox": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3406394137719415,
+          51.99770809636965
+        ]
+      },
+      "properties": {
+        "id": "de7a655a-7221-421a-942b-dd5963a143a7",
+        "icon": "Ziekenhuis_functionerend-1.gif",
+        "Name": "Ziekenhuis, Reinier de Graaf"
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.292408977068339,
+          52.0241214608992
+        ]
+      },
+      "properties": {
+        "id": "32a06bd6-d59d-450b-8af1-86d6309c0099",
+        "icon": "Incidentlocatie-1.png",
+        "Name": "Incident, Brug gesloten"
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.306137656999614,
+          52.01703661975331
+        ]
+      },
+      "properties": {
+        "id": "616ebda5-0b90-47fe-93a7-38d2a2a0e5df",
+        "icon": "Aardbeving-D2-1.gif",
+        "Name": "Gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "bbox": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.383642409828698,
+          52.00654633333156
+        ]
+      },
+      "properties": {
+        "id": "462681bb-ffc5-40ba-aa9c-ced9f149a02b",
+        "icon": "GHOR_Ambulancestation-1.gif",
+        "Name": "Ambulancestation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@layer-server/root",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnocs/layer-server.git"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap && lerna run link",
+    "dev:server": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon  packages/server/dist/index.js\"",
+    "dev:client": "lerna run dev --parallel",
+    "dev": "yarn dev:server && yarn dev:all",
+    "clean": "lerna run --parallel clean",
+    "types": "./node_modules/.bin/typescript-json-schema.cmd packages/core/tsconfig.json ServerConfig *  -o ./schema/server.json",
+    "build": "tsc -b packages",
+    "linkserver": "lerna run linkserver",
+    "linkcs": "lerna run linkcs",
+    "linkall": "yarn linkserver && yarn linkcs"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "lerna": "^3.11.1",
+    "typescript-json-schema": "^0.35.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "configs/*"
+    ],
+    "delay": "2"
+  }
+}

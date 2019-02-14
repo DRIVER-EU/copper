@@ -1,0 +1,290 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 84159,
+        "Y": 447398,
+        "X-nav": 84138,
+        "Y-nav": 447382,
+        "Bagvobid": "0503010000021727",
+        "Organisati": "Gem. Delft",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 78, 2600 ME  Delft",
+        "LOC_STRAAT": "Phoenixstraat",
+        "Huisnr": "16",
+        "Postcode": "2611 AL",
+        "Woonplaats": "Delft",
+        "GEM": "Delft",
+        "Regio": 15,
+        "Website": "www.gemeentedelft.info",
+        "Telefoon": "14-015",
+        "CODE": null,
+        "BIJZONDERH": 99.737
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3553542,
+          52.0104192
+        ]
+      },
+      "id": "5a067ba0-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 81653,
+        "Y": 454947,
+        "X-nav": 81602,
+        "Y-nav": 454905,
+        "Bagvobid": "0518010000747448",
+        "Organisati": "Gem. Den Haag",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 12600, 2500 DJ  Den Haag",
+        "LOC_STRAAT": "Spui",
+        "Huisnr": "70",
+        "Postcode": "2511 BT",
+        "Woonplaats": "Den Haag",
+        "GEM": "Den Haag",
+        "Regio": 15,
+        "Website": "www.denhaag.nl",
+        "Telefoon": "14-070",
+        "CODE": null,
+        "BIJZONDERH": 510.909
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3172386,
+          52.0779351
+        ]
+      },
+      "id": "5a067ba1-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 86936,
+        "Y": 455805,
+        "X-nav": 86957,
+        "Y-nav": 455788,
+        "Bagvobid": "1916010000071788",
+        "Organisati": "Gem. Leidschendam-Voorburg",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 905, 2270 AX  Leidschendam",
+        "LOC_STRAAT": "Raadhuisplein",
+        "Huisnr": "1",
+        "Postcode": "2264 BM",
+        "Woonplaats": "Leidschendam",
+        "GEM": "Leidschendam-Voorburg",
+        "Regio": 15,
+        "Website": "www.leidschendam-voorburg.nl",
+        "Telefoon": "14-070",
+        "CODE": null,
+        "BIJZONDERH": 73.543
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3941228,
+          52.0863204
+        ]
+      },
+      "id": "5a067ba2-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 81590,
+        "Y": 444047,
+        "X-nav": 81583,
+        "Y-nav": 444093,
+        "Bagvobid": "1842010000003725",
+        "Organisati": "Gem. Midden-Delfland",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 1, 2636 ZG  Schipluiden",
+        "LOC_STRAAT": "Anna van Raesfeltstraat",
+        "Huisnr": "37",
+        "Postcode": "2636 HX",
+        "Woonplaats": "Schipluiden",
+        "GEM": "Midden-Delfland",
+        "Regio": 15,
+        "Website": "www.middendelfland.nl",
+        "Telefoon": "015-3804111",
+        "CODE": null,
+        "BIJZONDERH": 18.514
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3186589,
+          51.9799702
+        ]
+      },
+      "id": "5a067ba3-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 89887,
+        "Y": 447648,
+        "X-nav": 89959,
+        "Y-nav": 447639,
+        "Bagvobid": "1926010000529922",
+        "Organisati": "Gem. Pijnacker-Nootdorp",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 1, 2640 AA  Pijnacker",
+        "LOC_STRAAT": "Oranjeplein",
+        "Huisnr": "1",
+        "Postcode": "2641 EZ",
+        "Woonplaats": "Pijnacker",
+        "GEM": "Pijnacker-Nootdorp",
+        "Regio": 15,
+        "Website": "www.pijnacker-nootdorp.nl",
+        "Telefoon": "14-015",
+        "CODE": null,
+        "BIJZONDERH": 51.148
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4387276,
+          52.0133677
+        ]
+      },
+      "id": "5a067ba4-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 81616,
+        "Y": 450221,
+        "X-nav": 81626,
+        "Y-nav": 450179,
+        "Bagvobid": "0603010000021932",
+        "Organisati": "Gem. Rijswijk",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 5305, 2280 HH  Rijswijk",
+        "LOC_STRAAT": "Boogaardplein",
+        "Huisnr": "15",
+        "Postcode": "2284 DP",
+        "Woonplaats": "Rijswijk",
+        "GEM": "Rijswijk",
+        "Regio": 15,
+        "Website": "www.rijswijk.nl",
+        "Telefoon": "070-3261000",
+        "CODE": null,
+        "BIJZONDERH": 47.674
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3177142,
+          52.0354586
+        ]
+      },
+      "id": "5a067ba5-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 87328,
+        "Y": 462398,
+        "X-nav": 87343,
+        "Y-nav": 462377,
+        "Bagvobid": "0629010000007025",
+        "Organisati": "Gem. Wassenaar",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 499, 2240 AL  Wassenaar",
+        "LOC_STRAAT": "Johan de Wittstraat",
+        "Huisnr": "45",
+        "Postcode": "2242 LV",
+        "Woonplaats": "Wassenaar",
+        "GEM": "Wassenaar",
+        "Regio": 15,
+        "Website": "www.wassenaar.nl",
+        "Telefoon": "070-5122222",
+        "CODE": null,
+        "BIJZONDERH": 25.768
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3985313,
+          52.1456191
+        ]
+      },
+      "id": "5a067ba6-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 74157,
+        "Y": 445680,
+        "X-nav": 74135,
+        "Y-nav": 445721,
+        "Bagvobid": "1783010000006216",
+        "Organisati": "Gem. Westland",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 150, 2670 AD  Westland",
+        "LOC_STRAAT": "Stokdijkkade",
+        "Huisnr": "2",
+        "Postcode": "2671 GW",
+        "Woonplaats": "Westland",
+        "GEM": "Westland",
+        "Regio": 15,
+        "Website": "www.gemeentewestland.nl",
+        "Telefoon": "0174-673673",
+        "CODE": null,
+        "BIJZONDERH": 103.716
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2101011,
+          51.9936131
+        ]
+      },
+      "id": "5a067ba7-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "X": 93709,
+        "Y": 452868,
+        "X-nav": 93749,
+        "Y-nav": 452810,
+        "Bagvobid": "0637010000193389",
+        "Organisati": "Gem. Zoetermeer",
+        "LOC_TYPE": "Gemeentehuis",
+        "LOC_NAAM": "postbus 15, 2700 AA  Zoetermeer",
+        "LOC_STRAAT": "Markt",
+        "Huisnr": "10",
+        "Postcode": "2711 EC",
+        "Woonplaats": "Zoetermeer",
+        "GEM": "Zoetermeer",
+        "Regio": 15,
+        "Website": "www.zoetermeer.nl",
+        "Telefoon": "079-3468000",
+        "CODE": null,
+        "BIJZONDERH": 123.784
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4934588,
+          52.0607163
+        ]
+      },
+      "id": "5a067ba8-2f0f-11e9-b758-db375abde619"
+    }
+  ]
+}

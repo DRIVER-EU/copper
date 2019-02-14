@@ -1,0 +1,4121 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 72307,
+        "gml_id": null,
+        "fid": 117246207,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117246207",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3284773,
+              52.0674511
+            ],
+            [
+              4.3284049,
+              52.0674211
+            ],
+            [
+              4.3283272,
+              52.067389
+            ],
+            [
+              4.3281994,
+              52.0675089
+            ],
+            [
+              4.3282731,
+              52.0675387
+            ],
+            [
+              4.3283416,
+              52.0675664
+            ],
+            [
+              4.3284773,
+              52.0674511
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa570-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 72308,
+        "gml_id": null,
+        "fid": 117258102,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117258102",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3286802,
+              52.0675352
+            ],
+            [
+              4.3285935,
+              52.0674992
+            ],
+            [
+              4.3285311,
+              52.0674734
+            ],
+            [
+              4.3284007,
+              52.0675902
+            ],
+            [
+              4.3284646,
+              52.067616
+            ],
+            [
+              4.3285564,
+              52.0676531
+            ],
+            [
+              4.3286802,
+              52.0675352
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa571-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 72336,
+        "gml_id": null,
+        "fid": 117249836,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117249836",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 280,
+        "visualisat": 10410,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:regionale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": "|Hoornbrug|",
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3432318,
+              52.051931
+            ],
+            [
+              4.3432206,
+              52.051897
+            ],
+            [
+              4.3432041,
+              52.0518465
+            ],
+            [
+              4.3431452,
+              52.0518788
+            ],
+            [
+              4.3430247,
+              52.0519495
+            ],
+            [
+              4.3430387,
+              52.0519968
+            ],
+            [
+              4.3430485,
+              52.0520302
+            ],
+            [
+              4.3432318,
+              52.051931
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa572-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 72337,
+        "gml_id": null,
+        "fid": 117240587,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117240587",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 280,
+        "visualisat": 10410,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:regionale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": "|Hoornbrug|",
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.343179,
+              52.0517703
+            ],
+            [
+              4.3431679,
+              52.0517364
+            ],
+            [
+              4.343157,
+              52.0517031
+            ],
+            [
+              4.3429796,
+              52.0517959
+            ],
+            [
+              4.3429901,
+              52.0518317
+            ],
+            [
+              4.3430015,
+              52.0518705
+            ],
+            [
+              4.343179,
+              52.0517703
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa573-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 106501,
+        "gml_id": null,
+        "fid": 116740579,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116740579",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 234,
+        "visualisat": 10310,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:hoofdweg)",
+        "hoofdverke": "(1:snelverkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": "2",
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": "(1:Kruithuisweg)",
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": "(1:N470)",
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3707869,
+              51.9919703
+            ],
+            [
+              4.3706517,
+              51.9919371
+            ],
+            [
+              4.3706114,
+              51.9920046
+            ],
+            [
+              4.3705793,
+              51.9920584
+            ],
+            [
+              4.3707163,
+              51.9920889
+            ],
+            [
+              4.3707474,
+              51.9920365
+            ],
+            [
+              4.3707869,
+              51.9919703
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa574-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 106502,
+        "gml_id": null,
+        "fid": 116747494,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116747494",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 234,
+        "visualisat": 10310,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:hoofdweg)",
+        "hoofdverke": "(1:snelverkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "ja",
+        "verhardi_1": "verhard",
+        "aantalrijs": "2",
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": "(1:Kruithuisweg)",
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": "(1:N470)",
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3708608,
+              51.9918464
+            ],
+            [
+              4.3707417,
+              51.9918174
+            ],
+            [
+              4.3707254,
+              51.9918134
+            ],
+            [
+              4.370691,
+              51.9918711
+            ],
+            [
+              4.3706517,
+              51.9919371
+            ],
+            [
+              4.3707869,
+              51.9919703
+            ],
+            [
+              4.3708264,
+              51.991904
+            ],
+            [
+              4.3708608,
+              51.9918464
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa575-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 391340,
+        "gml_id": null,
+        "fid": 115264548,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "115264548",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2816752,
+              51.95179
+            ],
+            [
+              4.2816377,
+              51.9517855
+            ],
+            [
+              4.2815956,
+              51.9517804
+            ],
+            [
+              4.281577,
+              51.9518347
+            ],
+            [
+              4.2815717,
+              51.9518621
+            ],
+            [
+              4.2816063,
+              51.9518668
+            ],
+            [
+              4.2816467,
+              51.9518723
+            ],
+            [
+              4.2816519,
+              51.9518475
+            ],
+            [
+              4.2816752,
+              51.95179
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa576-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 391347,
+        "gml_id": null,
+        "fid": 117300723,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117300723",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4314141,
+              52.0304892
+            ],
+            [
+              4.4312865,
+              52.0304819
+            ],
+            [
+              4.4312826,
+              52.030502
+            ],
+            [
+              4.4312765,
+              52.0305315
+            ],
+            [
+              4.4313985,
+              52.0305374
+            ],
+            [
+              4.4314077,
+              52.030509
+            ],
+            [
+              4.4314141,
+              52.0304892
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa577-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 455954,
+        "gml_id": null,
+        "fid": 117252436,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117252436",
+        "brontype": "luchtfoto",
+        "bronactual": "2011/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2013/03/31",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:voetgangers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.394942,
+              52.0796183
+            ],
+            [
+              4.3948602,
+              52.079583
+            ],
+            [
+              4.3948393,
+              52.0795961
+            ],
+            [
+              4.3948225,
+              52.0796066
+            ],
+            [
+              4.3948946,
+              52.0796413
+            ],
+            [
+              4.3949177,
+              52.0796301
+            ],
+            [
+              4.394942,
+              52.0796183
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa578-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 455956,
+        "gml_id": null,
+        "fid": 117231074,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117231074",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:voetgangers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3482501,
+              52.0566133
+            ],
+            [
+              4.3482205,
+              52.0565963
+            ],
+            [
+              4.3482054,
+              52.0565876
+            ],
+            [
+              4.3481273,
+              52.056644
+            ],
+            [
+              4.34814,
+              52.0566515
+            ],
+            [
+              4.3481711,
+              52.0566699
+            ],
+            [
+              4.3482501,
+              52.0566133
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa579-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 455964,
+        "gml_id": null,
+        "fid": 120604415,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "120604415",
+        "brontype": "luchtfoto",
+        "bronactual": "2011/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:voetgangers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3086436,
+              52.0708752
+            ],
+            [
+              4.3086062,
+              52.0708621
+            ],
+            [
+              4.3085693,
+              52.0708492
+            ],
+            [
+              4.3084799,
+              52.0709491
+            ],
+            [
+              4.3085149,
+              52.0709625
+            ],
+            [
+              4.3085526,
+              52.0709768
+            ],
+            [
+              4.3086436,
+              52.0708752
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 455974,
+        "gml_id": null,
+        "fid": 126643070,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126643070",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2013/10/26",
+        "objecteind": null,
+        "tijdstipre": "2013/10/26",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:voetgangers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "onbekend",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2181024,
+              52.0275489
+            ],
+            [
+              4.2180921,
+              52.0275421
+            ],
+            [
+              4.218079,
+              52.0275336
+            ],
+            [
+              4.2180392,
+              52.0275547
+            ],
+            [
+              4.2180515,
+              52.0275632
+            ],
+            [
+              4.2180628,
+              52.0275709
+            ],
+            [
+              4.2181024,
+              52.0275489
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033454,
+        "gml_id": null,
+        "fid": 116729187,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116729187",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3411133,
+              52.0028762
+            ],
+            [
+              4.3410779,
+              52.0028634
+            ],
+            [
+              4.3410247,
+              52.0028443
+            ],
+            [
+              4.3409914,
+              52.0028323
+            ],
+            [
+              4.3409767,
+              52.0028492
+            ],
+            [
+              4.3409612,
+              52.0028671
+            ],
+            [
+              4.3409959,
+              52.0028794
+            ],
+            [
+              4.341048,
+              52.0028978
+            ],
+            [
+              4.3410831,
+              52.0029102
+            ],
+            [
+              4.3410976,
+              52.0028938
+            ],
+            [
+              4.3411133,
+              52.0028762
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033494,
+        "gml_id": null,
+        "fid": 117230007,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117230007",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": "|Hoornbrug|",
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.343157,
+              52.0517031
+            ],
+            [
+              4.34315,
+              52.051682
+            ],
+            [
+              4.3431446,
+              52.0516655
+            ],
+            [
+              4.3429682,
+              52.0517572
+            ],
+            [
+              4.3429736,
+              52.0517755
+            ],
+            [
+              4.3429796,
+              52.0517959
+            ],
+            [
+              4.343157,
+              52.0517031
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033495,
+        "gml_id": null,
+        "fid": 117221384,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117221384",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3287504,
+              52.0675642
+            ],
+            [
+              4.3287118,
+              52.0675482
+            ],
+            [
+              4.3286802,
+              52.0675352
+            ],
+            [
+              4.3285564,
+              52.0676531
+            ],
+            [
+              4.3285877,
+              52.0676658
+            ],
+            [
+              4.3286268,
+              52.0676816
+            ],
+            [
+              4.3287504,
+              52.0675642
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033557,
+        "gml_id": null,
+        "fid": 117278765,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117278765",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2639105,
+              52.0933749
+            ],
+            [
+              4.2639053,
+              52.0933474
+            ],
+            [
+              4.2639012,
+              52.0933252
+            ],
+            [
+              4.2637575,
+              52.0934409
+            ],
+            [
+              4.2637645,
+              52.0934628
+            ],
+            [
+              4.2637728,
+              52.0934883
+            ],
+            [
+              4.2639105,
+              52.0933749
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa57f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033558,
+        "gml_id": null,
+        "fid": 117260191,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117260191",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3283272,
+              52.067389
+            ],
+            [
+              4.328304,
+              52.0673794
+            ],
+            [
+              4.3282792,
+              52.0673691
+            ],
+            [
+              4.3281519,
+              52.0674897
+            ],
+            [
+              4.3281785,
+              52.0675005
+            ],
+            [
+              4.3281994,
+              52.0675089
+            ],
+            [
+              4.3283272,
+              52.067389
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa580-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033561,
+        "gml_id": null,
+        "fid": 117250863,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117250863",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.435535,
+              52.1069295
+            ],
+            [
+              4.435521,
+              52.1068945
+            ],
+            [
+              4.4355098,
+              52.1068664
+            ],
+            [
+              4.435430365914259,
+              52.10687919413432
+            ],
+            [
+              4.435467957243929,
+              52.106941696654346
+            ],
+            [
+              4.435535,
+              52.1069295
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa581-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033563,
+        "gml_id": null,
+        "fid": 117235000,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117235000",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": "|Hoornbrug|",
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3432481,
+              52.0519805
+            ],
+            [
+              4.3432395,
+              52.0519545
+            ],
+            [
+              4.3432318,
+              52.051931
+            ],
+            [
+              4.3430485,
+              52.0520302
+            ],
+            [
+              4.3430551,
+              52.0520527
+            ],
+            [
+              4.3430628,
+              52.052079
+            ],
+            [
+              4.3431927,
+              52.0520109
+            ],
+            [
+              4.3432481,
+              52.0519805
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa582-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033681,
+        "gml_id": null,
+        "fid": 116622325,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116622325",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3638772,
+              52.0015578
+            ],
+            [
+              4.3637594,
+              52.0015255
+            ],
+            [
+              4.3636516,
+              52.0014959
+            ],
+            [
+              4.3635297,
+              52.0014625
+            ],
+            [
+              4.3635009,
+              52.0015002
+            ],
+            [
+              4.3634757,
+              52.0015333
+            ],
+            [
+              4.3635953,
+              52.0015667
+            ],
+            [
+              4.3637118,
+              52.0015992
+            ],
+            [
+              4.3638176,
+              52.0016288
+            ],
+            [
+              4.363846,
+              52.001595
+            ],
+            [
+              4.3638772,
+              52.0015578
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa583-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033715,
+        "gml_id": null,
+        "fid": 122581565,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122581565",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5009502,
+              52.0743492
+            ],
+            [
+              4.5009406,
+              52.074329
+            ],
+            [
+              4.5009296,
+              52.0743057
+            ],
+            [
+              4.5008714,
+              52.0743176
+            ],
+            [
+              4.5008844,
+              52.0743408
+            ],
+            [
+              4.5008953,
+              52.0743605
+            ],
+            [
+              4.5009097,
+              52.0743575
+            ],
+            [
+              4.5009502,
+              52.0743492
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa584-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033719,
+        "gml_id": null,
+        "fid": 116745442,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116745442",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3590765,
+              52.0181275
+            ],
+            [
+              4.3589386,
+              52.0180472
+            ],
+            [
+              4.3588831,
+              52.0180803
+            ],
+            [
+              4.3588248,
+              52.018115
+            ],
+            [
+              4.3589681,
+              52.0181997
+            ],
+            [
+              4.3590231,
+              52.018163
+            ],
+            [
+              4.3590765,
+              52.0181275
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa585-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033721,
+        "gml_id": null,
+        "fid": 116735039,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116735039",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.392717,
+              51.9638098
+            ],
+            [
+              4.392599168551443,
+              51.96377588954809
+            ],
+            [
+              4.392556990082857,
+              51.96383290182167
+            ],
+            [
+              4.3926774,
+              51.9638654
+            ],
+            [
+              4.3926928,
+              51.9638439
+            ],
+            [
+              4.392717,
+              51.9638098
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa586-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033722,
+        "gml_id": null,
+        "fid": 116743048,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116743048",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3694447,
+              52.0102507
+            ],
+            [
+              4.3690133,
+              52.0102242
+            ],
+            [
+              4.3690108,
+              52.0102733
+            ],
+            [
+              4.3690087,
+              52.0103163
+            ],
+            [
+              4.3693944,
+              52.0103359
+            ],
+            [
+              4.3694238,
+              52.0102861
+            ],
+            [
+              4.3694447,
+              52.0102507
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa587-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033723,
+        "gml_id": null,
+        "fid": 116730159,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116730159",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3638021,
+              52.0066807
+            ],
+            [
+              4.3637658,
+              52.0066648
+            ],
+            [
+              4.3637303,
+              52.0066508
+            ],
+            [
+              4.3636414,
+              52.0067303
+            ],
+            [
+              4.3636713,
+              52.0067432
+            ],
+            [
+              4.3637084,
+              52.0067593
+            ],
+            [
+              4.3638021,
+              52.0066807
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa588-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033726,
+        "gml_id": null,
+        "fid": 128766510,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128766510",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3427212,
+              52.0453143
+            ],
+            [
+              4.3426355,
+              52.0452528
+            ],
+            [
+              4.3425812,
+              52.0452783
+            ],
+            [
+              4.3425433,
+              52.0453073
+            ],
+            [
+              4.342632,
+              52.0453635
+            ],
+            [
+              4.3426674,
+              52.0453439
+            ],
+            [
+              4.3427212,
+              52.0453143
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa589-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033732,
+        "gml_id": null,
+        "fid": 116935198,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116935198",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4626526,
+              52.1258479
+            ],
+            [
+              4.4626303,
+              52.1258335
+            ],
+            [
+              4.4625982,
+              52.1258127
+            ],
+            [
+              4.462483259510187,
+              52.12588138637216
+            ],
+            [
+              4.462530818362812,
+              52.12591523352255
+            ],
+            [
+              4.4626526,
+              52.1258479
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033739,
+        "gml_id": null,
+        "fid": 116725061,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116725061",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3687904,
+              52.0106761
+            ],
+            [
+              4.3687573,
+              52.0106688
+            ],
+            [
+              4.3687119,
+              52.0106588
+            ],
+            [
+              4.3686809,
+              52.0107224
+            ],
+            [
+              4.368732,
+              52.0107339
+            ],
+            [
+              4.3687658,
+              52.0107415
+            ],
+            [
+              4.3687904,
+              52.0106761
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033778,
+        "gml_id": null,
+        "fid": 116726117,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116726117",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3707163,
+              51.9920889
+            ],
+            [
+              4.3705793,
+              51.9920584
+            ],
+            [
+              4.3705571,
+              51.9920957
+            ],
+            [
+              4.3705402,
+              51.9921241
+            ],
+            [
+              4.3705956,
+              51.992136
+            ],
+            [
+              4.3706776,
+              51.9921538
+            ],
+            [
+              4.3706963,
+              51.9921224
+            ],
+            [
+              4.3707163,
+              51.9920889
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033779,
+        "gml_id": null,
+        "fid": 116729347,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116729347",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3705793,
+              51.9920584
+            ],
+            [
+              4.3705385,
+              51.9920493
+            ],
+            [
+              4.3704792,
+              51.9920361
+            ],
+            [
+              4.3704548,
+              51.992076
+            ],
+            [
+              4.3704395,
+              51.9921023
+            ],
+            [
+              4.3704542,
+              51.9921055
+            ],
+            [
+              4.3704923,
+              51.9921137
+            ],
+            [
+              4.3705402,
+              51.9921241
+            ],
+            [
+              4.3705571,
+              51.9920957
+            ],
+            [
+              4.3705793,
+              51.9920584
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033929,
+        "gml_id": null,
+        "fid": 126776527,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126776527",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4507116,
+              52.1160515
+            ],
+            [
+              4.4506551,
+              52.1159927
+            ],
+            [
+              4.4506136,
+              52.1160076
+            ],
+            [
+              4.4505765,
+              52.1160209
+            ],
+            [
+              4.4506307,
+              52.1160815
+            ],
+            [
+              4.450669,
+              52.1160673
+            ],
+            [
+              4.4507116,
+              52.1160515
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033933,
+        "gml_id": null,
+        "fid": 126776640,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126776640",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4507494,
+              52.1160937
+            ],
+            [
+              4.4507287,
+              52.1160693
+            ],
+            [
+              4.4507116,
+              52.1160515
+            ],
+            [
+              4.450669,
+              52.1160673
+            ],
+            [
+              4.4506307,
+              52.1160815
+            ],
+            [
+              4.4506637,
+              52.1161183
+            ],
+            [
+              4.4507051,
+              52.1161064
+            ],
+            [
+              4.4507494,
+              52.1160937
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa58f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 1033972,
+        "gml_id": null,
+        "fid": 126862095,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126862095",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 340,
+        "visualisat": 10790,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:overig)",
+        "hoofdverke": "(1:fietsers, bromfietsers)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.38906,
+              52.0775359
+            ],
+            [
+              4.3890409,
+              52.0775295
+            ],
+            [
+              4.3889132,
+              52.0776046
+            ],
+            [
+              4.3889403,
+              52.0776146
+            ],
+            [
+              4.3889492,
+              52.0776179
+            ],
+            [
+              4.3889889,
+              52.0776324
+            ],
+            [
+              4.3891203,
+              52.0775562
+            ],
+            [
+              4.3890758,
+              52.0775412
+            ],
+            [
+              4.38906,
+              52.0775359
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa590-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225161,
+        "gml_id": null,
+        "fid": 116629157,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116629157",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2013/10/26",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3024742,
+              51.9642084
+            ],
+            [
+              4.3024685,
+              51.9641913
+            ],
+            [
+              4.3023959,
+              51.9642026
+            ],
+            [
+              4.302404,
+              51.9642222
+            ],
+            [
+              4.3024117,
+              51.9642446
+            ],
+            [
+              4.3024827,
+              51.9642329
+            ],
+            [
+              4.3024742,
+              51.9642084
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa591-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225175,
+        "gml_id": null,
+        "fid": 126605093,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126605093",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2013/10/26",
+        "objecteind": null,
+        "tijdstipre": "2013/10/26",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": "|Kolkbrug|",
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2999137,
+              51.9594682
+            ],
+            [
+              4.2999002,
+              51.9594574
+            ],
+            [
+              4.2998595,
+              51.9594771
+            ],
+            [
+              4.2998725,
+              51.9594874
+            ],
+            [
+              4.2998899,
+              51.9595024
+            ],
+            [
+              4.2999288,
+              51.9594807
+            ],
+            [
+              4.2999137,
+              51.9594682
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa592-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225178,
+        "gml_id": null,
+        "fid": 116750511,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116750511",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.4218594,
+              51.985481
+            ],
+            [
+              4.4218411,
+              51.9854661
+            ],
+            [
+              4.4218257,
+              51.9854536
+            ],
+            [
+              4.4218169,
+              51.9854464
+            ],
+            [
+              4.4217622,
+              51.9854771
+            ],
+            [
+              4.4217723,
+              51.9854864
+            ],
+            [
+              4.4217879,
+              51.9855007
+            ],
+            [
+              4.4218057,
+              51.985517
+            ],
+            [
+              4.4218594,
+              51.985481
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa593-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225224,
+        "gml_id": null,
+        "fid": 116739932,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116739932",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2013/10/26",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3033285,
+              51.9656608
+            ],
+            [
+              4.3033174,
+              51.9656435
+            ],
+            [
+              4.3033061,
+              51.9656247
+            ],
+            [
+              4.3032135,
+              51.9656448
+            ],
+            [
+              4.3032247,
+              51.9656638
+            ],
+            [
+              4.3032361,
+              51.965681
+            ],
+            [
+              4.3032431,
+              51.9656789
+            ],
+            [
+              4.3033285,
+              51.9656608
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa594-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225232,
+        "gml_id": null,
+        "fid": 126604878,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126604878",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2013/10/26",
+        "objecteind": null,
+        "tijdstipre": "2013/10/26",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3015145,
+              51.9617805
+            ],
+            [
+              4.3015082,
+              51.9617622
+            ],
+            [
+              4.301418,
+              51.9617675
+            ],
+            [
+              4.3014248,
+              51.9617877
+            ],
+            [
+              4.3014299,
+              51.9618043
+            ],
+            [
+              4.3015191,
+              51.9617988
+            ],
+            [
+              4.3015145,
+              51.9617805
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa595-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225283,
+        "gml_id": null,
+        "fid": 115269515,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "115269515",
+        "brontype": "TOP10vector",
+        "bronactual": "2002/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 353,
+        "visualisat": 10600,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:straat)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2696321,
+              51.9333542
+            ],
+            [
+              4.2697227,
+              51.9332789
+            ],
+            [
+              4.2697311,
+              51.9332719
+            ],
+            [
+              4.2696618,
+              51.9332101
+            ],
+            [
+              4.2696168,
+              51.9331699
+            ],
+            [
+              4.2696064,
+              51.9331785
+            ],
+            [
+              4.2695102,
+              51.9332582
+            ],
+            [
+              4.269498,
+              51.9332684
+            ],
+            [
+              4.2695515,
+              51.9333101
+            ],
+            [
+              4.2696204,
+              51.9333639
+            ],
+            [
+              4.2696321,
+              51.9333542
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa596-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225299,
+        "gml_id": null,
+        "fid": 115264003,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "115264003",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 353,
+        "visualisat": 10600,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:straat)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2711704,
+              51.9344671
+            ],
+            [
+              4.2711639,
+              51.934448
+            ],
+            [
+              4.2710659,
+              51.9344877
+            ],
+            [
+              4.2710821,
+              51.9345089
+            ],
+            [
+              4.2710943,
+              51.9345267
+            ],
+            [
+              4.27118,
+              51.9344938
+            ],
+            [
+              4.2711704,
+              51.9344671
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa597-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225383,
+        "gml_id": null,
+        "fid": 117261744,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117261744",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 353,
+        "visualisat": 10600,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:straat)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.2639012,
+              52.0933252
+            ],
+            [
+              4.2638978,
+              52.0932646
+            ],
+            [
+              4.2638926,
+              52.0931729
+            ],
+            [
+              4.2637231,
+              52.0933093
+            ],
+            [
+              4.2637419,
+              52.093381
+            ],
+            [
+              4.2637575,
+              52.0934409
+            ],
+            [
+              4.2639012,
+              52.0933252
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa598-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225391,
+        "gml_id": null,
+        "fid": 116745765,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116745765",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 353,
+        "visualisat": 10600,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:straat)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3651535,
+              52.0137546
+            ],
+            [
+              4.3650177,
+              52.013681
+            ],
+            [
+              4.3649176,
+              52.013767
+            ],
+            [
+              4.3648581,
+              52.0138182
+            ],
+            [
+              4.3649821,
+              52.0138808
+            ],
+            [
+              4.3650491,
+              52.0138315
+            ],
+            [
+              4.3651535,
+              52.0137546
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa599-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2225445,
+        "gml_id": null,
+        "fid": 117247352,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117247352",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 353,
+        "visualisat": 10600,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:straat)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "2 - 4 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3230297,
+              52.0653067
+            ],
+            [
+              4.3228629,
+              52.0652342
+            ],
+            [
+              4.3228418,
+              52.065225
+            ],
+            [
+              4.3226626,
+              52.065147
+            ],
+            [
+              4.3225702,
+              52.0652373
+            ],
+            [
+              4.3227349,
+              52.0653087
+            ],
+            [
+              4.3227614,
+              52.0653202
+            ],
+            [
+              4.3229263,
+              52.0653917
+            ],
+            [
+              4.3230297,
+              52.0653067
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2633719,
+        "gml_id": null,
+        "fid": 116615150,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116615150",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "4 - 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3176169,
+              51.9801153
+            ],
+            [
+              4.3175427,
+              51.9800767
+            ],
+            [
+              4.3175042,
+              51.9801037
+            ],
+            [
+              4.3174626,
+              51.9801343
+            ],
+            [
+              4.3175368,
+              51.9801728
+            ],
+            [
+              4.3175796,
+              51.9801427
+            ],
+            [
+              4.3176169,
+              51.9801153
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2633750,
+        "gml_id": null,
+        "fid": 116626536,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116626536",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "4 - 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.393952176380183,
+              51.96263151127558
+            ],
+            [
+              4.3939448,
+              51.9626393
+            ],
+            [
+              4.393982,
+              51.9626537
+            ],
+            [
+              4.3940237,
+              51.9626698
+            ],
+            [
+              4.394029674457898,
+              51.9626634452378
+            ],
+            [
+              4.393952176380183,
+              51.96263151127558
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2785896,
+        "gml_id": null,
+        "fid": 117222092,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "117222092",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.344415,
+              52.0594679
+            ],
+            [
+              4.3442516,
+              52.0593576
+            ],
+            [
+              4.344162,
+              52.0594015
+            ],
+            [
+              4.344139,
+              52.0594127
+            ],
+            [
+              4.3440483,
+              52.0594454
+            ],
+            [
+              4.3442635,
+              52.0595755
+            ],
+            [
+              4.3443201,
+              52.0595383
+            ],
+            [
+              4.3443246,
+              52.059535
+            ],
+            [
+              4.3443471,
+              52.0595182
+            ],
+            [
+              4.344415,
+              52.0594679
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2785919,
+        "gml_id": null,
+        "fid": 116722641,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116722641",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3479035,
+              52.0205562
+            ],
+            [
+              4.3478578,
+              52.0205494
+            ],
+            [
+              4.3478024,
+              52.0205412
+            ],
+            [
+              4.3477365,
+              52.0206379
+            ],
+            [
+              4.3477992,
+              52.0206451
+            ],
+            [
+              4.3478498,
+              52.020651
+            ],
+            [
+              4.3479035,
+              52.0205562
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2785920,
+        "gml_id": null,
+        "fid": 116725516,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116725516",
+        "brontype": "TOP10vector",
+        "bronactual": "2006/01/01",
+        "bronbeschr": "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+        "bronnauwke": 2000,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2008/11/24",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3511253,
+              52.017863
+            ],
+            [
+              4.3509132,
+              52.0178246
+            ],
+            [
+              4.3508827,
+              52.0178817
+            ],
+            [
+              4.3508524,
+              52.0179384
+            ],
+            [
+              4.3511122,
+              52.0179783
+            ],
+            [
+              4.351119,
+              52.0179189
+            ],
+            [
+              4.3511253,
+              52.017863
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa59f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2785924,
+        "gml_id": null,
+        "fid": 116740782,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116740782",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/10/23",
+        "eindregist": null,
+        "tdncode": 244,
+        "visualisat": 10510,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:lokale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3285661,
+              51.9968034
+            ],
+            [
+              4.3285366,
+              51.9967642
+            ],
+            [
+              4.3285036,
+              51.9967191
+            ],
+            [
+              4.328409,
+              51.9967195
+            ],
+            [
+              4.3284472,
+              51.9967683
+            ],
+            [
+              4.3284762,
+              51.9968111
+            ],
+            [
+              4.3284939,
+              51.9968064
+            ],
+            [
+              4.328521,
+              51.9968054
+            ],
+            [
+              4.3285661,
+              51.9968034
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa5a0-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2785990,
+        "gml_id": null,
+        "fid": 116666715,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116666715",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 280,
+        "visualisat": 10410,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:regionale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3657634,
+              52.0076224
+            ],
+            [
+              4.3656346,
+              52.0075672
+            ],
+            [
+              4.3655384,
+              52.0076893
+            ],
+            [
+              4.3656671,
+              52.0077463
+            ],
+            [
+              4.3658314,
+              52.007819
+            ],
+            [
+              4.365947,
+              52.0077041
+            ],
+            [
+              4.3657634,
+              52.0076224
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa5a1-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 2786043,
+        "gml_id": null,
+        "fid": 116728780,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "116728780",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/10/23",
+        "eindregist": null,
+        "tdncode": 280,
+        "visualisat": 10410,
+        "mutatietyp": null,
+        "typeinfras": "verbinding",
+        "typeweg": "(1:regionale weg)",
+        "hoofdverke": "(1:gemengd verkeer)",
+        "fysiekvoor": "(1:op beweegbaar deel van brug)",
+        "verharding": "> 7 meter",
+        "gescheiden": "nee",
+        "verhardi_1": "verhard",
+        "aantalrijs": null,
+        "hoogtenive": 0,
+        "status": "in gebruik",
+        "naam": null,
+        "isbagnaam": null,
+        "awegnummer": null,
+        "nwegnummer": null,
+        "ewegnummer": null,
+        "swegnummer": null,
+        "afritnumme": null,
+        "afritnaam": null,
+        "knooppuntn": null,
+        "brugnaam": null,
+        "tunnelnaam": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.3526643,
+              52.0195575
+            ],
+            [
+              4.3525631,
+              52.0195552
+            ],
+            [
+              4.3525432,
+              52.0195547
+            ],
+            [
+              4.3524264,
+              52.019552
+            ],
+            [
+              4.3524217,
+              52.0196647
+            ],
+            [
+              4.3525344,
+              52.0196671
+            ],
+            [
+              4.352556,
+              52.0196676
+            ],
+            [
+              4.3526587,
+              52.0196697
+            ],
+            [
+              4.3526643,
+              52.0195575
+            ]
+          ]
+        ]
+      },
+      "id": "5a2aa5a2-2f0f-11e9-b758-db375abde619"
+    }
+  ]
+}

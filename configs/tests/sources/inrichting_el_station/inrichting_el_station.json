@@ -1,0 +1,2927 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939379,
+        "gml_id": null,
+        "fid": 128969362,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969362",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Conradkade",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2832732,
+          52.0806395
+        ]
+      },
+      "id": "5a1bff70-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939398,
+        "gml_id": null,
+        "fid": 128969237,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969237",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Leyenburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2657809,
+          52.057182
+        ]
+      },
+      "id": "5a1bff71-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938681,
+        "gml_id": null,
+        "fid": 123791706,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "123791706",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2012/02/06",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Rijswijk",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3224714,
+          52.0372175
+        ]
+      },
+      "id": "5a1bff72-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938673,
+        "gml_id": null,
+        "fid": 128969259,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969259",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Voorweg Hoog",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4712799,
+          52.0632092
+        ]
+      },
+      "id": "5a1bff73-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938674,
+        "gml_id": null,
+        "fid": 128969313,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969313",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Stadhuis",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4930876,
+          52.0610659
+        ]
+      },
+      "id": "5a1bff74-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939399,
+        "gml_id": null,
+        "fid": 128969314,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969314",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zuidwoldepad",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2661061,
+          52.0528228
+        ]
+      },
+      "id": "5a1bff75-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939401,
+        "gml_id": null,
+        "fid": 128969238,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969238",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "De Rade",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2581676,
+          52.047831
+        ]
+      },
+      "id": "5a1bff76-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939404,
+        "gml_id": null,
+        "fid": 128969291,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969291",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "De Uithof",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2452986,
+          52.0394091
+        ]
+      },
+      "id": "5a1bff77-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971605,
+        "gml_id": null,
+        "fid": 129054221,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054221",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Maasland Viaduct",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2720926,
+          51.9251066
+        ]
+      },
+      "id": "5a1bff78-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971607,
+        "gml_id": null,
+        "fid": 129054323,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054323",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Delft",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3571599,
+          52.0067824
+        ]
+      },
+      "id": "5a1bff79-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 630156,
+        "gml_id": null,
+        "fid": 128969294,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969294",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Voorburg 't Loo",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3654923,
+          52.0822762
+        ]
+      },
+      "id": "5a1bff7a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 630157,
+        "gml_id": null,
+        "fid": 104455729,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104455729",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Voorburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3592883,
+          52.0666119
+        ]
+      },
+      "id": "5a1bff7b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 631182,
+        "gml_id": null,
+        "fid": 128969367,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969367",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Leidschenveen",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4003352,
+          52.0648232
+        ]
+      },
+      "id": "5a1bff7c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918472,
+        "gml_id": null,
+        "fid": 128969241,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969241",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Driemanspolder",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4771488,
+          52.0484648
+        ]
+      },
+      "id": "5a1bff7d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918473,
+        "gml_id": null,
+        "fid": 128969297,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969297",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Voorweg Laag",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4706882,
+          52.062753
+        ]
+      },
+      "id": "5a1bff7e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918474,
+        "gml_id": null,
+        "fid": 128969319,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969319",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Delftsewallen",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4870134,
+          52.0508071
+        ]
+      },
+      "id": "5a1bff7f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918475,
+        "gml_id": null,
+        "fid": 128969347,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969347",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "De Leyens",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4948013,
+          52.0719785
+        ]
+      },
+      "id": "5a1c2680-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918519,
+        "gml_id": null,
+        "fid": 128969213,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969213",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Buytenwegh",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4785839,
+          52.0667393
+        ]
+      },
+      "id": "5a1c2681-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918787,
+        "gml_id": null,
+        "fid": 128969352,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969352",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Meerzicht",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4698741,
+          52.0553713
+        ]
+      },
+      "id": "5a1c2682-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919002,
+        "gml_id": null,
+        "fid": 128969374,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969374",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Dorp",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4918386,
+          52.0541853
+        ]
+      },
+      "id": "5a1c2683-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919515,
+        "gml_id": null,
+        "fid": 128969397,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969397",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Seghwaert",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5152468,
+          52.0630218
+        ]
+      },
+      "id": "5a1c2684-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919615,
+        "gml_id": null,
+        "fid": 128969271,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969271",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Leidsewallen",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5099097,
+          52.0689867
+        ]
+      },
+      "id": "5a1c2685-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919619,
+        "gml_id": null,
+        "fid": 128969302,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969302",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Oosterheem",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5426612,
+          52.0603214
+        ]
+      },
+      "id": "5a1c2686-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919623,
+        "gml_id": null,
+        "fid": 128969351,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969351",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Palenstein",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5064344,
+          52.0596852
+        ]
+      },
+      "id": "5a1c2687-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938287,
+        "gml_id": null,
+        "fid": 128800014,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800014",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Delft",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3567167,
+          52.0073129
+        ]
+      },
+      "id": "5a1c2688-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938677,
+        "gml_id": null,
+        "fid": 123791695,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "123791695",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2012/02/06",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zoetermeer",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.476909,
+          52.0476165
+        ]
+      },
+      "id": "5a1c2689-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938683,
+        "gml_id": null,
+        "fid": 128969387,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969387",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Forepark",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3925464,
+          52.0701189
+        ]
+      },
+      "id": "5a1c268a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938686,
+        "gml_id": null,
+        "fid": 128969233,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969233",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Spui",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3146233,
+          52.0775095
+        ]
+      },
+      "id": "5a1c268b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938688,
+        "gml_id": null,
+        "fid": 128969340,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969340",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Nootdorp",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4146522,
+          52.0475745
+        ]
+      },
+      "id": "5a1c268c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938684,
+        "gml_id": null,
+        "fid": 128969388,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969388",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "L'dam-Voorburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3820312,
+          52.0775881
+        ]
+      },
+      "id": "5a1c268d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939315,
+        "gml_id": null,
+        "fid": 128969342,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969342",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "MCH Westeinde",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2990703,
+          52.0733178
+        ]
+      },
+      "id": "5a1c268e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971603,
+        "gml_id": null,
+        "fid": 129054269,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054269",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Rijswijk",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3223386,
+          52.0373403
+        ]
+      },
+      "id": "5a1c268f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971839,
+        "gml_id": null,
+        "fid": 129054478,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054478",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Voorburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3584394,
+          52.0672886
+        ]
+      },
+      "id": "5a1c2690-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 974091,
+        "gml_id": null,
+        "fid": 129054389,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054389",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zoetermeer",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4776016,
+          52.0470345
+        ]
+      },
+      "id": "5a1c2691-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939316,
+        "gml_id": null,
+        "fid": 128969260,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969260",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Elandstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2923973,
+          52.0783226
+        ]
+      },
+      "id": "5a1c2692-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939381,
+        "gml_id": null,
+        "fid": 128969419,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969419",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Fahrenheitstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2710658,
+          52.076588
+        ]
+      },
+      "id": "5a1c2693-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939382,
+        "gml_id": null,
+        "fid": 128969391,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969391",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Goudenregenstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2666991,
+          52.0749548
+        ]
+      },
+      "id": "5a1c2694-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939384,
+        "gml_id": null,
+        "fid": 128969287,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969287",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zonnebloemstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2563226,
+          52.0712127
+        ]
+      },
+      "id": "5a1c2695-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939385,
+        "gml_id": null,
+        "fid": 128969235,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969235",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Appelstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2512931,
+          52.0692834
+        ]
+      },
+      "id": "5a1c2696-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939391,
+        "gml_id": null,
+        "fid": 128969422,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969422",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Pisuissestr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2279763,
+          52.0571926
+        ]
+      },
+      "id": "5a1c2697-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939393,
+        "gml_id": null,
+        "fid": 128969262,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969262",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Monstersestr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.292366,
+          52.0729469
+        ]
+      },
+      "id": "5a1c2698-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 919622,
+        "gml_id": null,
+        "fid": 128969350,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969350",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Javaln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5376685,
+          52.0536053
+        ]
+      },
+      "id": "5a1c2699-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938676,
+        "gml_id": null,
+        "fid": 128969285,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969285",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Willem Dreesln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5345047,
+          52.065314
+        ]
+      },
+      "id": "5a1c269a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939387,
+        "gml_id": null,
+        "fid": 128969363,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969363",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Hoefbladln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2398318,
+          52.065459
+        ]
+      },
+      "id": "5a1c269b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939389,
+        "gml_id": null,
+        "fid": 128969288,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969288",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Heliotroopln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2307861,
+          52.0626877
+        ]
+      },
+      "id": "5a1c269c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939390,
+        "gml_id": null,
+        "fid": 128969261,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969261",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Mozartln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2323669,
+          52.0596602
+        ]
+      },
+      "id": "5a1c269d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939395,
+        "gml_id": null,
+        "fid": 128969263,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969263",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Dierenseln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2818669,
+          52.0666348
+        ]
+      },
+      "id": "5a1c269e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939396,
+        "gml_id": null,
+        "fid": 128969264,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969264",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Tienhovenseln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2768296,
+          52.064555
+        ]
+      },
+      "id": "5a1c269f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939402,
+        "gml_id": null,
+        "fid": 128969290,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969290",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Bouwlustln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2550144,
+          52.0458628
+        ]
+      },
+      "id": "5a1c26a0-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939403,
+        "gml_id": null,
+        "fid": 128969365,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969365",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Beresteinln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2498293,
+          52.0425709
+        ]
+      },
+      "id": "5a1c26a1-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971606,
+        "gml_id": null,
+        "fid": 129054322,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054322",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Naaldwijk Verdiln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2112787,
+          51.993238
+        ]
+      },
+      "id": "5a1c26a2-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939388,
+        "gml_id": null,
+        "fid": 128969236,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969236",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Muurbloemwg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.234884,
+          52.0640256
+        ]
+      },
+      "id": "5a1c26a3-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939394,
+        "gml_id": null,
+        "fid": 128969364,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969364",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "De La Reywg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2852747,
+          52.0709106
+        ]
+      },
+      "id": "5a1c26a4-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939400,
+        "gml_id": null,
+        "fid": 128969344,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969344",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Dedemsvaartwg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2627368,
+          52.0502761
+        ]
+      },
+      "id": "5a1c26a5-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939314,
+        "gml_id": null,
+        "fid": 128969286,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969286",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Brouwersgr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3046555,
+          52.0739144
+        ]
+      },
+      "id": "5a1c26a6-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939380,
+        "gml_id": null,
+        "fid": 128969343,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969343",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Valkenbospln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2761339,
+          52.078359
+        ]
+      },
+      "id": "5a1c26a7-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939383,
+        "gml_id": null,
+        "fid": 128969420,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969420",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Azaleapln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.261842,
+          52.0732687
+        ]
+      },
+      "id": "5a1c26a8-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939386,
+        "gml_id": null,
+        "fid": 128969421,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969421",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "De Savornin Lohmanpln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2461419,
+          52.0673348
+        ]
+      },
+      "id": "5a1c26a9-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939392,
+        "gml_id": null,
+        "fid": 128969423,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969423",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Arnold Spoelpln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2331722,
+          52.0545314
+        ]
+      },
+      "id": "5a1c26aa-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939397,
+        "gml_id": null,
+        "fid": 128969289,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969289",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Monnickendampln",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2707376,
+          52.062233
+        ]
+      },
+      "id": "5a1c26ab-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939313,
+        "gml_id": null,
+        "fid": 128969341,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969341",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Laan v. NOI",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3430866,
+          52.0791474
+        ]
+      },
+      "id": "5a1c26ac-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939378,
+        "gml_id": null,
+        "fid": 128969418,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969418",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "V. Speijkstr",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2879832,
+          52.0815438
+        ]
+      },
+      "id": "5a1c26ad-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938687,
+        "gml_id": null,
+        "fid": 128969416,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969416",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Gr. Markt",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3090809,
+          52.0754575
+        ]
+      },
+      "id": "5a1c26ae-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 556532,
+        "gml_id": null,
+        "fid": 129054606,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054606",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Delft Z.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3642017,
+          51.9907169
+        ]
+      },
+      "id": "5a1c26af-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 820395,
+        "gml_id": null,
+        "fid": 122172682,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122172682",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Delft Z.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3647785,
+          51.9909174
+        ]
+      },
+      "id": "5a1c26b0-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 937917,
+        "gml_id": null,
+        "fid": 128969249,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969249",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Pijnacker Z.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4457949,
+          52.0050673
+        ]
+      },
+      "id": "5a1c26b1-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 974090,
+        "gml_id": null,
+        "fid": 129054441,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054441",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zoetermeer O.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4915303,
+          52.0463467
+        ]
+      },
+      "id": "5a1c26b2-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938675,
+        "gml_id": null,
+        "fid": 128969339,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969339",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Centrum W.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4831676,
+          52.0606861
+        ]
+      },
+      "id": "5a1c26b3-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971608,
+        "gml_id": null,
+        "fid": 129054515,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054515",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Zoetermeer Centrum W.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4827811,
+          52.0612226
+        ]
+      },
+      "id": "5a1c26b4-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 939312,
+        "gml_id": null,
+        "fid": 128969390,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969390",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "C.S.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3242147,
+          52.0810991
+        ]
+      },
+      "id": "5a1c26b5-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 631192,
+        "gml_id": null,
+        "fid": 104459024,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104459024",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Ypenburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3900244,
+          52.0560477
+        ]
+      },
+      "id": "5a1c26b6-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938678,
+        "gml_id": null,
+        "fid": 127109626,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "127109626",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Centraal",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3244482,
+          52.0808358
+        ]
+      },
+      "id": "5a1c26b7-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938679,
+        "gml_id": null,
+        "fid": 128889208,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128889208",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "HS",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3224952,
+          52.0699744
+        ]
+      },
+      "id": "5a1c26b8-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938680,
+        "gml_id": null,
+        "fid": 123791708,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "123791708",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2012/02/06",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Moerwijk",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3085529,
+          52.0545185
+        ]
+      },
+      "id": "5a1c26b9-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938682,
+        "gml_id": null,
+        "fid": 128918081,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128918081",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Mariahoeve",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3689847,
+          52.0905859
+        ]
+      },
+      "id": "5a1c26ba-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971799,
+        "gml_id": null,
+        "fid": 129054473,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054473",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Leyenburg",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.265905,
+          52.0571434
+        ]
+      },
+      "id": "5a1c26bb-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 971840,
+        "gml_id": null,
+        "fid": 129054291,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "129054291",
+        "brontype": "luchtfoto",
+        "bronactual": "2015/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2016/02/01",
+        "objecteind": null,
+        "tijdstipre": "2016/02/01",
+        "eindregist": null,
+        "tdncode": 500,
+        "visualisat": 15880,
+        "mutatietyp": null,
+        "typeinrich": "busstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Centraal",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3251014,
+          52.0802106
+        ]
+      },
+      "id": "5a1c26bc-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 630154,
+        "gml_id": null,
+        "fid": 128889213,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128889213",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Laan v. NOI",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3432664,
+          52.0788668
+        ]
+      },
+      "id": "5a1c26bd-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 918518,
+        "gml_id": null,
+        "fid": 104504627,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104504627",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 430,
+        "visualisat": 15940,
+        "mutatietyp": null,
+        "typeinrich": "treinstation",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Z'meer-O.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4922195,
+          52.0465066
+        ]
+      },
+      "id": "5a1c26be-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 938685,
+        "gml_id": null,
+        "fid": 128969389,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969389",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Beatrixkw.",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3349233,
+          52.0799825
+        ]
+      },
+      "id": "5a1c26bf-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 683655,
+        "gml_id": null,
+        "fid": 128969370,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128969370",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/11/01",
+        "objecteind": null,
+        "tijdstipre": "2015/11/01",
+        "eindregist": null,
+        "tdncode": 999,
+        "visualisat": 15930,
+        "mutatietyp": null,
+        "typeinrich": "sneltramhalte",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": "Pijnacker",
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4370232,
+          52.0204744
+        ]
+      },
+      "id": "5a1c26c0-2f0f-11e9-b758-db375abde619"
+    }
+  ]
+}

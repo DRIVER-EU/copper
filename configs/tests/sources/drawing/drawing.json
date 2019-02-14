@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "2830768b-d11c-63a8-f10c-c49cd283c381",
+      "type": "Feature",
+      "properties": {
+        "title": "incident",
+        "description": "",
+        "type": "incident"
+      },
+      "geometry": {
+        "coordinates": [
+          5.573292401530011,
+          52.3918787351148
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

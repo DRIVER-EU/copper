@@ -1,0 +1,3215 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 7188,
+        "gml_id": null,
+        "fid": 104437896,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104437896",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3595418,
+          52.0857237
+        ]
+      },
+      "id": "5a1b1510-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 28147,
+        "gml_id": null,
+        "fid": 122035128,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122035128",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2211282,
+          51.9824725
+        ]
+      },
+      "id": "5a1b1511-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 108188,
+        "gml_id": null,
+        "fid": 120555052,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "120555052",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3838169,
+          52.0965845
+        ]
+      },
+      "id": "5a1b1512-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 108923,
+        "gml_id": null,
+        "fid": 122040509,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040509",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2603321,
+          51.9956301
+        ]
+      },
+      "id": "5a1b1513-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 111085,
+        "gml_id": null,
+        "fid": 122041578,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041578",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.353027,
+          52.0828237
+        ]
+      },
+      "id": "5a1b1514-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 113233,
+        "gml_id": null,
+        "fid": 122037456,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037456",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3032666,
+          52.0152863
+        ]
+      },
+      "id": "5a1b1515-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 117576,
+        "gml_id": null,
+        "fid": 122037455,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037455",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2688217,
+          51.9995513
+        ]
+      },
+      "id": "5a1b1516-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 131792,
+        "gml_id": null,
+        "fid": 104435718,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104435718",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2993386,
+          52.0134445
+        ]
+      },
+      "id": "5a1b1517-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 164914,
+        "gml_id": null,
+        "fid": 122041497,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041497",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2520023,
+          51.9918805
+        ]
+      },
+      "id": "5a1b1518-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 167334,
+        "gml_id": null,
+        "fid": 127026343,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "127026343",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3333054,
+          51.9808143
+        ]
+      },
+      "id": "5a1b1519-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 220417,
+        "gml_id": null,
+        "fid": 122040511,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040511",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2859975,
+          52.0073802
+        ]
+      },
+      "id": "5a1b151a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 228017,
+        "gml_id": null,
+        "fid": 126755236,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755236",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4572279,
+          52.0139204
+        ]
+      },
+      "id": "5a1b151b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 229346,
+        "gml_id": null,
+        "fid": 122042552,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122042552",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3080654,
+          52.015793
+        ]
+      },
+      "id": "5a1b151c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 230038,
+        "gml_id": null,
+        "fid": 122040507,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040507",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.20512,
+          51.972017
+        ]
+      },
+      "id": "5a1b151d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 232122,
+        "gml_id": null,
+        "fid": 122039479,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122039479",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.277286,
+          52.0034386
+        ]
+      },
+      "id": "5a1b151e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 238448,
+        "gml_id": null,
+        "fid": 104491071,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104491071",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.392018,
+          52.1002512
+        ]
+      },
+      "id": "5a1b151f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 240091,
+        "gml_id": null,
+        "fid": 104132234,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104132234",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2816371,
+          52.0053957
+        ]
+      },
+      "id": "5a1b1520-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 248112,
+        "gml_id": null,
+        "fid": 122041502,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041502",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3743131,
+          51.9708893
+        ]
+      },
+      "id": "5a1b1521-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 258212,
+        "gml_id": null,
+        "fid": 122040508,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040508",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2384303,
+          51.9871506
+        ]
+      },
+      "id": "5a1b1522-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 258575,
+        "gml_id": null,
+        "fid": 127026449,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "127026449",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3106674,
+          52.0107941
+        ]
+      },
+      "id": "5a1b1523-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 268772,
+        "gml_id": null,
+        "fid": 122042619,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122042619",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.400602,
+          52.1040815
+        ]
+      },
+      "id": "5a1b1524-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 283777,
+        "gml_id": null,
+        "fid": 127025648,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "127025648",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3104993,
+          52.0107665
+        ]
+      },
+      "id": "5a1b1525-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 290931,
+        "gml_id": null,
+        "fid": 122035126,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122035126",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1999458,
+          51.9700523
+        ]
+      },
+      "id": "5a1b1526-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 326152,
+        "gml_id": null,
+        "fid": 126755228,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755228",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4707038,
+          52.0292178
+        ]
+      },
+      "id": "5a1b1527-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 334854,
+        "gml_id": null,
+        "fid": 122041496,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041496",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2174504,
+          51.9819742
+        ]
+      },
+      "id": "5a1b1528-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 342401,
+        "gml_id": null,
+        "fid": 122041576,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041576",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3884621,
+          52.0986662
+        ]
+      },
+      "id": "5a1b1529-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 348317,
+        "gml_id": null,
+        "fid": 104500947,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104500947",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3670826,
+          51.9843585
+        ]
+      },
+      "id": "5a1b152a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 362402,
+        "gml_id": null,
+        "fid": 122039478,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122039478",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2645996,
+          51.9976537
+        ]
+      },
+      "id": "5a1b152b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 372900,
+        "gml_id": null,
+        "fid": 122040514,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040514",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3772536,
+          51.9654093
+        ]
+      },
+      "id": "5a1b152c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 384647,
+        "gml_id": null,
+        "fid": 122035127,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122035127",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2158319,
+          51.9791971
+        ]
+      },
+      "id": "5a1b152d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 390350,
+        "gml_id": null,
+        "fid": 104132387,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104132387",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2905119,
+          52.0094656
+        ]
+      },
+      "id": "5a1b152e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 393603,
+        "gml_id": null,
+        "fid": 104131648,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104131648",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1947323,
+          51.9680568
+        ]
+      },
+      "id": "5a1b152f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 399988,
+        "gml_id": null,
+        "fid": 126755233,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755233",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.457251,
+          52.0197197
+        ]
+      },
+      "id": "5a1b1530-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 410837,
+        "gml_id": null,
+        "fid": 104461631,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104461631",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3685389,
+          51.9816365
+        ]
+      },
+      "id": "5a1b1531-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 411871,
+        "gml_id": null,
+        "fid": 126755230,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755230",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4572128,
+          52.0117499
+        ]
+      },
+      "id": "5a1b1532-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 411929,
+        "gml_id": null,
+        "fid": 122036505,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122036505",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.372022,
+          52.0912975
+        ]
+      },
+      "id": "5a1b1533-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 413225,
+        "gml_id": null,
+        "fid": 127025846,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "127025846",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3331231,
+          51.9807182
+        ]
+      },
+      "id": "5a1b1534-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 441043,
+        "gml_id": null,
+        "fid": 126755232,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755232",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4572333,
+          52.0162249
+        ]
+      },
+      "id": "5a1b1535-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 464198,
+        "gml_id": null,
+        "fid": 122040569,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040569",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4080619,
+          52.1080967
+        ]
+      },
+      "id": "5a1b1536-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 469786,
+        "gml_id": null,
+        "fid": 122041501,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041501",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3700028,
+          51.9789377
+        ]
+      },
+      "id": "5a1b1537-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 539600,
+        "gml_id": null,
+        "fid": 104433671,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104433671",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3672964,
+          52.0891933
+        ]
+      },
+      "id": "5a1b1538-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 540374,
+        "gml_id": null,
+        "fid": 122037454,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037454",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2339689,
+          51.9857968
+        ]
+      },
+      "id": "5a1b1539-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 541351,
+        "gml_id": null,
+        "fid": 104132376,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104132376",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2475328,
+          51.9898545
+        ]
+      },
+      "id": "5a1b153a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 554833,
+        "gml_id": null,
+        "fid": 104131810,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104131810",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1893582,
+          51.9660043
+        ]
+      },
+      "id": "5a1b153b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 579582,
+        "gml_id": null,
+        "fid": 104462454,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104462454",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3714284,
+          51.9762642
+        ]
+      },
+      "id": "5a1b153c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596360,
+        "gml_id": null,
+        "fid": 128800007,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800007",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3051896,
+          52.0161562
+        ]
+      },
+      "id": "5a1b153d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596361,
+        "gml_id": null,
+        "fid": 128799988,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128799988",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3092646,
+          52.0136038
+        ]
+      },
+      "id": "5a1b153e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596362,
+        "gml_id": null,
+        "fid": 128799998,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128799998",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3112561,
+          52.007994
+        ]
+      },
+      "id": "5a1b153f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596363,
+        "gml_id": null,
+        "fid": 128800011,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800011",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3120564,
+          52.0053947
+        ]
+      },
+      "id": "5a1b1540-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596364,
+        "gml_id": null,
+        "fid": 128800019,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800019",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3130082,
+          52.0021838
+        ]
+      },
+      "id": "5a1b1541-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596365,
+        "gml_id": null,
+        "fid": 128800000,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800000",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3153373,
+          51.9995304
+        ]
+      },
+      "id": "5a1b1542-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596366,
+        "gml_id": null,
+        "fid": 128800012,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800012",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3196746,
+          51.9942748
+        ]
+      },
+      "id": "5a1b1543-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596367,
+        "gml_id": null,
+        "fid": 128800008,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800008",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3177751,
+          51.9967041
+        ]
+      },
+      "id": "5a1b1544-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596368,
+        "gml_id": null,
+        "fid": 128800004,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800004",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3224232,
+          51.9916411
+        ]
+      },
+      "id": "5a1b1545-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596369,
+        "gml_id": null,
+        "fid": 128800006,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800006",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3249877,
+          51.9887852
+        ]
+      },
+      "id": "5a1b1546-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 596370,
+        "gml_id": null,
+        "fid": 128799993,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128799993",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3278035,
+          51.9861097
+        ]
+      },
+      "id": "5a1b1547-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 599244,
+        "gml_id": null,
+        "fid": 128800013,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800013",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3304321,
+          51.983405
+        ]
+      },
+      "id": "5a1b1548-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 640831,
+        "gml_id": null,
+        "fid": 104473687,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104473687",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3728626,
+          51.9735754
+        ]
+      },
+      "id": "5a1b1549-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 641632,
+        "gml_id": null,
+        "fid": 104132204,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104132204",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2250954,
+          51.9831041
+        ]
+      },
+      "id": "5a1b154a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 641925,
+        "gml_id": null,
+        "fid": 104434017,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104434017",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3758031,
+          51.9681084
+        ]
+      },
+      "id": "5a1b154b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 641973,
+        "gml_id": null,
+        "fid": 122037453,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037453",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2295,
+          51.9844326
+        ]
+      },
+      "id": "5a1b154c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 644638,
+        "gml_id": null,
+        "fid": 104132386,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "104132386",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2008/11/24",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2557564,
+          51.9935933
+        ]
+      },
+      "id": "5a1b154d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 644877,
+        "gml_id": null,
+        "fid": 122037532,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037532",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3562262,
+          52.0842584
+        ]
+      },
+      "id": "5a1b154e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 644951,
+        "gml_id": null,
+        "fid": 122042551,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122042551",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2948267,
+          52.0114301
+        ]
+      },
+      "id": "5a1b154f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 645063,
+        "gml_id": null,
+        "fid": 122038556,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122038556",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3753382,
+          52.0927835
+        ]
+      },
+      "id": "5a1b1550-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 645656,
+        "gml_id": null,
+        "fid": 122041577,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041577",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3633945,
+          52.0874732
+        ]
+      },
+      "id": "5a1b1551-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 646395,
+        "gml_id": null,
+        "fid": 122041574,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041574",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4048673,
+          52.1059856
+        ]
+      },
+      "id": "5a1b1552-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 647488,
+        "gml_id": null,
+        "fid": 122037452,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122037452",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2102843,
+          51.9740667
+        ]
+      },
+      "id": "5a1b1553-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 806948,
+        "gml_id": null,
+        "fid": 122040510,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040510",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2731158,
+          52.0015146
+        ]
+      },
+      "id": "5a1b1554-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 834800,
+        "gml_id": null,
+        "fid": 122040570,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122040570",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3796968,
+          52.0947275
+        ]
+      },
+      "id": "5a1b1555-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 835431,
+        "gml_id": null,
+        "fid": 122042620,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122042620",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3505154,
+          52.0817
+        ]
+      },
+      "id": "5a1b1556-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 835488,
+        "gml_id": null,
+        "fid": 122041575,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122041575",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.396371,
+          52.1021987
+        ]
+      },
+      "id": "5a1b1557-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 841374,
+        "gml_id": null,
+        "fid": 122038483,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122038483",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3656264,
+          51.9870702
+        ]
+      },
+      "id": "5a1b1558-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 841478,
+        "gml_id": null,
+        "fid": 122035129,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122035129",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2429326,
+          51.9885047
+        ]
+      },
+      "id": "5a1b1559-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 856917,
+        "gml_id": null,
+        "fid": 122036130,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122036130",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2228473,
+          51.9820723
+        ]
+      },
+      "id": "5a1b155a-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 891533,
+        "gml_id": null,
+        "fid": 126755231,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "126755231",
+        "brontype": "luchtfoto",
+        "bronactual": "2012/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2014/01/24",
+        "objecteind": null,
+        "tijdstipre": "2014/01/24",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4744292,
+          52.0317192
+        ]
+      },
+      "id": "5a1b155b-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 906143,
+        "gml_id": null,
+        "fid": 122038481,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122038481",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2150283,
+          51.9760417
+        ]
+      },
+      "id": "5a1b155c-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 906146,
+        "gml_id": null,
+        "fid": 122042555,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "122042555",
+        "brontype": "luchtfoto",
+        "bronactual": "2010/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2011/08/25",
+        "objecteind": null,
+        "tijdstipre": "2011/08/25",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3649002,
+          51.9884338
+        ]
+      },
+      "id": "5a1b155d-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 922420,
+        "gml_id": null,
+        "fid": 128800092,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800092",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3301981,
+          51.98334
+        ]
+      },
+      "id": "5a1b155e-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 922421,
+        "gml_id": null,
+        "fid": 128800023,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800023",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3276153,
+          51.9860423
+        ]
+      },
+      "id": "5a1b155f-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925079,
+        "gml_id": null,
+        "fid": 128800077,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800077",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3248026,
+          51.9887148
+        ]
+      },
+      "id": "5a1b1560-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925080,
+        "gml_id": null,
+        "fid": 128800058,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800058",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3222199,
+          51.9915689
+        ]
+      },
+      "id": "5a1b1561-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925081,
+        "gml_id": null,
+        "fid": 128800033,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800033",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3194746,
+          51.9942149
+        ]
+      },
+      "id": "5a1b1562-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925082,
+        "gml_id": null,
+        "fid": 128800169,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800169",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3175824,
+          51.9966353
+        ]
+      },
+      "id": "5a1b1563-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925083,
+        "gml_id": null,
+        "fid": 128800034,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800034",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3151207,
+          51.9994601
+        ]
+      },
+      "id": "5a1b1564-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925084,
+        "gml_id": null,
+        "fid": 128800121,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800121",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3128098,
+          52.0021405
+        ]
+      },
+      "id": "5a1b1565-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925085,
+        "gml_id": null,
+        "fid": 128800185,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800185",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3118303,
+          52.0053652
+        ]
+      },
+      "id": "5a1b1566-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925086,
+        "gml_id": null,
+        "fid": 128800144,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800144",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3110448,
+          52.007976
+        ]
+      },
+      "id": "5a1b1567-2f0f-11e9-b758-db375abde619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ogc_fid": 925087,
+        "gml_id": null,
+        "fid": 128800122,
+        "namespace": "NL.TOP10NL",
+        "lokaalid": "128800122",
+        "brontype": "luchtfoto",
+        "bronactual": "2014/01/01",
+        "bronbeschr": "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig.",
+        "bronnauwke": 100,
+        "objectbegi": "2015/08/30",
+        "objecteind": null,
+        "tijdstipre": "2015/08/30",
+        "eindregist": null,
+        "tdncode": 480,
+        "visualisat": 15220,
+        "mutatietyp": null,
+        "typeinrich": "hoogspanningsmast",
+        "hoogte": null,
+        "breedte": null,
+        "hoogtenive": 0,
+        "soortnaam": null,
+        "naam": null,
+        "nummer": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.309046,
+          52.0135733
+        ]
+      },
+      "id": "5a1b1568-2f0f-11e9-b758-db375abde619"
+    }
+  ]
+}
