@@ -42,6 +42,7 @@
       "title": "lcms-geojson",
       "sourceUrl": "http://localhost:4000/sources/lcms-geojson",
       "version": "0.0.1",
+      "isLive": true,
       "style": {
         "types": [
           "point"
@@ -210,7 +211,7 @@
       "id": "ambassades",
       "source": "ambassades.json",
       "sourceType": "geojson",
-      "title": "ambassades",
+      "title": "Ambassades",
       "sourceUrl": "http://localhost:4000/sources/ambassades",
       "version": "0.0.1",
       "style": {
@@ -221,26 +222,29 @@
           "symbolPaint": {},
           "circleLayout": {},
           "circlePaint": {
-            "circle-color": "red"
+            "circle-color": "blue",
+            "circle-opacity": 0.5
           }
         },
         "types": [
           "point"
         ],
-        "pointCircle": true
+        "pointCircle": true,
+        "popup": "<h2>{{properties.Name}}</h2>"
       },
       "typeId": "poi",
       "description": "",
       "opacity": 1,
       "tags": [
-        " "
+        "external"
       ],
       "color": "blue",
       "types": [
         "poi",
         "geojson"
       ],
-      "openFeatureDetails": true
+      "openFeatureDetails": true,
+      "visible": true
     },
     {
       "id": "ambulanceposten",
@@ -614,6 +618,75 @@
         ],
         "pointCircle": true
       }
+    },
+    {
+      "title": "eelco.naarding@sim-ci.com",
+      "id": "eelco.naarding@sim-ci.com",
+      "isLive": true,
+      "sourceType": "geojson",
+      "tags": [
+        "cap"
+      ],
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "version": "0.0.1"
+    },
+    {
+      "title": "htm",
+      "id": "htm",
+      "isLive": true,
+      "sourceType": "geojson",
+      "tags": [
+        "cap"
+      ],
+      "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-radius": 12,
+            "circle-color": "blue"
+          }
+        },
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "version": "0.0.1",
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
+      "title": "no-reply@crisissuite.com",
+      "id": "no-reply@crisissuite.com",
+      "isLive": true,
+      "sourceType": "geojson",
+      "tags": [
+        "cap"
+      ],
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "version": "0.0.1"
     }
   ],
   "sourcePath": "./sources/",
@@ -630,5 +703,5 @@
   "serverUrl": "http://localhost:4000",
   "importRoot": "import/",
   "sourceRoot": "sources/",
-  "serverPath": "./configs/tests/"
+  "serverPath": "./configs/layers/"
 }

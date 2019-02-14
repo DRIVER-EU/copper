@@ -32,6 +32,38 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "id": "f146cd63-125f-264c-fdee-9e2303362a4d",
+      "type": "Feature",
+      "properties": {
+        "title": "incident",
+        "description": "",
+        "type": "incident"
+      },
+      "geometry": {
+        "coordinates": [
+          4.355040946131453,
+          52.042567870246046
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "id": "7e746fe4-a2af-d7e0-0ff3-eb4e60ba862e",
+      "type": "Feature",
+      "properties": {
+        "title": "incident",
+        "description": "",
+        "type": "incident"
+      },
+      "geometry": {
+        "coordinates": [
+          4.304811482066668,
+          52.09787885613119
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
