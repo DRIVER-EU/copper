@@ -14,10 +14,8 @@ import {
   IAdapterMessage
 } from 'node-test-bed-adapter';
 
-import { WebSocketServer, WebSocketGateway } from '@nestjs/websockets';
-import { roots } from 'protobufjs';
 import { LayerSource } from '@csnext/cs-layer-server/dist/classes';
-import { CAPObject } from './classes/cap';
+import { ICAPAlert } from './classes/cap';
 import { OffsetFetchRequest } from 'kafka-node';
 
 const log = Logger.instance;
@@ -43,7 +41,7 @@ export class TestbedController {
 
   public defaultConfig: CopServerConfig = {}
 
-  public capObjects: CAPObject[] = [];
+  public capObjects: ICAPAlert[] = [];
 
   handleConnection(d: any) {
     // this.server.emit('buttonCount',AppService.buttonCount);
@@ -183,7 +181,7 @@ export class TestbedController {
         if (topic) {
           switch (topic.type) {
             case 'cap':
-              this.parseCapObject(message.value as CAPObject);
+              this.parseCapObject(message.value as ICAPAlert);
               break;
             case 'geojson':
               this.parseGeojson(topic.title, message);
@@ -196,7 +194,7 @@ export class TestbedController {
     }
   }
 
-  private parseCapObject(cap: CAPObject) {
+  private parseCapObject(cap: ICAPAlert) {
     console.log('Got cap object');
     this.capObjects.push(cap);
     if (this.socket && this.socket.server) {
@@ -258,7 +256,7 @@ export class TestbedController {
   }
 
   @Get('cap')
-  getCapObjects(): CAPObject[] {
+  getCapObjects(): ICAPAlert[] {
     return this.capObjects;
   }
 

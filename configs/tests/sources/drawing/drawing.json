@@ -16,6 +16,22 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "id": "31018b3c-22d7-ace1-faa2-8b151d516102",
+      "type": "Feature",
+      "properties": {
+        "title": "incident",
+        "description": "",
+        "type": "incident"
+      },
+      "geometry": {
+        "coordinates": [
+          5.009573955184408,
+          52.33026614088641
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
