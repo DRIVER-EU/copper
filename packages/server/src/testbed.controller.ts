@@ -41,16 +41,7 @@ export class CopServerConfig {
 export class TestbedController {
   private adapter: TestBedAdapter;
 
-  public defaultConfig: CopServerConfig = {
-    topics: [
-      { id: 'lcms_plots', type: 'geojson', title: 'lcms-geojson' },
-      { id: 'standard_cap', type: 'cap', title: 'lcms-cap' }
-    ],
-    clientId: 'ConsumerCOP',
-    fromOffset: true,
-    kafkaHost: 'tb5.driver-testbed.eu:3551',
-    schemaRegistry: 'tb5.driver-testbed.eu:3552'
-  };
+  public defaultConfig: CopServerConfig = {}
 
   public capObjects: CAPObject[] = [];
 
@@ -65,6 +56,14 @@ export class TestbedController {
     public layers: LayerService
   ) {
     console.log('Init testbed');
+    // load config
+    const c = JSON.parse(
+      fs.readFileSync('configs/testbed/config.json', 'utf8')
+    );
+    if (c !== undefined) {
+      Object.assign(this.defaultConfig, c);
+    }
+
     let consume: OffsetFetchRequest[] = [];
     this.defaultConfig.topics.forEach(t => {
       consume.push({ topic: t.id, offset: t.offset });
