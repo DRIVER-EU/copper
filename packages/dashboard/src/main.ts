@@ -15,3 +15,4 @@ app.$cs.init(project);
 
 // for console debugging purposes
 (<any>window).cs = app.$cs;
+
