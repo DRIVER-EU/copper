@@ -3,13 +3,14 @@ import './cap-viewer.css';
 import Component from 'vue-class-component';
 import { ICAPAlert } from '@/classes/cap';
 import axios from 'axios';
-import VuePerfectScrollbar from 'vue-perfect-scrollbar';
 import { CapMessage } from '../cap-message/cap-message';
+
+import simplebar from 'simplebar-vue';
 
 @Component({
   name: 'cap-viewer',
-  template: require('./cap-viewer.html'),
-  components: { VuePerfectScrollbar}
+  components: { simplebar },
+  template: require('./cap-viewer.html')
 } as any)
 export class CapViewer extends WidgetBase {
   public sortOptions = [];
@@ -18,7 +19,7 @@ export class CapViewer extends WidgetBase {
 
   public capSelect(object: ICAPAlert) {
     // this.$cs.TriggerNotification()
-    this.$cs.OpenRightSidebarWidget({ component: CapMessage, data: object});
+    this.$cs.OpenRightSidebarWidget({ component: CapMessage, data: object });
     // console.log(object);
   }
 
@@ -31,7 +32,7 @@ export class CapViewer extends WidgetBase {
           (response.data as ICAPAlert[]).forEach(co => {
             this.capObjects.push(co);
           });
-        }        
+        }
       })
       .catch(error => {
         // handle error

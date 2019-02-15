@@ -1,4 +1,4 @@
-<VuePerfectScrollbar>
+<simplebar>
   <v-toolbar dense flat v-if="widget.content">
     <v-toolbar-title>CAP Messages</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -53,21 +53,28 @@
       </v-list>
     </v-menu>
   </v-toolbar>
+
   <v-list>
-    <template v-for="(item, index) in capObjects" >
-      <v-list-tile :key="item.identifier" avatar class="cap-object-tile" @click="capSelect(item)">
+    <template v-for="(item, index) in capObjects">
+      <v-list-tile
+        :key="item.identifier"
+        avatar
+        class="cap-object-tile"
+        @click="capSelect(item)"
+      >
         <v-list-tile-avatar>
           <img :src="item.avatar" />
         </v-list-tile-avatar>
 
-        <v-list-tile-content >
+        <v-list-tile-content>
           <v-list-tile-title v-html="item.sender"></v-list-tile-title>
           <v-list-tile-sub-title
-            >{{ item.status }} {{ item.info.urgency }} {{ item.info.severity }}
+            >{{ item.status }} {{ item.info.urgency }}
+            {{ item.info.severity }}
             {{ item.info.certainty }}
           </v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
     </template>
   </v-list>
-</VuePerfectScrollbar>
+</simplebar>

@@ -15,13 +15,3 @@ app.$cs.init(project);
 
 // for console debugging purposes
 (<any>window).cs = app.$cs;
-
-// app.$cs.loadDatasource<MapLayers>('mainmap').then(ml => {
-//   if (ml && ml.events) {
-//     ml.events.subscribe('drawlayer', (a: string, type: any) => {
-//       if (a === 'drawlayer.startdrawing' && type.notification) {
-//         AppState.Instance.TriggerNotification({ title: type.notification });
-//       }    
-//     });
-//   }
-// });

@@ -154,9 +154,7 @@ export const project: IProject = {
           type: 'layer-server-service',
           options: {
             url: LAYER_URL,
-            activeLayers: [
-              
-            ],
+            activeLayers: [],
             openFeatureDetails: true
           } as ILayerServiceOptions
         }
@@ -235,6 +233,7 @@ export const project: IProject = {
       leftSidebar: {
         open: true,
         clipped: true,
+        width: 400,        
         dashboard: {
           widgets: [
             {
