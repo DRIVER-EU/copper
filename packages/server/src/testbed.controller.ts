@@ -1,11 +1,7 @@
-import { Get, Controller, Param, Post, Body, Inject } from '@nestjs/common';
+import { Get, Controller, Inject } from '@nestjs/common';
 import * as fs from 'fs';
 
-import {
-  DefaultWebSocketGateway,
-  LayerController,
-  LayerService
-} from '@csnext/cs-layer-server';
+import { DefaultWebSocketGateway, LayerService } from '@csnext/cs-layer-server';
 import {
   TestBedAdapter,
   Logger,
@@ -16,36 +12,19 @@ import {
 
 import {
   LayerSource,
-  LayerDefinition,
-  LayerStyle
+  LayerDefinition
 } from '@csnext/cs-layer-server/dist/classes';
 import { ICAPAlert } from './classes/cap';
 import { OffsetFetchRequest } from 'kafka-node';
-import { ThisExpression } from 'ts-simple-ast';
-import { CircleLayout, CirclePaint } from 'mapbox-gl';
+import { TestBedConfig } from './classes/testbed-config';
 
 const log = Logger.instance;
-
-export class Topics {
-  id: string;
-  title: string;
-  type: 'cap' | 'geojson' | 'geojson-external';
-  offset?: number;
-}
-
-export class CopServerConfig {
-  public topics?: Topics[];
-  public clientId?: string;
-  public fromOffset?: boolean;
-  public kafkaHost?: string;
-  public schemaRegistry?: string;
-}
 
 @Controller('testbed')
 export class TestbedController {
   private adapter: TestBedAdapter;
 
-  public defaultConfig: CopServerConfig = {};
+  public config: TestBedConfig = {};
 
   public capObjects: ICAPAlert[] = [];
   public messageQueue: IAdapterMessage[] = [];
@@ -67,19 +46,26 @@ export class TestbedController {
       fs.readFileSync('configs/testbed/config.json', 'utf8')
     );
     if (c !== undefined) {
-      Object.assign(this.defaultConfig, c);
+      Object.assign(this.config, c);
+    }
+
+    if (
+      this.config.enabled !== undefined &&
+      !this.config.enabled
+    ) {
+      return;
     }
 
     let consume: OffsetFetchRequest[] = [];
-    this.defaultConfig.topics.forEach(t => {
+    this.config.topics.forEach(t => {
       consume.push({ topic: t.id, offset: t.offset });
     });
 
     this.adapter = new TestBedAdapter({
       // kafkaHost: 'localhost:3501',
       // schemaRegistry: 'localhost:3502',
-      kafkaHost: this.defaultConfig.kafkaHost,
-      schemaRegistry: this.defaultConfig.schemaRegistry,
+      kafkaHost: this.config.kafkaHost,
+      schemaRegistry: this.config.schemaRegistry,
       // kafkaHost: 'tb4.driver-testbed.eu:3501',
       // schemaRegistry: 'tb4.driver-testbed.eu:3502',
       consume: consume,
@@ -87,9 +73,9 @@ export class TestbedController {
       fetchAllVersions: false,
       wrapUnions: false,
       // wrapUnions: 'auto',
-      clientId: this.defaultConfig.clientId,
+      clientId: this.config.clientId,
       // Start from the latest message, not from the first
-      fromOffset: this.defaultConfig.fromOffset,
+      fromOffset: this.config.fromOffset,
       logging: {
         logToConsole: LogLevel.Info,
         logToFile: LogLevel.Info,
@@ -186,7 +172,7 @@ export class TestbedController {
           break;
         default:
           // find topic
-          const topic = this.defaultConfig.topics.find(
+          const topic = this.config.topics.find(
             t => t.id === message.topic.toLowerCase()
           );
           if (topic) {
@@ -284,25 +270,27 @@ export class TestbedController {
       try {
         let layer = await this.getCapLayer(cap);
         if (layer !== undefined) {
-          this.layers.getLayerSourceById(cap.sender).then(source => {
-            let p: number[] = this.getCirclePoint(cap);
-            source.features.push({
-              type: 'Feature',
-              id: cap.identifier,
-              properties: cap.info,
-              geometry: {
-                type: 'Point',
-                coordinates: p 
-              }
-            });
-            this.layers.putLayerSourceById(layer.id, source).then(ls => {
-              console.log('Layer saved')
-            }).catch(r => {
-
+          this.layers
+            .getLayerSourceById(cap.sender)
+            .then(source => {
+              let p: number[] = this.getCirclePoint(cap);
+              source.features.push({
+                type: 'Feature',
+                id: cap.identifier,
+                properties: cap.info,
+                geometry: {
+                  type: 'Point',
+                  coordinates: p
+                }
+              });
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log('Layer saved');
+                })
+                .catch(() => {});
             })
-          }).catch(r => {
-
-          })
+            .catch(() => {});
         }
       } catch (e) {
         console.log('Really not found');
