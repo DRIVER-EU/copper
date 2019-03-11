@@ -26,6 +26,7 @@ import { RasterPaint } from 'mapbox-gl';
 import { CapViewer } from './components/cap-viewer/cap-viewer';
 import { ScenarioControl } from './components/scenario-control/scenario-control';
 import { CapMessage } from './components/cap-message/cap-message';
+import { CapDatasource } from './shared/CapDatasource';
 
 const LAYER_URL =
   process.env.NODE_ENV !== 'production'
@@ -162,7 +163,8 @@ export const project: IProject = {
         }
       ]
     ),
-    project: new Project()
+    project: new Project(),
+    capdatasource: new CapDatasource()
   },
   theme: {
     dark: false,
@@ -294,7 +296,8 @@ export const project: IProject = {
       widgets: [
         {
           id: 'cap-viewer',
-          component: CapViewer          
+          component: CapViewer,
+          datasource: 'capdatasource'        
         },
         {
           id: 'cap-message',
