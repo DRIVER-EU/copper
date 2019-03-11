@@ -1,4 +1,4 @@
-import { Get, Controller, Inject } from '@nestjs/common';
+import { Get, Controller, Inject, Logger as NestLogger } from '@nestjs/common';
 import * as fs from 'fs';
 
 import { DefaultWebSocketGateway, LayerService } from '@csnext/cs-layer-server';
@@ -40,7 +40,7 @@ export class TestbedController {
     private readonly socket: DefaultWebSocketGateway,
     public layers: LayerService
   ) {
-    console.log('Init testbed');
+    NestLogger.log('Init testbed');
     // load config
     const c = JSON.parse(
       fs.readFileSync('configs/testbed/config.json', 'utf8')
@@ -351,7 +351,7 @@ export class TestbedController {
     if (this.adapter.isConnected) {
       return {
         time: this.adapter.trialTime.getTime(),
-        speed: this.adapter.trialSpeed,
+        speed: this.adapter.trialTimeSpeed,
         state: this.adapter.state,
         elapsed: this.adapter.timeElapsed
       };
