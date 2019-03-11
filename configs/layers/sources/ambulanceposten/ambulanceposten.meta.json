@@ -1,0 +1,187 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "X": {
+          "title": "X",
+          "description": "X",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 73362,
+          "max": 93731,
+          "mean": 83247.14285714286,
+          "legend": {}
+        },
+        "Y": {
+          "title": "Y",
+          "description": "Y",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 445068,
+          "max": 462284,
+          "mean": 452047.28571428574,
+          "legend": {}
+        },
+        "X-nav": {
+          "title": "X-nav",
+          "description": "X-nav",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 73390,
+          "max": 93714,
+          "mean": 83258.71428571429,
+          "legend": {}
+        },
+        "Y-nav": {
+          "title": "Y-nav",
+          "description": "Y-nav",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 445070,
+          "max": 462230,
+          "mean": 452050.28571428574,
+          "legend": {}
+        },
+        "BAG Id": {
+          "title": "BAG Id",
+          "description": "BAG Id",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 503010000051773,
+          "max": 1916010000081189,
+          "mean": 929152857506939.6,
+          "legend": {}
+        },
+        "Organisati": {
+          "title": "Organisati",
+          "description": "Organisati",
+          "type": "text",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            "RAV Haaglanden"
+          ]
+        },
+        "LOC_TYPE": {
+          "title": "LOC_TYPE",
+          "description": "LOC_TYPE",
+          "type": "text",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            "Ambulancepost"
+          ]
+        },
+        "LOC_NAAM": {
+          "title": "LOC_NAAM",
+          "description": "LOC_NAAM",
+          "type": "text",
+          "count": 7,
+          "unique": 7
+        },
+        "LOC_STRAAT": {
+          "title": "LOC_STRAAT",
+          "description": "LOC_STRAAT",
+          "type": "text",
+          "count": 7,
+          "unique": 7
+        },
+        "Huisnr": {
+          "title": "Huisnr",
+          "description": "Huisnr",
+          "type": "number",
+          "count": 7,
+          "unique": 7,
+          "min": 1,
+          "max": 555,
+          "mean": 156.28571428571428,
+          "legend": {}
+        },
+        "Postcode": {
+          "title": "Postcode",
+          "description": "Postcode",
+          "type": "text",
+          "count": 7,
+          "unique": 7
+        },
+        "Plaats": {
+          "title": "Plaats",
+          "description": "Plaats",
+          "type": "text",
+          "count": 7,
+          "unique": 6,
+          "options": [
+            "Delft",
+            "Den Haag",
+            "Leidschendam",
+            "Wassenaar",
+            "Naaldwijk",
+            "Zoetermeer"
+          ]
+        },
+        "GEM": {
+          "title": "GEM",
+          "description": "GEM",
+          "type": "text",
+          "count": 7,
+          "unique": 6,
+          "options": [
+            "Delft",
+            "Den Haag",
+            "Leidschendam-Voorburg",
+            "Wassenaar",
+            "Westland",
+            "Zoetermeer"
+          ]
+        },
+        "Regio": {
+          "title": "Regio",
+          "description": "Regio",
+          "type": "number",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "Website": {
+          "title": "Website",
+          "description": "Website",
+          "type": "text",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            "ravhaaglanden.com/"
+          ]
+        },
+        "Telefoon": {
+          "title": "Telefoon",
+          "description": "Telefoon",
+          "type": "number",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            70
+          ],
+          "legend": {}
+        },
+        "BIJZONDERH": {
+          "title": "BIJZONDERH",
+          "description": "BIJZONDERH",
+          "type": "text",
+          "count": 7,
+          "unique": 1,
+          "options": [
+            "Imergis"
+          ]
+        }
+      }
+    }
+  }
+}

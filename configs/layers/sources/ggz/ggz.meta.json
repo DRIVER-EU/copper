@@ -1,0 +1,882 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Naam": {
+          "title": "Naam",
+          "description": "Naam",
+          "type": "longtext",
+          "count": 22,
+          "unique": 22
+        },
+        "Hoofdsector": {
+          "title": "Hoofdsector",
+          "description": "Hoofdsector",
+          "type": "text",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            "GGZ"
+          ]
+        },
+        "KvK": {
+          "title": "KvK",
+          "description": "KvK",
+          "type": "number",
+          "count": 22,
+          "unique": 22,
+          "min": 9163899,
+          "max": 61268607,
+          "mean": 41262773,
+          "median": 41153333,
+          "sd": 15966162.546800306,
+          "legend": {}
+        },
+        "Aantal cliënten intramuraal (GHZ/VVT/GGZ)": {
+          "title": "Aantal cliënten intramuraal (GHZ/VVT/GGZ)",
+          "description": "Aantal cliënten intramuraal (GHZ/VVT/GGZ)",
+          "type": "number",
+          "count": 22,
+          "unique": 6,
+          "options": [
+            0,
+            273,
+            173,
+            566,
+            2194,
+            223
+          ],
+          "min": 0,
+          "max": 2194,
+          "mean": 155.86363636363637,
+          "median": 0,
+          "sd": 464.8422308555633,
+          "legend": {}
+        },
+        "Straat": {
+          "title": "Straat",
+          "description": "Straat",
+          "type": "text",
+          "count": 22,
+          "unique": 22
+        },
+        "huisnummer": {
+          "title": "huisnummer",
+          "description": "huisnummer",
+          "type": "number",
+          "count": 22,
+          "unique": 20,
+          "min": 2,
+          "max": 270,
+          "mean": 64,
+          "median": 40,
+          "sd": 70.60195722241957,
+          "legend": {}
+        },
+        "adres (straat+huisnr)": {
+          "title": "adres (straat+huisnr)",
+          "description": "adres (straat+huisnr)",
+          "type": "text",
+          "count": 22,
+          "unique": 22
+        },
+        "postcode": {
+          "title": "postcode",
+          "description": "postcode",
+          "type": "text",
+          "count": 22,
+          "unique": 22
+        },
+        "plaatsnaam": {
+          "title": "plaatsnaam",
+          "description": "plaatsnaam",
+          "type": "text",
+          "count": 22,
+          "unique": 6,
+          "options": [
+            "DEN HAAG",
+            "DELFT",
+            "SCHIPLUIDEN",
+            "RIJSWIJK (ZH)",
+            "ZOETERMEER",
+            "VOORBURG"
+          ]
+        },
+        "Bedrijfslasten - 2014 (%)": {
+          "title": "Bedrijfslasten - 2014 (%)",
+          "description": "Bedrijfslasten - 2014 (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": 0,
+          "max": 1057,
+          "mean": 93.26818181818182,
+          "median": 45.6,
+          "sd": 215.9819171436763,
+          "legend": {}
+        },
+        "Personeelskosten (%) - 2014": {
+          "title": "Personeelskosten (%) - 2014",
+          "description": "Personeelskosten (%) - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 12,
+          "min": 0,
+          "max": 1140.6,
+          "mean": 85.71363636363635,
+          "median": 32.4,
+          "sd": 233.08158598040401,
+          "legend": {}
+        },
+        "Afschrijvingen vaste activa (%) - 2014": {
+          "title": "Afschrijvingen vaste activa (%) - 2014",
+          "description": "Afschrijvingen vaste activa (%) - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 9,
+          "min": 0,
+          "max": 5.4,
+          "mean": 0.9227272727272727,
+          "median": 0,
+          "sd": 1.5054240774255483,
+          "legend": {}
+        },
+        "Overige bedrijfskosten - 2014 (%)": {
+          "title": "Overige bedrijfskosten - 2014 (%)",
+          "description": "Overige bedrijfskosten - 2014 (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": 0,
+          "max": 654.3,
+          "mean": 44.81363636363636,
+          "median": 16.15,
+          "sd": 134.77632748525693,
+          "legend": {}
+        },
+        "Bedrijfsresultaat - 2014 (%)": {
+          "title": "Bedrijfsresultaat - 2014 (%)",
+          "description": "Bedrijfsresultaat - 2014 (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 12,
+          "min": -933.3,
+          "max": 11.9,
+          "mean": -42.4,
+          "median": 0,
+          "sd": 194.69392295694192,
+          "legend": {}
+        },
+        "Personeelskosten per FTE - 2014": {
+          "title": "Personeelskosten per FTE - 2014",
+          "description": "Personeelskosten per FTE - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 3,
+          "options": [
+            null,
+            627957.303371,
+            200295.357143
+          ],
+          "min": null,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "sd": null,
+          "legend": {}
+        },
+        "Bedrijfslasten per FTE - 2014": {
+          "title": "Bedrijfslasten per FTE - 2014",
+          "description": "Bedrijfslasten per FTE - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 3,
+          "options": [
+            null,
+            789874.157303,
+            267264.285714
+          ],
+          "min": null,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "sd": null,
+          "legend": {}
+        },
+        "Boekwaarde per FTE - 2014": {
+          "title": "Boekwaarde per FTE - 2014",
+          "description": "Boekwaarde per FTE - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 3,
+          "options": [
+            null,
+            26889.325843,
+            7367.5
+          ],
+          "min": null,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "sd": null,
+          "legend": {}
+        },
+        "Liquiditeit - 2014": {
+          "title": "Liquiditeit - 2014",
+          "description": "Liquiditeit - 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": 0,
+          "max": 557.371786,
+          "mean": 128.2860300909091,
+          "median": 94.939892,
+          "sd": 152.59574045816504,
+          "legend": {}
+        },
+        "Solvabiliteit 2014": {
+          "title": "Solvabiliteit 2014",
+          "description": "Solvabiliteit 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": -40.742537,
+          "max": 81.777958,
+          "mean": 13.531712181818182,
+          "median": 0,
+          "sd": 26.23049409039208,
+          "legend": {}
+        },
+        "Rendement 2014": {
+          "title": "Rendement 2014",
+          "description": "Rendement 2014",
+          "type": "number",
+          "count": 22,
+          "unique": 12,
+          "min": -933.264463,
+          "max": 11.87211,
+          "mean": -42.403445863636364,
+          "median": 0,
+          "sd": 194.6847922779126,
+          "legend": {}
+        },
+        "Rendement (2 jaar)": {
+          "title": "Rendement (2 jaar)",
+          "description": "Rendement (2 jaar)",
+          "type": "number",
+          "count": 22,
+          "unique": 12,
+          "min": -461.713971,
+          "max": 9.583767,
+          "mean": -20.215723818181818,
+          "median": 0,
+          "sd": 96.60349523038681,
+          "legend": {}
+        },
+        "EBITDA": {
+          "title": "EBITDA",
+          "description": "EBITDA",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": -956.97888,
+          "max": 15.541122,
+          "mean": -42.28935490909091,
+          "median": 0,
+          "sd": 199.86578624843543,
+          "legend": {}
+        },
+        "DSCR I": {
+          "title": "DSCR I",
+          "description": "DSCR I",
+          "type": "number",
+          "count": 22,
+          "unique": 11,
+          "min": -58.347445,
+          "max": 73.020757,
+          "mean": 0.12918213636363654,
+          "median": 0,
+          "sd": 23.967284117926777,
+          "legend": {}
+        },
+        "DSCR II": {
+          "title": "DSCR II",
+          "description": "DSCR II",
+          "type": "number",
+          "count": 22,
+          "unique": 11,
+          "min": -60.855474,
+          "max": 87.272727,
+          "mean": 1.4325913181818184,
+          "median": 0,
+          "sd": 26.089227907161305,
+          "legend": {}
+        },
+        "ZVW budget (%)": {
+          "title": "ZVW budget (%)",
+          "description": "ZVW budget (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 7,
+          "min": 0,
+          "max": 100,
+          "mean": 32.78181818181818,
+          "median": 0,
+          "sd": 41.86243310875664,
+          "legend": {}
+        },
+        "AWBZ budget (%)": {
+          "title": "AWBZ budget (%)",
+          "description": "AWBZ budget (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 7,
+          "min": 0,
+          "max": 98.7,
+          "mean": 16.577272727272728,
+          "median": 0,
+          "sd": 32.03051005494863,
+          "legend": {}
+        },
+        "ZVW en AWBZ (%)": {
+          "title": "ZVW en AWBZ (%)",
+          "description": "ZVW en AWBZ (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 4,
+          "options": [
+            0,
+            3,
+            3.7,
+            100
+          ],
+          "min": 0,
+          "max": 100,
+          "mean": 4.8500000000000005,
+          "median": 0,
+          "sd": 20.78591634212497,
+          "legend": {}
+        },
+        "PGB  (%)": {
+          "title": "PGB  (%)",
+          "description": "PGB  (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 2,
+          "options": [
+            0,
+            0.1
+          ],
+          "min": 0,
+          "max": 0.1,
+          "mean": 0.004545454545454546,
+          "median": 0,
+          "sd": 0.02082988952252656,
+          "legend": {}
+        },
+        "Gemeenten (%)": {
+          "title": "Gemeenten (%)",
+          "description": "Gemeenten (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 4,
+          "options": [
+            0,
+            2.9,
+            12.4,
+            7.9
+          ],
+          "min": 0,
+          "max": 12.4,
+          "mean": 1.0545454545454545,
+          "median": 0,
+          "sd": 3.015976741037526,
+          "legend": {}
+        },
+        "Min V & J (%)": {
+          "title": "Min V & J (%)",
+          "description": "Min V & J (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 4,
+          "options": [
+            0,
+            4,
+            1.3,
+            5.9
+          ],
+          "min": 0,
+          "max": 5.9,
+          "mean": 0.5090909090909091,
+          "median": 0,
+          "sd": 1.458488972411046,
+          "legend": {}
+        },
+        "Min OCW (%)": {
+          "title": "Min OCW (%)",
+          "description": "Min OCW (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 2,
+          "options": [
+            0,
+            4
+          ],
+          "min": 0,
+          "max": 4,
+          "mean": 0.18181818181818182,
+          "median": 0,
+          "sd": 0.833195580901062,
+          "legend": {}
+        },
+        "Andere overheden (%)": {
+          "title": "Andere overheden (%)",
+          "description": "Andere overheden (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 3,
+          "options": [
+            0,
+            1.3,
+            0.9
+          ],
+          "min": 0,
+          "max": 1.3,
+          "mean": 0.1,
+          "median": 0,
+          "sd": 0.3219260219931957,
+          "legend": {}
+        },
+        "Overige financiers (%)": {
+          "title": "Overige financiers (%)",
+          "description": "Overige financiers (%)",
+          "type": "number",
+          "count": 22,
+          "unique": 7,
+          "min": 0,
+          "max": 44.5,
+          "mean": 3.0318181818181817,
+          "median": 0,
+          "sd": 9.392375358557231,
+          "legend": {}
+        },
+        "PC4": {
+          "title": "PC4",
+          "description": "PC4",
+          "type": "number",
+          "count": 22,
+          "unique": 13,
+          "min": null,
+          "max": null,
+          "mean": null,
+          "median": 2453,
+          "sd": null,
+          "legend": {}
+        },
+        "Gemeente": {
+          "title": "Gemeente",
+          "description": "Gemeente",
+          "type": "number",
+          "count": 22,
+          "unique": 6,
+          "options": [
+            null,
+            503,
+            603,
+            637,
+            518,
+            1884
+          ],
+          "min": null,
+          "max": null,
+          "mean": null,
+          "median": 1243.5,
+          "sd": null,
+          "legend": {}
+        },
+        "Gemeentecode": {
+          "title": "Gemeentecode",
+          "description": "Gemeentecode",
+          "type": "number",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "Provincie": {
+          "title": "Provincie",
+          "description": "Provincie",
+          "type": "number",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "ZK regio": {
+          "title": "ZK regio",
+          "description": "ZK regio",
+          "type": "number",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "WMO regio ": {
+          "title": "WMO regio ",
+          "description": "WMO regio ",
+          "type": "number",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "sub-WMO regio": {
+          "title": "sub-WMO regio",
+          "description": "sub-WMO regio",
+          "type": "number",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "Bronnen": {
+          "title": "Bronnen",
+          "description": "Bronnen",
+          "type": "text",
+          "count": 22,
+          "unique": 1,
+          "options": [
+            "CIBG: DigiMV verslagjaar 2014"
+          ]
+        },
+        "Openbareruimte": {
+          "title": "Openbareruimte",
+          "description": "Openbareruimte",
+          "type": "text",
+          "count": 22,
+          "unique": 22
+        },
+        "Woonplaats": {
+          "title": "Woonplaats",
+          "description": "Woonplaats",
+          "type": "text",
+          "count": 22,
+          "unique": 6,
+          "options": [
+            "'s-Gravenhage",
+            "Delft",
+            "Schipluiden",
+            "Rijswijk",
+            "Zoetermeer",
+            "Voorburg"
+          ]
+        },
+        "huisnummer-toevoeging letter": {
+          "title": "huisnummer-toevoeging letter",
+          "description": "huisnummer-toevoeging letter",
+          "type": "number",
+          "count": 17,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "Financieel-kwaliteit rapport NL": {
+          "title": "Financieel-kwaliteit rapport NL",
+          "description": "Financieel-kwaliteit rapport NL",
+          "type": "url",
+          "count": 11,
+          "unique": 11
+        },
+        "Financieel-kwaliteit rapport EN": {
+          "title": "Financieel-kwaliteit rapport EN",
+          "description": "Financieel-kwaliteit rapport EN",
+          "type": "url",
+          "count": 11,
+          "unique": 11
+        },
+        "Omzet - 2014": {
+          "title": "Omzet - 2014",
+          "description": "Omzet - 2014",
+          "type": "number",
+          "count": 13,
+          "unique": 13,
+          "min": 0,
+          "max": 584923626,
+          "mean": 56488244.92307692,
+          "median": 1956644,
+          "sd": 153786883.73816162,
+          "legend": {}
+        },
+        "Aantal instellingen of organisatorische eenheden": {
+          "title": "Aantal instellingen of organisatorische eenheden",
+          "description": "Aantal instellingen of organisatorische eenheden",
+          "type": "number",
+          "count": 13,
+          "unique": 3,
+          "options": [
+            2,
+            1,
+            13
+          ],
+          "min": 1,
+          "max": 13,
+          "mean": 2,
+          "median": 1,
+          "sd": 3.186510027262766,
+          "legend": {}
+        },
+        "Totaal aantal bedden": {
+          "title": "Totaal aantal bedden",
+          "description": "Totaal aantal bedden",
+          "type": "number",
+          "count": 5,
+          "unique": 5,
+          "options": [
+            273,
+            173,
+            566,
+            2194,
+            223
+          ],
+          "min": 173,
+          "max": 2194,
+          "mean": 685.8,
+          "legend": {}
+        },
+        "Aantal cliënten/patiënten in zorg/behandeling op 31 december 2014 (GGZ)": {
+          "title": "Aantal cliënten/patiënten in zorg/behandeling op 31 december 2014 (GGZ)",
+          "description": "Aantal cliënten/patiënten in zorg/behandeling op 31 december 2014 (GGZ)",
+          "type": "number",
+          "count": 12,
+          "unique": 12,
+          "min": 24,
+          "max": 77325,
+          "mean": 7576.833333333333,
+          "median": 444,
+          "sd": 21147.182380612525,
+          "legend": {}
+        },
+        "Totaal aantal bedden (2)": {
+          "title": "Totaal aantal bedden (2)",
+          "description": "Totaal aantal bedden (2)",
+          "type": "number",
+          "count": 5,
+          "unique": 5,
+          "options": [
+            273,
+            173,
+            566,
+            2194,
+            223
+          ],
+          "min": 173,
+          "max": 2194,
+          "mean": 685.8,
+          "legend": {}
+        },
+        "Omzet - 2014 (2)": {
+          "title": "Omzet - 2014 (2)",
+          "description": "Omzet - 2014 (2)",
+          "type": "number",
+          "count": 13,
+          "unique": 13,
+          "min": 0,
+          "max": 584923626,
+          "mean": 56488244.92307692,
+          "median": 1956644,
+          "sd": 153786883.73816162,
+          "legend": {}
+        },
+        "Bedrijfslasten - 2014": {
+          "title": "Bedrijfslasten - 2014",
+          "description": "Bedrijfslasten - 2014",
+          "type": "number",
+          "count": 12,
+          "unique": 12,
+          "min": 5250,
+          "max": 574261003,
+          "mean": 59144697.75,
+          "median": 5797314.5,
+          "sd": 156337573.76276618,
+          "legend": {}
+        },
+        "Personeelskosten - 2014": {
+          "title": "Personeelskosten - 2014",
+          "description": "Personeelskosten - 2014",
+          "type": "number",
+          "count": 12,
+          "unique": 12,
+          "min": 0,
+          "max": 427984204,
+          "mean": 43770547.083333336,
+          "median": 4255281,
+          "sd": 116593198.24576028,
+          "legend": {}
+        },
+        "Afschrijvingen vaste activa - 2014": {
+          "title": "Afschrijvingen vaste activa - 2014",
+          "description": "Afschrijvingen vaste activa - 2014",
+          "type": "number",
+          "count": 11,
+          "unique": 10,
+          "min": 0,
+          "max": 26395938,
+          "mean": 2829281.909090909,
+          "median": 122297,
+          "sd": 7515786.250467012,
+          "legend": {}
+        },
+        "Overige bedrijfskosten - 2014": {
+          "title": "Overige bedrijfskosten - 2014",
+          "description": "Overige bedrijfskosten - 2014",
+          "type": "number",
+          "count": 12,
+          "unique": 12,
+          "min": 13257,
+          "max": 102774677,
+          "mean": 11357542.166666666,
+          "median": 1435287.5,
+          "sd": 27844168.53998338,
+          "legend": {}
+        },
+        "Bedrijfsresultaat - 2014": {
+          "title": "Bedrijfsresultaat - 2014",
+          "description": "Bedrijfsresultaat - 2014",
+          "type": "number",
+          "count": 13,
+          "unique": 13,
+          "min": -202872,
+          "max": 10662623,
+          "mean": 1882916.3076923077,
+          "median": 171062,
+          "sd": 3274781.7908350513,
+          "legend": {}
+        },
+        "Vermogen - 2014": {
+          "title": "Vermogen - 2014",
+          "description": "Vermogen - 2014",
+          "type": "number",
+          "count": 13,
+          "unique": 13,
+          "min": -108345,
+          "max": 111473839,
+          "mean": 12774309.692307692,
+          "median": 374024,
+          "sd": 29506885.480290204,
+          "legend": {}
+        },
+        "Boekwaarde - 2014": {
+          "title": "Boekwaarde - 2014",
+          "description": "Boekwaarde - 2014",
+          "type": "number",
+          "count": 12,
+          "unique": 11,
+          "min": 0,
+          "max": 245954935,
+          "mean": 25196324.166666668,
+          "median": 215798,
+          "sd": 67562835.44074011,
+          "legend": {}
+        },
+        "Totaal volgens jaarrekening ": {
+          "title": "Totaal volgens jaarrekening ",
+          "description": "Totaal volgens jaarrekening ",
+          "type": "number",
+          "count": 13,
+          "unique": 13,
+          "min": 8712,
+          "max": 584923626,
+          "mean": 56377347.84615385,
+          "median": 1956644,
+          "sd": 153771163.1200755,
+          "legend": {}
+        },
+        "Ook sector(en)": {
+          "title": "Ook sector(en)",
+          "description": "Ook sector(en)",
+          "type": "text",
+          "count": 3,
+          "unique": 1,
+          "options": [
+            "GHZ"
+          ]
+        },
+        "Huisletter": {
+          "title": "Huisletter",
+          "description": "Huisletter",
+          "type": "number",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        },
+        "Personeel - 2014": {
+          "title": "Personeel - 2014",
+          "description": "Personeel - 2014",
+          "type": "number",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            3
+          ],
+          "legend": {}
+        },
+        "Personeel - 2014 (2)": {
+          "title": "Personeel - 2014 (2)",
+          "description": "Personeel - 2014 (2)",
+          "type": "number",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            3
+          ],
+          "legend": {}
+        },
+        "FTE - 2014": {
+          "title": "FTE - 2014",
+          "description": "FTE - 2014",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            1.78,
+            2.8
+          ],
+          "min": 1.78,
+          "max": 2.8,
+          "mean": 2.29,
+          "legend": {}
+        },
+        "FTE - 2014 (2)": {
+          "title": "FTE - 2014 (2)",
+          "description": "FTE - 2014 (2)",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            1.78,
+            2.8
+          ],
+          "min": 1.78,
+          "max": 2.8,
+          "mean": 2.29,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

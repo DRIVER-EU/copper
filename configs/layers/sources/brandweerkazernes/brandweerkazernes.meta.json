@@ -1,0 +1,184 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "X": {
+          "title": "X",
+          "description": "X",
+          "type": "number",
+          "count": 23,
+          "unique": 23,
+          "min": 71910,
+          "max": 95973,
+          "mean": 81193.65217391304,
+          "median": 80433,
+          "sd": 6251.577815509045,
+          "legend": {}
+        },
+        "Y": {
+          "title": "Y",
+          "description": "Y",
+          "type": "number",
+          "count": 23,
+          "unique": 23,
+          "min": 439063,
+          "max": 462344,
+          "mean": 449839.17391304346,
+          "median": 448900,
+          "sd": 5425.350412663594,
+          "legend": {}
+        },
+        "X-nav": {
+          "title": "X-nav",
+          "description": "X-nav",
+          "type": "number",
+          "count": 23,
+          "unique": 23,
+          "min": 71912,
+          "max": 96004,
+          "mean": 81194.60869565218,
+          "median": 80412,
+          "sd": 6251.637348929726,
+          "legend": {}
+        },
+        "Y-nav": {
+          "title": "Y-nav",
+          "description": "Y-nav",
+          "type": "number",
+          "count": 23,
+          "unique": 23,
+          "min": 439081,
+          "max": 462330,
+          "mean": 449844,
+          "median": 448842,
+          "sd": 5422.415569531318,
+          "legend": {}
+        },
+        "BAG id": {
+          "title": "BAG id",
+          "description": "BAG id",
+          "type": "number",
+          "count": 23,
+          "unique": 23,
+          "min": 503010000051773,
+          "max": 1926010000526433,
+          "mean": null,
+          "median": 1783010000026012,
+          "sd": null,
+          "legend": {}
+        },
+        "Organisati": {
+          "title": "Organisati",
+          "description": "Organisati",
+          "type": "text",
+          "count": 23,
+          "unique": 1,
+          "options": [
+            "Veiligheidsregio Haaglanden"
+          ]
+        },
+        "LOC_TYPE": {
+          "title": "LOC_TYPE",
+          "description": "LOC_TYPE",
+          "type": "text",
+          "count": 23,
+          "unique": 2,
+          "options": [
+            "Brandweerkazerne_beroeps",
+            "Brandweerkazerne_vrijwillig"
+          ]
+        },
+        "LOC_NAAM": {
+          "title": "LOC_NAAM",
+          "description": "LOC_NAAM",
+          "type": "text",
+          "count": 23,
+          "unique": 23
+        },
+        "LOC_STRAAT": {
+          "title": "LOC_STRAAT",
+          "description": "LOC_STRAAT",
+          "type": "text",
+          "count": 23,
+          "unique": 23
+        },
+        "Huisnr": {
+          "title": "Huisnr",
+          "description": "Huisnr",
+          "type": "number",
+          "count": 23,
+          "unique": 17,
+          "min": 1,
+          "max": 555,
+          "mean": 59.69565217391305,
+          "median": 10,
+          "sd": 125.1411150531614,
+          "legend": {}
+        },
+        "Postcode": {
+          "title": "Postcode",
+          "description": "Postcode",
+          "type": "text",
+          "count": 23,
+          "unique": 23
+        },
+        "Plaats": {
+          "title": "Plaats",
+          "description": "Plaats",
+          "type": "text",
+          "count": 23,
+          "unique": 18
+        },
+        "GEM": {
+          "title": "GEM",
+          "description": "GEM",
+          "type": "text",
+          "count": 23,
+          "unique": 9
+        },
+        "Regio": {
+          "title": "Regio",
+          "description": "Regio",
+          "type": "number",
+          "count": 23,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "Website": {
+          "title": "Website",
+          "description": "Website",
+          "type": "url",
+          "count": 23,
+          "unique": 1,
+          "options": [
+            "www.brandweer.nl/haaglanden"
+          ]
+        },
+        "Telefoon": {
+          "title": "Telefoon",
+          "description": "Telefoon",
+          "type": "number",
+          "count": 23,
+          "unique": 1,
+          "options": [
+            88
+          ],
+          "legend": {}
+        },
+        "BIJZONDERH": {
+          "title": "BIJZONDERH",
+          "description": "BIJZONDERH",
+          "type": "text",
+          "count": 23,
+          "unique": 1,
+          "options": [
+            "Imergis"
+          ]
+        }
+      }
+    }
+  }
+}

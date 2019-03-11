@@ -1,0 +1,168 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "ogc_fid": {
+          "title": "ogc_fid",
+          "description": "ogc_fid",
+          "type": "number",
+          "count": 89,
+          "unique": 89,
+          "min": 7188,
+          "max": 925087,
+          "mean": 524618.1460674157,
+          "median": 579582,
+          "sd": 263736.5855097221,
+          "legend": {}
+        },
+        "fid": {
+          "title": "fid",
+          "description": "fid",
+          "type": "number",
+          "count": 89,
+          "unique": 89,
+          "min": 104131648,
+          "max": 128800185,
+          "mean": 121125745.80898876,
+          "median": 122041501,
+          "sd": 8372226.421885079,
+          "legend": {}
+        },
+        "namespace": {
+          "title": "namespace",
+          "description": "namespace",
+          "type": "text",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            "NL.TOP10NL"
+          ]
+        },
+        "lokaalid": {
+          "title": "lokaalid",
+          "description": "lokaalid",
+          "type": "number",
+          "count": 89,
+          "unique": 89,
+          "min": 104131648,
+          "max": 128800185,
+          "mean": 121125745.80898876,
+          "median": 122041501,
+          "sd": 8372226.421885079,
+          "legend": {}
+        },
+        "brontype": {
+          "title": "brontype",
+          "description": "brontype",
+          "type": "text",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            "luchtfoto"
+          ]
+        },
+        "bronactual": {
+          "title": "bronactual",
+          "description": "bronactual",
+          "type": "text",
+          "count": 89,
+          "unique": 3,
+          "options": [
+            "2010/01/01",
+            "2012/01/01",
+            "2014/01/01"
+          ]
+        },
+        "bronbeschr": {
+          "title": "bronbeschr",
+          "description": "bronbeschr",
+          "type": "longtext",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig."
+          ]
+        },
+        "bronnauwke": {
+          "title": "bronnauwke",
+          "description": "bronnauwke",
+          "type": "number",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            100
+          ],
+          "legend": {}
+        },
+        "objectbegi": {
+          "title": "objectbegi",
+          "description": "objectbegi",
+          "type": "text",
+          "count": 89,
+          "unique": 4,
+          "options": [
+            "2008/11/24",
+            "2011/08/25",
+            "2014/01/24",
+            "2015/08/30"
+          ]
+        },
+        "tijdstipre": {
+          "title": "tijdstipre",
+          "description": "tijdstipre",
+          "type": "text",
+          "count": 89,
+          "unique": 3,
+          "options": [
+            "2011/08/25",
+            "2014/01/24",
+            "2015/08/30"
+          ]
+        },
+        "tdncode": {
+          "title": "tdncode",
+          "description": "tdncode",
+          "type": "number",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            480
+          ],
+          "legend": {}
+        },
+        "visualisat": {
+          "title": "visualisat",
+          "description": "visualisat",
+          "type": "number",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            15220
+          ],
+          "legend": {}
+        },
+        "typeinrich": {
+          "title": "typeinrich",
+          "description": "typeinrich",
+          "type": "text",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            "hoogspanningsmast"
+          ]
+        },
+        "hoogtenive": {
+          "title": "hoogtenive",
+          "description": "hoogtenive",
+          "type": "number",
+          "count": 89,
+          "unique": 1,
+          "options": [
+            0
+          ],
+          "legend": {}
+        }
+      }
+    }
+  }
+}

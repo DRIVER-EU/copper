@@ -1,0 +1,187 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Plaats": {
+          "title": "Plaats",
+          "description": "Plaats",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "Den Haag",
+            "Rijswijk"
+          ]
+        },
+        "Lat": {
+          "title": "Lat",
+          "description": "Lat",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            52.079674,
+            52.034182
+          ],
+          "min": 52.034182,
+          "max": 52.079674,
+          "mean": 52.056928,
+          "legend": {}
+        },
+        "Lon": {
+          "title": "Lon",
+          "description": "Lon",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            4.342734,
+            4.314097
+          ],
+          "min": 4.314097,
+          "max": 4.342734,
+          "mean": 4.3284155,
+          "legend": {}
+        },
+        "Naam": {
+          "title": "Naam",
+          "description": "Naam",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "Den Haag",
+            "Rijswijk (Centraal Bureau)"
+          ]
+        },
+        "Type": {
+          "title": "Type",
+          "description": "Type",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "Noodopvang",
+            "Centraal Bureau"
+          ]
+        },
+        "Opvangplaatsen": {
+          "title": "Opvangplaatsen",
+          "description": "Opvangplaatsen",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            600,
+            0
+          ],
+          "min": 0,
+          "max": 600,
+          "mean": 300,
+          "legend": {}
+        },
+        "Straat": {
+          "title": "Straat",
+          "description": "Straat",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "Anna van Hannoverstaat",
+            "Sir Winston Churchilllaan"
+          ]
+        },
+        "Huisnummer": {
+          "title": "Huisnummer",
+          "description": "Huisnummer",
+          "type": "number",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            4,
+            366
+          ],
+          "min": 4,
+          "max": 366,
+          "mean": 185,
+          "legend": {}
+        },
+        "Postcode": {
+          "title": "Postcode",
+          "description": "Postcode",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "2595BJ",
+            "2285SJ"
+          ]
+        },
+        "Email": {
+          "title": "Email",
+          "description": "Email",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "denhaag@coa.nl"
+          ]
+        },
+        "Noodopvang": {
+          "title": "Noodopvang",
+          "description": "Noodopvang",
+          "type": "text",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "Ja",
+            "Nee"
+          ]
+        },
+        "Beschrijving": {
+          "title": "Beschrijving",
+          "description": "Beschrijving",
+          "type": "longtext",
+          "count": 2,
+          "unique": 2,
+          "options": [
+            "In het voormalige ministerie van Sociale Zaken en Werkgelegenheid t.o. Station Den Haag NOI wordt noodopvang voor asielzoekers gerealiseerd. Naar verwachting zullen de bewoners vanaf 9-11 instromen. De noodopvang is tot 1-1-2016 geopend. De locatie biedt plaats aan 600 bewoners.",
+            "Het hoofdkantoor van het COA (Centraal Bureau) staat in Rijswijk. Hier is geen opvanglocatie gevestigd. Naast het kantoor in Rijswijk is er een dependancekantoor in Meppel, waar de bewonersadministratie wordt uitgevoerd."
+          ]
+        },
+        "Beschikbaar tot": {
+          "title": "Beschikbaar tot",
+          "description": "Beschikbaar tot",
+          "type": "longtext",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Fri Jan 01 2016 01:00:00 GMT+0100 (W. Europe Standard Time)"
+          ]
+        },
+        "Telefoon": {
+          "title": "Telefoon",
+          "description": "Telefoon",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            88
+          ],
+          "legend": {}
+        },
+        "Huisletter": {
+          "title": "Huisletter",
+          "description": "Huisletter",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            null
+          ],
+          "legend": {}
+        }
+      }
+    }
+  }
+}

@@ -37,9 +37,11 @@ LayoutManager.add({
   component: SplitPanel
 } as ILayoutManagerConfig);
 
-export const project: IProject = {  
-  useSocket: true,
-  socketServerUrl: 'http://localhost:3007',
+export const project: IProject = { 
+  server: {
+    useSocket: true,
+    socketServerUrl: 'http://localhost:3007',
+  }, 
   header: {
     title: '',
     logo: 'images/driver.png',
@@ -154,7 +156,7 @@ export const project: IProject = {
           type: 'layer-server-service',
           options: {
             url: LAYER_URL,
-            activeLayers: [],
+            activeLayers: ['buurt'],
             openFeatureDetails: true
           } as ILayerServiceOptions
         }
@@ -311,14 +313,15 @@ export const project: IProject = {
             token:
               'pk.eyJ1IjoiZGFteWxlbiIsImEiOiJfdUUzLVhNIn0.7-Ogdnc6voJfUXOMBE1VPA',
             mbOptions: {
-              style: 'mapbox://styles/mapbox/streets-v9',
+              style: 'mapbox://styles/mapbox/streets-v9', //'http://localhost:901/styles/klokantech-basic/style.json',
               center: [4.294637, 52.056277],
               zoom: 9
             },
             showDraw: true,
             showRuler: true,
             showStyles: false,
-            showGeocoder: true
+            showGeocoder: true,
+            showLegend: true
           } as MapOptions
         },
         {

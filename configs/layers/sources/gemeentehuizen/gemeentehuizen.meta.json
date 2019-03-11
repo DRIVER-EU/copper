@@ -1,0 +1,173 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "X": {
+          "title": "X",
+          "description": "X",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 74157,
+          "max": 93709,
+          "mean": 84559.44444444444,
+          "legend": {}
+        },
+        "Y": {
+          "title": "Y",
+          "description": "Y",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 444047,
+          "max": 462398,
+          "mean": 451223.55555555556,
+          "legend": {}
+        },
+        "X-nav": {
+          "title": "X-nav",
+          "description": "X-nav",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 74135,
+          "max": 93749,
+          "mean": 84565.77777777778,
+          "legend": {}
+        },
+        "Y-nav": {
+          "title": "Y-nav",
+          "description": "Y-nav",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 444093,
+          "max": 462377,
+          "mean": 451210.44444444444,
+          "legend": {}
+        },
+        "Bagvobid": {
+          "title": "Bagvobid",
+          "description": "Bagvobid",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 503010000021727,
+          "max": 1926010000529922,
+          "mean": 1150787777955908,
+          "legend": {}
+        },
+        "Organisati": {
+          "title": "Organisati",
+          "description": "Organisati",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "LOC_TYPE": {
+          "title": "LOC_TYPE",
+          "description": "LOC_TYPE",
+          "type": "text",
+          "count": 9,
+          "unique": 1,
+          "options": [
+            "Gemeentehuis"
+          ]
+        },
+        "LOC_NAAM": {
+          "title": "LOC_NAAM",
+          "description": "LOC_NAAM",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "LOC_STRAAT": {
+          "title": "LOC_STRAAT",
+          "description": "LOC_STRAAT",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "Huisnr": {
+          "title": "Huisnr",
+          "description": "Huisnr",
+          "type": "number",
+          "count": 9,
+          "unique": 8,
+          "min": 1,
+          "max": 70,
+          "mean": 21.88888888888889,
+          "legend": {}
+        },
+        "Postcode": {
+          "title": "Postcode",
+          "description": "Postcode",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "Woonplaats": {
+          "title": "Woonplaats",
+          "description": "Woonplaats",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "GEM": {
+          "title": "GEM",
+          "description": "GEM",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "Regio": {
+          "title": "Regio",
+          "description": "Regio",
+          "type": "number",
+          "count": 9,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "Website": {
+          "title": "Website",
+          "description": "Website",
+          "type": "url",
+          "count": 9,
+          "unique": 9
+        },
+        "Telefoon": {
+          "title": "Telefoon",
+          "description": "Telefoon",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            14,
+            15,
+            70,
+            174,
+            79
+          ],
+          "min": 14,
+          "max": 174,
+          "mean": 51.55555555555556,
+          "legend": {}
+        },
+        "BIJZONDERH": {
+          "title": "BIJZONDERH",
+          "description": "BIJZONDERH",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 18.514,
+          "max": 510.909,
+          "mean": 117.1992222222222,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

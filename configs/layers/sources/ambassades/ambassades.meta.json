@@ -1,0 +1,104 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Name": {
+          "title": "Name",
+          "description": "Name",
+          "type": "text",
+          "count": 131,
+          "unique": 126
+        },
+        "straatnaam": {
+          "title": "straatnaam",
+          "description": "straatnaam",
+          "type": "text",
+          "count": 131,
+          "unique": 66
+        },
+        "huisnummer": {
+          "title": "huisnummer",
+          "description": "huisnummer",
+          "type": "number",
+          "count": 131,
+          "unique": 68,
+          "min": 1,
+          "max": 342,
+          "mean": 39.465648854961835,
+          "median": 19,
+          "sd": 52.11793697327228,
+          "legend": {}
+        },
+        "huisletter": {
+          "title": "huisletter",
+          "description": "huisletter",
+          "type": "text",
+          "count": 131,
+          "unique": 7
+        },
+        "huisnrtoev": {
+          "title": "huisnrtoev",
+          "description": "huisnrtoev",
+          "type": "text",
+          "count": 131,
+          "unique": 1,
+          "options": [
+            ""
+          ]
+        },
+        "plaatsnaam": {
+          "title": "plaatsnaam",
+          "description": "plaatsnaam",
+          "type": "text",
+          "count": 131,
+          "unique": 2,
+          "options": [
+            "'s-Gravenhage",
+            "Wassenaar"
+          ]
+        },
+        "gemeentenaam": {
+          "title": "gemeentenaam",
+          "description": "gemeentenaam",
+          "type": "text",
+          "count": 131,
+          "unique": 2,
+          "options": [
+            "'s-Gravenhage",
+            "Wassenaar"
+          ]
+        },
+        "bijzonderheden": {
+          "title": "bijzonderheden",
+          "description": "bijzonderheden",
+          "type": "text",
+          "count": 131,
+          "unique": 24
+        },
+        "laatste mutatie": {
+          "title": "laatste mutatie",
+          "description": "laatste mutatie",
+          "type": "number",
+          "count": 131,
+          "unique": 123,
+          "min": 20091006090830000,
+          "max": 20160309133733000,
+          "mean": 20145275076945636,
+          "median": 20150202110710000,
+          "sd": 13692012356249.527,
+          "legend": {}
+        },
+        "objectfunctie": {
+          "title": "objectfunctie",
+          "description": "objectfunctie",
+          "type": "text",
+          "count": 131,
+          "unique": 1,
+          "options": [
+            "Ambassade/Consulaat"
+          ]
+        }
+      }
+    }
+  }
+}

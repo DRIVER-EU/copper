@@ -1,41 +1,6 @@
 {
   "layers": [
     {
-      "id": "world",
-      "sourceType": "geojson",
-      "title": "World Map",
-      "externalUrl": "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json",
-      "version": "0.0.1",
-      "style": {
-        "title": "{{title}}",
-        "fill": false,
-        "mapbox": {
-          "fillLayout": {},
-          "fillPaint": {
-            "fill-opacity": 0.27,
-            "fill-color": "red"
-          }
-        },
-        "types": [
-          "fill"
-        ],
-        "popup": "<h2>{{properties.name}}</h2>"
-      },
-      "color": "lightgray",
-      "tags": [
-        "external"
-      ],
-      "description": "",
-      "typeId": "poi",
-      "opacity": 1,
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
-    },
-    {
       "id": "lcms-geojson",
       "source": "lcms-geojson.json",
       "sourceType": "geojson",
@@ -53,7 +18,8 @@
       "tags": [
         "lcms-geojson"
       ],
-      "description": "lcms-geojson"
+      "description": "lcms-geojson",
+      "meta": "lcms-geojson.meta.json"
     },
     {
       "id": "drawing",
@@ -65,61 +31,11 @@
       "tags": [
         "Drawing"
       ],
-      "featureTypes": {
-        "incident": {
-          "mode": "draw_point",
-          "notification": "Plaats incident",
-          "icon": "images/incident-icon.png",
-          "properties": {
-            "title": "incident",
-            "description": "",
-            "type": "incident"
-          }
-        },
-        "demonstratie": {
-          "title": "Demonstratie",
-          "mode": "draw_point",
-          "notification": "Plaats demonstratie",
-          "icon": "images/demonstratie.png",
-          "properties": {
-            "title": "demonstratie",
-            "description": "",
-            "type": "demonstratie"
-          }
-        },
-        "lijn": {
-          "mode": "draw_line_string",
-          "notification": "Begin met tekenen",
-          "icon": "images/polyline.png",
-          "properties": {
-            "type": "line"
-          }
-        },
-        "vlak": {
-          "mode": "draw_polygon",
-          "notification": "Begin met tekenen",
-          "icon": "images/polygon.png",
-          "properties": {
-            "type": "polygon"
-          }
-        },
-        "circle": {
-          "mode": "draw_circle",
-          "notification": "Begin met tekenen",
-          "icon": "images/circle.png",
-          "properties": {
-            "type": "radius"
-          }
-        }
-      },
       "color": "lightgray",
       "sourceUrl": "http://localhost:4000/sources/drawing",
       "style": {
-        "pointCircle": true,
-        "icons": {
-          "incident": "images/incident-icon.png",
-          "demonstratie": "images/demonstratie.png"
-        },
+        "title": "{{title}}",
+        "fill": false,
         "mapbox": {
           "symbolLayout": {
             "icon-image": [
@@ -158,54 +74,29 @@
             "line-color": "blue",
             "line-opacity": 0.55,
             "line-width": 6
-          }
+          },
+          "symbolPaint": {},
+          "circleLayout": {}
         },
         "types": [
           "point"
-        ]
-      }
-    },
-    {
-      "id": "waterdepth_30cm",
-      "source": "waterdepth_30cm.json",
-      "sourceType": "geojson",
-      "title": "waterdepth_30cm",
-      "externalUrl": "https://raw.githubusercontent.com/DRIVER-EU/trial4/master/Example%20data/test_simplified.geojson",
-      "sourceUrl": "http://localhost:4000/sources/waterdepth_30cm",
-      "version": "0.0.1",
-      "style": {
-        "title": "{{title}}",
-        "fill": true,
-        "mapbox": {
-          "fillLayout": {},
-          "fillPaint": {
-            "fill-color": "blue",
-            "fill-opacity": 0.5,
-            "line-color": "red",
-            "line-width": 2
-          }
-        },
-        "types": [
-          "fill"
         ],
-        "line": true
-      },
-      "color": "lightgray",
-      "featureTypes": {
-        "default": {}
+        "pointCircle": true,
+        "icons": {
+          "incident": "images/incident-icon.png",
+          "demonstratie": "images/demonstratie.png"
+        }
       },
       "typeId": "poi",
       "description": "",
       "opacity": 1,
-      "tags": [
-        " "
-      ],
       "types": [
         "poi",
         "geojson"
       ],
       "openFeatureDetails": true,
-      "visible": true
+      "visible": true,
+      "meta": "drawing.meta.json"
     },
     {
       "id": "ambassades",
@@ -244,7 +135,8 @@
         "geojson"
       ],
       "openFeatureDetails": true,
-      "visible": true
+      "visible": true,
+      "meta": "ambassades.meta.json"
     },
     {
       "id": "ambulanceposten",
@@ -258,7 +150,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "ambulanceposten.meta.json"
     },
     {
       "id": "antenneregister",
@@ -294,7 +187,7 @@
       "description": "",
       "opacity": 1,
       "tags": [
-        " "
+        "layer"
       ],
       "color": "blue",
       "types": [
@@ -302,7 +195,8 @@
         "geojson"
       ],
       "openFeatureDetails": true,
-      "visible": true
+      "visible": true,
+      "meta": "antenneregister.meta.json"
     },
     {
       "id": "azc",
@@ -316,7 +210,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "azc.meta.json"
     },
     {
       "id": "brandweerkazernes",
@@ -326,11 +221,50 @@
       "sourceUrl": "http://localhost:4000/sources/brandweerkazernes",
       "version": "0.0.1",
       "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-color": {
+              "property": "Huisnr",
+              "stops": [
+                [
+                  1,
+                  "blue"
+                ],
+                [
+                  555,
+                  "red"
+                ]
+              ]
+            },
+            "circle-radius": 15,
+            "circle-stroke-color": "black",
+            "circle-stroke-width": 2
+          }
+        },
         "types": [
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "tags": [
+        "layer"
+      ],
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true,
+      "meta": "brandweerkazernes.meta.json"
     },
     {
       "id": "buurt",
@@ -340,12 +274,67 @@
       "sourceUrl": "http://localhost:4000/sources/buurt",
       "version": "0.0.1",
       "style": {
+        "title": "{{properties.BU_NAAM}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-color": {
+              "property": "P_GEHUWD",
+              "stops": [
+                [
+                  0,
+                  "blue"
+                ],
+                [
+                  100,
+                  "red"
+                ]
+              ]
+            }
+          },
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": {
+              "property": "P_GEHUWD",
+              "stops": [
+                [
+                  0,
+                  "blue"
+                ],
+                [
+                  100,
+                  "red"
+                ]
+              ]
+            }
+          }
+        },
         "types": [
           "fill",
           "point"
         ],
-        "pointCircle": true
-      }
+        "pointCircle": true,
+        "defaultLegendProperty": "P_GEHUWD",
+        "popup": "<h2>{{properties.BU_NAAM}}</h2>"
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "tags": [
+        "layer"
+      ],
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true,
+      "meta": "buurt.meta.json",
+      "disableFeatureList": true
     },
     {
       "id": "c2000masten",
@@ -359,7 +348,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "c2000masten.meta.json"
     },
     {
       "id": "clip",
@@ -373,7 +363,8 @@
           "fill"
         ]
       },
-      "color": "lightgray"
+      "color": "lightgray",
+      "meta": "clip.meta.json"
     },
     {
       "id": "gemeente",
@@ -386,7 +377,8 @@
         "types": [
           "fill"
         ]
-      }
+      },
+      "meta": "gemeente.meta.json"
     },
     {
       "id": "gemeentehuizen",
@@ -400,7 +392,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "gemeentehuizen.meta.json"
     },
     {
       "id": "ggz",
@@ -414,7 +407,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "ggz.meta.json"
     },
     {
       "id": "ghz",
@@ -428,7 +422,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "ghz.meta.json"
     },
     {
       "id": "hoogspanningsleidingen",
@@ -441,7 +436,8 @@
         "types": [
           "line"
         ]
-      }
+      },
+      "meta": "hoogspanningsleidingen.meta.json"
     },
     {
       "id": "hoogspanningsmasten",
@@ -455,7 +451,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "hoogspanningsmasten.meta.json"
     },
     {
       "id": "inrichting_el_station",
@@ -469,7 +466,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "inrichting_el_station.meta.json"
     },
     {
       "id": "ministeries",
@@ -484,7 +482,8 @@
         ],
         "pointCircle": true
       },
-      "color": "lightgray"
+      "color": "lightgray",
+      "meta": "ministeries.meta.json"
     },
     {
       "id": "politievestigingen",
@@ -498,7 +497,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "politievestigingen.meta.json"
     },
     {
       "id": "project",
@@ -521,7 +521,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "scholenonderwijs_bo.meta.json"
     },
     {
       "id": "scholenonderwijs_bo_spec",
@@ -535,7 +536,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "scholenonderwijs_bo_spec.meta.json"
     },
     {
       "id": "scholenonderwijs_vo",
@@ -549,7 +551,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "scholenonderwijs_vo.meta.json"
     },
     {
       "id": "vluchtelingen",
@@ -562,7 +565,8 @@
         "types": [
           "fill"
         ]
-      }
+      },
+      "meta": "vluchtelingen.meta.json"
     },
     {
       "id": "vvt",
@@ -572,11 +576,48 @@
       "sourceUrl": "http://localhost:4000/sources/vvt",
       "version": "0.0.1",
       "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-color": {
+              "property": "Omzet - 2014 (2)",
+              "stops": [
+                [
+                  0,
+                  "blue"
+                ],
+                [
+                  239529128,
+                  "red"
+                ]
+              ]
+            },
+            "circle-radius": 14
+          }
+        },
         "types": [
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "tags": [
+        "layer"
+      ],
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true,
+      "meta": "vvt.meta.json"
     },
     {
       "id": "wegdeel_vlak_brug_beweegbaar",
@@ -589,7 +630,8 @@
         "types": [
           "fill"
         ]
-      }
+      },
+      "meta": "wegdeel_vlak_brug_beweegbaar.meta.json"
     },
     {
       "id": "wijk",
@@ -599,11 +641,72 @@
       "sourceUrl": "http://localhost:4000/sources/wijk",
       "version": "0.0.1",
       "style": {
+        "title": "{{properties.wk_name}}",
+        "fill": false,
+        "mapbox": {
+          "lineLayout": {},
+          "linePaint": {
+            "line-color": {
+              "property": "P_25_44_JR",
+              "stops": [
+                [
+                  0,
+                  "blue"
+                ],
+                [
+                  43,
+                  "red"
+                ]
+              ]
+            }
+          },
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": {
+              "property": "P_25_44_JR",
+              "stops": [
+                [
+                  0,
+                  "blue"
+                ],
+                [
+                  43,
+                  "red"
+                ]
+              ]
+            }
+          },
+          "symbolLayout": {
+            "text-field": "{wk_name}",
+            "text-anchor": "center",
+            "text-size": 12,
+            "text-offset": [
+              0,
+              1.5
+            ]
+          }
+        },
         "types": [
           "fill",
           "line"
-        ]
-      }
+        ],
+        "mapTitle": "{wk_name}",
+        "popup": "{{properties.wk_name}}"
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "tags": [
+        "layer"
+      ],
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true,
+      "meta": "wijk.meta.json"
     },
     {
       "id": "ziekenhuis",
@@ -617,7 +720,8 @@
           "point"
         ],
         "pointCircle": true
-      }
+      },
+      "meta": "ziekenhuis.meta.json"
     },
     {
       "title": "eelco.naarding@sim-ci.com",
@@ -681,12 +785,111 @@
         "cap"
       ],
       "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {}
+        },
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "version": "0.0.1",
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
+      "title": "htm@crisissuite.com",
+      "id": "htm@crisissuite.com",
+      "isLive": true,
+      "sourceType": "geojson",
+      "tags": [
+        "cap"
+      ],
+      "style": {
         "types": [
           "point"
         ],
         "pointCircle": true
       },
       "version": "0.0.1"
+    },
+    {
+      "title": "stedin@crisissuite.com",
+      "id": "stedin@crisissuite.com",
+      "isLive": true,
+      "sourceType": "geojson",
+      "tags": [
+        "cap"
+      ],
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "version": "0.0.1"
+    },
+    {
+      "id": "testlayer",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "layer"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "Test New",
+      "description": "",
+      "source": "testlayer.json",
+      "sourceUrl": "http://localhost:4000/sources/testlayer",
+      "style": {
+        "title": "",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {
+            "icon-image": "testlayer-symbol",
+            "icon-size": 0.1
+          },
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-color": "black",
+            "circle-opacity": 1,
+            "circle-radius": 10,
+            "circle-stroke-width": 2,
+            "circle-stroke-color": "black"
+          }
+        },
+        "types": [
+          "point"
+        ],
+        "pointCircle": true,
+        "icon": "https://pbs.twimg.com/profile_images/1038832199792029697/kCPmLaEO_400x400.jpg"
+      },
+      "typeId": "poi",
+      "opacity": 1,
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true,
+      "meta": "testlayer.meta.json"
     }
   ],
   "sourcePath": "./sources/",

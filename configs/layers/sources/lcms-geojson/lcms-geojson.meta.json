@@ -1,0 +1,47 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "id": {
+          "title": "id",
+          "description": "id",
+          "type": "longtext",
+          "count": 4,
+          "unique": 4,
+          "options": [
+            "de7a655a-7221-421a-942b-dd5963a143a7",
+            "32a06bd6-d59d-450b-8af1-86d6309c0099",
+            "616ebda5-0b90-47fe-93a7-38d2a2a0e5df",
+            "462681bb-ffc5-40ba-aa9c-ced9f149a02b"
+          ]
+        },
+        "icon": {
+          "title": "icon",
+          "description": "icon",
+          "type": "text",
+          "count": 4,
+          "unique": 4,
+          "options": [
+            "Ziekenhuis_functionerend-1.gif",
+            "Incidentlocatie-1.png",
+            "Aardbeving-D2-1.gif",
+            "GHOR_Ambulancestation-1.gif"
+          ]
+        },
+        "Name": {
+          "title": "Name",
+          "description": "Name",
+          "type": "text",
+          "count": 4,
+          "unique": 4,
+          "options": [
+            "Ziekenhuis, Reinier de Graaf",
+            "Incident, Brug gesloten",
+            "Gas",
+            "Ambulancestation"
+          ]
+        }
+      }
+    }
+  }
+}

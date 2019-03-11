@@ -1,0 +1,44 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "title": {
+          "title": "title",
+          "description": "title",
+          "type": "text",
+          "count": 5,
+          "unique": 1,
+          "options": [
+            "incident"
+          ]
+        },
+        "description": {
+          "title": "description",
+          "description": "description",
+          "type": "text",
+          "count": 5,
+          "unique": 1,
+          "options": [
+            ""
+          ]
+        },
+        "type": {
+          "title": "type",
+          "description": "type",
+          "type": "text",
+          "count": 5,
+          "unique": 1,
+          "options": [
+            "incident"
+          ]
+        }
+      }
+    },
+    "new": {
+      "properties": {
+        "bla": {},
+        "new": {}
+      }
+    }
+  }
+}

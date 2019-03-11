@@ -42,7 +42,7 @@ export class CapViewer extends WidgetBase {
 
   mounted() {
     // get all cap messages
-    this.fetchCapMessages();
+    this.fetchCapMessages();    
     // subscribe
     if (this.$cs.socket) {
       this.$cs.socket.on('cap', (d: ICAPAlert) => {

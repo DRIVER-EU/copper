@@ -1,0 +1,194 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "X": {
+          "title": "X",
+          "description": "X",
+          "type": "number",
+          "count": 25,
+          "unique": 25,
+          "min": 73417,
+          "max": 93459,
+          "mean": 82775.92,
+          "median": 81705,
+          "sd": 4742.254180619171,
+          "legend": {}
+        },
+        "Y": {
+          "title": "Y",
+          "description": "Y",
+          "type": "number",
+          "count": 25,
+          "unique": 25,
+          "min": 444955,
+          "max": 462240,
+          "mean": 453215.2,
+          "median": 453648,
+          "sd": 3562.4896912131544,
+          "legend": {}
+        },
+        "X-nav": {
+          "title": "X-nav",
+          "description": "X-nav",
+          "type": "number",
+          "count": 25,
+          "unique": 25,
+          "min": 73464,
+          "max": 93452,
+          "mean": 82787.4,
+          "median": 81755,
+          "sd": 4736.769802301987,
+          "legend": {}
+        },
+        "Y-nav": {
+          "title": "Y-nav",
+          "description": "Y-nav",
+          "type": "number",
+          "count": 25,
+          "unique": 25,
+          "min": 444994,
+          "max": 462215,
+          "mean": 453223.36,
+          "median": 453639,
+          "sd": 3557.4001504469534,
+          "legend": {}
+        },
+        "BAGvobid": {
+          "title": "BAGvobid",
+          "description": "BAGvobid",
+          "type": "number",
+          "count": 25,
+          "unique": 25,
+          "min": 503010000034308,
+          "max": 1926010000526887,
+          "mean": 697613600469525.9,
+          "median": 518010000782508,
+          "sd": 437207030019206.8,
+          "legend": {}
+        },
+        "Organisati": {
+          "title": "Organisati",
+          "description": "Organisati",
+          "type": "text",
+          "count": 25,
+          "unique": 6,
+          "options": [
+            "Eenheid Den Haag",
+            "Landelijke Eenheid, Dienst Operationele samenwerking",
+            "NP/PDC/Dienst ICT",
+            "Landelijke Eenheid, Dienst Spoorwegpolitie",
+            "Politieacademie",
+            "Landelijke Eenheid, Dienst IPOL"
+          ]
+        },
+        "LOC_TYPE": {
+          "title": "LOC_TYPE",
+          "description": "LOC_TYPE",
+          "type": "text",
+          "count": 25,
+          "unique": 3,
+          "options": [
+            "Politie hoofdbureau",
+            "Politiebureau",
+            "Politievestiging"
+          ]
+        },
+        "LOC_NAAM": {
+          "title": "LOC_NAAM",
+          "description": "LOC_NAAM",
+          "type": "text",
+          "count": 25,
+          "unique": 25
+        },
+        "LOC_STRAAT": {
+          "title": "LOC_STRAAT",
+          "description": "LOC_STRAAT",
+          "type": "text",
+          "count": 25,
+          "unique": 25
+        },
+        "Huisnr": {
+          "title": "Huisnr",
+          "description": "Huisnr",
+          "type": "number",
+          "count": 25,
+          "unique": 20,
+          "min": 1,
+          "max": 401,
+          "mean": 103.68,
+          "median": 44,
+          "sd": 120.54234774551225,
+          "legend": {}
+        },
+        "Postcode": {
+          "title": "Postcode",
+          "description": "Postcode",
+          "type": "text",
+          "count": 25,
+          "unique": 25
+        },
+        "Woonplaats": {
+          "title": "Woonplaats",
+          "description": "Woonplaats",
+          "type": "text",
+          "count": 25,
+          "unique": 8
+        },
+        "GEM": {
+          "title": "GEM",
+          "description": "GEM",
+          "type": "text",
+          "count": 25,
+          "unique": 8
+        },
+        "Regio": {
+          "title": "Regio",
+          "description": "Regio",
+          "type": "number",
+          "count": 25,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "URL": {
+          "title": "URL",
+          "description": "URL",
+          "type": "url",
+          "count": 25,
+          "unique": 12
+        },
+        "Telefoon": {
+          "title": "Telefoon",
+          "description": "Telefoon",
+          "type": "number",
+          "count": 25,
+          "unique": 3,
+          "options": [
+            900,
+            343,
+            70
+          ],
+          "min": 70,
+          "max": 900,
+          "mean": 755.84,
+          "median": 900,
+          "sd": 294.4585104900179,
+          "legend": {}
+        },
+        "BIJZONDERH": {
+          "title": "BIJZONDERH",
+          "description": "BIJZONDERH",
+          "type": "text",
+          "count": 25,
+          "unique": 1,
+          "options": [
+            "Imergis"
+          ]
+        }
+      }
+    }
+  }
+}

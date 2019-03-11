@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "id": "testlayer",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.57032225,
+          52.693361078274485
+        ]
+      },
+      "id": "2"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Naam locatie": {
+          "title": "Naam locatie",
+          "description": "Naam locatie",
+          "type": "text",
+          "count": 18,
+          "unique": 18
+        },
+        "Naam concern": {
+          "title": "Naam concern",
+          "description": "Naam concern",
+          "type": "longtext",
+          "count": 18,
+          "unique": 5,
+          "options": [
+            "Stichting Medisch Centrum Haaglanden",
+            "Reinier de Graaf groep",
+            "Stichting Bronovo-Nebo",
+            "Stichting HagaZiekenhuis",
+            "Het LangeLand Ziekenhuis"
+          ]
+        },
+        "Soort locatie": {
+          "title": "Soort locatie",
+          "description": "Soort locatie",
+          "type": "longtext",
+          "count": 18,
+          "unique": 4,
+          "options": [
+            "Nevenlocatie van Algemeen ziekenhuis",
+            "Hoofdlocatie (Algemeen ziekenhuis)",
+            "Hoofdlocatie (Algemeen ziekenhuis & Categoraal ziekenhuis)",
+            "Nevenlocatie van Algemeen ziekenhuis & Categoraal ziekenhuis"
+          ]
+        },
+        "Aantal locaties": {
+          "title": "Aantal locaties",
+          "description": "Aantal locaties",
+          "type": "text",
+          "count": 18,
+          "unique": 12
+        },
+        "Straat": {
+          "title": "Straat",
+          "description": "Straat",
+          "type": "text",
+          "count": 18,
+          "unique": 16
+        },
+        "huisnummer": {
+          "title": "huisnummer",
+          "description": "huisnummer",
+          "type": "number",
+          "count": 18,
+          "unique": 13,
+          "min": 1,
+          "max": 600,
+          "mean": 126,
+          "median": 24.5,
+          "sd": 188.9891237317346,
+          "legend": {}
+        },
+        "postcode": {
+          "title": "postcode",
+          "description": "postcode",
+          "type": "text",
+          "count": 18,
+          "unique": 16
+        },
+        "plaatsnaam": {
+          "title": "plaatsnaam",
+          "description": "plaatsnaam",
+          "type": "text",
+          "count": 18,
+          "unique": 8
+        },
+        "Aantal bedden": {
+          "title": "Aantal bedden",
+          "description": "Aantal bedden",
+          "type": "number",
+          "count": 13,
+          "unique": 10,
+          "min": 0,
+          "max": 881,
+          "mean": 268.84615384615387,
+          "median": 255,
+          "sd": 245.08047223273928,
+          "legend": {}
+        },
+        "Hartbewaking": {
+          "title": "Hartbewaking",
+          "description": "Hartbewaking",
+          "type": "number",
+          "count": 10,
+          "unique": 3,
+          "options": [
+            0,
+            8,
+            13
+          ],
+          "min": 0,
+          "max": 13,
+          "mean": 3.4,
+          "legend": {}
+        },
+        "IC met beademing": {
+          "title": "IC met beademing",
+          "description": "IC met beademing",
+          "type": "number",
+          "count": 10,
+          "unique": 5,
+          "options": [
+            0,
+            4,
+            12,
+            16,
+            13
+          ],
+          "min": 0,
+          "max": 16,
+          "mean": 4.5,
+          "legend": {}
+        },
+        "IC zonder beademing": {
+          "title": "IC zonder beademing",
+          "description": "IC zonder beademing",
+          "type": "number",
+          "count": 10,
+          "unique": 3,
+          "options": [
+            0,
+            2,
+            4
+          ],
+          "min": 0,
+          "max": 4,
+          "mean": 0.8,
+          "legend": {}
+        },
+        "Spoedeisende hulp": {
+          "title": "Spoedeisende hulp",
+          "description": "Spoedeisende hulp",
+          "type": "text",
+          "count": 10,
+          "unique": 2,
+          "options": [
+            "nee",
+            "ja"
+          ]
+        },
+        "Kenmerk locatie": {
+          "title": "Kenmerk locatie",
+          "description": "Kenmerk locatie",
+          "type": "text",
+          "count": 8,
+          "unique": 4,
+          "options": [
+            "Buitenpolikliniek",
+            "Polikliniek in gezondheidscentrum",
+            "Topklinische opleidingsziekenhuis",
+            "Huidkliniek"
+          ]
+        },
+        "KvK": {
+          "title": "KvK",
+          "description": "KvK",
+          "type": "number",
+          "count": 4,
+          "unique": 4,
+          "options": [
+            27169890,
+            41149706,
+            27268552,
+            41149315
+          ],
+          "min": 27169890,
+          "max": 41149706,
+          "mean": 34184365.75,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,8 @@
         "id": "de7a655a-7221-421a-942b-dd5963a143a7",
         "icon": "Ziekenhuis_functionerend-1.gif",
         "Name": "Ziekenhuis, Reinier de Graaf"
-      }
+      },
+      "id": "467d68f0-322a-11e9-81a7-59aa7da4ff8d"
     },
     {
       "type": "Feature",
@@ -37,7 +38,8 @@
         "id": "32a06bd6-d59d-450b-8af1-86d6309c0099",
         "icon": "Incidentlocatie-1.png",
         "Name": "Incident, Brug gesloten"
-      }
+      },
+      "id": "467d9000-322a-11e9-81a7-59aa7da4ff8d"
     },
     {
       "type": "Feature",
@@ -53,7 +55,8 @@
         "id": "616ebda5-0b90-47fe-93a7-38d2a2a0e5df",
         "icon": "Aardbeving-D2-1.gif",
         "Name": "Gas"
-      }
+      },
+      "id": "467d9001-322a-11e9-81a7-59aa7da4ff8d"
     },
     {
       "type": "Feature",
@@ -69,7 +72,8 @@
         "id": "462681bb-ffc5-40ba-aa9c-ced9f149a02b",
         "icon": "GHOR_Ambulancestation-1.gif",
         "Name": "Ambulancestation"
-      }
+      },
+      "id": "467d9002-322a-11e9-81a7-59aa7da4ff8d"
     }
   ]
 }

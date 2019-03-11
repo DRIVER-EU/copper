@@ -1,0 +1,40 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "id": {
+          "title": "id",
+          "description": "id",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "regiocode": {
+          "title": "regiocode",
+          "description": "regiocode",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            15
+          ],
+          "legend": {}
+        },
+        "Name": {
+          "title": "Name",
+          "description": "Name",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Haaglanden"
+          ]
+        }
+      }
+    }
+  }
+}

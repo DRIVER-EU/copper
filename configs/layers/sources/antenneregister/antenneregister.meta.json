@@ -1,0 +1,67 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "GEMEENTE": {
+          "title": "GEMEENTE",
+          "description": "GEMEENTE",
+          "type": "text",
+          "count": 2142,
+          "unique": 9
+        },
+        "TOEPASSING": {
+          "title": "TOEPASSING",
+          "description": "TOEPASSING",
+          "type": "text",
+          "count": 2142,
+          "unique": 4,
+          "options": [
+            "GSM 1800",
+            "GSM 900",
+            "LTE",
+            "UMTS"
+          ]
+        },
+        "X": {
+          "title": "X",
+          "description": "X",
+          "type": "number",
+          "count": 2142,
+          "unique": 775,
+          "min": 69475,
+          "max": 97142,
+          "mean": 83054.8608776844,
+          "median": 82505,
+          "sd": 5339.793044093957,
+          "legend": {}
+        },
+        "Y": {
+          "title": "Y",
+          "description": "Y",
+          "type": "number",
+          "count": 2142,
+          "unique": 797,
+          "min": 438900,
+          "max": 464368,
+          "mean": 452608.29878618114,
+          "median": 453300,
+          "sd": 4460.731336389962,
+          "legend": {}
+        },
+        "ANT_HOOGTE": {
+          "title": "ANT_HOOGTE",
+          "description": "ANT_HOOGTE",
+          "type": "number",
+          "count": 2142,
+          "unique": 344,
+          "min": 0,
+          "max": 130,
+          "mean": 26.487161531279177,
+          "median": 26.3,
+          "sd": 11.618525263189287,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

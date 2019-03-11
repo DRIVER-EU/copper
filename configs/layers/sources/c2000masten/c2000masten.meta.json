@@ -1,0 +1,44 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Naam": {
+          "title": "Naam",
+          "description": "Naam",
+          "type": "text",
+          "count": 14,
+          "unique": 1,
+          "options": [
+            "C2000 mast"
+          ]
+        },
+        "Lat": {
+          "title": "Lat",
+          "description": "Lat",
+          "type": "number",
+          "count": 14,
+          "unique": 14,
+          "min": 51.99702,
+          "max": 52.14437,
+          "mean": 52.05545214285714,
+          "median": 52.061035000000004,
+          "sd": 0.04331569629370199,
+          "legend": {}
+        },
+        "Lon": {
+          "title": "Lon",
+          "description": "Lon",
+          "type": "number",
+          "count": 14,
+          "unique": 14,
+          "min": 4.16336,
+          "max": 4.49332,
+          "mean": 4.301075,
+          "median": 4.29655,
+          "sd": 0.0837926250377339,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import {Module} from '@nestjs/common';
+import {Module, Logger} from '@nestjs/common';
 import {TestbedController} from './testbed.controller';
 
 @Module({
@@ -10,7 +10,7 @@ import {TestbedController} from './testbed.controller';
 export class TimeModule {
 
   constructor() {
-    console.log(`Initializing test-bed`);    
+    Logger.log(`Initializing test-bed`);    
   }
 
 }

@@ -1,0 +1,446 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "SOORT PRIMAIR ONDERWIJS": {
+          "title": "SOORT PRIMAIR ONDERWIJS",
+          "description": "SOORT PRIMAIR ONDERWIJS",
+          "type": "number",
+          "count": 53,
+          "unique": 4,
+          "options": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "min": 0,
+          "max": 3,
+          "mean": 0.8301886792452831,
+          "median": 1,
+          "sd": 0.9464102795459967,
+          "legend": {}
+        },
+        "PROVINCIE": {
+          "title": "PROVINCIE",
+          "description": "PROVINCIE",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            11
+          ],
+          "legend": {}
+        },
+        "BEVOEGD GEZAG NUMMER": {
+          "title": "BEVOEGD GEZAG NUMMER",
+          "description": "BEVOEGD GEZAG NUMMER",
+          "type": "number",
+          "count": 53,
+          "unique": 18,
+          "min": 20281,
+          "max": 95694,
+          "mean": 42563,
+          "median": 41572,
+          "sd": 16004.523552762932,
+          "legend": {}
+        },
+        "BRINNUMMER": {
+          "title": "BRINNUMMER",
+          "description": "BRINNUMMER",
+          "type": "text",
+          "count": 53,
+          "unique": 37
+        },
+        "VESTIGINGSNUMMER": {
+          "title": "VESTIGINGSNUMMER",
+          "description": "VESTIGINGSNUMMER",
+          "type": "text",
+          "count": 53,
+          "unique": 53
+        },
+        "VESTIGINGSNAAM": {
+          "title": "VESTIGINGSNAAM",
+          "description": "VESTIGINGSNAAM",
+          "type": "text",
+          "count": 53,
+          "unique": 46
+        },
+        "STRAATNAAM": {
+          "title": "STRAATNAAM",
+          "description": "STRAATNAAM",
+          "type": "text",
+          "count": 53,
+          "unique": 44
+        },
+        "HUISNUMMER-TOEVOEGING": {
+          "title": "HUISNUMMER-TOEVOEGING",
+          "description": "HUISNUMMER-TOEVOEGING",
+          "type": "number",
+          "count": 53,
+          "unique": 30,
+          "min": 1,
+          "max": 1185,
+          "mean": 96.33962264150944,
+          "median": 15,
+          "sd": 185.29822402352562,
+          "legend": {}
+        },
+        "POSTCODE": {
+          "title": "POSTCODE",
+          "description": "POSTCODE",
+          "type": "text",
+          "count": 53,
+          "unique": 44
+        },
+        "PLAATSNAAM": {
+          "title": "PLAATSNAAM",
+          "description": "PLAATSNAAM",
+          "type": "text",
+          "count": 53,
+          "unique": 9
+        },
+        "GEMEENTENUMMER": {
+          "title": "GEMEENTENUMMER",
+          "description": "GEMEENTENUMMER",
+          "type": "number",
+          "count": 53,
+          "unique": 7,
+          "min": 503,
+          "max": 1926,
+          "mean": 771.0188679245283,
+          "median": 518,
+          "sd": 495.27802333509453,
+          "legend": {}
+        },
+        "GEMEENTENAAM": {
+          "title": "GEMEENTENAAM",
+          "description": "GEMEENTENAAM",
+          "type": "text",
+          "count": 53,
+          "unique": 7
+        },
+        "DENOMINATIE": {
+          "title": "DENOMINATIE",
+          "description": "DENOMINATIE",
+          "type": "number",
+          "count": 53,
+          "unique": 5,
+          "options": [
+            1,
+            3,
+            0,
+            2,
+            7
+          ],
+          "min": 0,
+          "max": 7,
+          "mean": 1.3396226415094339,
+          "median": 1,
+          "sd": 1.3022969001311242,
+          "legend": {}
+        },
+        "TELEFOONNUMMER": {
+          "title": "TELEFOONNUMMER",
+          "description": "TELEFOONNUMMER",
+          "type": "text",
+          "count": 53,
+          "unique": 41
+        },
+        "INTERNETADRES": {
+          "title": "INTERNETADRES",
+          "description": "INTERNETADRES",
+          "type": "longtext",
+          "count": 53,
+          "unique": 37
+        },
+        "CLUSTER": {
+          "title": "CLUSTER",
+          "description": "CLUSTER",
+          "type": "number",
+          "count": 53,
+          "unique": 4,
+          "options": [
+            3,
+            2,
+            4,
+            0
+          ],
+          "min": 0,
+          "max": 4,
+          "mean": 2.056603773584906,
+          "median": 3,
+          "sd": 1.653071404815812,
+          "legend": {}
+        },
+        "STRAATNAAM CORRESPONDENTIEADRES": {
+          "title": "STRAATNAAM CORRESPONDENTIEADRES",
+          "description": "STRAATNAAM CORRESPONDENTIEADRES",
+          "type": "text",
+          "count": 53,
+          "unique": 35
+        },
+        "HUISNUMMER-TOEVOEGING CORRESPONDENTIEADRES": {
+          "title": "HUISNUMMER-TOEVOEGING CORRESPONDENTIEADRES",
+          "description": "HUISNUMMER-TOEVOEGING CORRESPONDENTIEADRES",
+          "type": "number",
+          "count": 53,
+          "unique": 27,
+          "min": 1,
+          "max": 64602,
+          "mean": 6174.924528301887,
+          "median": 24,
+          "sd": 18858.09281744273,
+          "legend": {}
+        },
+        "POSTCODE CORRESPONDENTIEADRES": {
+          "title": "POSTCODE CORRESPONDENTIEADRES",
+          "description": "POSTCODE CORRESPONDENTIEADRES",
+          "type": "text",
+          "count": 53,
+          "unique": 39
+        },
+        "PLAATSNAAM CORRESPONDENTIEADRES": {
+          "title": "PLAATSNAAM CORRESPONDENTIEADRES",
+          "description": "PLAATSNAAM CORRESPONDENTIEADRES",
+          "type": "text",
+          "count": 53,
+          "unique": 11
+        },
+        "NODAAL GEBIED CODE": {
+          "title": "NODAAL GEBIED CODE",
+          "description": "NODAAL GEBIED CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 2,
+          "options": [
+            49,
+            50
+          ],
+          "min": 49,
+          "max": 50,
+          "mean": 49.132075471698116,
+          "median": 49,
+          "sd": 0.3385728008476674,
+          "legend": {}
+        },
+        "NODAAL GEBIED NAAM": {
+          "title": "NODAAL GEBIED NAAM",
+          "description": "NODAAL GEBIED NAAM",
+          "type": "text",
+          "count": 53,
+          "unique": 2,
+          "options": [
+            "'s-Gravenhage",
+            "Delft"
+          ]
+        },
+        "RPA-GEBIED CODE": {
+          "title": "RPA-GEBIED CODE",
+          "description": "RPA-GEBIED CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            22
+          ],
+          "legend": {}
+        },
+        "RPA-GEBIED NAAM": {
+          "title": "RPA-GEBIED NAAM",
+          "description": "RPA-GEBIED NAAM",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            30
+          ],
+          "legend": {}
+        },
+        "WGR-GEBIED CODE": {
+          "title": "WGR-GEBIED CODE",
+          "description": "WGR-GEBIED CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            28
+          ],
+          "legend": {}
+        },
+        "WGR-GEBIED NAAM": {
+          "title": "WGR-GEBIED NAAM",
+          "description": "WGR-GEBIED NAAM",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            36
+          ],
+          "legend": {}
+        },
+        "COROPGEBIED CODE": {
+          "title": "COROPGEBIED CODE",
+          "description": "COROPGEBIED CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 2,
+          "options": [
+            26,
+            27
+          ],
+          "min": 26,
+          "max": 27,
+          "mean": 26.20754716981132,
+          "median": 26,
+          "sd": 0.4055506652868806,
+          "legend": {}
+        },
+        "COROPGEBIED NAAM": {
+          "title": "COROPGEBIED NAAM",
+          "description": "COROPGEBIED NAAM",
+          "type": "number",
+          "count": 53,
+          "unique": 2,
+          "options": [
+            33,
+            38
+          ],
+          "min": 33,
+          "max": 38,
+          "mean": 34.0377358490566,
+          "median": 33,
+          "sd": 2.0277533264344028,
+          "legend": {}
+        },
+        "ONDERWIJSGEBIED CODE": {
+          "title": "ONDERWIJSGEBIED CODE",
+          "description": "ONDERWIJSGEBIED CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            16
+          ],
+          "legend": {}
+        },
+        "ONDERWIJSGEBIED NAAM": {
+          "title": "ONDERWIJSGEBIED NAAM",
+          "description": "ONDERWIJSGEBIED NAAM",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            22
+          ],
+          "legend": {}
+        },
+        "RMC-REGIO CODE": {
+          "title": "RMC-REGIO CODE",
+          "description": "RMC-REGIO CODE",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            28
+          ],
+          "legend": {}
+        },
+        "RMC-REGIO NAAM": {
+          "title": "RMC-REGIO NAAM",
+          "description": "RMC-REGIO NAAM",
+          "type": "number",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            33
+          ],
+          "legend": {}
+        },
+        "Huisnummer": {
+          "title": "Huisnummer",
+          "description": "Huisnummer",
+          "type": "number",
+          "count": 53,
+          "unique": 30,
+          "min": 1,
+          "max": 1185,
+          "mean": 96.33962264150944,
+          "median": 15,
+          "sd": 185.29822402352562,
+          "legend": {}
+        },
+        "Woonplaatsnaam": {
+          "title": "Woonplaatsnaam",
+          "description": "Woonplaatsnaam",
+          "type": "text",
+          "count": 53,
+          "unique": 9
+        },
+        "Provincienaam": {
+          "title": "Provincienaam",
+          "description": "Provincienaam",
+          "type": "text",
+          "count": 53,
+          "unique": 1,
+          "options": [
+            "Zuid-Holland"
+          ]
+        },
+        "Bouwjaar": {
+          "title": "Bouwjaar",
+          "description": "Bouwjaar",
+          "type": "number",
+          "count": 53,
+          "unique": 36,
+          "min": 1728,
+          "max": 9999,
+          "mean": 2128.9245283018868,
+          "median": 1982,
+          "sd": 1092.2396041137627,
+          "legend": {}
+        },
+        "Pandidentificatie": {
+          "title": "Pandidentificatie",
+          "description": "Pandidentificatie",
+          "type": "number",
+          "count": 53,
+          "unique": 45,
+          "min": 503100000000301,
+          "max": 1926100000551456,
+          "mean": 771118868179767.4,
+          "median": 518100000337653,
+          "sd": 495278023315864.1,
+          "legend": {}
+        },
+        "Gebruiksdoelverblijfsobject": {
+          "title": "Gebruiksdoelverblijfsobject",
+          "description": "Gebruiksdoelverblijfsobject",
+          "type": "text",
+          "count": 53,
+          "unique": 5,
+          "options": [
+            "woonfunctie",
+            "onderwijsfunctie",
+            "overige gebruiksfunctie",
+            "kantoorfunctie",
+            "bijeenkomstfunctie"
+          ]
+        },
+        "Oppervlakteverblijfsobject": {
+          "title": "Oppervlakteverblijfsobject",
+          "description": "Oppervlakteverblijfsobject",
+          "type": "number",
+          "count": 53,
+          "unique": 43,
+          "min": 220,
+          "max": 999999,
+          "mean": 97530.37735849057,
+          "median": 1650,
+          "sd": 291384.98493814806,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

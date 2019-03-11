@@ -1,0 +1,271 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "ogc_fid": {
+          "title": "ogc_fid",
+          "description": "ogc_fid",
+          "type": "number",
+          "count": 1224,
+          "unique": 1224,
+          "min": 271,
+          "max": 14620,
+          "mean": 5833.550653594772,
+          "median": 6136.5,
+          "sd": 3826.748526065952,
+          "legend": {}
+        },
+        "fid": {
+          "title": "fid",
+          "description": "fid",
+          "type": "number",
+          "count": 1224,
+          "unique": 1224,
+          "min": 105515404,
+          "max": 128969156,
+          "mean": 117101054.68137255,
+          "median": 120605028.5,
+          "sd": 10116574.916211871,
+          "legend": {}
+        },
+        "namespace": {
+          "title": "namespace",
+          "description": "namespace",
+          "type": "text",
+          "count": 1224,
+          "unique": 1,
+          "options": [
+            "NL.TOP10NL"
+          ]
+        },
+        "lokaalid": {
+          "title": "lokaalid",
+          "description": "lokaalid",
+          "type": "number",
+          "count": 1224,
+          "unique": 1224,
+          "min": 105515404,
+          "max": 128969156,
+          "mean": 117101054.68137255,
+          "median": 120605028.5,
+          "sd": 10116574.916211871,
+          "legend": {}
+        },
+        "brontype": {
+          "title": "brontype",
+          "description": "brontype",
+          "type": "text",
+          "count": 1224,
+          "unique": 1,
+          "options": [
+            "luchtfoto"
+          ]
+        },
+        "bronactual": {
+          "title": "bronactual",
+          "description": "bronactual",
+          "type": "text",
+          "count": 1224,
+          "unique": 6,
+          "options": [
+            "2015/01/01",
+            "2012/01/01",
+            "2010/01/01",
+            "2013/01/01",
+            "2014/01/01",
+            "2011/01/01"
+          ]
+        },
+        "bronbeschr": {
+          "title": "bronbeschr",
+          "description": "bronbeschr",
+          "type": "longtext",
+          "count": 1224,
+          "unique": 1,
+          "options": [
+            "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig."
+          ]
+        },
+        "bronnauwke": {
+          "title": "bronnauwke",
+          "description": "bronnauwke",
+          "type": "number",
+          "count": 1224,
+          "unique": 1,
+          "options": [
+            100
+          ],
+          "legend": {}
+        },
+        "objectbegi": {
+          "title": "objectbegi",
+          "description": "objectbegi",
+          "type": "text",
+          "count": 1224,
+          "unique": 12
+        },
+        "tijdstipre": {
+          "title": "tijdstipre",
+          "description": "tijdstipre",
+          "type": "text",
+          "count": 1224,
+          "unique": 11
+        },
+        "tdncode": {
+          "title": "tdncode",
+          "description": "tdncode",
+          "type": "number",
+          "count": 1224,
+          "unique": 5,
+          "options": [
+            423,
+            999,
+            404,
+            400,
+            410
+          ],
+          "min": 400,
+          "max": 999,
+          "mean": 531.4869281045752,
+          "median": 423,
+          "sd": 232.242421432404,
+          "legend": {}
+        },
+        "visualisat": {
+          "title": "visualisat",
+          "description": "visualisat",
+          "type": "number",
+          "count": 1224,
+          "unique": 21,
+          "min": -11303,
+          "max": 11301,
+          "mean": 9329.133169934641,
+          "median": 11200,
+          "sd": 6188.558096714947,
+          "legend": {}
+        },
+        "typeinfras": {
+          "title": "typeinfras",
+          "description": "typeinfras",
+          "type": "text",
+          "count": 1224,
+          "unique": 1,
+          "options": [
+            "verbinding"
+          ]
+        },
+        "typespoorb": {
+          "title": "typespoorb",
+          "description": "typespoorb",
+          "type": "text",
+          "count": 1224,
+          "unique": 3,
+          "options": [
+            "tram",
+            "sneltram",
+            "trein"
+          ]
+        },
+        "spoorbreed": {
+          "title": "spoorbreed",
+          "description": "spoorbreed",
+          "type": "text",
+          "count": 1224,
+          "unique": 2,
+          "options": [
+            "normaalspoor",
+            "smalspoor"
+          ]
+        },
+        "aantalspor": {
+          "title": "aantalspor",
+          "description": "aantalspor",
+          "type": "text",
+          "count": 1224,
+          "unique": 3,
+          "options": [
+            "dubbel",
+            "enkel",
+            "meervoudig"
+          ]
+        },
+        "vervoerfun": {
+          "title": "vervoerfun",
+          "description": "vervoerfun",
+          "type": "text",
+          "count": 1224,
+          "unique": 4,
+          "options": [
+            "personenvervoer",
+            "gemengd gebruik",
+            "goederenvervoer",
+            "museumlijn"
+          ]
+        },
+        "elektrific": {
+          "title": "elektrific",
+          "description": "elektrific",
+          "type": "text",
+          "count": 1224,
+          "unique": 2,
+          "options": [
+            "ja",
+            "nee"
+          ]
+        },
+        "hoogtenive": {
+          "title": "hoogtenive",
+          "description": "hoogtenive",
+          "type": "number",
+          "count": 1224,
+          "unique": 2,
+          "options": [
+            0,
+            -1
+          ],
+          "min": -1,
+          "max": 0,
+          "mean": -0.08333333333333333,
+          "median": 0,
+          "sd": 0.2763853991962813,
+          "legend": {}
+        },
+        "status": {
+          "title": "status",
+          "description": "status",
+          "type": "text",
+          "count": 1224,
+          "unique": 2,
+          "options": [
+            "in gebruik",
+            "buiten gebruik"
+          ]
+        },
+        "fysiekvoor": {
+          "title": "fysiekvoor",
+          "description": "fysiekvoor",
+          "type": "text",
+          "count": 235,
+          "unique": 5,
+          "options": [
+            "(1:overkluisd)",
+            "(1:op vast deel van brug)",
+            "(2:op vast deel van brug,overkluisd)",
+            "(1:op beweegbaar deel van brug)",
+            "(1:in tunnel)"
+          ]
+        },
+        "brugnaam": {
+          "title": "brugnaam",
+          "description": "brugnaam",
+          "type": "text",
+          "count": 3,
+          "unique": 1,
+          "options": [
+            "|Hoornbrug|"
+          ]
+        }
+      }
+    }
+  }
+}

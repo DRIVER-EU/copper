@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "topics": [
     { "id": "lcms_plots", "type": "geojson", "title": "lcms-geojson", "offset": 20 },
     { "id": "standard_cap", "type": "cap", "title": "lcms-cap", "offset": 20 },

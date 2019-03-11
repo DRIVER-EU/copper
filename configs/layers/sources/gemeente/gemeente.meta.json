@@ -1,0 +1,592 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "GM_CODE": {
+          "title": "GM_CODE",
+          "description": "GM_CODE",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "GM_NAAM": {
+          "title": "GM_NAAM",
+          "description": "GM_NAAM",
+          "type": "text",
+          "count": 9,
+          "unique": 9
+        },
+        "OAD": {
+          "title": "OAD",
+          "description": "OAD",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1250,
+          "max": 4751,
+          "mean": 2456.222222222222,
+          "legend": {}
+        },
+        "STED": {
+          "title": "STED",
+          "description": "STED",
+          "type": "number",
+          "count": 9,
+          "unique": 3,
+          "options": [
+            1,
+            3,
+            2
+          ],
+          "min": 1,
+          "max": 3,
+          "mean": 2,
+          "legend": {}
+        },
+        "AANT_INW": {
+          "title": "AANT_INW",
+          "description": "AANT_INW",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 18709,
+          "max": 514861,
+          "mean": 118006.22222222222,
+          "legend": {}
+        },
+        "AANT_MAN": {
+          "title": "AANT_MAN",
+          "description": "AANT_MAN",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 9461,
+          "max": 254187,
+          "mean": 58452.444444444445,
+          "legend": {}
+        },
+        "AANT_VROUW": {
+          "title": "AANT_VROUW",
+          "description": "AANT_VROUW",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 9248,
+          "max": 260674,
+          "mean": 59553.77777777778,
+          "legend": {}
+        },
+        "P_00_14_JR": {
+          "title": "P_00_14_JR",
+          "description": "P_00_14_JR",
+          "type": "number",
+          "count": 9,
+          "unique": 6,
+          "options": [
+            13,
+            18,
+            14,
+            17,
+            16,
+            22
+          ],
+          "min": 13,
+          "max": 22,
+          "mean": 16.88888888888889,
+          "legend": {}
+        },
+        "P_15_24_JR": {
+          "title": "P_15_24_JR",
+          "description": "P_15_24_JR",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            20,
+            12,
+            9,
+            10,
+            13
+          ],
+          "min": 9,
+          "max": 20,
+          "mean": 12.222222222222221,
+          "legend": {}
+        },
+        "P_25_44_JR": {
+          "title": "P_25_44_JR",
+          "description": "P_25_44_JR",
+          "type": "number",
+          "count": 9,
+          "unique": 6,
+          "options": [
+            28,
+            31,
+            25,
+            17,
+            24,
+            22
+          ],
+          "min": 17,
+          "max": 31,
+          "mean": 24.555555555555557,
+          "legend": {}
+        },
+        "P_45_64_JR": {
+          "title": "P_45_64_JR",
+          "description": "P_45_64_JR",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            24,
+            25,
+            28,
+            30,
+            31
+          ],
+          "min": 24,
+          "max": 31,
+          "mean": 28,
+          "legend": {}
+        },
+        "P_65_EO_JR": {
+          "title": "P_65_EO_JR",
+          "description": "P_65_EO_JR",
+          "type": "number",
+          "count": 9,
+          "unique": 8,
+          "min": 14,
+          "max": 25,
+          "mean": 18.22222222222222,
+          "legend": {}
+        },
+        "P_ONGEHUWD": {
+          "title": "P_ONGEHUWD",
+          "description": "P_ONGEHUWD",
+          "type": "number",
+          "count": 9,
+          "unique": 7,
+          "min": 41,
+          "max": 58,
+          "mean": 47.888888888888886,
+          "legend": {}
+        },
+        "P_GEHUWD": {
+          "title": "P_GEHUWD",
+          "description": "P_GEHUWD",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 30,
+          "max": 46,
+          "mean": 39.55555555555556,
+          "legend": {}
+        },
+        "P_GESCHEID": {
+          "title": "P_GESCHEID",
+          "description": "P_GESCHEID",
+          "type": "number",
+          "count": 9,
+          "unique": 4,
+          "options": [
+            4,
+            7,
+            5,
+            6
+          ],
+          "min": 4,
+          "max": 7,
+          "mean": 5,
+          "legend": {}
+        },
+        "P_VERWEDUW": {
+          "title": "P_VERWEDUW",
+          "description": "P_VERWEDUW",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            7,
+            10,
+            9,
+            6,
+            5
+          ],
+          "min": 5,
+          "max": 10,
+          "mean": 7.666666666666667,
+          "legend": {}
+        },
+        "BEV_DICHTH": {
+          "title": "BEV_DICHTH",
+          "description": "BEV_DICHTH",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 395,
+          "max": 6289,
+          "mean": 2620.3333333333335,
+          "legend": {}
+        },
+        "AANTAL_HH": {
+          "title": "AANTAL_HH",
+          "description": "AANTAL_HH",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 7457,
+          "max": 253420,
+          "mean": 56424.22222222222,
+          "legend": {}
+        },
+        "P_EENP_HH": {
+          "title": "P_EENP_HH",
+          "description": "P_EENP_HH",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 24,
+          "max": 57,
+          "mean": 37.44444444444444,
+          "legend": {}
+        },
+        "P_HH_Z_K": {
+          "title": "P_HH_Z_K",
+          "description": "P_HH_Z_K",
+          "type": "number",
+          "count": 9,
+          "unique": 6,
+          "options": [
+            22,
+            29,
+            30,
+            31,
+            33,
+            28
+          ],
+          "min": 22,
+          "max": 33,
+          "mean": 28,
+          "legend": {}
+        },
+        "P_HH_M_K": {
+          "title": "P_HH_M_K",
+          "description": "P_HH_M_K",
+          "type": "number",
+          "count": 9,
+          "unique": 7,
+          "min": 21,
+          "max": 48,
+          "mean": 34.55555555555556,
+          "legend": {}
+        },
+        "GEM_HH_GR": {
+          "title": "GEM_HH_GR",
+          "description": "GEM_HH_GR",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1.8,
+          "max": 2.6,
+          "mean": 2.2,
+          "legend": {}
+        },
+        "P_WEST_AL": {
+          "title": "P_WEST_AL",
+          "description": "P_WEST_AL",
+          "type": "number",
+          "count": 9,
+          "unique": 8,
+          "min": 6,
+          "max": 22,
+          "mean": 12.555555555555555,
+          "legend": {}
+        },
+        "P_N_W_AL": {
+          "title": "P_N_W_AL",
+          "description": "P_N_W_AL",
+          "type": "number",
+          "count": 9,
+          "unique": 8,
+          "min": 4,
+          "max": 35,
+          "mean": 15,
+          "legend": {}
+        },
+        "P_MAROKKO": {
+          "title": "P_MAROKKO",
+          "description": "P_MAROKKO",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            1,
+            6,
+            3,
+            0,
+            2
+          ],
+          "min": 0,
+          "max": 6,
+          "mean": 2,
+          "legend": {}
+        },
+        "P_ANT_ARU": {
+          "title": "P_ANT_ARU",
+          "description": "P_ANT_ARU",
+          "type": "number",
+          "count": 9,
+          "unique": 3,
+          "options": [
+            2,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 2,
+          "mean": 1.1111111111111112,
+          "legend": {}
+        },
+        "P_SURINAM": {
+          "title": "P_SURINAM",
+          "description": "P_SURINAM",
+          "type": "number",
+          "count": 9,
+          "unique": 6,
+          "options": [
+            2,
+            9,
+            4,
+            1,
+            7,
+            3
+          ],
+          "min": 1,
+          "max": 9,
+          "mean": 3.4444444444444446,
+          "legend": {}
+        },
+        "P_TURKIJE": {
+          "title": "P_TURKIJE",
+          "description": "P_TURKIJE",
+          "type": "number",
+          "count": 9,
+          "unique": 4,
+          "options": [
+            3,
+            7,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 7,
+          "mean": 1.6666666666666667,
+          "legend": {}
+        },
+        "P_OVER_NW": {
+          "title": "P_OVER_NW",
+          "description": "P_OVER_NW",
+          "type": "number",
+          "count": 9,
+          "unique": 6,
+          "options": [
+            11,
+            10,
+            7,
+            2,
+            8,
+            4
+          ],
+          "min": 2,
+          "max": 11,
+          "mean": 6.444444444444445,
+          "legend": {}
+        },
+        "AO_UIT_TOT": {
+          "title": "AO_UIT_TOT",
+          "description": "AO_UIT_TOT",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 430,
+          "max": 23490,
+          "mean": 4816.666666666667,
+          "legend": {}
+        },
+        "WW_UIT_TOT": {
+          "title": "WW_UIT_TOT",
+          "description": "WW_UIT_TOT",
+          "type": "number",
+          "count": 9,
+          "unique": 8,
+          "min": 300,
+          "max": 13330,
+          "mean": 2750,
+          "legend": {}
+        },
+        "WWB_UITTOT": {
+          "title": "WWB_UITTOT",
+          "description": "WWB_UITTOT",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 110,
+          "max": 26670,
+          "mean": 4302.222222222223,
+          "legend": {}
+        },
+        "A_SOZ_OW": {
+          "title": "A_SOZ_OW",
+          "description": "A_SOZ_OW",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 3110,
+          "max": 70280,
+          "mean": 18451.11111111111,
+          "legend": {}
+        },
+        "AUTO_TOT": {
+          "title": "AUTO_TOT",
+          "description": "AUTO_TOT",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 8735,
+          "max": 177400,
+          "mean": 46670.555555555555,
+          "legend": {}
+        },
+        "AUTO_HH": {
+          "title": "AUTO_HH",
+          "description": "AUTO_HH",
+          "type": "number",
+          "count": 9,
+          "unique": 5,
+          "options": [
+            0.6,
+            0.7,
+            1.1,
+            1.2,
+            1
+          ],
+          "min": 0.6,
+          "max": 1.2,
+          "mean": 1.011111111111111,
+          "legend": {}
+        },
+        "AUTO_LAND": {
+          "title": "AUTO_LAND",
+          "description": "AUTO_LAND",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 184,
+          "max": 2167,
+          "mean": 1081.888888888889,
+          "legend": {}
+        },
+        "BEDR_AUTO": {
+          "title": "BEDR_AUTO",
+          "description": "BEDR_AUTO",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1005,
+          "max": 16950,
+          "mean": 4912.777777777777,
+          "legend": {}
+        },
+        "MOTOR_2W": {
+          "title": "MOTOR_2W",
+          "description": "MOTOR_2W",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 675,
+          "max": 10030,
+          "mean": 3078.3333333333335,
+          "legend": {}
+        },
+        "A_LFTJ6J": {
+          "title": "A_LFTJ6J",
+          "description": "A_LFTJ6J",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 2975,
+          "max": 52885,
+          "mean": 15482.222222222223,
+          "legend": {}
+        },
+        "A_LFTO6J": {
+          "title": "A_LFTO6J",
+          "description": "A_LFTO6J",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 5760,
+          "max": 124515,
+          "mean": 31188.333333333332,
+          "legend": {}
+        },
+        "A_BST_B": {
+          "title": "A_BST_B",
+          "description": "A_BST_B",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 7670,
+          "max": 149660,
+          "mean": 40046.11111111111,
+          "legend": {}
+        },
+        "A_BST_NB": {
+          "title": "A_BST_NB",
+          "description": "A_BST_NB",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1065,
+          "max": 27740,
+          "mean": 6623.888888888889,
+          "legend": {}
+        },
+        "OPP_TOT": {
+          "title": "OPP_TOT",
+          "description": "OPP_TOT",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1449,
+          "max": 9811,
+          "mean": 5003.111111111111,
+          "legend": {}
+        },
+        "OPP_LAND": {
+          "title": "OPP_LAND",
+          "description": "OPP_LAND",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 1405,
+          "max": 8187,
+          "mean": 4456.888888888889,
+          "legend": {}
+        },
+        "OPP_WATER": {
+          "title": "OPP_WATER",
+          "description": "OPP_WATER",
+          "type": "number",
+          "count": 9,
+          "unique": 9,
+          "min": 44,
+          "max": 1624,
+          "mean": 546.1111111111111,
+          "legend": {}
+        }
+      }
+    }
+  }
+}

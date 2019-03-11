@@ -1,0 +1,316 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "ogc_fid": {
+          "title": "ogc_fid",
+          "description": "ogc_fid",
+          "type": "number",
+          "count": 51,
+          "unique": 51,
+          "min": 72307,
+          "max": 2786043,
+          "mean": 1353966.843137255,
+          "median": 1033726,
+          "sd": 886573.8572085364,
+          "legend": {}
+        },
+        "fid": {
+          "title": "fid",
+          "description": "fid",
+          "type": "number",
+          "count": 51,
+          "unique": 51,
+          "min": 115264003,
+          "max": 128766510,
+          "mean": 118404033.39215687,
+          "median": 116935198,
+          "sd": 3597047.594012035,
+          "legend": {}
+        },
+        "namespace": {
+          "title": "namespace",
+          "description": "namespace",
+          "type": "text",
+          "count": 51,
+          "unique": 1,
+          "options": [
+            "NL.TOP10NL"
+          ]
+        },
+        "lokaalid": {
+          "title": "lokaalid",
+          "description": "lokaalid",
+          "type": "number",
+          "count": 51,
+          "unique": 51,
+          "min": 115264003,
+          "max": 128766510,
+          "mean": 118404033.39215687,
+          "median": 116935198,
+          "sd": 3597047.594012035,
+          "legend": {}
+        },
+        "brontype": {
+          "title": "brontype",
+          "description": "brontype",
+          "type": "text",
+          "count": 51,
+          "unique": 2,
+          "options": [
+            "TOP10vector",
+            "luchtfoto"
+          ]
+        },
+        "bronactual": {
+          "title": "bronactual",
+          "description": "bronactual",
+          "type": "text",
+          "count": 51,
+          "unique": 6,
+          "options": [
+            "2006/01/01",
+            "2014/01/01",
+            "2010/01/01",
+            "2011/01/01",
+            "2012/01/01",
+            "2002/01/01"
+          ]
+        },
+        "bronbeschr": {
+          "title": "bronbeschr",
+          "description": "bronbeschr",
+          "type": "longtext",
+          "count": 51,
+          "unique": 2,
+          "options": [
+            "Digitaal bestand met gecodeerde vectoren. Deze geven tezamen de topografie van Nederland weer op de schaal 1:10.000. Voorloper van TOP10NL.",
+            "Een orthogerectificeerde fotografische opname van een deel van het aardoppervlak. Gemaakt vanuit een vliegtuig."
+          ]
+        },
+        "bronnauwke": {
+          "title": "bronnauwke",
+          "description": "bronnauwke",
+          "type": "number",
+          "count": 51,
+          "unique": 2,
+          "options": [
+            2000,
+            100
+          ],
+          "min": 100,
+          "max": 2000,
+          "mean": 1031.3725490196077,
+          "median": 100,
+          "sd": 949.8173603751268,
+          "legend": {}
+        },
+        "objectbegi": {
+          "title": "objectbegi",
+          "description": "objectbegi",
+          "type": "text",
+          "count": 51,
+          "unique": 5,
+          "options": [
+            "2008/11/24",
+            "2011/08/25",
+            "2013/10/26",
+            "2015/08/30",
+            "2014/01/24"
+          ]
+        },
+        "tijdstipre": {
+          "title": "tijdstipre",
+          "description": "tijdstipre",
+          "type": "text",
+          "count": 51,
+          "unique": 7
+        },
+        "tdncode": {
+          "title": "tdncode",
+          "description": "tdncode",
+          "type": "number",
+          "count": 51,
+          "unique": 5,
+          "options": [
+            244,
+            280,
+            234,
+            340,
+            353
+          ],
+          "min": 234,
+          "max": 353,
+          "mean": 307.94117647058823,
+          "median": 340,
+          "sd": 45.39776783175703,
+          "legend": {}
+        },
+        "visualisat": {
+          "title": "visualisat",
+          "description": "visualisat",
+          "type": "number",
+          "count": 51,
+          "unique": 5,
+          "options": [
+            10510,
+            10410,
+            10310,
+            10790,
+            10600
+          ],
+          "min": 10310,
+          "max": 10790,
+          "mean": 10651.372549019608,
+          "median": 10790,
+          "sd": 157.05649798772782,
+          "legend": {}
+        },
+        "typeinfras": {
+          "title": "typeinfras",
+          "description": "typeinfras",
+          "type": "text",
+          "count": 51,
+          "unique": 1,
+          "options": [
+            "verbinding"
+          ]
+        },
+        "typeweg": {
+          "title": "typeweg",
+          "description": "typeweg",
+          "type": "text",
+          "count": 51,
+          "unique": 5,
+          "options": [
+            "(1:lokale weg)",
+            "(1:regionale weg)",
+            "(1:hoofdweg)",
+            "(1:overig)",
+            "(1:straat)"
+          ]
+        },
+        "hoofdverke": {
+          "title": "hoofdverke",
+          "description": "hoofdverke",
+          "type": "text",
+          "count": 51,
+          "unique": 4,
+          "options": [
+            "(1:gemengd verkeer)",
+            "(1:snelverkeer)",
+            "(1:voetgangers)",
+            "(1:fietsers, bromfietsers)"
+          ]
+        },
+        "fysiekvoor": {
+          "title": "fysiekvoor",
+          "description": "fysiekvoor",
+          "type": "longtext",
+          "count": 51,
+          "unique": 1,
+          "options": [
+            "(1:op beweegbaar deel van brug)"
+          ]
+        },
+        "verharding": {
+          "title": "verharding",
+          "description": "verharding",
+          "type": "text",
+          "count": 51,
+          "unique": 3,
+          "options": [
+            "> 7 meter",
+            "2 - 4 meter",
+            "4 - 7 meter"
+          ]
+        },
+        "gescheiden": {
+          "title": "gescheiden",
+          "description": "gescheiden",
+          "type": "text",
+          "count": 51,
+          "unique": 2,
+          "options": [
+            "ja",
+            "nee"
+          ]
+        },
+        "verhardi_1": {
+          "title": "verhardi_1",
+          "description": "verhardi_1",
+          "type": "text",
+          "count": 51,
+          "unique": 2,
+          "options": [
+            "verhard",
+            "onbekend"
+          ]
+        },
+        "hoogtenive": {
+          "title": "hoogtenive",
+          "description": "hoogtenive",
+          "type": "number",
+          "count": 51,
+          "unique": 1,
+          "options": [
+            0
+          ],
+          "legend": {}
+        },
+        "status": {
+          "title": "status",
+          "description": "status",
+          "type": "text",
+          "count": 51,
+          "unique": 1,
+          "options": [
+            "in gebruik"
+          ]
+        },
+        "brugnaam": {
+          "title": "brugnaam",
+          "description": "brugnaam",
+          "type": "text",
+          "count": 5,
+          "unique": 2,
+          "options": [
+            "|Hoornbrug|",
+            "|Kolkbrug|"
+          ]
+        },
+        "aantalrijs": {
+          "title": "aantalrijs",
+          "description": "aantalrijs",
+          "type": "number",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            2
+          ],
+          "legend": {}
+        },
+        "naam": {
+          "title": "naam",
+          "description": "naam",
+          "type": "text",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            "(1:Kruithuisweg)"
+          ]
+        },
+        "nwegnummer": {
+          "title": "nwegnummer",
+          "description": "nwegnummer",
+          "type": "text",
+          "count": 2,
+          "unique": 1,
+          "options": [
+            "(1:N470)"
+          ]
+        }
+      }
+    }
+  }
+}
