@@ -2,6 +2,9 @@
   <v-toolbar dense flat v-if="widget.content">
     <v-toolbar-title>CAP Messages</v-toolbar-title>
     <v-spacer></v-spacer>
+    <v-btn icon @click="getCapItems">
+      <v-icon>cached</v-icon>
+    </v-btn>
     <v-menu bottom left>
       <v-btn slot="activator" icon>
         <v-tooltip bottom>
