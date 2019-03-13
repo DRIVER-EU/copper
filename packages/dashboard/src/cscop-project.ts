@@ -22,10 +22,11 @@ import {
   ILayerServiceOptions
 } from '@csnext/cs-map';
 import { Project } from './';
-import { RasterPaint } from 'mapbox-gl';
+import { RasterPaint, MapboxOptions } from 'mapbox-gl';
 import { CapViewer } from './components/cap-viewer/cap-viewer';
 import { ScenarioControl } from './components/scenario-control/scenario-control';
 import { CapMessage } from './components/cap-message/cap-message';
+import { CapDatasource } from './shared/CapDatasource';
 
 const LAYER_URL =
   process.env.NODE_ENV !== 'production'
@@ -289,8 +290,9 @@ export const project: IProject = {
       } as any,
       widgets: [
         {
-          id: 'cap-viewer',
-          component: CapViewer          
+          id: 'cap-viewer2',
+          component: CapViewer,
+          datasource: 'capdatasource'        
         },
         {
           id: 'cap-message',
@@ -312,7 +314,7 @@ export const project: IProject = {
               style: 'mapbox://styles/mapbox/streets-v9', //'http://localhost:901/styles/klokantech-basic/style.json',
               center: [4.294637, 52.056277],
               zoom: 9
-            },
+            } as MapboxOptions,
             showDraw: true,
             showRuler: true,
             showStyles: false,
@@ -330,8 +332,8 @@ export const project: IProject = {
             timelineOptions: {
               editable: false,
               height: '100%',
-              start: new Date('2019-03-23T02:00:00.000Z'),
-              end: new Date('2019-03-24T12:00:00.000Z'),
+              start: new Date(Date.now() - 1000 * 60 * 60 * 12),
+              end: new Date(Date.now() + 1000 * 60 * 60 * 12),
               moveable: true,
               verticalScroll: true,
               margin: {

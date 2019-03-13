@@ -1,4 +1,4 @@
-import { Get, Controller, Inject, Logger as NestLogger } from '@nestjs/common';
+import { Get, Controller, Inject, Logger as NestLogger, Post, Body } from '@nestjs/common';
 import * as fs from 'fs';
 
 import { DefaultWebSocketGateway, LayerService } from '@csnext/cs-layer-server';
@@ -370,6 +370,16 @@ export class TestbedController {
   @Get('cap')
   getCapObjects(): ICAPAlert[] {
     return this.capObjects;
+  }
+
+  @Post('cap')
+  addCapObject(@Body() capObject: ICAPAlert): void {
+    this.parseCapObject(capObject).then(() => {
+      log.info(`Added cap object`);
+    }).catch((err) => {
+      log.warn(`Error adding capObject: ${err}`);
+    });
+    return;
   }
 
   @Get('version')
