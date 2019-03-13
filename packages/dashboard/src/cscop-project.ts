@@ -1,4 +1,4 @@
-import { IProject, ILayoutManagerConfig, IMenu } from '@csnext/cs-core';
+import { IProject, ILayoutManagerConfig, IMenu, TimeDataSource } from '@csnext/cs-core';
 import { LayoutManager, MdWidget, ImageWidget, Grid } from '@csnext/cs-client';
 import { CsTimeline, TimelineWidgetOptions } from '@csnext/cs-timeline';
 import './assets/example.css';
@@ -145,12 +145,7 @@ export const project: IProject = {
         } as GeojsonLayer
       ],
       'layers',
-      [
-        // {
-        //   id: "dynamic",
-        //   type: "layer-server-service",
-        //   options: { url: 'http://localhost:4000/layers/' } as any
-        // }
+      [       
         {
           id: 'event',
           type: 'layer-server-service',
@@ -162,6 +157,7 @@ export const project: IProject = {
         }
       ]
     ),
+    time: new TimeDataSource(),
     project: new Project()
   },
   theme: {
@@ -327,7 +323,7 @@ export const project: IProject = {
         {
           id: 'timeline',
           component: CsTimeline,
-          datasource: 'project',
+          datasource: 'time',
           options: {
             class: 'timeline-window-container',
             widgetBorder: 'timeline-border',
