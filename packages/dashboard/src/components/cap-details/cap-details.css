@@ -1,0 +1,15 @@
+.cap-param-name {
+    font-weight: 600;
+}
+
+.cap-param-value {
+    margin-bottom: 5px;
+}
+
+.cap-details {
+    margin: 5px;
+}
+
+.cap-details-parameters {
+    margin: 10px;
+}

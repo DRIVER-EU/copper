@@ -1,16 +1,18 @@
 import { WidgetBase, AppState } from '@csnext/cs-client';
-import './cap-message.css';
+import './cap-details.css';
 import Component from 'vue-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: 'cap-message',
-  template: require('./cap-message.html')
+  name: 'cap-details',
+  template: require('./cap-details.html')
 } as any)
-export class CapMessage extends WidgetBase {
+export class CapDetails extends WidgetBase {
 
+  public tabs = 'params';
   
   mounted() {
+    console.log(this.widget.data);
   
   }
 }

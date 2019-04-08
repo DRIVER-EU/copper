@@ -1,0 +1,35 @@
+<div>
+  <v-toolbar tabs>
+    <v-toolbar-title class="feature-details-title"
+      >{{ title }}
+    </v-toolbar-title>
+
+    <v-spacer></v-spacer>
+    <v-tooltip bottom>
+      <v-btn slot="activator" icon @click="centerFeature()">
+        <v-icon>map</v-icon>
+      </v-btn>
+      show on map</v-tooltip
+    >
+    <v-tabs right color="transparent" slot="extension" v-model="tabs">
+      <v-tab href="#params">parameters</v-tab>
+      <v-tab href="#details">details</v-tab>
+      <!-- <v-tab href="#filters">Filter</v-tab> -->
+    </v-tabs>
+  </v-toolbar>
+
+  <div style="position:absolute;top:125px;bottom:0;left:0;right:0">
+    <v-tabs-items id="feature-properties-tab" v-model="tabs">
+      <v-tab-item value="params">
+        <div v-for="param in widget.data.item.content.info.parameter" class="cap-details-parameters">
+          <div class="cap-param-name">{{ param.valueName }}</div>
+          <div class="cap-param-value" v-html="param.value"></div>
+        </div>
+      </v-tab-item>
+      <v-tab-item value="details">
+        details
+      </v-tab-item>
+      <!-- <v-tab-item value="filters"> <h1>items</h1> </v-tab-item> -->
+    </v-tabs-items>
+  </div>
+</div>
