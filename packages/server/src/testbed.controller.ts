@@ -1,7 +1,7 @@
 import { Get, Controller, Inject, Logger as NestLogger, Post, Body } from '@nestjs/common';
 import * as fs from 'fs';
 
-import { DefaultWebSocketGateway, LayerService } from '@csnext/cs-layer-server';
+import { DefaultWebSocketGateway, LayerService, ILogItem } from '@csnext/cs-layer-server';
 import {
   TestBedAdapter,
   Logger,
@@ -11,12 +11,14 @@ import {
 } from 'node-test-bed-adapter';
 
 import {
+  LogService,
   LayerSource,
   LayerDefinition
-} from '@csnext/cs-layer-server/dist/classes';
+} from '@csnext/cs-layer-server';
 import { ICAPAlert } from './classes/cap';
 import { OffsetFetchRequest } from 'kafka-node';
 import { TestBedConfig } from './classes/testbed-config';
+import _ from 'lodash';
 
 const log = Logger.instance;
 
@@ -38,7 +40,8 @@ export class TestbedController {
   constructor(
     @Inject('DefaultWebSocketGateway')
     private readonly socket: DefaultWebSocketGateway,
-    public layers: LayerService
+    public layers: LayerService,
+    public logs: LogService,
   ) {
     NestLogger.log('Init testbed');
     // load config
@@ -88,19 +91,10 @@ export class TestbedController {
 
       log.info('Consumer is connected');
       this.getTopics();
-      // this.adapter.addConsumerTopics({ topic: 'lcms_plots', offset: 0 }, true, (err, msg) => {
-      //   if (err) {
-      //     return log.error(err);
-      //   }
-      //   this.handleMessage(msg as IAdapterMessage);
-      // });
       setInterval(() => {
         if (this.socket && this.socket.server) {
           this.socket.server.emit('time', this.getAdapterState());
-        }
-        // process.stdout.write(
-        //   `Time: ${time.toUTCString()}; Speed: ${speed}; State: ${state}    \r`
-        // );
+        };
       }, 2000);
     });
     this.adapter.on('error', err =>
@@ -181,11 +175,10 @@ export class TestbedController {
                 await this.parseCapObject(message.value as ICAPAlert);
                 break;
               case 'geojson':
-                await this.parseGeojson(topic.title, message);
+                await this.parseGeojson(topic.title, message, topic.tags);
                 break;
               case 'geojson-external':
-                console.log('Geojson external');
-                console.log(JSON.stringify(message));
+                await this.parseGeojsonExternal(topic.title, message, topic.tags);
                 break;
             }
           }
@@ -204,93 +197,165 @@ export class TestbedController {
     this.handleMessage();
   }
 
-  private getCapLayer(cap: ICAPAlert): Promise<LayerDefinition> {
+  private getExternalLayer(id: string): Promise<LayerDefinition> {
     return new Promise(async (resolve, reject) => {
-      if (cap.sender) {
-        try {
-          // try to get existing layer
-          console.log('Trying to get ' + cap.sender);
-          let layer = await this.layers.getLayerById(cap.sender);
-          resolve(layer);
-          return;
-        } catch (e) {
-          console.log(e);
-          console.log('not found ' + cap.sender);
-          // layer not found, create new one
-          const def = new LayerDefinition();
-          def.title = cap.sender;
-          def.id = cap.sender;
-          def.isLive = true;
-          def.sourceType = 'geojson';
-          def.tags = ['cap'];
-          def.style = {
-            types: ['point'],
-            pointCircle: true
-          };
-          def._layerSource = {
-            id: cap.sender,
-            type: 'FeatureCollection',
-            features: []
-          } as LayerSource;
 
-          // init layer
-          this.layers
-            .initLayer(def)
-            .then(ld => {
-              // add layer
-              this.layers
-                .addLayer(ld)
-                .then(l => {
-                  resolve(l);
-                  return;
-                })
-                .catch(r => {
-                  // could not add layer
-                  reject(r);
-                  return;
-                });
-            })
-            .catch(r => {
-              // could not init layer
-              reject(r);
-              return;
-            });
-        }
-      } else {
-        reject();
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = false;
+
+        def.sourceType = 'geojson';
+        def.style = {
+          types: ['point'],
+          pointCircle: true
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private getCapLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['cap'];
+        def.style = {
+          types: ['point'],
+          pointCircle: true
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
       }
     });
   }
 
   private async parseCapObject(cap: ICAPAlert) {
+    if (cap === undefined) { return; }
     console.log('Got cap object');
+
+    // make sure parameter is always an array
+    if (cap.info && cap.info.hasOwnProperty('parameter') && !_.isArray(cap.info['parameter'])) {
+      cap.info['parameter'] = [cap.info['parameter']];
+    }
     this.capObjects.push(cap);
+
+    // add to cap log
+    const logdef = this.logs.getLogById('cap');
+    const logItem: ILogItem = {
+      id: cap.identifier,
+      start: new Date(cap.sent),
+      content: cap
+    }
+    this.logs.addLogItem('cap', logItem);
+
+    // add to cap layer
     if (cap.info && cap.info.area && cap.info.area.circle) {
-      console.log('Got circle');
       try {
-        let layer = await this.getCapLayer(cap);
+        let layer = await this.getCapLayer(cap.sender);
         if (layer !== undefined) {
           this.layers
             .getLayerSourceById(cap.sender)
             .then(source => {
               let p: number[] = this.getCirclePoint(cap);
+              let res = {};
+
               source.features.push({
                 type: 'Feature',
                 id: cap.identifier,
                 properties: cap.info,
                 geometry: {
                   type: 'Point',
-                  coordinates: p
+                  coordinates: [p[1], p[0]]
                 }
               });
+
+
               this.layers
                 .putLayerSourceById(layer.id, source)
                 .then(() => {
                   console.log('Layer saved');
                 })
-                .catch(() => {});
+                .catch(() => { });
             })
-            .catch(() => {});
+            .catch(() => { });
         }
       } catch (e) {
         console.log('Really not found');
@@ -314,14 +379,53 @@ export class TestbedController {
     return p;
   }
 
-  private parseGeojson(layerId: string, message: IAdapterMessage) {
-    console.log(JSON.stringify(message.key));
+  private async parseGeojsonExternal(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    console.log('Geojson external');
+    console.log(JSON.stringify(message));
+    this.getExternalLayer(id).then(l => {
+      if (tags) {
+        l.tags = tags;
+      }
+      l.title = message.value['title'];
+      l.externalUrl = message.value['url'];
+      this.layers.triggerLayerRefresh(id);
+    }).catch(e => {
+
+    })
+  }
+
+  private async parseGeojson(id: string, message: IAdapterMessage, tags: string[] | undefined) {
     if (
       message.value &&
-      message.value.hasOwnProperty('features') &&
-      message.value['features'].length > 0
+      message.value.hasOwnProperty('geojson') &&
+      message.value['geojson']['features'].length > 0
     ) {
-      let geojson = message.value as GeoJSON.FeatureCollection;
+      let layerId = id;
+
+      if (message.value.hasOwnProperty('properties') && message.value['properties'].hasOwnProperty('map') && message.value['properties']['map'].hasOwnProperty('name')) {
+        layerId = message.value['properties']['map']['name']['string'];
+      }
+
+      if (message.value.hasOwnProperty('properties') && message.value['properties'].hasOwnProperty('name')) {
+        layerId = message.value['properties']['name']['string'];
+      }
+
+      console.log(message.value['properties']);
+      console.log(`LayerID = ${layerId}`);
+
+      let layer = await this.getCapLayer(layerId);
+      if (layerId !== id && layer.tags.indexOf(id) === -1) {
+        layer.tags.push(id);
+      }
+
+      console.log(layer);
+
+
+
+
+
+      let geojson = message.value['geojson'] as GeoJSON.FeatureCollection;
+      // console.log(geojson);
       for (const feature of geojson.features) {
         // fix geometry object
         if (
@@ -330,6 +434,22 @@ export class TestbedController {
         ) {
           feature.geometry = feature.geometry['eu.driver.model.geojson.Point'];
         }
+
+        if (
+          feature.geometry &&
+          feature.geometry.hasOwnProperty('eu.driver.model.geojson.Polygon')
+        ) {
+          feature.geometry = feature.geometry['eu.driver.model.geojson.Polygon'];
+        }
+
+        if (
+          feature.geometry &&
+          feature.geometry.hasOwnProperty('eu.driver.model.geojson.LineString')
+        ) {
+          feature.geometry = feature.geometry['eu.driver.model.geojson.LineString'];
+        }
+
+
         // fix properties
         if (feature.properties) {
           for (const key in feature.properties) {
@@ -338,12 +458,13 @@ export class TestbedController {
               if (prop.hasOwnProperty('string')) {
                 feature.properties[key] = prop['string'];
               }
+
             }
           }
         }
       }
 
-      this.layers.putLayerSourceById(layerId, geojson as LayerSource);
+      this.layers.putLayerSourceById(layerId, geojson as any);
     }
   }
 

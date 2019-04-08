@@ -5,5 +5,5 @@ import { Logger } from '@nestjs/common';
 
 const server = new NestServer();
 server.bootstrap(ApplicationModule, 'driver-cop-server', 'localhost', 3007, 'localhost:3007').then(async ()=>{
-  Logger.log('Server Started');
+  Logger.log('COPPER Server Started');
 });

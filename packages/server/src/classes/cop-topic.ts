@@ -5,6 +5,7 @@ export class Topics {
     id: string;
     /** title */
     title: string;
+    public tags?: string[];
     /** describes type of messages published on topic */
     type: 'cap' | 'geojson' | 'geojson-external';
     /** offset id to receive older messages  */

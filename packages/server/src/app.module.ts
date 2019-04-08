@@ -1,14 +1,11 @@
 import {Module} from '@nestjs/common';
-import {LayerController, DefaultWebSocketGateway, LayerService, SourceController, FeatureController } from '@csnext/cs-layer-server';
+import {LogController, LogItemsController, LogService, LayerController, DefaultWebSocketGateway, LayerService, SourceController, FeatureController } from '@csnext/cs-layer-server';
 import * as path from 'path';
 import { TestbedController } from './testbed.controller';
-import { GraphqlConfigService } from './graphql/graph.controller';
-import { GraphQLModule } from '@nestjs/graphql';
-
 
 @Module({  
-  controllers: [LayerController, FeatureController, SourceController, TestbedController],
-  providers: [LayerService, DefaultWebSocketGateway]
+  controllers: [LogItemsController, LogController, LayerController, FeatureController, SourceController, TestbedController],
+  providers: [LogService, LayerService, DefaultWebSocketGateway]
 })
 export class ApplicationModule {
 

@@ -1,5 +1,5 @@
-import {MessageBusService} from '@csnext/cs-core';
-import {ITimelineDataSource, DataItem, TIME_TOPIC} from '@csnext/cs-timeline';
+import {MessageBusService, Topics} from '@csnext/cs-core';
+import {ITimelineDataSource, DataItem} from '@csnext/cs-timeline';
 import http from 'axios';
 import {ICAPAlert} from '../classes/cap';
 
@@ -64,7 +64,7 @@ export class CapDatasource implements ITimelineDataSource {
         .then(response => {
           this.capItems = response.data;
           this.convertCAPAlerts();
-          this.events.publish(TIME_TOPIC, 'update');
+          this.events.publish(Topics.TIME_TOPIC, 'update');
           resolve(this.capItems);
         })
         .catch(err => reject(err));
@@ -73,14 +73,14 @@ export class CapDatasource implements ITimelineDataSource {
 
   public addItem(item: DataItem) {
     this.timelineItems.push(item);
-    this.events.publish(TIME_TOPIC, 'added-item', item);
+    this.events.publish(Topics.TIME_TOPIC, 'added-item', item);
   }
 
   public removeItem(item: DataItem) {
     const removedItem = this.timelineItems.find(ti => ti.id === item.id);
     if (removedItem) {
       this.timelineItems = this.timelineItems.filter(ti => ti.id != removedItem.id);
-      this.events.publish(TIME_TOPIC, 'deleted', item);
+      this.events.publish(Topics.TIME_TOPIC, 'deleted', item);
     }
   }
 
@@ -101,7 +101,7 @@ export class CapDatasource implements ITimelineDataSource {
     switch (action) {
       case 'update':
         this.getCAPAlerts().then(() => {
-          this.events.publish(TIME_TOPIC, 'update');
+          this.events.publish(Topics.TIME_TOPIC, 'update');
         });
         break;
       default:

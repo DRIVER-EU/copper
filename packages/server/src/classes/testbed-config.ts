@@ -5,7 +5,7 @@ export class TestBedConfig {
   public enabled?: boolean;
 
   /** list of topic to subscribe to */
-  public topics?: Topics[];
+  public topics?: Topics[];  
 
   /** client id used by testbed adapter */
   public clientId?: string;

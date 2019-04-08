@@ -1,12 +1,11 @@
 import { IProject, ILayoutManagerConfig, IMenu, TimeDataSource } from '@csnext/cs-core';
-import { LayoutManager, MdWidget, ImageWidget, Grid } from '@csnext/cs-client';
-import { CsTimeline, TimelineWidgetOptions } from '@csnext/cs-timeline';
+import { LayoutManager, MdWidget, ImageWidget, Grid, LogDataSource } from '@csnext/cs-client';
+import { CsTimeline, TimelineWidgetOptions, TimelineTooltipOption } from '@csnext/cs-timeline';
+import { CsLogList, LogListOptions } from '@csnext/cs-log';
 import './assets/example.css';
-import './assets/sgbo.css';
+import './assets/copper.css';
 import {
-  SplitPanel,
-  SplitPanelDashboardOptions,
-  SplitPanelOptions
+  SplitPanel
 } from '@csnext/cs-split-panel';
 import {
   CsMap,
@@ -16,21 +15,26 @@ import {
   MapLayers,
   LayerSource,
   GeojsonLayer,
-  ITimeInterpolationExtensionOptions,
   ILayerExtensionType,
   IWmsTimeExtensionOptions,
   ILayerServiceOptions
 } from '@csnext/cs-map';
 import { Project } from './';
+import Vue from 'vue';
 import { RasterPaint, MapboxOptions } from 'mapbox-gl';
-import { CapViewer } from './components/cap-viewer/cap-viewer';
-import { ScenarioControl } from './components/scenario-control/scenario-control';
-import { CapMessage } from './components/cap-message/cap-message';
-import { CapDatasource } from './shared/CapDatasource';
+import { ScenarioControl, ScenarioControlOptions } from './components/scenario-control/scenario-control';
+import { CapDetails } from './components/cap-details/cap-details';
+
+Vue.component('cap-details', CapDetails);
 
 const LAYER_URL =
   process.env.NODE_ENV !== 'production'
     ? 'http://localhost:3007/'
+    : 'http://cool5.sensorlab.tno.nl:4022/';
+
+const LOG_URL = 
+  process.env.NODE_ENV !== 'production'
+    ? 'http://localhost:3007/logs/'
     : 'http://cool5.sensorlab.tno.nl:4022/';
 
 LayoutManager.add({
@@ -56,6 +60,7 @@ export const project: IProject = {
     }
   },
   datasources: {
+    caplog: new LogDataSource(LOG_URL, 'cap'),
     layers: new LayerSources({
       buienradar: {
         title: 'Buienradar',
@@ -152,7 +157,7 @@ export const project: IProject = {
           type: 'layer-server-service',
           options: {
             url: LAYER_URL,
-            activeLayers: ['buurt'],
+            activeLayers: [],
             openFeatureDetails: true
           } as ILayerServiceOptions
         }
@@ -177,7 +182,7 @@ export const project: IProject = {
   rightSidebar: {
     open: false,
     clipped: true,
-    width: 500,
+    width: 600,
     // floating: true,
     dashboard: {
       widgets: [{ component: MdWidget, data: 'right sidebar' }]
@@ -200,7 +205,7 @@ export const project: IProject = {
     //         break;
     //     }
     //   })
-    // },
+    // }
   ],
   dashboards: [
     {
@@ -290,17 +295,24 @@ export const project: IProject = {
       } as any,
       widgets: [
         {
-          id: 'cap-viewer2',
-          component: CapViewer,
-          datasource: 'capdatasource'        
-        },
-        {
-          id: 'cap-message',
-          component: CapMessage          
-        },
+          id: 'cap-viewer',
+          component: CsLogList,
+          options: {
+            showToolbar: true,
+            title: 'Cap Messages',
+            logSource: 'caplog',
+            titleTemplate: "{{content.info.headline}}",
+            subTitleTemplate: "{{content.sent}} - {{content.info.senderName}} - {{content.info.event}} - {{content.info.severity}} - {{content.info.category}}",
+            openDetailsOnClick: true,
+            detailsComponent: 'cap-details'
+          } as LogListOptions          
+        },       
         {
           id: 'scenario-control',
-          component: ScenarioControl          
+          component: ScenarioControl,
+          options: {
+            timesource: 'time'
+          } as ScenarioControlOptions
         },
         {
           id: 'map',
@@ -329,18 +341,17 @@ export const project: IProject = {
           options: {
             class: 'timeline-window-container',
             widgetBorder: 'timeline-border',
+            logSource: 'caplog',
             timelineOptions: {
               editable: false,
               height: '100%',
+              type: 'point',
               start: new Date(Date.now() - 1000 * 60 * 60 * 12),
               end: new Date(Date.now() + 1000 * 60 * 60 * 12),
-              moveable: true,
+              moveable: true,              
               verticalScroll: true,
               margin: {
                 item: 2
-              },
-              tooltip: {
-                followMouse: true
               }
             }
           } as TimelineWidgetOptions,
