@@ -27,7 +27,7 @@ npm manifest:
       "linkcs": "yarn link @csnext/cs-client && yarn link @csnext/cs-split-panel && yarn link @csnext/cs-map && yarn link @csnext/cs-timeline && yarn link @csnext/cs-core  && yarn link @csnext/cs-form",
       "unlinkcs": "yarn unlink @csnext/cs-core && yarn unlink @csnext/cs-client && yarn unlink @csnext/cs-split-panel && yarn unlink @csnext/cs-map && yarn unlink @csnext/cs-timeline",
       "dev": "yarn serve",
-      "clean": "del-cli dist"
+      "clean": "del-cli dist lib node_modules"
     },
     "dependencies": {
       "@csnext/cs-client": "^0.0.106-beta.5+3d3ed91",

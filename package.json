@@ -7,7 +7,7 @@
   },
   "scripts": {
     "postinstall": "lerna bootstrap && lerna run link",
-    "dev:server": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon  packages/server/dist/index.js\"",
+    "dev:server": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon --watch ./packages/server/dist packages/server/dist/index.js\"",
     "dev:client": "lerna run dev --parallel",
     "dev": "yarn dev:server && yarn dev:all",
     "clean": "lerna run --parallel clean",
@@ -28,5 +28,8 @@
       "configs/*"
     ],
     "delay": "2"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.10"
   }
 }
