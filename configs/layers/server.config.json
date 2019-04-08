@@ -724,125 +724,6 @@
       "meta": "ziekenhuis.meta.json"
     },
     {
-      "title": "eelco.naarding@sim-ci.com",
-      "id": "eelco.naarding@sim-ci.com",
-      "isLive": true,
-      "sourceType": "geojson",
-      "tags": [
-        "cap"
-      ],
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "version": "0.0.1"
-    },
-    {
-      "title": "htm",
-      "id": "htm",
-      "isLive": true,
-      "sourceType": "geojson",
-      "tags": [
-        "cap"
-      ],
-      "style": {
-        "title": "{{title}}",
-        "fill": false,
-        "mapbox": {
-          "symbolLayout": {},
-          "symbolPaint": {},
-          "circleLayout": {},
-          "circlePaint": {
-            "circle-radius": 12,
-            "circle-color": "blue"
-          }
-        },
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "version": "0.0.1",
-      "typeId": "poi",
-      "description": "",
-      "opacity": 1,
-      "color": "blue",
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
-    },
-    {
-      "title": "no-reply@crisissuite.com",
-      "id": "no-reply@crisissuite.com",
-      "isLive": true,
-      "sourceType": "geojson",
-      "tags": [
-        "cap"
-      ],
-      "style": {
-        "title": "{{title}}",
-        "fill": false,
-        "mapbox": {
-          "symbolLayout": {},
-          "symbolPaint": {},
-          "circleLayout": {},
-          "circlePaint": {}
-        },
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "version": "0.0.1",
-      "typeId": "poi",
-      "description": "",
-      "opacity": 1,
-      "color": "blue",
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
-    },
-    {
-      "title": "htm@crisissuite.com",
-      "id": "htm@crisissuite.com",
-      "isLive": true,
-      "sourceType": "geojson",
-      "tags": [
-        "cap"
-      ],
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "version": "0.0.1"
-    },
-    {
-      "title": "stedin@crisissuite.com",
-      "id": "stedin@crisissuite.com",
-      "isLive": true,
-      "sourceType": "geojson",
-      "tags": [
-        "cap"
-      ],
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "version": "0.0.1"
-    },
-    {
       "id": "testlayer",
       "sourceType": "geojson",
       "version": "0.0.1",
@@ -890,10 +771,249 @@
       "openFeatureDetails": true,
       "visible": true,
       "meta": "testlayer.meta.json"
+    },
+    {
+      "id": "flood actual",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": false,
+      "tags": [
+        "flooding"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "b3_1200_actual_zki",
+      "style": {
+        "title": "{{title}}",
+        "fill": true,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {},
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": "blue",
+            "fill-opacity": 0.5
+          }
+        },
+        "types": [],
+        "pointCircle": false
+      },
+      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=driver:dryrun1_watermask_tsx_sim_genwm52&outputFormat=application/json",
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
+      "id": "flood actual",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": false,
+      "tags": [
+        "flooding"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "Walktrough Test WMS RADAR watermask The Hague (driver:dryrun1_watermask_tsx_sim)",
+      "style": {
+        "types": [],
+        "pointCircle": true
+      },
+      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
+    },
+    {
+      "id": "KETEN",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "lcms-plots"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "KETEN",
+      "style": {
+        "title": "{{Name}}",
+        "fill": true,
+        "mapbox": {
+          "symbolLayout": {
+            "text-field": "{Name}",
+            "text-anchor": "center",
+            "text-size": 12,
+            "text-offset": [
+              0,
+              1.5
+            ],
+            "icon-text-fit": "height"
+          },
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {
+            "circle-radius": 15,
+            "circle-opacity": 0.5,
+            "circle-color": "blue"
+          },
+          "lineLayout": {},
+          "linePaint": {},
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-opacity": "",
+            "line-width": "",
+            "line-color": "",
+            "line-opacity": "",
+            "fill-color": ""
+          }
+        },
+        "types": [
+          "point",
+          "fill"
+        ],
+        "pointCircle": true,
+        "popup": "{{properties.Name}}",
+        "mapTitle": "Name"
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
+      "id": "zorg",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "lcms-plots"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "zorg",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "AC",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "lcms-plots"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "AC",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "eelco.naarding@sim-ci.com",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "eelco.naarding@sim-ci.com",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "eelco.naarding",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "eelco.naarding",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "htm@sim-ci.com",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "htm@sim-ci.com",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "flood actual",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": false,
+      "tags": [
+        "flooding"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "Walktrough Test WMS RADAR watermask The Hague (driver:dryrun1_watermask_tsx_sim)",
+      "style": {
+        "types": [],
+        "pointCircle": true
+      },
+      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
     }
   ],
   "sourcePath": "./sources/",
   "importPath": "./import",
+  "logs": [
+    {}
+  ],
   "connections": {
     "journal": {
       "user": "root",
