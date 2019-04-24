@@ -24,8 +24,10 @@ import Vue from 'vue';
 import { RasterPaint, MapboxOptions } from 'mapbox-gl';
 import { ScenarioControl, ScenarioControlOptions } from './components/scenario-control/scenario-control';
 import { CapDetails } from './components/cap-details/cap-details';
+import { SimDetails } from './components/sim-details/sim-details';
 
 Vue.component('cap-details', CapDetails);
+Vue.component('sim-details', SimDetails);
 
 const LAYER_URL =
   process.env.NODE_ENV !== 'production'
@@ -61,6 +63,7 @@ export const project: IProject = {
   },
   datasources: {
     caplog: new LogDataSource(LOG_URL, 'cap'),
+    simlog: new LogDataSource(LOG_URL, 'sim'),
     layers: new LayerSources({
       buienradar: {
         title: 'Buienradar',
@@ -265,7 +268,7 @@ export const project: IProject = {
             direction: 'vertical',
             elements: [
               {
-                size: 80,
+                size: 82,
                 splitpanel: {
                   direction: 'horizontal',
                   elements: [
@@ -279,7 +282,7 @@ export const project: IProject = {
                           { size: 20, widgetId: 'scenario-control' },
                           {
                             size: 80,
-                            widgetId: 'cap-viewer'
+                            widgetId: 'sim-viewer'
                           }
                         ]
                       }
@@ -288,7 +291,7 @@ export const project: IProject = {
                   ]
                 }
               },
-              { size: 20, widgetId: 'timeline' }
+              { size: 18, widgetId: 'timeline' }
             ]
           }
         } as any
@@ -306,7 +309,21 @@ export const project: IProject = {
             openDetailsOnClick: true,
             detailsComponent: 'cap-details'
           } as LogListOptions          
-        },       
+        }, 
+        {
+          id: 'sim-viewer',
+          component: CsLogList,
+          options: {
+            showToolbar: true,
+            title: 'Simulation Messages',
+            logSource: 'simlog',
+            titleTemplate: "{{content.headline}}",
+            subTitleTemplate: "{{content.owner}} - {{content.destination}} - {{content.sent}}",
+            openDetailsOnClick: true,
+            reverseOrder: true,
+            detailsComponent: 'sim-details'
+          } as LogListOptions          
+        },      
         {
           id: 'scenario-control',
           component: ScenarioControl,

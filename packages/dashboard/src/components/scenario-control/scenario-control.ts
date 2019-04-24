@@ -67,6 +67,6 @@ Vue.filter('formatTime', (value: number) => {
 Vue.filter('formatDay', (value: number) => {
   if (value !== undefined) {
     const date = new Date(value);
-    return date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear();
+    return `${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}`;
   }
 });

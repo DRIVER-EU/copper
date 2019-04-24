@@ -7,7 +7,8 @@ import {
   Logger,
   LogLevel,
   ITopicMetadataItem,
-  IAdapterMessage
+  IAdapterMessage,
+  IDefaultKey
 } from 'node-test-bed-adapter';
 
 import {
@@ -19,6 +20,8 @@ import { ICAPAlert } from './classes/cap';
 import { OffsetFetchRequest } from 'kafka-node';
 import { TestBedConfig } from './classes/testbed-config';
 import _ from 'lodash';
+import { RequestUnitTransport } from './classes/request-unittransport';
+import { Item } from './classes/entity_item';
 
 const log = Logger.instance;
 
@@ -180,6 +183,12 @@ export class TestbedController {
               case 'geojson-external':
                 await this.parseGeojsonExternal(topic.title, message, topic.tags);
                 break;
+              case 'request-unittransport':
+                await this.parseRequestUnittransport(topic.title, message, topic.tags);
+                break;
+              case 'entity-item':
+                await this.parseEntityItem(topic.title, message, topic.tags);
+                break;
             }
           }
 
@@ -307,6 +316,224 @@ export class TestbedController {
     });
   }
 
+  private getRouteRequestLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['request-unittransport'];
+        def.style = {
+          types: ['line'],
+          pointCircle: false
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private getEntityItemLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['entity-item'];
+        def.style = {
+          types: ['point'],
+          pointCircle: true
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private async parseRequestUnittransport(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    if (!message || !message.value) return;
+    var value: RequestUnitTransport = message.value as RequestUnitTransport;
+    value['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+    value['headline'] = 'Request Unittransport';
+
+    // add to sim log
+    const logdef = this.logs.getLogById('sim');
+    const logItem: ILogItem = {
+      id: (message.key as IDefaultKey).distributionID,
+      start: new Date((message.key as IDefaultKey).dateTimeSent),
+      content: value
+    }
+    this.logs.addLogItem('sim', logItem);
+    
+    // add to RequestUnitTransport layer
+    if (value.route && value.route.length > 0) {
+      try {
+        let layer = await this.getRouteRequestLayer(value.owner);
+        if (layer !== undefined) {
+          this.layers
+            .getLayerSourceById(value.owner)
+            .then(source => {
+              const f = {
+                type: 'Feature',
+                id: value.guid,
+                properties: value,
+                geometry: {
+                  type: 'LineString',
+                  coordinates: value.route.map(a => {return [a.longitude, a.latitude]})
+                }
+              };
+              source.features.push(f);
+              console.log(JSON.stringify(f));
+
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log(`Saved layer ${layer.id}`);
+                })
+                .catch(() => { });
+            })
+            .catch(() => { });
+        }
+      } catch (e) {
+        console.log('Really not found');
+        console.log(e);
+      }
+    }
+    
+    if (this.socket && this.socket.server) {
+      this.socket.server.emit('sim', value);
+    }
+  }
+
+  private async parseEntityItem(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    if (!message || !message.value) return;
+    var unit: Item = message.value as Item;
+    unit['headline'] = 'Unit update';
+    unit['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+
+    // add to sim log
+    const logdef = this.logs.getLogById('sim');
+    const logItem: ILogItem = {
+      id: unit.guid,
+      start: new Date((message.key as IDefaultKey).dateTimeSent),
+      content: unit
+    }
+    this.logs.addLogItem('sim', logItem);
+    
+    // add to EntityItem layer
+    if (unit.location) {
+      try {
+        let layer = await this.getEntityItemLayer(unit.owner);
+        if (layer !== undefined) {
+          this.layers
+            .getLayerSourceById(unit.owner)
+            .then(source => {
+              const f = {
+                type: 'Feature',
+                id: unit.guid,
+                properties: unit,
+                geometry: {
+                  type: 'Point',
+                  coordinates: [unit.location.longitude, unit.location.latitude]
+                }
+              };
+              source.features.push(f);
+              console.log(JSON.stringify(f));
+
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log(`Saved layer ${layer.id}`);
+                })
+                .catch(() => { });
+            })
+            .catch(() => { });
+        }
+      } catch (e) {
+        console.log('Really not found');
+        console.log(e);
+      }
+    }
+    
+    if (this.socket && this.socket.server) {
+      this.socket.server.emit('unit', unit);
+    }
+  }
+
   private async parseCapObject(cap: ICAPAlert) {
     if (cap === undefined) { return; }
     console.log('Got cap object');
@@ -351,7 +578,7 @@ export class TestbedController {
               this.layers
                 .putLayerSourceById(layer.id, source)
                 .then(() => {
-                  console.log('Layer saved');
+                  console.log(`Saved layer ${layer.id}`);
                 })
                 .catch(() => { });
             })
@@ -417,13 +644,7 @@ export class TestbedController {
       if (layerId !== id && layer.tags.indexOf(id) === -1) {
         layer.tags.push(id);
       }
-
       console.log(layer);
-
-
-
-
-
       let geojson = message.value['geojson'] as GeoJSON.FeatureCollection;
       // console.log(geojson);
       for (const feature of geojson.features) {
