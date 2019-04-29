@@ -7,7 +7,7 @@ export class Topics {
     title: string;
     public tags?: string[];
     /** describes type of messages published on topic */
-    type: 'cap' | 'geojson' | 'geojson-external' | 'request-unittransport' | 'entity-item';
+    type: 'cap' | 'geojson' | 'geojson-external' | 'request-unittransport' | 'entity-item' | 'affected-area';
     /** offset id to receive older messages  */
     offset?: number;
   }

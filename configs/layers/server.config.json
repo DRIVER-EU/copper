@@ -934,44 +934,6 @@
       }
     },
     {
-      "id": "eelco.naarding@sim-ci.com",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": true,
-      "tags": [
-        "cap"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "eelco.naarding@sim-ci.com",
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
-    },
-    {
-      "id": "eelco.naarding",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": true,
-      "tags": [
-        "cap"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "eelco.naarding",
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
-    },
-    {
       "id": "htm@sim-ci.com",
       "sourceType": "geojson",
       "version": "0.0.1",
@@ -1007,6 +969,64 @@
         "pointCircle": true
       },
       "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
+    },
+    {
+      "id": "unittransportrequest",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "unittransportrequest.json",
+      "title": "Unit transport request",
+      "sourceUrl": "http://localhost:4000/sources/unittransportrequest",
+      "style": {
+        "types": []
+      },
+      "meta": "unittransportrequest.meta.json"
+    },
+    {
+      "id": "entityupdate",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "entityupdate.json",
+      "title": "Unit update",
+      "sourceUrl": "http://localhost:4000/sources/entityupdate",
+      "style": {
+        "types": [],
+        "pointCircle": true
+      },
+      "meta": "entityupdate.meta.json"
+    },
+    {
+      "id": "affectedarea",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "affectedarea.json",
+      "title": "affectedarea",
+      "sourceUrl": "http://localhost:4000/sources/affectedarea",
+      "style": {
+        "types": []
+      },
+      "meta": "affectedarea.meta.json"
     }
   ],
   "sourcePath": "./sources/",

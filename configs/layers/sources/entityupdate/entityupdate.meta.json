@@ -1,0 +1,120 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "guid": {
+          "title": "guid",
+          "description": "guid",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "vehicle1"
+          ]
+        },
+        "name": {
+          "title": "name",
+          "description": "name",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "vehicle1 ignoring"
+          ]
+        },
+        "owner": {
+          "title": "owner",
+          "description": "owner",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "sumo"
+          ]
+        },
+        "location": {
+          "title": "location",
+          "description": "location",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            {
+              "latitude": 51.9207569291235,
+              "longitude": 4.479538956117142,
+              "altitude": 0
+            }
+          ]
+        },
+        "orientation": {
+          "title": "orientation",
+          "description": "orientation",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            {
+              "yaw": 163.7536704833741,
+              "pitch": 0,
+              "roll": 0
+            }
+          ]
+        },
+        "velocity": {
+          "title": "velocity",
+          "description": "velocity",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            {
+              "yaw": 163.7536704833741,
+              "pitch": 0,
+              "magnitude": 13.679648520713673
+            }
+          ]
+        },
+        "visibleForParticipant": {
+          "title": "visibleForParticipant",
+          "description": "visibleForParticipant",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            true
+          ]
+        },
+        "movable": {
+          "title": "movable",
+          "description": "movable",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            true
+          ]
+        },
+        "headline": {
+          "title": "headline",
+          "description": "headline",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Unit update"
+          ]
+        },
+        "sent": {
+          "title": "sent",
+          "description": "sent",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "2019-04-25T12:05:30.000Z"
+          ]
+        }
+      }
+    }
+  }
+}
