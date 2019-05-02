@@ -4,6 +4,7 @@ import { CsTimeline, TimelineWidgetOptions, TimelineTooltipOption } from '@csnex
 import { CsLogList, LogListOptions } from '@csnext/cs-log';
 import './assets/example.css';
 import './assets/copper.css';
+import * as translations from './assets/locales.json';
 import {
   SplitPanel
 } from '@csnext/cs-split-panel';
@@ -29,25 +30,21 @@ import { SimDetails } from './components/sim-details/sim-details';
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
 
-const LAYER_URL =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:3007/'
-    : 'http://cool5.sensorlab.tno.nl:4022/';
-
-const LOG_URL = 
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:3007/logs/'
-    : 'http://cool5.sensorlab.tno.nl:4022/';
+const LAYER_URL = process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LOG_URL = process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
+const SOCKET_SERVER_URL = process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 
 LayoutManager.add({
   id: 'split-panel',
   component: SplitPanel
 } as ILayoutManagerConfig);
 
+console.log(translations);
+
 export const project: IProject = { 
   server: {
     useSocket: true,
-    socketServerUrl: 'http://localhost:3007',
+    socketServerUrl: SOCKET_SERVER_URL,
   }, 
   header: {
     title: '',
@@ -60,6 +57,11 @@ export const project: IProject = {
     search: {
       enabled: false
     }
+  },
+  languages: {
+    defaultLanguage: 'en',
+    fallbackLanguage: 'en',
+    localeMessages: translations.default
   },
   datasources: {
     caplog: new LogDataSource(LOG_URL, 'cap'),
@@ -341,8 +343,8 @@ export const project: IProject = {
               'pk.eyJ1IjoiZGFteWxlbiIsImEiOiJfdUUzLVhNIn0.7-Ogdnc6voJfUXOMBE1VPA',
             mbOptions: {
               style: 'mapbox://styles/mapbox/streets-v9', //'http://localhost:901/styles/klokantech-basic/style.json',
-              center: [4.294637, 52.056277],
-              zoom: 9
+              center: [4.474612, 51.920446],
+              zoom: 13
             } as MapboxOptions,
             showDraw: true,
             showRuler: true,

@@ -3,7 +3,7 @@
   "topics": [
     { "id": "simulation_request_unittransport", "type": "request-unittransport", "title": "request-unittransport", "offset": 0 },
     { "id": "simulation_entity_item", "type": "entity-item", "title": "entity-item", "offset": 0 },
-    {"id": "sumo_AffectedArea", "type": "affected-area", "title": "affected-area", "offset": 0}
+    { "id": "sumo_AffectedArea", "type": "affected-area", "title": "affected-area", "offset": 0}
   ],
   "oldtopics": [
     { "id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20},
