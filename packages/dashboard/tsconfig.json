@@ -12,6 +12,11 @@
     "resolveJsonModule": false,
     "importHelpers": true,
     "sourceMap": true,
+    "skipLibCheck": false,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
     "types": ["node"],
     "paths": {
