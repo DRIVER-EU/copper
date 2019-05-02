@@ -1,6 +1,68 @@
 {
   "layers": [
     {
+      "id": "schets",
+      "source": "schets.json",
+      "sourceType": "geojson",
+      "title": "Schets",
+      "version": "0.0.1",
+      "isEditable": true,
+      "tags": [
+        "Drawing"
+      ],
+      "meta": "schets.meta.json",
+      "color": "lightgray",
+      "sourceUrl": "http://localhost:4000/sources/schets",
+      "style": {
+        "pointCircle": true,
+        "icons": {
+          "incident": "images/incident-icon.png",
+          "demonstratie": "images/demonstratie.png"
+        },
+        "mapbox": {
+          "symbolLayout": {
+            "icon-image": [
+              "get",
+              "type"
+            ],
+            "icon-ignore-placement": true,
+            "icon-allow-overlap": true,
+            "text-field": "{title}",
+            "text-offset": [
+              0,
+              2
+            ]
+          },
+          "circlePaint": {
+            "circle-radius": 18,
+            "circle-color": [
+              "match",
+              [
+                "get",
+                "type"
+              ],
+              "incident",
+              "red",
+              "demonstratie",
+              "blue",
+              "#ccc"
+            ],
+            "circle-opacity": 0.5
+          },
+          "fillPaint": {
+            "fill-color": "blue",
+            "fill-opacity": 0.5
+          },
+          "linePaint": {
+            "line-color": "blue",
+            "line-opacity": 0.55,
+            "line-width": 6
+          }
+        },
+        "types": []
+      }
+    },
+    {
       "id": "lcms-geojson",
       "source": "lcms-geojson.json",
       "sourceType": "geojson",
@@ -81,11 +143,7 @@
         "types": [
           "point"
         ],
-        "pointCircle": true,
-        "icons": {
-          "incident": "images/incident-icon.png",
-          "demonstratie": "images/demonstratie.png"
-        }
+        "pointCircle": true
       },
       "typeId": "poi",
       "description": "",
@@ -562,11 +620,45 @@
       "sourceUrl": "http://localhost:4000/sources/vluchtelingen",
       "version": "0.0.1",
       "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": {
+              "property": "P_00_14_JR",
+              "stops": [
+                [
+                  13,
+                  "blue"
+                ],
+                [
+                  23,
+                  "red"
+                ]
+              ]
+            }
+          }
+        },
         "types": [
           "fill"
-        ]
+        ],
+        "defaultLegendProperty": "P_00_14_JR"
       },
-      "meta": "vluchtelingen.meta.json"
+      "meta": "vluchtelingen.meta.json",
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "tags": [
+        " "
+      ],
+      "color": "blue",
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
     },
     {
       "id": "vvt",
@@ -773,62 +865,23 @@
       "meta": "testlayer.meta.json"
     },
     {
-      "id": "flood actual",
+      "id": "stedin@sim-ci.com",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "blue",
-      "isLive": false,
+      "isLive": true,
       "tags": [
-        "flooding"
+        "cap"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "b3_1200_actual_zki",
+      "title": "stedin@sim-ci.com",
       "style": {
-        "title": "{{title}}",
-        "fill": true,
-        "mapbox": {
-          "symbolLayout": {},
-          "symbolPaint": {},
-          "circleLayout": {},
-          "circlePaint": {},
-          "fillLayout": {},
-          "fillPaint": {
-            "fill-color": "blue",
-            "fill-opacity": 0.5
-          }
-        },
-        "types": [],
-        "pointCircle": false
-      },
-      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=driver:dryrun1_watermask_tsx_sim_genwm52&outputFormat=application/json",
-      "typeId": "poi",
-      "description": "",
-      "opacity": 1,
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
-    },
-    {
-      "id": "flood actual",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": false,
-      "tags": [
-        "flooding"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "Walktrough Test WMS RADAR watermask The Hague (driver:dryrun1_watermask_tsx_sim)",
-      "style": {
-        "types": [],
+        "types": [
+          "point"
+        ],
         "pointCircle": true
-      },
-      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
+      }
     },
     {
       "id": "KETEN",
@@ -844,48 +897,52 @@
       "tileSupport": false,
       "title": "KETEN",
       "style": {
-        "title": "{{Name}}",
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": " B2_1200_predicted_3di",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "flood prediction"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": " B2_1200_predicted_3di",
+      "style": {
+        "title": "{{title}}",
         "fill": true,
         "mapbox": {
-          "symbolLayout": {
-            "text-field": "{Name}",
-            "text-anchor": "center",
-            "text-size": 12,
-            "text-offset": [
-              0,
-              1.5
-            ],
-            "icon-text-fit": "height"
+          "symbolLayout": {},
+          "symbolPaint": {
+            "text-opacity": 0.39,
+            "icon-opacity": 0.39
           },
-          "symbolPaint": {},
           "circleLayout": {},
           "circlePaint": {
-            "circle-radius": 15,
-            "circle-opacity": 0.5,
-            "circle-color": "blue"
+            "circle-opacity": 0.39
           },
-          "lineLayout": {},
-          "linePaint": {},
           "fillLayout": {},
           "fillPaint": {
-            "fill-opacity": "",
-            "line-width": "",
-            "line-color": "",
-            "line-opacity": "",
-            "fill-color": ""
+            "fill-color": "blue"
           }
         },
         "types": [
           "point",
           "fill"
         ],
-        "pointCircle": true,
-        "popup": "{{properties.Name}}",
-        "mapTitle": "Name"
+        "pointCircle": true
       },
       "typeId": "poi",
       "description": "",
-      "opacity": 1,
+      "opacity": 39,
       "types": [
         "poi",
         "geojson"
@@ -894,18 +951,17 @@
       "visible": true
     },
     {
-      "id": "zorg",
+      "id": "htm@crisissuite.com",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "blue",
       "isLive": true,
       "tags": [
-        "cap",
-        "lcms-plots"
+        "cap"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "zorg",
+      "title": "htm@crisissuite.com",
       "style": {
         "types": [
           "point"
@@ -914,18 +970,17 @@
       }
     },
     {
-      "id": "AC",
+      "id": "stedin@crisissuite.com",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "blue",
       "isLive": true,
       "tags": [
-        "cap",
-        "lcms-plots"
+        "cap"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "AC",
+      "title": "stedin@crisissuite.com",
       "style": {
         "types": [
           "point"
@@ -953,44 +1008,6 @@
       }
     },
     {
-      "id": "eelco.naarding",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": true,
-      "tags": [
-        "cap"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "eelco.naarding",
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
-    },
-    {
-      "id": "htm@sim-ci.com",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": true,
-      "tags": [
-        "cap"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "htm@sim-ci.com",
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
-    },
-    {
       "id": "flood actual",
       "sourceType": "geojson",
       "version": "0.0.1",
@@ -1001,12 +1018,94 @@
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "Walktrough Test WMS RADAR watermask The Hague (driver:dryrun1_watermask_tsx_sim)",
+      "title": "B3_20190523_0845_actual_zki",
       "style": {
         "types": [],
         "pointCircle": true
       },
-      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
+      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=driver:dryrun2_watermask_s1_sim_genwm52&outputFormat=application/json"
+    },
+    {
+      "id": "B1_2300_predicted_3di",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "flood prediction"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "B1_2300_predicted_3di",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
+    },
+    {
+      "id": "B2_1400_predicted_3di",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "flood prediction"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "B2_1400_predicted_3di",
+      "style": {
+        "title": "{{title}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {},
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": "blue"
+          }
+        },
+        "types": [
+          "point",
+          "fill"
+        ],
+        "pointCircle": true
+      },
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
+      "id": "ROT",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "blue",
+      "isLive": true,
+      "tags": [
+        "cap",
+        "lcms-plots"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "ROT",
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      }
     }
   ],
   "sourcePath": "./sources/",

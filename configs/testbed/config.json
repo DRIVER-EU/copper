@@ -1,15 +1,18 @@
 {
-  "enabled": true,
+  "enabled": false,
   "topics": [
-    { "id": "lcms_plots", "type": "geojson", "title": "lcms-plots", "offset": 20 },
-    { "id": "standard_cap", "type": "cap", "title": "lcms-cap", "offset": 6382 },
-    { "id": "flood_actual", "type": "geojson-external", "tags": ["flooding"], "title": "flood actual"}
+    { "id": "lcms_plots", "type": "geojson", "title": "lcms-plots", "offset": 0 },
+    { "id": "standard_cap", "type": "cap", "title": "lcms-cap", "offset": 0 },
+    { "id": "flood_actual", "type": "geojson-external", "tags": ["flooding"], "title": "flood actual", "offset": 1},
+    { "id": "flood_prediction_geojson", "type": "geojson", "tags": ["flooding"], "title": "flood prediction", "offset": 0}
+    
+
   ],
   "oldtopics": [
     { "id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20}
   ],
-  "clientId": "ConsumerCOP",
+  "clientId": "Copper",
   "fromOffset": true,
-  "kafkaHost": "tb4.driver-testbed.eu:3541",
-  "schemaRegistry": "tb4.driver-testbed.eu:3542"
+  "kafkaHost": "driver-testbed.eu:3551",
+  "schemaRegistry": "driver-testbed.eu:3552"
 }

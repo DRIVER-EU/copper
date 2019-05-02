@@ -1,0 +1,11 @@
+{
+  "featureTypes": {
+    "incident": {
+      "mode": "draw_point",
+      "icon": "incident-icon.png",
+      "properties": {
+        "type": "incident"
+      }
+    }
+  }
+}

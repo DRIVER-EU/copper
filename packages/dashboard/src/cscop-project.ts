@@ -27,15 +27,9 @@ import { CapDetails } from './components/cap-details/cap-details';
 
 Vue.component('cap-details', CapDetails);
 
-const LAYER_URL =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:3007/'
-    : 'http://cool5.sensorlab.tno.nl:4022/';
-
-const LOG_URL = 
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:3007/logs/'
-    : 'http://cool5.sensorlab.tno.nl:4022/';
+const LAYER_URL = process.env.VUE_LAYER_URL || 'http://localhost:3007/';
+    
+const LOG_URL = process.env.VUE_LOG_URL ||  'http://localhost:3007/logs/';
 
 LayoutManager.add({
   id: 'split-panel',
@@ -48,13 +42,17 @@ export const project: IProject = {
     socketServerUrl: 'http://localhost:3007',
   }, 
   header: {
-    title: '',
+    title: 'Copper',
     logo: 'images/driver.png',
     breadcrumbs: false,
     dense: false
   },
+  user: {
+    showUserIcon: true
+  },
   navigation: {
     style: 'tabs',
+    hideTitle: false,
     search: {
       enabled: false
     }
@@ -157,7 +155,7 @@ export const project: IProject = {
           type: 'layer-server-service',
           options: {
             url: LAYER_URL,
-            activeLayers: [],
+            activeLayers: ['schets'],
             openFeatureDetails: true
           } as ILayerServiceOptions
         }
@@ -331,7 +329,8 @@ export const project: IProject = {
             showRuler: true,
             showStyles: false,
             showGeocoder: true,
-            showLegend: true
+            showLegend: true,
+            showGrid: true
           } as MapOptions
         },
         {
@@ -362,7 +361,8 @@ export const project: IProject = {
         //   options: <any> { x: 0, y: 4, width: 4, height: 5 }
         // },
       ]
-    },
+    }
+   
     // {
     //   title: 'Risico Editor',
     //   icon: 'assignment',

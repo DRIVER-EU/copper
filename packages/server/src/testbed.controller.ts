@@ -77,6 +77,12 @@ export class TestbedController {
       wrapUnions: false,
       // wrapUnions: 'auto',
       clientId: this.config.clientId,
+      sslOptions: {
+        pfx: fs.readFileSync('./configs/testbed/Copper.p12'),
+        passphrase: 'changeit',
+        ca: fs.readFileSync('./configs/testbed/test-ca.pem'),
+        rejectUnauthorized: true
+      },
       // Start from the latest message, not from the first
       fromOffset: this.config.fromOffset,
       logging: {
@@ -134,6 +140,7 @@ export class TestbedController {
     if (this.messageQueue.length > 0 && !this.busy) {
       this.busy = true;
       let message = this.messageQueue.shift();
+      console.log(message.topic);
       const stringify = (m: string | Object) =>
         typeof m === 'string' ? m : JSON.stringify(m, null, 2);
       switch (message.topic.toLowerCase()) {
@@ -164,12 +171,12 @@ export class TestbedController {
             )}: ${stringify(message.value)}`
           );
           break;
-        default:
+        default:         
           // find topic
           const topic = this.config.topics.find(
             t => t.id === message.topic.toLowerCase()
           );
-          if (topic) {
+          if (topic) {            
             switch (topic.type) {
               case 'cap':
                 await this.parseCapObject(message.value as ICAPAlert);
@@ -178,6 +185,7 @@ export class TestbedController {
                 await this.parseGeojson(topic.title, message, topic.tags);
                 break;
               case 'geojson-external':
+
                 await this.parseGeojsonExternal(topic.title, message, topic.tags);
                 break;
             }
@@ -309,8 +317,7 @@ export class TestbedController {
 
   private async parseCapObject(cap: ICAPAlert) {
     if (cap === undefined) { return; }
-    console.log('Got cap object');
-
+    
     // make sure parameter is always an array
     if (cap.info && cap.info.hasOwnProperty('parameter') && !_.isArray(cap.info['parameter'])) {
       cap.info['parameter'] = [cap.info['parameter']];
