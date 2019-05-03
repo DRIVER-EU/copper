@@ -64,8 +64,8 @@ export const project: IProject = {
     localeMessages: translations.default
   },
   datasources: {
-    caplog: new LogDataSource(LOG_URL, 'cap'),
-    simlog: new LogDataSource(LOG_URL, 'sim'),
+    caplog: new LogDataSource(`${LOG_URL}/`, 'cap'),
+    simlog: new LogDataSource(`${LOG_URL}/`, 'sim'),
     layers: new LayerSources({
       buienradar: {
         title: 'Buienradar',
@@ -112,11 +112,11 @@ export const project: IProject = {
       } as LayerSource,
       sintrouteland: {
         title: 'Locatie Sint (vasteland)',
-        url: `${LAYER_URL}sources/sintrouteland`
+        url: `${LAYER_URL}/sources/sintrouteland`
       } as LayerSource,
       sintroutewater: {
         title: 'Locatie Sint (water)',
-        url: `${LAYER_URL}sources/sintroutewater`
+        url: `${LAYER_URL}/sources/sintroutewater`
       } as LayerSource
     }),
     mainmap: new MapLayers(
@@ -161,7 +161,7 @@ export const project: IProject = {
           id: 'event',
           type: 'layer-server-service',
           options: {
-            url: LAYER_URL,
+            url: `${LAYER_URL}/`,
             activeLayers: [],
             openFeatureDetails: true
           } as ILayerServiceOptions
