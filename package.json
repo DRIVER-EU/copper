@@ -9,7 +9,7 @@
     "postinstall": "lerna bootstrap && lerna run link",
     "dev:server": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon --watch ./packages/server/dist packages/server/dist/index.js\"",
     "dev:client": "lerna run dev --parallel",
-    "dev": "yarn dev:server && yarn dev:all",
+    "dev": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon --watch ./packages/server/dist packages/server/dist/index.js\" \"yarn dev:client\"",
     "clean": "lerna run --parallel clean",
     "types": "./node_modules/.bin/typescript-json-schema.cmd packages/core/tsconfig.json ServerConfig *  -o ./schema/server.json",
     "build": "tsc -b packages",
