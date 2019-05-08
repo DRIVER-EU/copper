@@ -193,7 +193,6 @@ export class TestbedController {
                 await this.parseGeojson(topic.title, message, topic.tags);
                 break;
               case 'geojson-external':
-
                 await this.parseGeojsonExternal(topic.title, message, topic.tags);
                 break;
               case 'request-unittransport':
@@ -359,7 +358,7 @@ export class TestbedController {
         def.tags = ['request-unittransport'];
         def.style = {
           types: ['line'],
-          pointCircle: false
+          pointCircle: false      
         };
         def._layerSource = {
           id: id,
@@ -523,29 +522,40 @@ export class TestbedController {
       try {
         let layer = await this.getRouteRequestLayer('unittransportrequest');
         if (layer !== undefined) {
-          this.layers
-            .getLayerSourceById('unittransportrequest')
-            .then(source => {
-              const f = {
-                type: 'Feature',
-                id: value.guid,
-                properties: value,
-                geometry: {
-                  type: 'LineString',
-                  coordinates: value.route.map(a => { return [a.longitude, a.latitude] })
-                }
-              };
-              source.features.push(f);
-              console.log(JSON.stringify(f));
-
-              this.layers
-                .putLayerSourceById(layer.id, source)
-                .then(() => {
-                  console.log(`Saved layer ${layer.id}`);
-                })
-                .catch(() => { });
+          const f = {
+            type: 'Feature',
+            id: value.guid,
+            properties: value,
+            geometry: {
+              type: 'LineString',
+              coordinates: value.route.map(a => { return [a.longitude, a.latitude] })
+            }
+          };
+          if (this.layers) {
+            this.layers.updateFeature(layer.id, f as any, value.guid).then(f => {
+              // console.log('Feature saved');
+            }).catch(e => {
+              console.log('Error saving feature');
+              console.log(e);
             })
-            .catch(() => { });
+          }
+
+
+          // this.layers
+          //   .getLayerSourceById('unittransportrequest')
+          //   .then(source => {
+              
+          //     source.features.push(f);
+          //     console.log(JSON.stringify(f));
+
+          //     this.layers
+          //       .putLayerSourceById(layer.id, source)
+          //       .then(() => {
+          //         console.log(`Saved layer ${layer.id}`);
+          //       })
+          //       .catch(() => { });
+          //   })
+          //   .catch(() => { });
         }
       } catch (e) {
         console.log('Really not found');
