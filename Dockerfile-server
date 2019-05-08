@@ -1,0 +1,10 @@
+FROM node:11-stretch-slim
+RUN mkdir -p ./code
+COPY packages/server/package.json /code/packages/server/package.json
+WORKDIR /code
+RUN cd /code/packages/server && npm install 
+COPY . /code
+RUN cd /code/packages/server && yarn build
+
+EXPOSE 3007
+CMD ["node", "/code/packages/server/dist/index.js"]

@@ -30,7 +30,7 @@ import { SimDetails } from './components/sim-details/sim-details';
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
 
-const LAYER_URL = 'http://localhost:3007/'; // process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LAYER_URL = 'http://localhost:3007'; // process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 const LOG_URL = 'http://localhost:3007/logs/'; //process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
 const SOCKET_SERVER_URL = 'http://localhost:3007'; //process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 
@@ -68,8 +68,8 @@ export const project: IProject = {
     localeMessages: translations.default
   },
   datasources: {
-    caplog: new LogDataSource(LOG_URL, 'cap'),
-    simlog: new LogDataSource(LOG_URL, 'sim'),
+    caplog: new LogDataSource(`${LOG_URL}/`, 'cap'),
+    simlog: new LogDataSource(`${LOG_URL}/`, 'sim'),
     layers: new LayerSources({
       buienradar: {
         title: 'Buienradar',
@@ -109,19 +109,7 @@ export const project: IProject = {
       provincie: {
         title: 'Provincie',
         url: '/layers/provincie_2017.json'
-      } as LayerSource,
-      evenement: {
-        title: 'Evenement',
-        url: '/layers/evenement.json'
-      } as LayerSource,
-      sintrouteland: {
-        title: 'Locatie Sint (vasteland)',
-        url: `${LAYER_URL}sources/sintrouteland`
-      } as LayerSource,
-      sintroutewater: {
-        title: 'Locatie Sint (water)',
-        url: `${LAYER_URL}sources/sintroutewater`
-      } as LayerSource
+      } as LayerSource      
     }),
     mainmap: new MapLayers(
       [
@@ -165,7 +153,7 @@ export const project: IProject = {
           id: 'event',
           type: 'layer-server-service',
           options: {
-            url: LAYER_URL,
+            url: `${LAYER_URL}/`,
             activeLayers: [],
             openFeatureDetails: true
           } as ILayerServiceOptions
