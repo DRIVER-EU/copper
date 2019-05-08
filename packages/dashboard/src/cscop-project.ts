@@ -166,7 +166,7 @@ export const project: IProject = {
           type: 'layer-server-service',
           options: {
             url: LAYER_URL,
-            activeLayers: ['schets'],
+            activeLayers: [],
             openFeatureDetails: true
           } as ILayerServiceOptions
         }
