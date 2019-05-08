@@ -20,7 +20,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@csnext/cs-layer-server": "0.0.114",    
+    "@csnext/cs-layer-server": "0.0.115",    
     "dbgeo": "^1.1.0",
     "wkx": "^0.4.6",    
     "pg-query-stream":"^2.0.0",
