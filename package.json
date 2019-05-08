@@ -15,7 +15,7 @@
     "build": "tsc -b packages",
     "linkserver": "lerna run linkserver",
     "start:client": "lerna run start:client --parallel",
-    "start:server": "node ./packages/server/dist packages/server/dist/index.js",
+    "start:server": "nodemon ./packages/server/dist packages/server/dist/index.js",
     "linkcs": "lerna run linkcs",
     "linkall": "yarn linkserver && yarn linkcs",
     "rebuild": "yarn clean && yarn && yarn linkall && yarn dev"
