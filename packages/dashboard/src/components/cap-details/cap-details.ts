@@ -10,10 +10,13 @@ import Vue from 'vue';
 export class CapDetails extends WidgetBase {
 
   public tabs = 'params';
+
+  private centerFeature(id: string) {
+    console.log('this.$cs.zoomFeatureId is not implemented');
+  }
   
   mounted() {
     console.log(this.widget.data);
-  
   }
 }
 

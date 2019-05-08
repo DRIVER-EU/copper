@@ -1,0 +1,6 @@
+{
+    "id": "entityupdate",
+    "type": "FeatureCollection",
+    "features": [{"type":"Feature","id":"vehicle1","properties":{"guid":"vehicle1","name":"vehicle1 ignoring","owner":"sumo","location":{"latitude":51.9207569291235,"longitude":4.479538956117142,"altitude":0},"orientation":{"yaw":163.7536704833741,"pitch":0,"roll":0},"velocity":{"yaw":163.7536704833741,"pitch":0,"magnitude":13.679648520713673},"visibleForParticipant":true,"movable":true,"itemType":null,"scenarioLabel":null,"userTags":null,"physicalConnections":null,"group":null,"formation":null,"unit":null,"headline":"Unit update","sent":"2019-04-25T12:05:30.000Z"},"geometry":{"type":"Point","coordinates":[4.479538956117142,51.9207569291235]}}
+]
+}

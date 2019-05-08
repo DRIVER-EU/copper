@@ -1,0 +1,15 @@
+.sim-param-name {
+    font-weight: 600;
+}
+
+.sim-param-value {
+    margin-bottom: 5px;
+}
+
+.sim-details {
+    margin: 5px;
+}
+
+.sim-details-parameters {
+    margin: 10px;
+}

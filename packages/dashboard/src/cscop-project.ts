@@ -4,6 +4,7 @@ import { CsTimeline, TimelineWidgetOptions, TimelineTooltipOption } from '@csnex
 import { CsLogList, LogListOptions } from '@csnext/cs-log';
 import './assets/example.css';
 import './assets/copper.css';
+import * as translations from './assets/locales.json';
 import {
   SplitPanel
 } from '@csnext/cs-split-panel';
@@ -24,22 +25,26 @@ import Vue from 'vue';
 import { RasterPaint, MapboxOptions } from 'mapbox-gl';
 import { ScenarioControl, ScenarioControlOptions } from './components/scenario-control/scenario-control';
 import { CapDetails } from './components/cap-details/cap-details';
+import { SimDetails } from './components/sim-details/sim-details';
 
 Vue.component('cap-details', CapDetails);
+Vue.component('sim-details', SimDetails);
 
-const LAYER_URL = process.env.VUE_LAYER_URL || 'http://localhost:3007/';
-    
-const LOG_URL = process.env.VUE_LOG_URL ||  'http://localhost:3007/logs/';
+const LAYER_URL = 'http://localhost:3007/'; // process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LOG_URL = 'http://localhost:3007/logs/'; //process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
+const SOCKET_SERVER_URL = 'http://localhost:3007'; //process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 
 LayoutManager.add({
   id: 'split-panel',
   component: SplitPanel
 } as ILayoutManagerConfig);
 
+console.log(translations);
+
 export const project: IProject = { 
   server: {
     useSocket: true,
-    socketServerUrl: 'http://localhost:3007',
+    socketServerUrl: SOCKET_SERVER_URL,
   }, 
   header: {
     title: 'Copper',
@@ -48,7 +53,7 @@ export const project: IProject = {
     dense: false
   },
   user: {
-    showUserIcon: true
+    // showUserIcon: true
   },
   navigation: {
     style: 'tabs',
@@ -57,8 +62,14 @@ export const project: IProject = {
       enabled: false
     }
   },
+  languages: {
+    defaultLanguage: 'en',
+    fallbackLanguage: 'en',
+    localeMessages: translations.default
+  },
   datasources: {
     caplog: new LogDataSource(LOG_URL, 'cap'),
+    simlog: new LogDataSource(LOG_URL, 'sim'),
     layers: new LayerSources({
       buienradar: {
         title: 'Buienradar',
@@ -263,7 +274,7 @@ export const project: IProject = {
             direction: 'vertical',
             elements: [
               {
-                size: 80,
+                size: 82,
                 splitpanel: {
                   direction: 'horizontal',
                   elements: [
@@ -277,7 +288,7 @@ export const project: IProject = {
                           { size: 20, widgetId: 'scenario-control' },
                           {
                             size: 80,
-                            widgetId: 'cap-viewer'
+                            widgetId: 'sim-viewer'
                           }
                         ]
                       }
@@ -286,7 +297,7 @@ export const project: IProject = {
                   ]
                 }
               },
-              { size: 20, widgetId: 'timeline' }
+              { size: 18, widgetId: 'timeline' }
             ]
           }
         } as any
@@ -304,7 +315,21 @@ export const project: IProject = {
             openDetailsOnClick: true,
             detailsComponent: 'cap-details'
           } as LogListOptions          
-        },       
+        }, 
+        {
+          id: 'sim-viewer',
+          component: CsLogList,
+          options: {
+            showToolbar: true,
+            title: 'Simulation Messages',
+            logSource: 'simlog',
+            titleTemplate: "{{content.headline}}",
+            subTitleTemplate: "{{content.owner}} - {{content.destination}} - {{content.sent}}",
+            openDetailsOnClick: true,
+            reverseOrder: true,
+            detailsComponent: 'sim-details'
+          } as LogListOptions          
+        },      
         {
           id: 'scenario-control',
           component: ScenarioControl,
@@ -322,8 +347,8 @@ export const project: IProject = {
               'pk.eyJ1IjoiZGFteWxlbiIsImEiOiJfdUUzLVhNIn0.7-Ogdnc6voJfUXOMBE1VPA',
             mbOptions: {
               style: 'mapbox://styles/mapbox/streets-v9', //'http://localhost:901/styles/klokantech-basic/style.json',
-              center: [4.294637, 52.056277],
-              zoom: 9
+              center: [4.474612, 51.920446],
+              zoom: 13
             } as MapboxOptions,
             showDraw: true,
             showRuler: true,

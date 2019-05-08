@@ -1,0 +1,89 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "guid": {
+          "title": "guid",
+          "description": "guid",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "vehicle1_route"
+          ]
+        },
+        "owner": {
+          "title": "owner",
+          "description": "owner",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "anyone"
+          ]
+        },
+        "unit": {
+          "title": "unit",
+          "description": "unit",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "vehicle1"
+          ]
+        },
+        "destination": {
+          "title": "destination",
+          "description": "destination",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "somewhere"
+          ]
+        },
+        "route": {
+          "title": "route",
+          "description": "route",
+          "type": "longtext",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            [
+              {
+                "latitude": 51.9236,
+                "longitude": 4.4802,
+                "altitude": 0
+              },
+              {
+                "latitude": 51.9114,
+                "longitude": 4.4682,
+                "altitude": 0
+              }
+            ]
+          ]
+        },
+        "sent": {
+          "title": "sent",
+          "description": "sent",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "2019-04-25T11:52:26.000Z"
+          ]
+        },
+        "headline": {
+          "title": "headline",
+          "description": "headline",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Request Unittransport"
+          ]
+        }
+      }
+    }
+  }
+}

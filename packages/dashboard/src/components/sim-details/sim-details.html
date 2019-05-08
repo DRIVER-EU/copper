@@ -21,9 +21,9 @@
   <div style="position:absolute;top:125px;bottom:0;left:0;right:0">
     <v-tabs-items id="feature-properties-tab" v-model="tabs">
       <v-tab-item value="params">
-        <div v-for="param in widget.data.item.content.info.parameter" class="cap-details-parameters">
-          <div class="cap-param-name">{{ param.valueName }}</div>
-          <div class="cap-param-value" v-html="param.value"></div>
+        <div v-for="(val, key) in widget.data.item.content" class="sim-details-parameters">
+          <div class="sim-param-name">{{ key }}</div>
+          <div class="sim-param-value"> {{ val }}</div>
         </div>
       </v-tab-item>
       <v-tab-item value="details">

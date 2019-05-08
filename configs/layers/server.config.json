@@ -989,7 +989,7 @@
       }
     },
     {
-      "id": "eelco.naarding@sim-ci.com",
+      "id": "htm@sim-ci.com",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "blue",
@@ -999,7 +999,7 @@
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "eelco.naarding@sim-ci.com",
+      "title": "htm@sim-ci.com",
       "style": {
         "types": [
           "point"
@@ -1018,94 +1018,51 @@
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "B3_20190523_0845_actual_zki",
+      "title": "Walktrough Test WMS RADAR watermask The Hague (driver:dryrun1_watermask_tsx_sim)",
       "style": {
         "types": [],
         "pointCircle": true
       },
-      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=driver:dryrun2_watermask_s1_sim_genwm52&outputFormat=application/json"
+      "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
     },
     {
-      "id": "B1_2300_predicted_3di",
+      "id": "unittransportrequest",
       "sourceType": "geojson",
       "version": "0.0.1",
-      "color": "blue",
+      "color": "lightgray",
       "isLive": true,
       "tags": [
-        "cap",
-        "flood prediction"
+        "simulation"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "B1_2300_predicted_3di",
+      "source": "unittransportrequest.json",
+      "title": "Unit transport request",
+      "sourceUrl": "http://localhost:4000/sources/unittransportrequest",
       "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
+        "types": []
+      },
+      "meta": "unittransportrequest.meta.json"
     },
     {
-      "id": "B2_1400_predicted_3di",
+      "id": "entityupdate",
       "sourceType": "geojson",
       "version": "0.0.1",
-      "color": "blue",
+      "color": "lightgray",
       "isLive": true,
       "tags": [
-        "cap",
-        "flood prediction"
+        "simulation"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "title": "B2_1400_predicted_3di",
+      "source": "entityupdate.json",
+      "title": "Unit update",
+      "sourceUrl": "http://localhost:4000/sources/entityupdate",
       "style": {
-        "title": "{{title}}",
-        "fill": false,
-        "mapbox": {
-          "symbolLayout": {},
-          "symbolPaint": {},
-          "circleLayout": {},
-          "circlePaint": {},
-          "fillLayout": {},
-          "fillPaint": {
-            "fill-color": "blue"
-          }
-        },
-        "types": [
-          "point",
-          "fill"
-        ],
+        "types": [],
         "pointCircle": true
       },
-      "typeId": "poi",
-      "description": "",
-      "opacity": 1,
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
-    },
-    {
-      "id": "ROT",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "blue",
-      "isLive": true,
-      "tags": [
-        "cap",
-        "lcms-plots"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "title": "ROT",
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      }
+      "meta": "entityupdate.meta.json"
     }
   ],
   "sourcePath": "./sources/",

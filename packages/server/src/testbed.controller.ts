@@ -7,7 +7,8 @@ import {
   Logger,
   LogLevel,
   ITopicMetadataItem,
-  IAdapterMessage
+  IAdapterMessage,
+  IDefaultKey
 } from 'node-test-bed-adapter';
 
 import {
@@ -19,6 +20,9 @@ import { ICAPAlert } from './classes/cap';
 import { OffsetFetchRequest } from 'kafka-node';
 import { TestBedConfig } from './classes/testbed-config';
 import _ from 'lodash';
+import { RequestUnitTransport } from './classes/request-unittransport';
+import { Item } from './classes/entity_item';
+import { AffectedArea } from './classes/sumo_affected_area';
 
 const log = Logger.instance;
 
@@ -31,6 +35,7 @@ export class TestbedController {
   public capObjects: ICAPAlert[] = [];
   public messageQueue: IAdapterMessage[] = [];
   public busy = false;
+  private unitUpdateCount = 0;
 
   handleConnection(d: any) {
     // this.server.emit('buttonCount',AppService.buttonCount);
@@ -107,6 +112,9 @@ export class TestbedController {
       log.error(`Consumer received an error: ${err}`)
     );
     this.adapter.connect();
+    //Init logs
+    this.logs.getLogById('sim');
+    this.logs.getLogById('cap');
   }
 
   private getTopics() {
@@ -143,7 +151,7 @@ export class TestbedController {
       console.log(message.topic);
       const stringify = (m: string | Object) =>
         typeof m === 'string' ? m : JSON.stringify(m, null, 2);
-      switch (message.topic.toLowerCase()) {
+      switch (message.topic) {
         case 'system_heartbeat':
           log.info(
             `Received heartbeat message with key ${stringify(
@@ -174,7 +182,7 @@ export class TestbedController {
         default:         
           // find topic
           const topic = this.config.topics.find(
-            t => t.id === message.topic.toLowerCase()
+            t => t.id === message.topic
           );
           if (topic) {            
             switch (topic.type) {
@@ -187,6 +195,15 @@ export class TestbedController {
               case 'geojson-external':
 
                 await this.parseGeojsonExternal(topic.title, message, topic.tags);
+                break;
+              case 'request-unittransport':
+                await this.parseRequestUnittransport(topic.title, message, topic.tags);
+                break;
+              case 'entity-item':
+                await this.parseEntityItem(topic.title, message, topic.tags);
+                break;
+              case 'affected-area':
+                await this.parseAffectedArea(topic.title, message, topic.tags);
                 break;
             }
           }
@@ -315,6 +332,336 @@ export class TestbedController {
     });
   }
 
+  private getRouteRequestLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['request-unittransport'];
+        def.style = {
+          types: ['line'],
+          pointCircle: false
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private getEntityItemLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['entity-item'];
+        def.style = {
+          types: ['point'],
+          pointCircle: true
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private getAffectedAreaLayer(id: string): Promise<LayerDefinition> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        // try to get existing layer
+        console.log('Trying to get ' + id);
+        let layer = await this.layers.getLayerById(id);
+        resolve(layer);
+        return;
+      } catch (e) {
+        console.log(e);
+        console.log('not found ' + id);
+        // layer not found, create new one
+        const def = new LayerDefinition();
+        def.title = id;
+        def.id = id;
+        def.isLive = true;
+        def.sourceType = 'geojson';
+        def.tags = ['affected-area'];
+        def.style = {
+          types: ['polygon']
+        };
+        def._layerSource = {
+          id: id,
+          type: 'FeatureCollection',
+          features: []
+        } as any; // LayerSource;
+
+        // init layer
+        this.layers
+          .initLayer(def)
+          .then(ld => {
+            // add layer
+            this.layers
+              .addLayer(ld)
+              .then(l => {
+                resolve(l);
+                return;
+              })
+              .catch(r => {
+                // could not add layer
+                reject(r);
+                return;
+              });
+          })
+          .catch(r => {
+            // could not init layer
+            reject(r);
+            return;
+          });
+      }
+    });
+  }
+
+  private async parseRequestUnittransport(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    if (!message || !message.value) return;
+    var value: RequestUnitTransport = message.value as RequestUnitTransport;
+    value['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+    value['headline'] = 'Request Unittransport';
+
+    // add to sim log
+    const logdef = this.logs.getLogById('sim');
+    const logItem: ILogItem = {
+      id: (message.key as IDefaultKey).distributionID,
+      start: new Date((message.key as IDefaultKey).dateTimeSent),
+      content: value
+    }
+    this.logs.addLogItem('sim', logItem);
+    
+    // add to RequestUnitTransport layer
+    if (value.route && value.route.length > 0) {
+      try {
+        let layer = await this.getRouteRequestLayer('unittransportrequest');
+        if (layer !== undefined) {
+          this.layers
+            .getLayerSourceById('unittransportrequest')
+            .then(source => {
+              const f = {
+                type: 'Feature',
+                id: value.guid,
+                properties: value,
+                geometry: {
+                  type: 'LineString',
+                  coordinates: value.route.map(a => {return [a.longitude, a.latitude]})
+                }
+              };
+              source.features.push(f);
+              console.log(JSON.stringify(f));
+
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log(`Saved layer ${layer.id}`);
+                })
+                .catch(() => { });
+            })
+            .catch(() => { });
+        }
+      } catch (e) {
+        console.log('Really not found');
+        console.log(e);
+      }
+    }
+    
+    if (this.socket && this.socket.server) {
+      this.socket.server.emit('sim', value);
+    }
+  }
+
+  private async parseEntityItem(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    if (!message || !message.value) return;
+    var unit: Item = message.value as Item;
+    unit['headline'] = 'Unit update';
+    unit['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+
+    // add to sim log
+    if (this.unitUpdateCount++ % 5 === 0) {
+      const logdef = this.logs.getLogById('sim');
+      const logItem: ILogItem = {
+        id: `${unit.guid}-${(message.key as IDefaultKey).dateTimeSent}`,
+        start: new Date((message.key as IDefaultKey).dateTimeSent),
+        content: unit
+      }
+      this.logs.addLogItem('sim', logItem);
+    }
+    
+    // add to EntityItem layer
+    if (unit.location) {
+      try {
+        let layer = await this.getEntityItemLayer('entityupdate');
+        if (layer !== undefined) {
+          this.layers
+            .getLayerSourceById('entityupdate')
+            .then(source => {
+              const f = {
+                type: 'Feature',
+                id: unit.guid,
+                properties: unit,
+                geometry: {
+                  type: 'Point',
+                  coordinates: [unit.location.longitude, unit.location.latitude]
+                }
+              };
+              source.features.push(f);
+              console.log(JSON.stringify(f));
+
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log(`Saved layer ${layer.id}`);
+                })
+                .catch(() => { });
+            })
+            .catch(() => { });
+        }
+      } catch (e) {
+        console.log('Really not found');
+        console.log(e);
+      }
+    }
+    
+    if (this.socket && this.socket.server) {
+      this.socket.server.emit('unit', unit);
+    }
+  }
+
+  private async parseAffectedArea(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    console.log(`Parsing affected area`);
+    if (!message || !message.value) return;
+    var area: AffectedArea = message.value as AffectedArea;
+    area['headline'] = 'Affected area';
+    area['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+
+    // add to sim log
+    const logdef = this.logs.getLogById('sim');
+    const logItem: ILogItem = {
+      id: `${area.id}-${(message.key as IDefaultKey).dateTimeSent}`,
+      start: new Date((message.key as IDefaultKey).dateTimeSent),
+      content: area
+    }
+    this.logs.addLogItem('sim', logItem);
+    
+    // add to AffectedArea layer
+    if (area.area) {
+      try {
+        let layer = await this.getAffectedAreaLayer('affectedarea');
+        if (layer !== undefined) {
+          this.layers
+            .getLayerSourceById('affectedarea')
+            .then(source => {
+              const f = {
+                type: 'Feature',
+                id: area.id,
+                properties: area,
+                geometry: {
+                  type: 'MultiPolygon',
+                  coordinates: area.area.coordinates
+                }
+              };
+              source.features.push(f);
+              console.log(JSON.stringify(f));
+
+              this.layers
+                .putLayerSourceById(layer.id, source)
+                .then(() => {
+                  console.log(`Saved layer ${layer.id}`);
+                })
+                .catch(() => { });
+            })
+            .catch(() => { });
+        }
+      } catch (e) {
+        console.log('Really not found');
+        console.log(e);
+      }
+    }
+    
+    if (this.socket && this.socket.server) {
+      this.socket.server.emit('area', area);
+    }
+  }
+
+
   private async parseCapObject(cap: ICAPAlert) {
     if (cap === undefined) { return; }
     
@@ -358,7 +705,7 @@ export class TestbedController {
               this.layers
                 .putLayerSourceById(layer.id, source)
                 .then(() => {
-                  console.log('Layer saved');
+                  console.log(`Saved layer ${layer.id}`);
                 })
                 .catch(() => { });
             })
@@ -424,13 +771,7 @@ export class TestbedController {
       if (layerId !== id && layer.tags.indexOf(id) === -1) {
         layer.tags.push(id);
       }
-
       console.log(layer);
-
-
-
-
-
       let geojson = message.value['geojson'] as GeoJSON.FeatureCollection;
       // console.log(geojson);
       for (const feature of geojson.features) {

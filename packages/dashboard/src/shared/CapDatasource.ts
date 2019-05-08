@@ -3,7 +3,7 @@ import {ITimelineDataSource, DataItem} from '@csnext/cs-timeline';
 import http from 'axios';
 import {ICAPAlert} from '../classes/cap';
 
-const BASE_URL = 'http://localhost:3007';
+const BASE_URL = process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 const CAP_ROUTE = '/testbed/cap';
 export const CAP_TOPIC = 'cap';
 

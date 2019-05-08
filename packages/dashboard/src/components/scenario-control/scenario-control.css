@@ -1,16 +1,17 @@
 .simulation-time {
-    font-size: 5rem;
-    font-weight: 600;    
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 600;
 }
 
 .simulation-day {
-    font-size: 2rem;
-    font-weight: 300;    
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
-.simulation-date-group
-{
-    margin-left:25px;
-    padding-top:10px;
-
+.simulation-date-group {
+  text-align: center;
+  margin: 2px 25px;
+  padding-top: 10px;
 }
