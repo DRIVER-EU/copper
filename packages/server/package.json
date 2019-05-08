@@ -30,6 +30,7 @@
     "@nestjs/common": "^6.0.5",
     "@nestjs/swagger": "^3.0.2",
     "@nestjs/websockets":"^6.0.5",
+    "@nestjs/platform-socket.io": "^6.0.5",
     "socket.io": "^2.2.0",
     "@mapbox/togeojson": "^0.16.0", 
     "rxjs": "^6.4.0",
