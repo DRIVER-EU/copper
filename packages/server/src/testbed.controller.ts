@@ -11,6 +11,7 @@ import {
   IDefaultKey
 } from 'node-test-bed-adapter';
 
+import { Feature, Point, MultiPolygon, Polygon } from 'geojson';
 import {
   LogService,
   LayerSource,
@@ -82,12 +83,12 @@ export class TestbedController {
       wrapUnions: false,
       // wrapUnions: 'auto',
       clientId: this.config.clientId,
-      sslOptions: {
-        pfx: fs.readFileSync('./configs/testbed/Copper.p12'),
-        passphrase: 'changeit',
-        ca: fs.readFileSync('./configs/testbed/test-ca.pem'),
-        rejectUnauthorized: true
-      },
+      // sslOptions: {
+      //   pfx: fs.readFileSync('./configs/testbed/Copper.p12'),
+      //   passphrase: 'changeit',
+      //   ca: fs.readFileSync('./configs/testbed/test-ca.pem'),
+      //   rejectUnauthorized: true
+      // },
       // Start from the latest message, not from the first
       fromOffset: this.config.fromOffset,
       logging: {
@@ -148,7 +149,6 @@ export class TestbedController {
     if (this.messageQueue.length > 0 && !this.busy) {
       this.busy = true;
       let message = this.messageQueue.shift();
-      console.log(message.topic);
       const stringify = (m: string | Object) =>
         typeof m === 'string' ? m : JSON.stringify(m, null, 2);
       switch (message.topic) {
@@ -179,12 +179,12 @@ export class TestbedController {
             )}: ${stringify(message.value)}`
           );
           break;
-        default:         
+        default:
           // find topic
           const topic = this.config.topics.find(
             t => t.id === message.topic
           );
-          if (topic) {            
+          if (topic) {
             switch (topic.type) {
               case 'cap':
                 await this.parseCapObject(message.value as ICAPAlert);
@@ -298,7 +298,14 @@ export class TestbedController {
         def.tags = ['cap'];
         def.style = {
           types: ['point'],
-          pointCircle: true
+          pointCircle: true,
+          mapbox: {
+            circlePaint: {
+              "circle-radius": 15,
+              "circle-color": "blue",
+              "circle-opacity": 0.6
+            }
+          }
         };
         def._layerSource = {
           id: id,
@@ -390,7 +397,7 @@ export class TestbedController {
     return new Promise(async (resolve, reject) => {
       try {
         // try to get existing layer
-        console.log('Trying to get ' + id);
+        // console.log('Trying to get ' + id);
         let layer = await this.layers.getLayerById(id);
         resolve(layer);
         return;
@@ -459,7 +466,10 @@ export class TestbedController {
         def.sourceType = 'geojson';
         def.tags = ['affected-area'];
         def.style = {
-          types: ['polygon']
+          types: ['polygon'],
+          mapbox: {
+            fillPaint: { 'fill-color': 'orange', 'fill-opacity': 0.5 }
+          }
         };
         def._layerSource = {
           id: id,
@@ -507,7 +517,7 @@ export class TestbedController {
       content: value
     }
     this.logs.addLogItem('sim', logItem);
-    
+
     // add to RequestUnitTransport layer
     if (value.route && value.route.length > 0) {
       try {
@@ -522,7 +532,7 @@ export class TestbedController {
                 properties: value,
                 geometry: {
                   type: 'LineString',
-                  coordinates: value.route.map(a => {return [a.longitude, a.latitude]})
+                  coordinates: value.route.map(a => { return [a.longitude, a.latitude] })
                 }
               };
               source.features.push(f);
@@ -542,7 +552,7 @@ export class TestbedController {
         console.log(e);
       }
     }
-    
+
     if (this.socket && this.socket.server) {
       this.socket.server.emit('sim', value);
     }
@@ -554,52 +564,66 @@ export class TestbedController {
     unit['headline'] = 'Unit update';
     unit['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
 
+
     // add to sim log
-    if (this.unitUpdateCount++ % 5 === 0) {
-      const logdef = this.logs.getLogById('sim');
-      const logItem: ILogItem = {
-        id: `${unit.guid}-${(message.key as IDefaultKey).dateTimeSent}`,
-        start: new Date((message.key as IDefaultKey).dateTimeSent),
-        content: unit
-      }
-      this.logs.addLogItem('sim', logItem);
-    }
-    
+    // if (this.unitUpdateCount++ % 5 === 0) {
+    //   const logdef = this.logs.getLogById('sim');
+    //   const logItem: ILogItem = {
+    //     id: `${unit.guid}-${(message.key as IDefaultKey).dateTimeSent}`,
+    //     start: new Date((message.key as IDefaultKey).dateTimeSent),
+    //     content: unit
+    //   }
+    //   this.logs.addLogItem('sim', logItem);
+    // }
+
     // add to EntityItem layer
     if (unit.location) {
       try {
         let layer = await this.getEntityItemLayer('entityupdate');
         if (layer !== undefined) {
-          this.layers
-            .getLayerSourceById('entityupdate')
-            .then(source => {
-              const f = {
-                type: 'Feature',
-                id: unit.guid,
-                properties: unit,
-                geometry: {
-                  type: 'Point',
-                  coordinates: [unit.location.longitude, unit.location.latitude]
-                }
-              };
-              source.features.push(f);
-              console.log(JSON.stringify(f));
-
-              this.layers
-                .putLayerSourceById(layer.id, source)
-                .then(() => {
-                  console.log(`Saved layer ${layer.id}`);
-                })
-                .catch(() => { });
+          const f: Feature = {
+            type: 'Feature',
+            id: unit.guid,
+            properties: unit,
+            geometry: {
+              type: 'Point',
+              coordinates: [unit.location.longitude, unit.location.latitude]
+            } as Point
+          };
+          // console.log(JSON.stringify(unit));
+          if (this.layers) {
+            this.layers.updateFeature(layer.id, f, unit.guid).then(f => {
+              // console.log('Feature saved');
+            }).catch(e => {
+              console.log('Error saving feature');
+              console.log(e);
             })
-            .catch(() => { });
+          }
+          // this.layers.updateFeature()
+          // this.layers
+          //   .getLayerSourceById('entityupdate')
+          //   .then(source => {
+
+
+
+          //     source.features.push(f);
+          //     console.log(JSON.stringify(f));
+
+          //     // this.layers
+          //     //   .putLayerSourceById(layer.id, source)
+          //     //   .then(() => {
+          //     //     console.log(`Saved layer ${layer.id}`);
+          //     //   })
+          //     //   .catch(() => { });
+          //   })
+          //   .catch(() => { });
         }
       } catch (e) {
         console.log('Really not found');
         console.log(e);
       }
     }
-    
+
     if (this.socket && this.socket.server) {
       this.socket.server.emit('unit', unit);
     }
@@ -620,42 +644,59 @@ export class TestbedController {
       content: area
     }
     this.logs.addLogItem('sim', logItem);
-    
+
     // add to AffectedArea layer
     if (area.area) {
       try {
         let layer = await this.getAffectedAreaLayer('affectedarea');
         if (layer !== undefined) {
-          this.layers
-            .getLayerSourceById('affectedarea')
-            .then(source => {
-              const f = {
-                type: 'Feature',
-                id: area.id,
-                properties: area,
-                geometry: {
-                  type: 'MultiPolygon',
-                  coordinates: area.area.coordinates
-                }
-              };
-              source.features.push(f);
-              console.log(JSON.stringify(f));
+          const af = {
+            type: 'Feature',
+            id: area.id,
+            properties: area,
+            geometry: {
+              type: 'MultiPolygon',
+              coordinates: area.area.coordinates
+            }
+          } as any;
+          this.layers.updateFeature(layer.id, af, area.id).then(f => {
+            // console.log('Feature saved');
+          }).catch(e => {
+            console.log('Error saving feature');
+            console.log(e);
+          })
 
-              this.layers
-                .putLayerSourceById(layer.id, source)
-                .then(() => {
-                  console.log(`Saved layer ${layer.id}`);
-                })
-                .catch(() => { });
-            })
-            .catch(() => { });
+
+          // this.layers
+          //   .getLayerSourceById('affectedarea')
+          //   .then(source => {
+          //     const f = {
+          //       type: 'Feature',
+          //       id: area.id,
+          //       properties: area,
+          //       geometry: {
+          //         type: 'MultiPolygon',
+          //         coordinates: area.area.coordinates
+          //       }
+          //     };
+          //     source.features.push(f);
+          //     // console.log(JSON.stringify(f));
+
+          //     this.layers
+          //       .putLayerSourceById(layer.id, source)
+          //       .then(() => {
+          //         console.log(`Saved layer ${layer.id}`);
+          //       })
+          //       .catch(() => { });
+          //   })
+          //   .catch(() => { });
         }
       } catch (e) {
         console.log('Really not found');
         console.log(e);
       }
     }
-    
+
     if (this.socket && this.socket.server) {
       this.socket.server.emit('area', area);
     }
@@ -664,7 +705,7 @@ export class TestbedController {
 
   private async parseCapObject(cap: ICAPAlert) {
     if (cap === undefined) { return; }
-    
+
     // make sure parameter is always an array
     if (cap.info && cap.info.hasOwnProperty('parameter') && !_.isArray(cap.info['parameter'])) {
       cap.info['parameter'] = [cap.info['parameter']];
@@ -700,7 +741,6 @@ export class TestbedController {
                   coordinates: [p[1], p[0]]
                 }
               });
-
 
               this.layers
                 .putLayerSourceById(layer.id, source)
