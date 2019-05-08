@@ -8,8 +8,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "link": "yarn linkserver",
+  "scripts": {    
     "unlink": "yarn unlinkserver",
     "linkserver": "yarn link @csnext/cs-layer-server",
     "unlinkserver": "yarn unlink @csnext/cs-layer-server",
