@@ -13,8 +13,8 @@
   ],
   "clientId": "ConsumerCOP",
   "fromOffset": false,
-  "kafkaHost": "tb4.driver-testbed.eu:3541",
-  "schemaRegistry": "tb4.driver-testbed.eu:3542",
+  "kafkaHost": "tb6.driver-testbed.eu:3561",
+  "schemaRegistry": "tb6.driver-testbed.eu:362",
   "kafkaHost": "localhost:3501",
   "schemaRegistry": "localhost:3502"
 }
