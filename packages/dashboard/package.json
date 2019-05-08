@@ -65,9 +65,6 @@
     "files": [
       "dist/**/*",
       "node_modules/**/*",
-      "package.json",
-      "dist/**/*",
-      "node_modules/**/*",
       "package.json"
     ]
   }

@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  coppr-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-server
+    container_name: coppr-server
+    ports:
+     - "3007:3007"
+  coppr-webclient:
+    build:
+      context: ./packages/dashboard
+      dockerfile: Dockerfile
+    container_name: coppr-webclient
+    depends_on:
+     - coppr-server
+    ports:
+     - "8080:8080"
+    environment:
+     - COPPER_LAYER_URL="http://coppr-server:3007/"
+     - COPPER_SOCKET_SERVER_URL="http://coppr-server:3007/"
