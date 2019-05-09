@@ -30,9 +30,9 @@ import { SimDetails } from './components/sim-details/sim-details';
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
 
-const LAYER_URL = 'http://localhost:3007'; // process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
-const LOG_URL = 'http://localhost:3007/logs/'; //process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
-const SOCKET_SERVER_URL = 'http://localhost:3007'; //process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LAYER_URL = process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LOG_URL = process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
+const SOCKET_SERVER_URL = process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 
 LayoutManager.add({
   id: 'split-panel',
