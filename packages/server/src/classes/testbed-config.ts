@@ -13,6 +13,9 @@ export class TestBedConfig {
   /** set true to get older messages from kafka bus */
   public fromOffset?: boolean;
 
+  /** set true to get auto register schemas to kafka */
+  public autoRegisterSchemas?: boolean;
+
   /** kafka host url */
   public kafkaHost?: string;
 

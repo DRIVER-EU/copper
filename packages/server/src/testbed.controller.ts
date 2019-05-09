@@ -91,6 +91,7 @@ export class TestbedController {
       // },
       // Start from the latest message, not from the first
       fromOffset: this.config.fromOffset,
+      autoRegisterSchemas: this.config.autoRegisterSchemas,
       logging: {
         logToConsole: LogLevel.Info,
         logToFile: LogLevel.Info,
@@ -197,6 +198,9 @@ export class TestbedController {
                 break;
               case 'request-unittransport':
                 await this.parseRequestUnittransport(topic.title, message, topic.tags);
+                break;
+              case 'request-startinject':
+                await this.parseRequestStartinject(topic.title, message, topic.tags);
                 break;
               case 'entity-item':
                 await this.parseEntityItem(topic.title, message, topic.tags);
@@ -502,6 +506,24 @@ export class TestbedController {
     });
   }
 
+  private async parseRequestStartinject(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    if (!message || !message.value) return;
+    var value: RequestUnitTransport = message.value as RequestUnitTransport;
+    value['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
+    value['headline'] = `Simulation inject: ${value['inject']}`;
+
+    console.log('Add: ' + value['headline']);
+
+    // add to sim log
+    const logdef = this.logs.getLogById('sim');
+    const logItem: ILogItem = {
+      id: (message.key as IDefaultKey).distributionID,
+      start: new Date((message.key as IDefaultKey).dateTimeSent),
+      content: value
+    }
+    this.logs.addLogItem('sim', logItem);
+  }
+
   private async parseRequestUnittransport(id: string, message: IAdapterMessage, tags: string[] | undefined) {
     if (!message || !message.value) return;
     var value: RequestUnitTransport = message.value as RequestUnitTransport;
@@ -522,40 +544,23 @@ export class TestbedController {
       try {
         let layer = await this.getRouteRequestLayer('unittransportrequest');
         if (layer !== undefined) {
-          const f = {
-            type: 'Feature',
-            id: value.guid,
-            properties: value,
-            geometry: {
-              type: 'LineString',
-              coordinates: value.route.map(a => { return [a.longitude, a.latitude] })
-            }
-          };
-          if (this.layers) {
-            this.layers.updateFeature(layer.id, f as any, value.guid).then(f => {
-              // console.log('Feature saved');
-            }).catch(e => {
-              console.log('Error saving feature');
-              console.log(e);
-            })
-          }
-
-
-          // this.layers
-          //   .getLayerSourceById('unittransportrequest')
-          //   .then(source => {
-              
-          //     source.features.push(f);
-          //     console.log(JSON.stringify(f));
-
-          //     this.layers
-          //       .putLayerSourceById(layer.id, source)
-          //       .then(() => {
-          //         console.log(`Saved layer ${layer.id}`);
-          //       })
-          //       .catch(() => { });
-          //   })
-          //   .catch(() => { });
+              const f = {
+                type: 'Feature',
+                id: value.guid,
+                properties: value,
+                geometry: {
+                  type: 'LineString',
+                  coordinates: value.route.map(a => {return [a.longitude, a.latitude]})
+                }
+              };
+              if (this.layers) {
+                this.layers.updateFeature(layer.id, f as any, value.guid).then(f => {
+                  // console.log('Feature saved');
+                }).catch(e => {
+                  console.log('Error saving feature');
+                  console.log(e);
+                })
+              }
         }
       } catch (e) {
         console.log('Really not found');
@@ -574,9 +579,8 @@ export class TestbedController {
     unit['headline'] = 'Unit update';
     unit['sent'] = new Date((message.key as IDefaultKey).dateTimeSent);
 
-
     // add to sim log
-    // if (this.unitUpdateCount++ % 5 === 0) {
+    // if (this.unitUpdateCount++ % 100 === 0) {
     //   const logdef = this.logs.getLogById('sim');
     //   const logItem: ILogItem = {
     //     id: `${unit.guid}-${(message.key as IDefaultKey).dateTimeSent}`,
