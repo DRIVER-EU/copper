@@ -18,7 +18,8 @@
     "start:server": "nodemon ./packages/server/dist packages/server/dist/index.js",
     "linkcs": "lerna run linkcs",
     "linkall": "yarn linkserver && yarn linkcs",
-    "rebuild": "yarn clean && yarn && yarn linkall && yarn dev"
+    "rebuild": "yarn clean && yarn && yarn linkall && yarn dev",
+    "docker:build": "lerna run docker:build --parallel"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",

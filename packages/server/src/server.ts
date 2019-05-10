@@ -1,16 +1,13 @@
-import { NestServer } from '@csnext/cs-layer-server';
 import { ApplicationModule } from './app.module';
 import { NestFactory } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { Express } from 'express';
-import { join } from 'path';
 
 var path = require('path');
 var express = require('express');
 
-const portNumber = process.env.SERVER_PORT_NUMBER ? process.env.SERVER_PORT_NUMBER : 3007;
+const portNumber = process.env.COPPER_SERVER_PORT ? process.env.COPPER_SERVER_PORT : 3007;
 
 export class Server {
 	

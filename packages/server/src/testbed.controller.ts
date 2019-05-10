@@ -1,6 +1,6 @@
 import { Get, Controller, Inject, Logger as NestLogger, Post, Body } from '@nestjs/common';
 import * as fs from 'fs';
-
+import * as path from 'path';
 import { DefaultWebSocketGateway, LayerService, ILogItem } from '@csnext/cs-layer-server';
 import {
   TestBedAdapter,
@@ -8,10 +8,10 @@ import {
   LogLevel,
   ITopicMetadataItem,
   IAdapterMessage,
-  IDefaultKey
+  IDefaultKey,
+  ITestBedOptions
 } from 'node-test-bed-adapter';
-
-import { Feature, Point, MultiPolygon, Polygon } from 'geojson';
+import { Feature, Point } from 'geojson';
 import {
   LogService,
   LayerSource,
@@ -36,7 +36,6 @@ export class TestbedController {
   public capObjects: ICAPAlert[] = [];
   public messageQueue: IAdapterMessage[] = [];
   public busy = false;
-  private unitUpdateCount = 0;
 
   handleConnection(d: any) {
     // this.server.emit('buttonCount',AppService.buttonCount);
@@ -51,9 +50,7 @@ export class TestbedController {
   ) {
     NestLogger.log('Init testbed');
     // load config
-    const c = JSON.parse(
-      fs.readFileSync('configs/testbed/config.json', 'utf8')
-    );
+    const c = this.loadConfig(path.join('configs','testbed', 'config.json'));
     if (c !== undefined) {
       Object.assign(this.config, c);
     }
@@ -65,23 +62,22 @@ export class TestbedController {
       return;
     }
 
+    this.config.clientId = process.env.COPPER_CLIENT_ID ? process.env.COPPER_CLIENT_ID : this.config.clientId;
+    this.config.kafkaHost = process.env.KAFKA_HOST ? process.env.KAFKA_HOST : this.config.kafkaHost;
+    this.config.schemaRegistry = process.env.SCHEMA_REGISTRY ? process.env.SCHEMA_REGISTRY : this.config.schemaRegistry;
+
     let consume: OffsetFetchRequest[] = [];
     this.config.topics.forEach(t => {
       consume.push({ topic: t.id, offset: t.offset });
     });
 
-    this.adapter = new TestBedAdapter({
-      // kafkaHost: 'localhost:3501',
-      // schemaRegistry: 'localhost:3502',
+    const tbOptions: ITestBedOptions = {
       kafkaHost: this.config.kafkaHost,
       schemaRegistry: this.config.schemaRegistry,
-      // kafkaHost: 'tb4.driver-testbed.eu:3501',
-      // schemaRegistry: 'tb4.driver-testbed.eu:3502',
       consume: consume,
       fetchAllSchemas: false,
       fetchAllVersions: false,
       wrapUnions: false,
-      // wrapUnions: 'auto',
       clientId: this.config.clientId,
       // sslOptions: {
       //   pfx: fs.readFileSync('./configs/testbed/Copper.p12'),
@@ -98,7 +94,9 @@ export class TestbedController {
         logToKafka: LogLevel.Warn,
         logFile: 'log.txt'
       }
-    });
+    };
+
+    this.adapter = new TestBedAdapter(tbOptions);
     this.adapter.on('ready', () => {
       this.adapter.on('message', message => this.addMessage(message));
 
@@ -117,6 +115,17 @@ export class TestbedController {
     //Init logs
     this.logs.getLogById('sim');
     this.logs.getLogById('cap');
+  }
+
+  private loadConfig(file: string) {
+    if (fs.existsSync(file)) {
+      const data = fs.readFileSync(file, 'utf8');
+      if (data && data.length > 0) {
+        return JSON.parse(data);
+      }
+    } else {
+      NestLogger.log(`Could not find file: '${file}'`);
+    }
   }
 
   private getTopics() {

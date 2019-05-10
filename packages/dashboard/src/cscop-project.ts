@@ -30,9 +30,9 @@ import { SimDetails } from './components/sim-details/sim-details';
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
 
-const LAYER_URL = process.env.COPPER_LAYER_URL ? process.env.COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
-const LOG_URL = process.env.COPPER_LOG_URL ? process.env.COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
-const SOCKET_SERVER_URL = process.env.COPPER_SOCKET_SERVER_URL ? process.env.COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LAYER_URL = process.env.VUE_APP_COPPER_LAYER_URL ? process.env.VUE_APP_COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LOG_URL = process.env.VUE_APP_COPPER_LOG_URL ? process.env.VUE_APP_COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
+const SOCKET_SERVER_URL = process.env.VUE_APP_COPPER_SOCKET_SERVER_URL ? process.env.VUE_APP_COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
 
 LayoutManager.add({
   id: 'split-panel',
@@ -251,7 +251,6 @@ export const project: IProject = {
       },
       defaultWidgetOptions: {
         widgetBorder: 'widget-border-shadow'
-
         // height: 300
       },
       options: {

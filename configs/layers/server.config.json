@@ -63,6 +63,88 @@
       }
     },
     {
+      "id": "unittransportrequest",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "unittransportrequest.json",
+      "title": "Unit transport request",
+      "sourceUrl": "http://localhost:4000/sources/unittransportrequest",
+      "style": {
+        "types": [],
+        "popup": "<h3>{{properties.headline}}</h3>{{properties.unit}} <br> {{properties.owner}} @ {{properties.sent}}"
+      },
+      "meta": "unittransportrequest.meta.json"
+    },
+    {
+      "id": "entityupdate",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "entityupdate.json",
+      "title": "Unit update",
+      "sourceUrl": "http://localhost:4000/sources/entityupdate",
+      "style": {
+        "types": [],
+        "pointCircle": true,
+        "popup": "<h3>{{properties.name}}</h3>{{properties.owner}} @ {{properties.sent}}"
+      },
+      "meta": "entityupdate.meta.json"
+    },
+    {
+      "id": "affectedarea",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "simulation"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "affectedarea.json",
+      "title": "Affected area",
+      "sourceUrl": "http://localhost:4000/sources/affectedarea",
+      "style": {
+        "title": "{{properties.headline}}",
+        "fill": false,
+        "mapbox": {
+          "symbolLayout": {},
+          "symbolPaint": {},
+          "circleLayout": {},
+          "circlePaint": {},
+          "fillLayout": {},
+          "fillPaint": {
+            "fill-color": "orange",
+            "fill-opacity": 0.5
+          }
+        },
+        "types": []
+      },
+      "meta": "affectedarea.meta.json",
+      "typeId": "poi",
+      "description": "",
+      "opacity": 1,
+      "types": [
+        "poi",
+        "geojson"
+      ],
+      "openFeatureDetails": true,
+      "visible": true
+    },
+    {
       "id": "lcms-geojson",
       "source": "lcms-geojson.json",
       "sourceType": "geojson",
@@ -1024,87 +1106,6 @@
         "pointCircle": true
       },
       "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
-    },
-    {
-      "id": "unittransportrequest",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "lightgray",
-      "isLive": true,
-      "tags": [
-        "simulation"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "source": "unittransportrequest.json",
-      "title": "Unit transport request",
-      "sourceUrl": "http://localhost:4000/sources/unittransportrequest",
-      "style": {
-        "types": []
-      },
-      "meta": "unittransportrequest.meta.json"
-    },
-    {
-      "id": "entityupdate",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "lightgray",
-      "isLive": true,
-      "tags": [
-        "simulation"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "source": "entityupdate.json",
-      "title": "Unit update",
-      "sourceUrl": "http://localhost:4000/sources/entityupdate",
-      "style": {
-        "types": [],
-        "pointCircle": true,
-        "popup": "<h3>{{properties.name}}</h3>{{properties.owner}} @ {{properties.sent}}"
-      },
-      "meta": "entityupdate.meta.json"
-    },
-    {
-      "id": "affectedarea",
-      "sourceType": "geojson",
-      "version": "0.0.1",
-      "color": "lightgray",
-      "isLive": true,
-      "tags": [
-        "simulation"
-      ],
-      "isEditable": false,
-      "tileSupport": false,
-      "source": "affectedarea.json",
-      "title": "Affected area",
-      "sourceUrl": "http://localhost:4000/sources/affectedarea",
-      "style": {
-        "title": "{{properties.headline}}",
-        "fill": false,
-        "mapbox": {
-          "symbolLayout": {},
-          "symbolPaint": {},
-          "circleLayout": {},
-          "circlePaint": {},
-          "fillLayout": {},
-          "fillPaint": {
-            "fill-color": "orange",
-            "fill-opacity": 0.5
-          }
-        },
-        "types": []
-      },
-      "meta": "affectedarea.meta.json",
-      "typeId": "poi",
-      "description": "",
-      "opacity": 1,
-      "types": [
-        "poi",
-        "geojson"
-      ],
-      "openFeatureDetails": true,
-      "visible": true
     }
   ],
   "sourcePath": "./sources/",

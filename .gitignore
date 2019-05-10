@@ -3,3 +3,4 @@ log.txt
 tsconfig.tsbuildinfo
 configs/testbed/test-ca.pem
 configs/testbed/Copper.p12
+packages/dashboard/dist/

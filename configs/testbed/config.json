@@ -16,5 +16,7 @@
   "fromOffset": false,
   "autoRegisterSchemas": false,
   "kafkaHost": "tb6.driver-testbed.eu:3561",
-  "schemaRegistry": "tb6.driver-testbed.eu:3562"
+  "schemaRegistry": "tb6.driver-testbed.eu:3562",
+  "kafkaHost": "localhost:3501",
+  "schemaRegistry": "localhost:3502"
 }

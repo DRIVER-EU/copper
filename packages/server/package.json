@@ -16,7 +16,8 @@
     "dev:server": "yarn dev:compile",
     "serve": "nodemon dist/index.js",
     "clean": "del-cli dist lib node_modules",
-    "build": "tsc"
+    "build": "tsc",
+    "docker:build": "docker build -t copper-server ."
   },
   "dependencies": {
     "@csnext/cs-layer-server": "0.0.115",

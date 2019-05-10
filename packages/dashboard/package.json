@@ -9,7 +9,8 @@
     "linkcs": "yarn link @csnext/cs-client && yarn link @csnext/cs-split-panel && yarn link @csnext/cs-map && yarn link @csnext/cs-timeline && yarn link @csnext/cs-core  && yarn link @csnext/cs-form && yarn link @csnext/cs-log",
     "unlinkcs": "yarn unlink @csnext/cs-core && yarn unlink @csnext/cs-client && yarn unlink @csnext/cs-split-panel && yarn unlink @csnext/cs-map && yarn unlink @csnext/cs-timeline &&  yarn unlink @csnext/cs-log",
     "dev": "yarn serve",
-    "clean": "del-cli dist lib node_modules"
+    "clean": "del-cli dist lib node_modules",
+    "docker:build": "docker build --build-arg VUE_APP_COPPER_SERVER_PORT=3007 --build-arg VUE_APP_COPPER_LAYER_URL=http://localhost:3007 --build-arg VUE_APP_COPPER_LOG_URL=http://localhost:3007/logs --build-arg VUE_APP_COPPER_SOCKET_SERVER_URL=http://localhost:3007 -t copper-gui ."
   },
   "dependencies": {
     "@csnext/cs-client": "^0.0.115",
@@ -32,13 +33,13 @@
     "vue-markdown": "^2.2.4",
     "vue-property-decorator": "^8.1.1",
     "vue-router": "^3.0.6",
-    "vuetify": "^1.5.14",    
+    "vuetify": "^1.5.14",
     "core-js": "^2.6.5",
     "timeline-plus": "https://github.com/rinzeb/timeline-plus/releases/download/v2.3.1-beta.1/timeline-plus-2.3.1.tgz",
     "handlebars": "^4.1.2",
-    "simplebar-vue" : "^0.1.6"
+    "simplebar-vue": "^0.1.6"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "@types/socket.io-client": "^1.4.32",
     "@csnext/vue-cli-plugin-cs": "^0.0.115",
     "@types/chroma-js": "^1.4.1",
@@ -53,7 +54,7 @@
     "@types/node": "^11.12.2",
     "@types/vue-markdown": "^2.2.1",
     "@types/mapbox-gl": "^0.51.6",
-    "babel-runtime": "^6.26.0"    
+    "babel-runtime": "^6.26.0"
   },
   "browserslist": [
     "> 1%",
