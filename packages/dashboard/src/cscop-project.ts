@@ -48,7 +48,7 @@ export const project: IProject = {
     socketServerUrl: SOCKET_SERVER_URL,
   }, 
   header: {
-    title: 'Copper',
+    title: 'COPPER',
     logo: 'images/driver.png',
     breadcrumbs: false,
     dense: false

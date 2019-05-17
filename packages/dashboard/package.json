@@ -10,7 +10,7 @@
     "unlinkcs": "yarn unlink @csnext/cs-core && yarn unlink @csnext/cs-client && yarn unlink @csnext/cs-split-panel && yarn unlink @csnext/cs-map && yarn unlink @csnext/cs-timeline &&  yarn unlink @csnext/cs-log",
     "dev": "yarn serve",
     "clean": "del-cli dist lib node_modules",
-    "docker:build": "docker build --build-arg VUE_APP_COPPER_SERVER_PORT=3007 --build-arg VUE_APP_COPPER_LAYER_URL=http://localhost:3007 --build-arg VUE_APP_COPPER_LOG_URL=http://localhost:3007/logs --build-arg VUE_APP_COPPER_SOCKET_SERVER_URL=http://localhost:3007 -t copper-gui ."
+    "docker:build": "docker build --build-arg VUE_APP_COPPER_LAYER_URL=http://localhost:3007 --build-arg VUE_APP_COPPER_LOG_URL=http://localhost:3007/logs --build-arg VUE_APP_COPPER_SOCKET_SERVER_URL=http://localhost:3007 -t copper-gui ."
   },
   "dependencies": {
     "@csnext/cs-client": "^0.0.115",
