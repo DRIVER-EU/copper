@@ -1,15 +1,15 @@
 {
-  "name": "@layer-server/root",
+  "name": "copper",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tnocs/layer-server.git"
+    "url": "https://github.com/driver-eu/copper.git"
   },
   "scripts": {
     "postinstall": "lerna bootstrap && lerna run link",
-    "dev:server": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon --watch ./packages/server/dist packages/server/dist/index.js\"",
-    "dev:client": "lerna run dev --parallel",
-    "dev": "concurrently --kill-others \"tsc -b -w packages\" \"nodemon --watch ./packages/server/dist packages/server/dist/index.js\" \"yarn dev:client\"",
+    "dev:server": "lerna run dev:server --parallel",
+    "dev:client": "lerna run dev:client --parallel",
+    "dev": "lerna run dev --parallel",
     "clean": "lerna run --parallel clean",
     "types": "./node_modules/.bin/typescript-json-schema.cmd packages/core/tsconfig.json ServerConfig *  -o ./schema/server.json",
     "build": "tsc -b packages",
@@ -22,9 +22,10 @@
     "docker:build": "lerna run docker:build --parallel"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "lerna": "^3.13.2",
-    "typescript-json-schema": "^0.37.0"
+    "concurrently": "^4.1.2",
+    "lerna": "^3.16.4",
+    "nodemon": "^1.19.2",
+    "typescript-json-schema": "^0.40.0"
   },
   "nodemonConfig": {
     "ignore": [
@@ -32,7 +33,5 @@
     ],
     "delay": "2"
   },
-  "dependencies": {
-    "nodemon": "^1.18.11"
-  }
+  "dependencies": {}
 }

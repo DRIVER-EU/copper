@@ -1,20 +1,21 @@
 {
   "enabled": true,
-  "topics": [
-    { "id": "simulation_request_unittransport", "type": "request-unittransport", "title": "request-unittransport", "offset": 0 },
-    { "id": "simulation_request_startinject", "type": "request-startinject", "title": "request-startinject", "offset": 0 },
-    { "id": "simulation_entity_item", "type": "entity-item", "title": "entity-item", "offset": 0 },
-    { "id": "sumo_AffectedArea", "type": "affected-area", "title": "affected-area", "offset": 0},
-    { "id": "standard_cap", "type": "cap", "title": "lcms-cap", "offset": 0 }
-  ],
+  "topics": [{"id": "chain", "type": "geojson-data", "tags": ["chain"], "title": "chain", "offset": 0}, {"id": "chain_power", "type": "geojson-data", "tags": ["chain"], "title": "chain_power", "offset": 0}],
   "oldtopics": [
-    { "id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20},
-    { "id": "lcms_plots", "type": "geojson", "title": "lcms-plots", "offset": 0 },
-    { "id": "flood_actual", "type": "geojson-external", "tags": ["flooding"], "title": "flood actual"}
+    {"id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20},
+    {"id": "lcms_plots", "type": "geojson", "title": "lcms-plots", "offset": 0},
+    {"id": "flood_actual", "type": "geojson-external", "tags": ["flooding"], "title": "flood actual"},
+    {"id": "simulation_request_unittransport", "type": "request-unittransport", "title": "request-unittransport", "offset": 0},
+    {"id": "simulation_request_startinject", "type": "request-startinject", "title": "request-startinject", "offset": 0},
+    {"id": "simulation_entity_item", "type": "entity-item", "title": "entity-item", "offset": 0},
+    {"id": "sumo_AffectedArea", "type": "affected-area", "title": "affected-area", "offset": 0},
+    {"id": "standard_cap", "type": "cap", "title": "lcms-cap", "offset": 0}
   ],
+  "produce": ["system_logging", "system_timing", "system_topic_access_invite"],
   "clientId": "ConsumerCOP3",
   "fromOffset": false,
   "autoRegisterSchemas": false,
+  "autoRegisterDefaultSchemas": true,
   "kafkaHost": "tb6.driver-testbed.eu:3561",
   "schemaRegistry": "tb6.driver-testbed.eu:3562",
   "kafkaHost": "localhost:3501",

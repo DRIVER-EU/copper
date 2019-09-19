@@ -1,4 +1,4 @@
-import { WidgetBase, AppState } from '@csnext/cs-client';
+import { WidgetBase } from '@csnext/cs-client';
 import './cap-details.css';
 import Component from 'vue-class-component';
 import Vue from 'vue';
@@ -19,7 +19,6 @@ export class CapDetails extends WidgetBase {
     console.log(this.widget.data);
   }
 }
-
 
 Vue.filter('json', (value: any) => {
   if (value !== undefined) {        

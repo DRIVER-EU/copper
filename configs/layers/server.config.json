@@ -166,6 +166,51 @@
       "meta": "lcms-geojson.meta.json"
     },
     {
+      "id": "chain",
+      "source": "chain.json",
+      "sourceType": "geojson",
+      "title": "Chain effects",
+      "sourceUrl": "http://localhost:4000/sources/chain",
+      "version": "0.0.1",
+      "isLive": true,
+      "style": {
+        "types": [],
+        "pointCircle": true
+      },
+      "color": "lightgray",
+      "tags": [
+        "chain"
+      ],
+      "description": "chain",
+      "meta": "chain.meta.json"
+    },
+    {
+      "id": "chain_power",
+      "source": "chain_power.json",
+      "sourceType": "geojson",
+      "title": "Chain_power effects",
+      "sourceUrl": "http://localhost:4000/sources/chain_power",
+      "version": "0.0.1",
+      "isLive": true,
+      "style": {
+        "types": [],
+        "pointCircle": true,
+        "mapbox": {
+          "circlePaint": {
+            "circle-radius": 15,
+            "circle-color": "blue",
+            "circle-opacity": 0.6
+          }
+        }
+      },
+      "color": "lightgray",
+      "tags": [
+        "chain"
+      ],
+      "description": "chain_power",
+      "meta": "chain_power.meta.json"
+    },
+    {
       "id": "drawing",
       "source": "drawing.json",
       "sourceType": "geojson",

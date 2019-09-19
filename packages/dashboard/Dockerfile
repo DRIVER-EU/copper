@@ -17,5 +17,5 @@ RUN yarn global add http-server
 RUN mkdir -p /copper
 COPY --from=builder /code/dist /copper
 EXPOSE 8080
-# CMD ["http-server", "./copper"]
+# CMD ["http-server", "/copper"]
 CMD ["sh", "-c", "echo \"var VUE_APP_COPPER_LAYER_URL=$$VUE_APP_COPPER_LAYER_URL;var VUE_APP_COPPER_LOG_URL=$$VUE_APP_COPPER_LOG_URL;var VUE_APP_COPPER_SOCKET_SERVER_URL=$$VUE_APP_COPPER_SOCKET_SERVER_URL\" > /copper/global-vars-copper.js && http-server /copper"]

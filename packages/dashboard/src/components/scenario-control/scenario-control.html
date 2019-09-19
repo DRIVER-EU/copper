@@ -1,6 +1,9 @@
-<div v-if="time">
-  <div class="simulation-date-group">
+<div>
+  <div v-if="adapterState && adapterState.time" class="simulation-date-group">
     <div class="simulation-time">{{ adapterState.time | formatTime}}</div>
     <div class="simulation-day">{{ adapterState.time | formatDay}}</div>
+  </div>
+  <div v-else class="pa-3">
+    {{$cs.Translate('NO_TIME_AVAILABLE')}}
   </div>
 </div>

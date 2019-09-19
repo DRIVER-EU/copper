@@ -2,6 +2,14 @@ html {
   overflow-y: hidden !important;
 }
 
+main > div > div {
+  height: 100%;
+}
+
+.v-application a.subheading {
+  color: black;
+}
+
 .pointer {
   cursor: pointer;
 }

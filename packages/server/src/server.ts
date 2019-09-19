@@ -1,8 +1,10 @@
-import { ApplicationModule } from './app.module';
-import { NestFactory } from '@nestjs/core';
-import { Logger } from '@nestjs/common';
-import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { NestExpressApplication } from '@nestjs/platform-express';
+import dotenv from 'dotenv';
+dotenv.config();
+import {ApplicationModule} from './app.module';
+import {NestFactory} from '@nestjs/core';
+import {Logger} from '@nestjs/common';
+import {SwaggerModule, DocumentBuilder} from '@nestjs/swagger';
+import {NestExpressApplication} from '@nestjs/platform-express';
 
 var path = require('path');
 var express = require('express');
@@ -10,22 +12,18 @@ var express = require('express');
 const portNumber = process.env.COPPER_SERVER_PORT ? process.env.COPPER_SERVER_PORT : 3007;
 
 export class Server {
-	
-   private server: NestExpressApplication;
-  
-	 
-   constructor() {
-      this.StartNestServerAsync()
-        .then(server =>  Logger.log('COPPER Server Started'))
-        .catch(reason => Logger.log('Failed to start COPPER Server'));
+  private server: NestExpressApplication;
+
+  constructor() {
+    this.StartNestServerAsync()
+      .then(server => Logger.log('COPPER Server Started'))
+      .catch(reason => Logger.log('Failed to start COPPER Server'));
   }
-  
-  
+
   // Setup NEST.JS REST server
   async StartNestServerAsync(): Promise<NestExpressApplication> {
     // Create the server
-    const app = await NestFactory.create<NestExpressApplication>(ApplicationModule, { cors: true /* enable preflight cors */ });
-    
+    const app = await NestFactory.create<NestExpressApplication>(ApplicationModule, {cors: true /* enable preflight cors */});
 
     // Add response header to all incomming requests
     // Use express from this
@@ -35,7 +33,7 @@ export class Server {
       res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
       next();
     });
-/*
+    /*
     NEST.JS also supports CORS:
     const corsOptions = {
       "origin": "*",
@@ -68,5 +66,4 @@ export class Server {
     await app.listen(portNumber);
     return app;
   }
-	 
 }

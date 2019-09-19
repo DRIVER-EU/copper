@@ -1,5 +1,6 @@
 import {MessageBusService, Topics} from '@csnext/cs-core';
-import {ITimelineDataSource, DataItem} from '@csnext/cs-timeline';
+import {ITimelineDataSource} from '@csnext/cs-timeline';
+import {DataItem} from 'vis';
 import http from 'axios';
 import {ICAPAlert} from '../classes/cap';
 

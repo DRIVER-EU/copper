@@ -1,38 +1,24 @@
-import { Get, Controller, Inject, Logger as NestLogger, Post, Body } from '@nestjs/common';
+import {Get, Controller, Inject, Logger as NestLogger, Post, Body} from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
-import { DefaultWebSocketGateway, LayerService, ILogItem } from '@csnext/cs-layer-server';
-import {
-  TestBedAdapter,
-  Logger,
-  LogLevel,
-  ITopicMetadataItem,
-  IAdapterMessage,
-  IDefaultKey,
-  ITestBedOptions
-} from 'node-test-bed-adapter';
-import { Feature, Point } from 'geojson';
-import {
-  LogService,
-  LayerSource,
-  LayerDefinition
-} from '@csnext/cs-layer-server';
-import { ICAPAlert } from './classes/cap';
-import { OffsetFetchRequest } from 'kafka-node';
-import { TestBedConfig } from './classes/testbed-config';
+import {DefaultWebSocketGateway, LayerService, ILogItem} from '@csnext/cs-layer-server';
+import {TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, IAdapterMessage, IDefaultKey, ITestBedOptions} from 'node-test-bed-adapter';
+import {Feature, Point} from 'geojson';
+import {LogService, LayerDefinition} from '@csnext/cs-layer-server';
+import {ICAPAlert} from './classes/cap';
+import {OffsetFetchRequest} from 'kafka-node';
 import _ from 'lodash';
-import { RequestUnitTransport } from './classes/request-unittransport';
-import { Item } from './classes/entity_item';
-import { AffectedArea } from './classes/sumo_affected_area';
+import {RequestUnitTransport} from './classes/request-unittransport';
+import {Item} from './classes/entity_item';
+import {AffectedArea} from './classes/sumo_affected_area';
+import { IExtendedTestBedOptions } from './classes/testbed-config';
 
 const log = Logger.instance;
 
 @Controller('testbed')
 export class TestbedController {
   private adapter: TestBedAdapter;
-
-  public config: TestBedConfig = {};
-
+  public config: IExtendedTestBedOptions = {} as IExtendedTestBedOptions;
   public capObjects: ICAPAlert[] = [];
   public messageQueue: IAdapterMessage[] = [];
   public busy = false;
@@ -46,19 +32,16 @@ export class TestbedController {
     @Inject('DefaultWebSocketGateway')
     private readonly socket: DefaultWebSocketGateway,
     public layers: LayerService,
-    public logs: LogService,
+    public logs: LogService
   ) {
     NestLogger.log('Init testbed');
     // load config
-    const c = this.loadConfig(path.join('configs','testbed', 'config.json'));
+    const c = this.loadConfig(path.join(__dirname, '..', '..', '..', 'configs', 'testbed', 'config.json'));
     if (c !== undefined) {
       Object.assign(this.config, c);
     }
 
-    if (
-      this.config.enabled !== undefined &&
-      !this.config.enabled
-    ) {
+    if (this.config.enabled !== undefined && !this.config.enabled) {
       return;
     }
 
@@ -68,13 +51,14 @@ export class TestbedController {
 
     let consume: OffsetFetchRequest[] = [];
     this.config.topics.forEach(t => {
-      consume.push({ topic: t.id, offset: t.offset });
+      consume.push({topic: t.id, offset: t.offset});
     });
 
     const tbOptions: ITestBedOptions = {
+      ...this.config,
       kafkaHost: this.config.kafkaHost,
       schemaRegistry: this.config.schemaRegistry,
-      consume: consume,
+      consume: (this.config.consume || []).concat(consume),
       fetchAllSchemas: false,
       fetchAllVersions: false,
       wrapUnions: false,
@@ -88,6 +72,7 @@ export class TestbedController {
       // Start from the latest message, not from the first
       fromOffset: this.config.fromOffset,
       autoRegisterSchemas: this.config.autoRegisterSchemas,
+      autoRegisterDefaultSchemas: this.config.autoRegisterDefaultSchemas,
       logging: {
         logToConsole: LogLevel.Info,
         logToFile: LogLevel.Info,
@@ -105,12 +90,10 @@ export class TestbedController {
       setInterval(() => {
         if (this.socket && this.socket.server) {
           this.socket.server.emit('time', this.getAdapterState());
-        };
+        }
       }, 2000);
     });
-    this.adapter.on('error', err =>
-      log.error(`Consumer received an error: ${err}`)
-    );
+    this.adapter.on('error', err => log.error(`Consumer received an error: ${err}`));
     this.adapter.connect();
     //Init logs
     this.logs.getLogById('sim');
@@ -138,13 +121,11 @@ export class TestbedController {
           if (result.hasOwnProperty('metadata')) {
             console.log('TOPICS');
             const metadata = (result as {
-              [metadata: string]: { [topic: string]: ITopicMetadataItem };
+              [metadata: string]: {[topic: string]: ITopicMetadataItem};
             }).metadata;
             for (let key in metadata) {
               const md = metadata[key];
-              console.log(
-                `Topic: ${key}, partitions: ${Object.keys(md).length}`
-              );
+              console.log(`Topic: ${key}, partitions: ${Object.keys(md).length}`);
             }
           } else {
             console.log('NODE');
@@ -159,41 +140,26 @@ export class TestbedController {
     if (this.messageQueue.length > 0 && !this.busy) {
       this.busy = true;
       let message = this.messageQueue.shift();
-      const stringify = (m: string | Object) =>
-        typeof m === 'string' ? m : JSON.stringify(m, null, 2);
+      const stringify = (m: string | Object) => (typeof m === 'string' ? m : JSON.stringify(m, null, 2));
       switch (message.topic) {
         case 'system_heartbeat':
-          log.info(
-            `Received heartbeat message with key ${stringify(
-              message.key
-            )}: ${stringify(message.value)}`
-          );
+          log.info(`Received heartbeat message with key ${stringify(message.key)}: ${stringify(message.value)}`);
           if (this.socket && this.socket.server) {
             this.socket.server.emit('time', this.getAdapterState());
           }
           break;
         case 'system_timing':
-          log.info(
-            `Received timing message with key ${stringify(
-              message.key
-            )}: ${stringify(message.value)}`
-          );
+          log.info(`Received timing message with key ${stringify(message.key)}: ${stringify(message.value)}`);
           if (this.socket && this.socket.server) {
             this.socket.server.emit('time', this.getAdapterState());
           }
           break;
         case 'system_configuration':
-          log.info(
-            `Received configuration message with key ${stringify(
-              message.key
-            )}: ${stringify(message.value)}`
-          );
+          log.info(`Received configuration message with key ${stringify(message.key)}: ${stringify(message.value)}`);
           break;
         default:
           // find topic
-          const topic = this.config.topics.find(
-            t => t.id === message.topic
-          );
+          const topic = this.config.topics.find(t => t.id === message.topic);
           if (topic) {
             switch (topic.type) {
               case 'cap':
@@ -204,6 +170,9 @@ export class TestbedController {
                 break;
               case 'geojson-external':
                 await this.parseGeojsonExternal(topic.title, message, topic.tags);
+                break;
+              case 'geojson-data':
+                await this.parseGeojsonData(topic.title, message, topic.tags);
                 break;
               case 'request-unittransport':
                 await this.parseRequestUnittransport(topic.title, message, topic.tags);
@@ -236,7 +205,6 @@ export class TestbedController {
 
   private getExternalLayer(id: string): Promise<LayerDefinition> {
     return new Promise(async (resolve, reject) => {
-
       try {
         // try to get existing layer
         console.log('Trying to get ' + id);
@@ -291,7 +259,6 @@ export class TestbedController {
 
   private getCapLayer(id: string): Promise<LayerDefinition> {
     return new Promise(async (resolve, reject) => {
-
       try {
         // try to get existing layer
         console.log('Trying to get ' + id);
@@ -313,9 +280,9 @@ export class TestbedController {
           pointCircle: true,
           mapbox: {
             circlePaint: {
-              "circle-radius": 15,
-              "circle-color": "blue",
-              "circle-opacity": 0.6
+              'circle-radius': 15,
+              'circle-color': 'blue',
+              'circle-opacity': 0.6
             }
           }
         };
@@ -371,7 +338,7 @@ export class TestbedController {
         def.tags = ['request-unittransport'];
         def.style = {
           types: ['line'],
-          pointCircle: false      
+          pointCircle: false
         };
         def._layerSource = {
           id: id,
@@ -480,7 +447,7 @@ export class TestbedController {
         def.style = {
           types: ['polygon'],
           mapbox: {
-            fillPaint: { 'fill-color': 'orange', 'fill-opacity': 0.5 }
+            fillPaint: {'fill-color': 'orange', 'fill-opacity': 0.5}
           }
         };
         def._layerSource = {
@@ -529,7 +496,7 @@ export class TestbedController {
       id: (message.key as IDefaultKey).distributionID,
       start: new Date((message.key as IDefaultKey).dateTimeSent),
       content: value
-    }
+    };
     this.logs.addLogItem('sim', logItem);
   }
 
@@ -545,7 +512,7 @@ export class TestbedController {
       id: (message.key as IDefaultKey).distributionID,
       start: new Date((message.key as IDefaultKey).dateTimeSent),
       content: value
-    }
+    };
     this.logs.addLogItem('sim', logItem);
 
     // add to RequestUnitTransport layer
@@ -553,23 +520,28 @@ export class TestbedController {
       try {
         let layer = await this.getRouteRequestLayer('unittransportrequest');
         if (layer !== undefined) {
-              const f = {
-                type: 'Feature',
-                id: value.guid,
-                properties: value,
-                geometry: {
-                  type: 'LineString',
-                  coordinates: value.route.map(a => {return [a.longitude, a.latitude]})
-                }
-              };
-              if (this.layers) {
-                this.layers.updateFeature(layer.id, f as any, value.guid).then(f => {
-                  // console.log('Feature saved');
-                }).catch(e => {
-                  console.log('Error saving feature');
-                  console.log(e);
-                })
-              }
+          const f = {
+            type: 'Feature',
+            id: value.guid,
+            properties: value,
+            geometry: {
+              type: 'LineString',
+              coordinates: value.route.map(a => {
+                return [a.longitude, a.latitude];
+              })
+            }
+          };
+          if (this.layers) {
+            this.layers
+              .updateFeature(layer.id, f as any, value.guid)
+              .then(f => {
+                // console.log('Feature saved');
+              })
+              .catch(e => {
+                console.log('Error saving feature');
+                console.log(e);
+              });
+          }
         }
       } catch (e) {
         console.log('Really not found');
@@ -615,19 +587,20 @@ export class TestbedController {
           };
           // console.log(JSON.stringify(unit));
           if (this.layers) {
-            this.layers.updateFeature(layer.id, f, unit.guid).then(f => {
-              // console.log('Feature saved');
-            }).catch(e => {
-              console.log('Error saving feature');
-              console.log(e);
-            })
+            this.layers
+              .updateFeature(layer.id, f, unit.guid)
+              .then(f => {
+                // console.log('Feature saved');
+              })
+              .catch(e => {
+                console.log('Error saving feature');
+                console.log(e);
+              });
           }
           // this.layers.updateFeature()
           // this.layers
           //   .getLayerSourceById('entityupdate')
           //   .then(source => {
-
-
 
           //     source.features.push(f);
           //     console.log(JSON.stringify(f));
@@ -665,7 +638,7 @@ export class TestbedController {
       id: `${area.id}-${(message.key as IDefaultKey).dateTimeSent}`,
       start: new Date((message.key as IDefaultKey).dateTimeSent),
       content: area
-    }
+    };
     this.logs.addLogItem('sim', logItem);
 
     // add to AffectedArea layer
@@ -682,13 +655,15 @@ export class TestbedController {
               coordinates: area.area.coordinates
             }
           } as any;
-          this.layers.updateFeature(layer.id, af, area.id).then(f => {
-            // console.log('Feature saved');
-          }).catch(e => {
-            console.log('Error saving feature');
-            console.log(e);
-          })
-
+          this.layers
+            .updateFeature(layer.id, af, area.id)
+            .then(f => {
+              // console.log('Feature saved');
+            })
+            .catch(e => {
+              console.log('Error saving feature');
+              console.log(e);
+            });
 
           // this.layers
           //   .getLayerSourceById('affectedarea')
@@ -725,9 +700,10 @@ export class TestbedController {
     }
   }
 
-
   private async parseCapObject(cap: ICAPAlert) {
-    if (cap === undefined) { return; }
+    if (cap === undefined) {
+      return;
+    }
 
     // make sure parameter is always an array
     if (cap.info && cap.info.hasOwnProperty('parameter') && !_.isArray(cap.info['parameter'])) {
@@ -741,7 +717,7 @@ export class TestbedController {
       id: cap.identifier,
       start: new Date(cap.sent),
       content: cap
-    }
+    };
     this.logs.addLogItem('cap', logItem);
 
     // add to cap layer
@@ -770,9 +746,9 @@ export class TestbedController {
                 .then(() => {
                   console.log(`Saved layer ${layer.id}`);
                 })
-                .catch(() => { });
+                .catch(() => {});
             })
-            .catch(() => { });
+            .catch(() => {});
         }
       } catch (e) {
         console.log('Really not found');
@@ -796,27 +772,33 @@ export class TestbedController {
     return p;
   }
 
+  private async parseGeojsonData(id: string, message: IAdapterMessage, tags: string[] | undefined) {
+    console.log('Geojson data');
+    if (message.value && message.value.hasOwnProperty('data')) {
+      if ((message.value['data'] as string).trim().startsWith('{')) {
+        message.value['geojson'] = JSON.parse(message.value['data']);
+        return this.parseGeojson(id, message, tags);
+      }
+    }
+  }
+
   private async parseGeojsonExternal(id: string, message: IAdapterMessage, tags: string[] | undefined) {
     console.log('Geojson external');
     console.log(JSON.stringify(message));
-    this.getExternalLayer(id).then(l => {
-      if (tags) {
-        l.tags = tags;
-      }
-      l.title = message.value['title'];
-      l.externalUrl = message.value['url'];
-      this.layers.triggerLayerRefresh(id);
-    }).catch(e => {
-
-    })
+    this.getExternalLayer(id)
+      .then(l => {
+        if (tags) {
+          l.tags = tags;
+        }
+        l.title = message.value['title'];
+        l.externalUrl = message.value['url'];
+        this.layers.triggerLayerRefresh(id);
+      })
+      .catch(e => {});
   }
 
   private async parseGeojson(id: string, message: IAdapterMessage, tags: string[] | undefined) {
-    if (
-      message.value &&
-      message.value.hasOwnProperty('geojson') &&
-      message.value['geojson']['features'].length > 0
-    ) {
+    if (message.value && message.value.hasOwnProperty('geojson') && message.value['geojson']['features'].length > 0) {
       let layerId = id;
 
       if (message.value.hasOwnProperty('properties') && message.value['properties'].hasOwnProperty('map') && message.value['properties']['map'].hasOwnProperty('name')) {
@@ -839,37 +821,26 @@ export class TestbedController {
       // console.log(geojson);
       for (const feature of geojson.features) {
         // fix geometry object
-        if (
-          feature.geometry &&
-          feature.geometry.hasOwnProperty('eu.driver.model.geojson.Point')
-        ) {
+        if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.Point')) {
           feature.geometry = feature.geometry['eu.driver.model.geojson.Point'];
         }
 
-        if (
-          feature.geometry &&
-          feature.geometry.hasOwnProperty('eu.driver.model.geojson.Polygon')
-        ) {
+        if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.Polygon')) {
           feature.geometry = feature.geometry['eu.driver.model.geojson.Polygon'];
         }
 
-        if (
-          feature.geometry &&
-          feature.geometry.hasOwnProperty('eu.driver.model.geojson.LineString')
-        ) {
+        if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.LineString')) {
           feature.geometry = feature.geometry['eu.driver.model.geojson.LineString'];
         }
-
 
         // fix properties
         if (feature.properties) {
           for (const key in feature.properties) {
             if (feature.properties.hasOwnProperty(key)) {
               const prop = feature.properties[key];
-              if (prop.hasOwnProperty('string')) {
+              if (prop && prop.hasOwnProperty('string')) {
                 feature.properties[key] = prop['string'];
               }
-
             }
           }
         }
@@ -906,16 +877,18 @@ export class TestbedController {
 
   @Post('cap')
   addCapObject(@Body() capObject: ICAPAlert): void {
-    this.parseCapObject(capObject).then(() => {
-      log.info(`Added cap object`);
-    }).catch((err) => {
-      log.warn(`Error adding capObject: ${err}`);
-    });
+    this.parseCapObject(capObject)
+      .then(() => {
+        log.info(`Added cap object`);
+      })
+      .catch(err => {
+        log.warn(`Error adding capObject: ${err}`);
+      });
     return;
   }
 
   @Get('version')
   version(): string {
-    return 'v0.0.1';
+    return 'v0.0.2';
   }
 }

@@ -1,39 +1,44 @@
-import { IProject, ILayoutManagerConfig, IMenu, TimeDataSource } from '@csnext/cs-core';
-import { LayoutManager, MdWidget, ImageWidget, Grid, LogDataSource } from '@csnext/cs-client';
-import { CsTimeline, TimelineWidgetOptions, TimelineTooltipOption } from '@csnext/cs-timeline';
-import { CsLogList, LogListOptions } from '@csnext/cs-log';
+import {IProject, ILayoutManagerConfig, IMenu, TimeDataSource} from '@csnext/cs-core';
+import {LayoutManager, MdWidget, LogDataSource} from '@csnext/cs-client';
+import {CsTimeline, TimelineWidgetOptions} from '@csnext/cs-timeline';
+import {CsLogList, LogListOptions} from '@csnext/cs-log';
 import './assets/example.css';
 import './assets/copper.css';
 import * as translations from './assets/locales.json';
-import {
-  SplitPanel
-} from '@csnext/cs-split-panel';
-import {
-  CsMap,
-  MapOptions,
-  LayerSelection,
-  LayerSources,
-  MapLayers,
-  LayerSource,
-  GeojsonLayer,
-  ILayerExtensionType,
-  IWmsTimeExtensionOptions,
-  ILayerServiceOptions
-} from '@csnext/cs-map';
-import { Project } from './';
+import {SplitPanel} from '@csnext/cs-split-panel';
+import {CsMap, MapOptions, LayerSelection, LayerSources, MapLayers, LayerSource, GeojsonLayer, ILayerExtensionType, IWmsTimeExtensionOptions, ILayerServiceOptions} from '@csnext/cs-map';
+import {Project} from './';
 import Vue from 'vue';
-import { RasterPaint, MapboxOptions } from 'mapbox-gl';
-import { ScenarioControl, ScenarioControlOptions } from './components/scenario-control/scenario-control';
-import { CapDetails } from './components/cap-details/cap-details';
-import { SimDetails } from './components/sim-details/sim-details';
+import {RasterPaint} from 'mapbox-gl';
+import {ScenarioControl, ScenarioControlOptions} from './components/scenario-control/scenario-control';
+import {CapDetails} from './components/cap-details/cap-details';
+import {SimDetails} from './components/sim-details/sim-details';
 
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
-const global = window as CopperWindow || {};
+const global = ((window as unknown) as CopperWindow) || {};
 
-const LAYER_URL = global.VUE_APP_COPPER_LAYER_URL ? global.VUE_APP_COPPER_LAYER_URL : process.env.VUE_APP_COPPER_LAYER_URL ? process.env.VUE_APP_COPPER_LAYER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
-const LOG_URL = global.VUE_APP_COPPER_LOG_URL ? global.VUE_APP_COPPER_LOG_URL : process.env.VUE_APP_COPPER_LOG_URL ? process.env.VUE_APP_COPPER_LOG_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007/logs' : 'http://cool5.sensorlab.tno.nl:4022';
-const SOCKET_SERVER_URL = global.VUE_APP_COPPER_SOCKET_SERVER_URL ? global.VUE_APP_COPPER_SOCKET_SERVER_URL : process.env.VUE_APP_COPPER_SOCKET_SERVER_URL ? process.env.VUE_APP_COPPER_SOCKET_SERVER_URL : process.env.NODE_ENV !== 'production' ? 'http://localhost:3007' : 'http://cool5.sensorlab.tno.nl:4022';
+const LAYER_URL = global.VUE_APP_COPPER_LAYER_URL
+  ? global.VUE_APP_COPPER_LAYER_URL
+  : process.env.VUE_APP_COPPER_LAYER_URL
+  ? process.env.VUE_APP_COPPER_LAYER_URL
+  : process.env.NODE_ENV !== 'production'
+  ? 'http://localhost:3007'
+  : 'http://cool5.sensorlab.tno.nl:4022';
+const LOG_URL = global.VUE_APP_COPPER_LOG_URL
+  ? global.VUE_APP_COPPER_LOG_URL
+  : process.env.VUE_APP_COPPER_LOG_URL
+  ? process.env.VUE_APP_COPPER_LOG_URL
+  : process.env.NODE_ENV !== 'production'
+  ? 'http://localhost:3007/logs'
+  : 'http://cool5.sensorlab.tno.nl:4022';
+const SOCKET_SERVER_URL = global.VUE_APP_COPPER_SOCKET_SERVER_URL
+  ? global.VUE_APP_COPPER_SOCKET_SERVER_URL
+  : process.env.VUE_APP_COPPER_SOCKET_SERVER_URL
+  ? process.env.VUE_APP_COPPER_SOCKET_SERVER_URL
+  : process.env.NODE_ENV !== 'production'
+  ? 'http://localhost:3007'
+  : 'http://cool5.sensorlab.tno.nl:4022';
 
 LayoutManager.add({
   id: 'split-panel',
@@ -42,16 +47,17 @@ LayoutManager.add({
 
 console.log(translations);
 
-export const project: IProject = { 
+export const project: IProject = {
   server: {
     useSocket: true,
-    socketServerUrl: SOCKET_SERVER_URL,
-  }, 
+    socketServerUrl: SOCKET_SERVER_URL
+  },
   header: {
     title: 'COPPER',
     logo: 'images/driver.png',
     breadcrumbs: false,
-    dense: false
+    dense: false,
+    showNotifications: false
   },
   user: {
     // showUserIcon: true
@@ -75,22 +81,19 @@ export const project: IProject = {
       buienradar: {
         title: 'Buienradar',
         type: 'raster',
-        url:
-          'http://geoservices.knmi.nl/cgi-bin/RADNL_OPER_R___25PCPRR_L3.cgi?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=RADNL_OPER_R___25PCPRR_L3_COLOR&CRS=EPSG%3A3857&transparent=true',
+        url: 'http://geoservices.knmi.nl/cgi-bin/RADNL_OPER_R___25PCPRR_L3.cgi?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=RADNL_OPER_R___25PCPRR_L3_COLOR&CRS=EPSG%3A3857&transparent=true',
         tileSize: 256
       } as LayerSource,
       luchtfoto: {
         title: "Lucht foto's actueel (25m)",
         type: 'raster',
-        url:
-          'https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=Actueel_ortho25&CRS=EPSG%3A3857&transparent=true&styles=default',
+        url: 'https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=Actueel_ortho25&CRS=EPSG%3A3857&transparent=true&styles=default',
         tileSize: 256
       } as LayerSource,
       hoogtekaart: {
         title: 'Hoogte Kaart (AHN3)',
         type: 'raster',
-        url:
-          'https://geodata.nationaalgeoregister.nl/ahn3/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=ahn3_5m_dsm&CRS=EPSG%3A3857&transparent=true&styles=default',
+        url: 'https://geodata.nationaalgeoregister.nl/ahn3/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=ahn3_5m_dsm&CRS=EPSG%3A3857&transparent=true&styles=default',
         tileSize: 256
       } as LayerSource,
 
@@ -110,11 +113,11 @@ export const project: IProject = {
       provincie: {
         title: 'Provincie',
         url: '/layers/provincie_2017.json'
-      } as LayerSource      
+      } as LayerSource
     }),
     mainmap: new MapLayers(
       [
-        { source: 'gemeenten', type: 'line' } as GeojsonLayer,
+        {source: 'gemeenten', type: 'line'} as GeojsonLayer,
         // { source: 'sectoren', type: 'line', tags: ['evenement'] } as MapLayer,
         {
           source: 'buienradar',
@@ -122,7 +125,7 @@ export const project: IProject = {
           color: 'blue',
           tags: ['weer'],
           type: 'raster',
-          paint: { 'raster-opacity': 0.5 } as RasterPaint,
+          paint: {'raster-opacity': 0.5} as RasterPaint,
           extensions: [
             {
               id: 'wms-time',
@@ -149,7 +152,7 @@ export const project: IProject = {
         } as GeojsonLayer
       ],
       'layers',
-      [       
+      [
         {
           id: 'event',
           type: 'layer-server-service',
@@ -183,7 +186,7 @@ export const project: IProject = {
     width: 600,
     // floating: true,
     dashboard: {
-      widgets: [{ component: MdWidget, data: 'right sidebar' }]
+      widgets: [{component: MdWidget, data: 'right sidebar'}]
     }
   },
   menus: [
@@ -233,9 +236,13 @@ export const project: IProject = {
         }
       ],
       leftSidebar: {
+        footer: {
+          icon: 'info',
+          tooltip: `Build date: ${process.env.VUE_APP_VERSION_TIME || '?'} <br>Git commit: ${process.env.VUE_APP_VERSION_SHA || '?'} <br>NPM-package: ${process.env.VUE_APP_PACKAGE_VERSION || '?'}`
+        },
         open: true,
         clipped: true,
-        width: 400,        
+        width: 400,
         dashboard: {
           widgets: [
             {
@@ -256,7 +263,7 @@ export const project: IProject = {
       },
       options: {
         defaultPreset: 'map',
-        presets: {          
+        presets: {
           map: {
             icon: 'map',
             direction: 'vertical',
@@ -266,26 +273,25 @@ export const project: IProject = {
                 splitpanel: {
                   direction: 'horizontal',
                   elements: [
-                    { size: 66, widgetId: 'map' },
+                    {size: 66, widgetId: 'map'},
                     {
                       size: 33,
                       splitpanel: {
                         direction: 'vertical',
                         disableVerticalScroll: true,
                         elements: [
-                          { size: 20, widgetId: 'scenario-control' },
+                          {size: 20, widgetId: 'scenario-control'},
                           {
                             size: 80,
                             widgetId: 'sim-viewer'
                           }
                         ]
                       }
-                    },
-                    
+                    }
                   ]
                 }
               },
-              { size: 18, widgetId: 'timeline' }
+              {size: 18, widgetId: 'timeline'}
             ]
           }
         } as any
@@ -298,26 +304,26 @@ export const project: IProject = {
             showToolbar: true,
             title: 'Cap Messages',
             logSource: 'caplog',
-            titleTemplate: "{{content.info.headline}}",
-            subTitleTemplate: "{{content.sent}} - {{content.info.senderName}} - {{content.info.event}} - {{content.info.severity}} - {{content.info.category}}",
+            titleTemplate: '{{content.info.headline}}',
+            subTitleTemplate: '{{content.sent}} - {{content.info.senderName}} - {{content.info.event}} - {{content.info.severity}} - {{content.info.category}}',
             openDetailsOnClick: true,
             detailsComponent: 'cap-details'
-          } as LogListOptions          
-        }, 
+          } as LogListOptions
+        },
         {
           id: 'sim-viewer',
           component: CsLogList,
           options: {
             showToolbar: true,
-            title: 'Simulation Messages',
+            title: 'SIMULATION_MESSAGES',
             logSource: 'simlog',
-            titleTemplate: "{{content.headline}}",
-            subTitleTemplate: "{{content.owner}} - {{content.destination}} - {{content.sent}}",
+            titleTemplate: '{{content.headline}}',
+            subTitleTemplate: '{{content.owner}} - {{content.destination}} - {{content.sent}}',
             openDetailsOnClick: true,
             reverseOrder: true,
             detailsComponent: 'sim-details'
-          } as LogListOptions          
-        },      
+          } as LogListOptions
+        },
         {
           id: 'scenario-control',
           component: ScenarioControl,
@@ -331,19 +337,19 @@ export const project: IProject = {
           datasource: 'mainmap',
           options: {
             class: 'data-map-container',
-            token:
-              'pk.eyJ1IjoiZGFteWxlbiIsImEiOiJfdUUzLVhNIn0.7-Ogdnc6voJfUXOMBE1VPA',
+            token: 'pk.eyJ1IjoiZGFteWxlbiIsImEiOiJfdUUzLVhNIn0.7-Ogdnc6voJfUXOMBE1VPA',
             mbOptions: {
-              style: 'mapbox://styles/mapbox/streets-v9', //'http://localhost:901/styles/klokantech-basic/style.json',
-              center: [4.474612, 51.920446],
+              // style: 'test.json',
+              style: 'mapbox://styles/mapbox/streets-v9', //"http://localhost:901/styles/klokantech-basic/style.json", //"mapbox://styles/mapbox/streets-v9",
+              center: [4.799119, 52.478137],
               zoom: 13
-            } as MapboxOptions,
-            showDraw: true,
+            },
+            showDraw: false,
             showRuler: true,
-            showStyles: false,
+            showStyles: true,
             showGeocoder: true,
-            showLegend: true,
-            showGrid: true
+            showLegend: false,
+            showGrid: false
           } as MapOptions
         },
         {
@@ -360,67 +366,44 @@ export const project: IProject = {
               type: 'point',
               start: new Date(Date.now() - 1000 * 60 * 60 * 12),
               end: new Date(Date.now() + 1000 * 60 * 60 * 12),
-              moveable: true,              
+              moveable: true,
               verticalScroll: true,
               margin: {
                 item: 2
               }
             }
           } as TimelineWidgetOptions,
-          data: { smallView: false }
+          data: {smallView: false}
         }
-        // {
-        //   component: RiskVariables,
-        //   options: <any> { x: 0, y: 4, width: 4, height: 5 }
-        // },
+      ]
+    },
+    {
+      title: 'ABOUT',
+      icon: 'assignment',
+      path: '/about',
+      layout: 'single',
+      datasource: 'project',
+      menus: [],
+      leftSidebar: {
+        footer: {
+          icon: 'info',
+          tooltip: `Build date: ${process.env.VUE_APP_VERSION_TIME || '?'} <br>Git commit: ${process.env.VUE_APP_VERSION_SHA || '?'} <br>NPM-package: ${process.env.VUE_APP_PACKAGE_VERSION || '?'}`
+        },
+        open: false,
+        clipped: true,
+        width: 400
+      },
+      defaultWidgetOptions: {
+        widgetBorder: 'pa-4 widget-border-shadow'
+        // height: 300
+      },
+      widgets: [
+        {
+          id: 'about-view',
+          component: MdWidget,
+          data: '## COPPER \n\n COPPER is a Common Operational Picture tool developed by TNO'
+        }
       ]
     }
-   
-    // {
-    //   title: 'Risico Editor',
-    //   icon: 'assignment',
-    //   path: '/:eventid/risks',
-    //   layout: 'single',
-    //   datasource: 'project',
-    //   leftSidebar: {
-    //     open: false,
-    //     clipped: true
-    //   },
-    //   widgets: [
-    //     {
-    //       id: 'riskeditor',
-    //       component: AllRiskEditor,
-    //       datasource: 'project',
-    //       options: {
-    //         class: 'data-map-container'
-    //       }
-    //     }
-    //   ]
-    // },
-
-    // {
-    //   title: 'Programma',
-    //   icon: 'assignment',
-    //   path: '/agenda',
-    //   layout: 'single',
-    //   datasource: 'project',
-    //   leftSidebar: {
-    //     open: false,
-    //     clipped: true,
-    //     dashboard: {
-    //       widgets: []
-    //     }
-    //   },
-    //   footer: { visible: false },
-    //   widgets: [
-    //     {
-    //       id: 'timeline',
-    //       component: CsTimeline,
-    //       options: { class: 'timeline-widget' },
-    //       datasource: 'project',
-    //       data: { smallView: false, fullscreen: true, venues: true }
-    //     }
-    //   ]
-    // }
   ]
 };

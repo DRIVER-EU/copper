@@ -3,6 +3,8 @@
     "APP_TITLE": "COPPER",
     "COPPER": "COPPER",
     "CLOSE_RIGHT_SIDEBAR": "Close",
-    "OPEN_RIGHT_SIDEBAR": "Open"
+    "OPEN_RIGHT_SIDEBAR": "Open",
+    "SIMULATION_MESSAGES": "Simulation Messages",
+    "NO_TIME_AVAILABLE": "Time not found"
   }
 }
