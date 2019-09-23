@@ -185,6 +185,36 @@
       "meta": "chain.meta.json"
     },
     {
+      "id": "chain_flood",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "chain"
+      ],
+      "isEditable": false,
+      "tileSupport": false,
+      "source": "chain_flood.json",
+      "title": "Chain flood",
+      "sourceUrl": "http://localhost:4000/sources/chain_flood",
+      "style": {
+        "types": [],
+        "pointCircle": true,
+        "mapbox": {
+          "fillPaint": {
+            "fill-color": "blue",
+            "fill-opacity": 0.4
+          },
+          "circlePaint": {
+            "circle-radius": 8,
+            "circle-color": "yellow",
+            "circle-opacity": 0.6
+          }
+        }
+      }
+    },
+    {
       "id": "chain_power",
       "source": "chain_power.json",
       "sourceType": "geojson",
@@ -196,11 +226,16 @@
         "types": [],
         "pointCircle": true,
         "mapbox": {
+          "fillPaint": {
+            "fill-color": "black",
+            "fill-opacity": 0.4
+          },
           "circlePaint": {
-            "circle-radius": 15,
-            "circle-color": "blue",
+            "circle-radius": 8,
+            "circle-color": "yellow",
             "circle-opacity": 0.6
-          }
+          },
+          "icon": "/images/icons/hoogspanningsmast.png"
         }
       },
       "color": "lightgray",

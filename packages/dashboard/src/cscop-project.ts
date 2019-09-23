@@ -341,8 +341,8 @@ export const project: IProject = {
             mbOptions: {
               // style: 'test.json',
               style: 'mapbox://styles/mapbox/streets-v9', //"http://localhost:901/styles/klokantech-basic/style.json", //"mapbox://styles/mapbox/streets-v9",
-              center: [4.799119, 52.478137],
-              zoom: 13
+              center: [4.999119, 52.478137],
+              zoom: 11
             },
             showDraw: false,
             showRuler: true,

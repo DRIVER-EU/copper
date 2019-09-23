@@ -1,6 +1,10 @@
 {
   "enabled": true,
-  "topics": [{"id": "chain", "type": "geojson-data", "tags": ["chain"], "title": "chain", "offset": 0}, {"id": "chain_power", "type": "geojson-data", "tags": ["chain"], "title": "chain_power", "offset": 0}],
+  "topics": [
+    {"id": "chain", "type": "geojson-data", "tags": ["chain"], "title": "chain", "offset": 0},
+    {"id": "chain_power", "type": "geojson-data", "tags": ["chain"], "title": "chain_power", "offset": 0},
+    {"id": "chain_flood", "type": "geojson-data", "tags": ["chain"], "title": "chain_flood", "offset": 0}
+  ],
   "oldtopics": [
     {"id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20},
     {"id": "lcms_plots", "type": "geojson", "title": "lcms-plots", "offset": 0},
