@@ -2,6 +2,7 @@ FROM node:11 as builder
 RUN mkdir -p ./code
 COPY package.json /code/package.json
 WORKDIR /code
+RUN apt-get update && apt-get install git
 RUN yarn
 COPY . .
 ARG VUE_APP_COPPER_LAYER_URL

@@ -64,7 +64,6 @@ export const project: IProject = {
   },
   navigation: {
     style: 'tabs',
-    hideTitle: false,
     search: {
       enabled: false
     }

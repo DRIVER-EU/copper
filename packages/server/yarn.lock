@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@csnext/cs-layer-server@0.0.123":
-  version "0.0.123"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-layer-server/-/cs-layer-server-0.0.123.tgz#efdb37d56b57b200b715d16d7f9a8578f01572f7"
-  integrity sha512-iXhemW8sgCdDDAOqlQEfJWAM4GN2kcND6sq15vp5Z1oNH2vBFB7niIyczUgnGqc9Zr/rdpJGZwOVD4OBb690Zg==
+"@csnext/cs-layer-server@0.0.124":
+  version "0.0.124"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-layer-server/-/cs-layer-server-0.0.124.tgz#fb4dbfb1a0d3c4e875100b313fc7e5263523a9f0"
+  integrity sha512-0fM014ngn4Lg4yJQ9gahvDM5F+tBusUJfKBRDqgDR+I1mXsesQsVLaO+hc8rHScJ52JK/Oo6g/YQEhZ9qkI1yA==
   dependencies:
     "@macrostrat/dbgeo-stream" "^1.0.0"
     "@mapbox/togeojson" "^0.16.0"

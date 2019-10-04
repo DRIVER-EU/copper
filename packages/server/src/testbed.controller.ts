@@ -1,16 +1,16 @@
-import {Get, Controller, Inject, Logger as NestLogger, Post, Body} from '@nestjs/common';
+import { Get, Controller, Inject, Logger as NestLogger, Post, Body } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
-import {DefaultWebSocketGateway, LayerService, ILogItem} from '@csnext/cs-layer-server';
-import {TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, IAdapterMessage, IDefaultKey, ITestBedOptions} from 'node-test-bed-adapter';
-import {Feature, Point} from 'geojson';
-import {LogService, LayerDefinition} from '@csnext/cs-layer-server';
-import {ICAPAlert} from './classes/cap';
-import {OffsetFetchRequest} from 'kafka-node';
+import { DefaultWebSocketGateway, LayerService, ILogItem } from '@csnext/cs-layer-server';
+import { TestBedAdapter, Logger, LogLevel, ITopicMetadataItem, IAdapterMessage, IDefaultKey, ITestBedOptions } from 'node-test-bed-adapter';
+import { Feature, Point } from 'geojson';
+import { LogService, LayerDefinition } from '@csnext/cs-layer-server';
+import { ICAPAlert } from './classes/cap';
+import { OffsetFetchRequest } from 'kafka-node';
 import _ from 'lodash';
-import {RequestUnitTransport} from './classes/request-unittransport';
-import {Item} from './classes/entity_item';
-import {AffectedArea} from './classes/sumo_affected_area';
+import { RequestUnitTransport } from './classes/request-unittransport';
+import { Item } from './classes/entity_item';
+import { AffectedArea } from './classes/sumo_affected_area';
 import { IExtendedTestBedOptions } from './classes/testbed-config';
 
 const log = Logger.instance;
@@ -51,7 +51,7 @@ export class TestbedController {
 
     let consume: OffsetFetchRequest[] = [];
     this.config.topics.forEach(t => {
-      consume.push({topic: t.id, offset: t.offset});
+      consume.push({ topic: t.id, offset: t.offset });
     });
 
     const tbOptions: ITestBedOptions = {
@@ -121,7 +121,7 @@ export class TestbedController {
           if (result.hasOwnProperty('metadata')) {
             console.log('TOPICS');
             const metadata = (result as {
-              [metadata: string]: {[topic: string]: ITopicMetadataItem};
+              [metadata: string]: { [topic: string]: ITopicMetadataItem };
             }).metadata;
             for (let key in metadata) {
               const md = metadata[key];
@@ -447,7 +447,7 @@ export class TestbedController {
         def.style = {
           types: ['polygon'],
           mapbox: {
-            fillPaint: {'fill-color': 'orange', 'fill-opacity': 0.5}
+            fillPaint: { 'fill-color': 'orange', 'fill-opacity': 0.5 }
           }
         };
         def._layerSource = {
@@ -746,9 +746,9 @@ export class TestbedController {
                 .then(() => {
                   console.log(`Saved layer ${layer.id}`);
                 })
-                .catch(() => {});
+                .catch(() => { });
             })
-            .catch(() => {});
+            .catch(() => { });
         }
       } catch (e) {
         console.log('Really not found');
@@ -773,7 +773,7 @@ export class TestbedController {
   }
 
   private async parseGeojsonData(id: string, message: IAdapterMessage, tags: string[] | undefined) {
-    console.log('Geojson data');
+    console.log(`Geojson data id ${id}`);
     if (message.value && message.value.hasOwnProperty('data')) {
       if ((message.value['data'] as string).trim().startsWith('{')) {
         message.value['geojson'] = JSON.parse(message.value['data']);
@@ -794,11 +794,11 @@ export class TestbedController {
         l.externalUrl = message.value['url'];
         this.layers.triggerLayerRefresh(id);
       })
-      .catch(e => {});
+      .catch(e => { });
   }
 
   private async parseGeojson(id: string, message: IAdapterMessage, tags: string[] | undefined) {
-    if (message.value && message.value.hasOwnProperty('geojson') && message.value['geojson']['features'].length > 0) {
+    if (message.value && message.value.hasOwnProperty('geojson') && message.value['geojson']['features']) {
       let layerId = id;
 
       if (message.value.hasOwnProperty('properties') && message.value['properties'].hasOwnProperty('map') && message.value['properties']['map'].hasOwnProperty('name')) {
@@ -809,14 +809,14 @@ export class TestbedController {
         layerId = message.value['properties']['name']['string'];
       }
 
-      console.log(message.value['properties']);
+      console.log(`Properties: ${message.value['properties']}`);
       console.log(`LayerID = ${layerId}`);
 
       let layer = await this.getCapLayer(layerId);
       if (layerId !== id && layer.tags.indexOf(id) === -1) {
         layer.tags.push(id);
       }
-      console.log(layer);
+      console.log(`Layer = ${layer}`);
       let geojson = message.value['geojson'] as GeoJSON.FeatureCollection;
       // console.log(geojson);
       for (const feature of geojson.features) {
@@ -846,7 +846,33 @@ export class TestbedController {
         }
       }
 
-      this.layers.putLayerSourceById(layerId, geojson as any);
+      if (message.value['timestamp'] && message.value['timestamp'] === -1) {
+        console.log(`Timestamp is -1, restart with the ${geojson.features.length} features of the msg`);
+        this.layers.putLayerSourceById(layerId, geojson as any);
+      } else {
+        // Update existing features
+        console.log("Update existing features");
+        const origSource = await this.layers.getLayerSourceById(layerId);
+        console.log(`Orig features: ${origSource.features.length}`);
+        if (layer && origSource && origSource.features) {
+          const updatedIds = [];
+          geojson.features.forEach(f => {
+            const origF = origSource.features.find(ff => ff.id === f.id);
+            if (origF) {
+              origF.properties = { ...origF.properties, ...f.properties };
+              origF.geometry = f.geometry;
+            } else {
+              origSource.features.push(f);
+            }
+          });
+          this.layers.putLayerSourceById(layerId, origSource as any);
+        } else {
+          console.log(`Zero orig features, use all ${geojson.features.length} features of the msg`);
+          this.layers.putLayerSourceById(layerId, geojson as any);
+        }
+      }
+    } else {
+      console.log(`No GeoJSON features to parse in message ${id}`);
     }
   }
 

@@ -145,46 +145,6 @@
       "visible": true
     },
     {
-      "id": "lcms-geojson",
-      "source": "lcms-geojson.json",
-      "sourceType": "geojson",
-      "title": "lcms-geojson",
-      "sourceUrl": "http://localhost:4000/sources/lcms-geojson",
-      "version": "0.0.1",
-      "isLive": true,
-      "style": {
-        "types": [
-          "point"
-        ],
-        "pointCircle": true
-      },
-      "color": "lightgray",
-      "tags": [
-        "lcms-geojson"
-      ],
-      "description": "lcms-geojson",
-      "meta": "lcms-geojson.meta.json"
-    },
-    {
-      "id": "chain",
-      "source": "chain.json",
-      "sourceType": "geojson",
-      "title": "Chain effects",
-      "sourceUrl": "http://localhost:4000/sources/chain",
-      "version": "0.0.1",
-      "isLive": true,
-      "style": {
-        "types": [],
-        "pointCircle": true
-      },
-      "color": "lightgray",
-      "tags": [
-        "chain"
-      ],
-      "description": "chain",
-      "meta": "chain.meta.json"
-    },
-    {
       "id": "chain_flood",
       "sourceType": "geojson",
       "version": "0.0.1",
@@ -232,7 +192,20 @@
           },
           "circlePaint": {
             "circle-radius": 8,
-            "circle-color": "yellow",
+            "circle-color": [
+              "match",
+              [
+                "get",
+                "state"
+              ],
+              0,
+              "yellow",
+              1,
+              "orange",
+              2,
+              "red",
+              "grey"
+            ],
             "circle-opacity": 0.6
           },
           "icon": "/images/icons/hoogspanningsmast.png"
@@ -244,6 +217,27 @@
       ],
       "description": "chain_power",
       "meta": "chain_power.meta.json"
+    },
+    {
+      "id": "lcms-geojson",
+      "source": "lcms-geojson.json",
+      "sourceType": "geojson",
+      "title": "lcms-geojson",
+      "sourceUrl": "http://localhost:4000/sources/lcms-geojson",
+      "version": "0.0.1",
+      "isLive": true,
+      "style": {
+        "types": [
+          "point"
+        ],
+        "pointCircle": true
+      },
+      "color": "lightgray",
+      "tags": [
+        "lcms-geojson"
+      ],
+      "description": "lcms-geojson",
+      "meta": "lcms-geojson.meta.json"
     },
     {
       "id": "drawing",
@@ -317,6 +311,23 @@
       "openFeatureDetails": true,
       "visible": true,
       "meta": "drawing.meta.json"
+    },
+    {
+      "id": "chain",
+      "source": "chain.json",
+      "sourceType": "geojson",
+      "title": "Chain effects",
+      "sourceUrl": "http://localhost:4000/sources/chain",
+      "version": "0.0.1",
+      "isLive": true,
+      "style": {
+        "types": [],
+        "pointCircle": true
+      },
+      "color": "lightgray",
+      "tags": [],
+      "description": "chain",
+      "meta": "chain.meta.json"
     },
     {
       "id": "ambassades",
@@ -1186,6 +1197,47 @@
         "pointCircle": true
       },
       "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
+    },
+    {
+      "id": "chain_care",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "lightgray",
+      "isLive": true,
+      "tags": [
+        "chain"
+      ],
+      "source": "chain_care.json",
+      "title": "Chain_care effects",
+      "sourceUrl": "http://localhost:4000/sources/chain_care",
+      "style": {
+        "types": [],
+        "pointCircle": true,
+        "mapbox": {
+          "fillPaint": {
+            "fill-color": "black",
+            "fill-opacity": 0.4
+          },
+          "circlePaint": {
+            "circle-radius": 8,
+            "circle-color": [
+              "match",
+              [
+                "get",
+                "state"
+              ],
+              0,
+              "purple",
+              1,
+              "orange",
+              2,
+              "red",
+              "grey"
+            ],
+            "circle-opacity": 0.6
+          }
+        }
+      }
     }
   ],
   "sourcePath": "./sources/",
@@ -1205,5 +1257,5 @@
   "serverUrl": "http://localhost:4000",
   "importRoot": "import/",
   "sourceRoot": "sources/",
-  "serverPath": "./configs/layers/"
+  "serverPath": "C:\\dev\\projects\\DRIVER\\copper\\configs\\layers\\"
 }

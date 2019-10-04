@@ -3,6 +3,7 @@
   "topics": [
     {"id": "chain", "type": "geojson-data", "tags": ["chain"], "title": "chain", "offset": 0},
     {"id": "chain_power", "type": "geojson-data", "tags": ["chain"], "title": "chain_power", "offset": 0},
+    {"id": "chain_care", "type": "geojson-data", "tags": ["chain"], "title": "chain_care", "offset": 0},
     {"id": "chain_flood", "type": "geojson-data", "tags": ["chain"], "title": "chain_flood", "offset": 0}
   ],
   "oldtopics": [
