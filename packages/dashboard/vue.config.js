@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const childProcess = require('child_process');
+const fs = require('fs');
 const __versionString__ = process.env.CI_COMMIT_SHORT_SHA || childProcess.execSync('git rev-parse --short HEAD').toString();
 const package = require('./package.json');
 
