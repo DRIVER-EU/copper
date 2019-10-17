@@ -12,7 +12,7 @@
     "resolveJsonModule": false,
     "importHelpers": true,
     "sourceMap": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "composite": true,
     "declaration": true,
     "esModuleInterop": true,
