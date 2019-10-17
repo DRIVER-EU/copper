@@ -708,12 +708,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@csnext/cs-client@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-client/-/cs-client-0.0.124.tgz#87974a861b5db7c5b9079f103eca186612839e54"
-  integrity sha512-ViMLlZyBBQ03j0Ar8WQnicnvWDSyma3cgs+4ghU2WZ8AAlFFKv8vKAnhMKufy4d8U+P1wHWpYrnHMT9HojZS9Q==
+"@csnext/cs-client@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-client/-/cs-client-0.0.125.tgz#9bee5ffcc71fa5274bd4971265dc7c4ba57f9a7d"
+  integrity sha512-dhnwI+zbGRjWfaI0C8ZDlgF51qEcjxAFM7+2VGulp4NBMQv1I24Z2E143imTx3noUf/SY3AU+pkLqqo9nWzIcA==
   dependencies:
-    "@csnext/cs-core" "^0.0.124"
+    "@csnext/cs-core" "^0.0.125"
     axios "^0.19.0"
     core-js "^2.6.5"
     deepmerge "^4.0.0"
@@ -725,44 +725,44 @@
     vue-mixin-decorator "^1.2.0"
     vue-resize-directive "^1.2.0"
     vue-router "^3.1.3"
-    vuetify "^2.0.18"
+    vuetify "^2.1.1"
 
-"@csnext/cs-core@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-core/-/cs-core-0.0.124.tgz#8ad8eeef7dfff0b49464bc9cb2bbf0268951b4f7"
-  integrity sha512-HL25ubNG4oGVsYekeJSDy/QzgTMF+RjbXMOmdgdae1Oi36zEtmxipaXzhqMV1WkBpu5J4j6nfwu5zrppEinxLg==
+"@csnext/cs-core@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-core/-/cs-core-0.0.125.tgz#3c91f29abe22f14055bfb7deb09d48e1c9c3a932"
+  integrity sha512-QefJPx1Bax9tyKZnzdCQ+tyw1m2VjuFWN3+EkC6JekCUxy5o6cHU7r+cqWU7NQvM/2D1Na0H6s7QCKURS2RZMw==
   dependencies:
     typescript-collections "^1.3.2"
 
-"@csnext/cs-form@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-form/-/cs-form-0.0.124.tgz#77247180c51a3b3ec49351f73aa5c09be93fe376"
-  integrity sha512-xajYid+AazYwJm+fqV8VSj5QGS3XiV30XlM+FOLDplkRtkCPk1yGNPdH61quVAPI84ly2nNwo0km8eIQ7i/xWg==
+"@csnext/cs-form@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-form/-/cs-form-0.0.125.tgz#bb1929ed695a5ed8f3dd0daaa8685e61bfd23c9d"
+  integrity sha512-yPtoTLEGPSOlrYEqahQ6c2/dUw9l3o3uw+ChkX8XBWapDF2KtM8NEPw1TP9ld3/BGw1B4C5U5CbEW0KF1CSMCA==
   dependencies:
-    "@csnext/cs-client" "^0.0.124"
-    "@csnext/cs-core" "^0.0.124"
+    "@csnext/cs-client" "^0.0.125"
+    "@csnext/cs-core" "^0.0.125"
     dayjs "^1.8.15"
     lodash.debounce "4.0.8"
     reflect-metadata "^0.1.13"
 
-"@csnext/cs-log@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-log/-/cs-log-0.0.124.tgz#9580d031ee60a663d6f4dc41a41d63a10fa3b070"
-  integrity sha512-63Dit2la6h4FuYZJQ32bXwyHc1ljqNYIqPf/WHhjXqGiav/0tHWWkEcb/BtYHQaOZFOQGadbwuX5fXYiX7EQ4A==
+"@csnext/cs-log@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-log/-/cs-log-0.0.125.tgz#4fe6a9f786362f14dc9908e0a8630b4b2a8d4959"
+  integrity sha512-OFVAdB0iGoeaBuTAsV2HuKk/UuG87M/J++ZpfUNyaSTkkK5RFHefqsE3NwLizw15sgoO+wZ7jOUYiOaK1mdqAg==
   dependencies:
-    "@csnext/cs-client" "^0.0.124"
-    "@csnext/cs-core" "^0.0.124"
+    "@csnext/cs-client" "^0.0.125"
+    "@csnext/cs-core" "^0.0.125"
     handlebars "^4.2.0"
 
-"@csnext/cs-map@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-map/-/cs-map-0.0.124.tgz#8388232d911d0adaf695ab828d0b8c61a27a7dac"
-  integrity sha512-TLdqoDIVejO4aa0DkJbzNinxMeXY9jaMtQnThk5kLGtDCt43xwviPqrFSC28DFDXBX7Yl2KZOE8x/bgrn73D5g==
+"@csnext/cs-map@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-map/-/cs-map-0.0.125.tgz#5ee76da4f28f06716a672d10ec876b08b09e8325"
+  integrity sha512-qy/QNW6ip1q4Zj3OKjeyrP8qN7ffhZFv4mNjS3CIBqbTyuLj1n0Basg232Kz4ENem2oMbiJnQmGl2e37mu/u1Q==
   dependencies:
     "@babel/polyfill" "^7.6.0"
-    "@csnext/cs-client" "^0.0.124"
-    "@csnext/cs-core" "^0.0.124"
-    "@csnext/cs-form" "^0.0.124"
+    "@csnext/cs-client" "^0.0.125"
+    "@csnext/cs-core" "^0.0.125"
+    "@csnext/cs-form" "^0.0.125"
     "@mapbox/geojson-extent" "^0.3.2"
     "@mapbox/mapbox-gl-draw" "1.1.2"
     "@mapbox/mapbox-gl-geocoder" "^4.4.2"
@@ -782,28 +782,28 @@
     numeral "^2.0.6"
     scrollbarwidth "^0.1.3"
 
-"@csnext/cs-split-panel@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-split-panel/-/cs-split-panel-0.0.124.tgz#2d5f779ab0af78e2c18f8c1070420c2cc2796a95"
-  integrity sha512-XnuXsiWXYivcl293BTpx1wgpnEVqLCOjMsUr9d6fwGUUusvPG+9Oogbio7xyvLmK8MyAUl81nLGfQhn8sGC+AQ==
+"@csnext/cs-split-panel@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-split-panel/-/cs-split-panel-0.0.125.tgz#2c0c9961f5791fb2df7362a4e2c71d297716a901"
+  integrity sha512-V2dkLwJPYz4hnmodIQpJ4L2yq0fmR1qbWIIKeodhwx4vp5xO8P0RKh7z1QFQJDiDizXr/sYnaHLkH6JTPqqq6Q==
   dependencies:
-    "@csnext/cs-client" "^0.0.124"
+    "@csnext/cs-client" "^0.0.125"
     vue "^2.6.10"
     vue-split-panel "^1.0.4"
 
-"@csnext/cs-timeline@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/cs-timeline/-/cs-timeline-0.0.124.tgz#426399d1e7a55dd8a6f4a3fdc4cc07c8f597b600"
-  integrity sha512-OzoKQUDacVwIilPGQ3WrwCCZClHog9JSn15dBt+xjkRqFEUKTOvc3Tlg5hrEGBK2B4VMT2eCWaEfyQroklKttw==
+"@csnext/cs-timeline@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/cs-timeline/-/cs-timeline-0.0.125.tgz#5bc18660338ff2ed29a706e76bc67bba868e7491"
+  integrity sha512-m5fmw+04PWnco7pX8YXIKeXKbOGgu7xsj/UliPHMQ5agI0G4gVtWpLNzMobRkq/fXQHFsGC5KuAqlipljKs3ew==
   dependencies:
-    "@csnext/cs-client" "^0.0.124"
-    "@csnext/cs-core" "^0.0.124"
+    "@csnext/cs-client" "^0.0.125"
+    "@csnext/cs-core" "^0.0.125"
     vis-timeline visjs/vis-timeline
 
-"@csnext/vue-cli-plugin-cs@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@csnext/vue-cli-plugin-cs/-/vue-cli-plugin-cs-0.0.124.tgz#bdb7c48e76637e3072d3fd1a7e61549ed6934252"
-  integrity sha512-2bOR2BKCmFg7k+wtHZz1+RVPQDw3TaznJH4Nb2METxL2NIWw7G0vrNpL2PA4T8B5sF9zs5BZbPV4Hp2TcXhqDA==
+"@csnext/vue-cli-plugin-cs@^0.0.125":
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@csnext/vue-cli-plugin-cs/-/vue-cli-plugin-cs-0.0.125.tgz#5fc1ad09d4dd65e8749ebc4b277a5fdf817093ed"
+  integrity sha512-9UzDQk8hwSqfpNjLNBzMZ1/SRgOtT68N8YIocvx11g45Cu5Tt/teCuU0UkUNA8V+pb5lEEqnIuEf16bGXJYsFA==
   dependencies:
     "@vue/cli-shared-utils" "^3.7.0"
 
@@ -1155,10 +1155,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.5.tgz#e19436e7f8e9b4601005d73673b6dc4784ffcc2f"
   integrity sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
 
-"@types/node@^12.7.9":
-  version "12.7.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.9.tgz#da0210f91096aa67138cf5afd04c4d629f8a406a"
-  integrity sha512-P57oKTJ/vYivL2BCfxCC5tQjlS8qW31pbOL6qt99Yrjm95YdHgNZwjrTTjMBh+C2/y6PXIX4oz253+jUzxKKfQ==
+"@types/node@^12.7.12":
+  version "12.7.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
+  integrity sha512-KPYGmfD0/b1eXurQ59fXD1GBzhSQfz6/lKBxkaHX9dKTzjXbK68Zt7yGUxUsCS1jeTy/8aL+d9JEr+S54mpkWQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -8777,10 +8777,10 @@ typescript-collections@^1.3.2:
   resolved "https://registry.yarnpkg.com/typescript-collections/-/typescript-collections-1.3.2.tgz#b2476373d2976eb3dc8be931292a20a30d23677d"
   integrity sha512-Frfvtwym0VebbueXWEJlVkGiWjKEFStsRwusuzjh8lX8OEJ9ZbFqpYLNfPvZcxw/+nqW0cRNBeBq6SVoTjymcQ==
 
-typescript@^3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
-  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+typescript@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
+  integrity sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
 
 uc.micro@^1.0.1:
   version "1.0.6"
@@ -9110,15 +9110,15 @@ vis-timeline@^5.1.0:
 
 vis-timeline@visjs/vis-timeline:
   version "0.0.0-no-version"
-  resolved "https://codeload.github.com/visjs/vis-timeline/tar.gz/57f85127ce6b338473dee85a88a5e7c38283c650"
+  resolved "https://codeload.github.com/visjs/vis-timeline/tar.gz/9315d243e5a768759d9c7a20162b3901a09745c3"
   dependencies:
-    emitter-component "^1.1.1"
-    hammerjs "^2.0.8"
-    keycharm "^0.2.0"
-    moment "^2.20.1"
-    propagating-hammerjs "^1.4.6"
-    vis-data "^6.1.1"
-    vis-util "^1.1.4"
+    "@egjs/hammerjs" "2.0.15"
+    emitter-component "1.1.1"
+    keycharm "0.2.0"
+    moment "2.24.0"
+    propagating-hammerjs "1.4.7"
+    vis-data "6.1.1"
+    vis-util "1.1.4"
 
 vis-util@1.1.4:
   version "1.1.4"
@@ -9261,10 +9261,10 @@ vue@^2.5.16, vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuetify@^2.0.18:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.1.0.tgz#77866613843634fc9e8837f98fd9fce7142f804b"
-  integrity sha512-wITLJ7ly3Oq2wxMMD0EGs2aMpAPjp1kNUXm8Wb4f8yv/B3yNKYC2K5Kp/Y1l2faIGwhoScvWsUJuNmioRG9/dg==
+vuetify@^2.1.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.1.3.tgz#88245154fff84e8da9c498182d3a16f55c73e3c1"
+  integrity sha512-hZ5rGXqj6Q322bbJyaxw6Fr+vBI+1bO3ahDEfxGmdTZJnwespM/WOEL1CnWTc4hIfolaGFCZEkzrbNgkuyeZ1w==
 
 watchpack@^1.6.0:
   version "1.6.0"

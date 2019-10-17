@@ -12,5 +12,4 @@ export class TimeModule {
   constructor() {
     Logger.log(`Initializing test-bed`);    
   }
-
 }

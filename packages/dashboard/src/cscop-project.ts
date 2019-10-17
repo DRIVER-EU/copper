@@ -1,6 +1,5 @@
 import {IProject, ILayoutManagerConfig, IMenu, TimeDataSource} from '@csnext/cs-core';
 import {LayoutManager, MdWidget, LogDataSource} from '@csnext/cs-client';
-import {CsTimeline, TimelineWidgetOptions} from '@csnext/cs-timeline';
 import {CsLogList, LogListOptions} from '@csnext/cs-log';
 import './assets/example.css';
 import './assets/copper.css';
@@ -13,6 +12,7 @@ import {RasterPaint} from 'mapbox-gl';
 import {ScenarioControl, ScenarioControlOptions} from './components/scenario-control/scenario-control';
 import {CapDetails} from './components/cap-details/cap-details';
 import {SimDetails} from './components/sim-details/sim-details';
+import { CsTimeline, TimelineWidgetOptions } from '@csnext/cs-timeline';
 
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
