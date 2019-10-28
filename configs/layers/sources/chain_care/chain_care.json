@@ -1,1 +1,35 @@
-{"type":"FeatureCollection","features":[]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Naam concern": "ATAL-Medial (Stichting)",
+        "Soort locatie": "Hoofdlocatie (Algemeen ziekenhuis)",
+        "KvK": 55583261,
+        "Aantal locaties": "Locatie 1 van 1",
+        "Straat": "Jan Tooropstraat",
+        "huisnummer": "138",
+        "postcode": "1061 AD ",
+        "plaatsnaam": "AMSTERDAM",
+        "Aantal bedden": null,
+        "Hartbewaking": null,
+        "IC met beademing": null,
+        "IC zonder beademing": null,
+        "Spoedeisende hulp": null,
+        "Kenmerk locatie": null,
+        "Ook sector": null,
+        "featureTypeId": "Ziekenhuis_{state}",
+        "Name": "ATAL-Medial (Stichting)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.83696,
+          52.36826
+        ]
+      },
+      "id": "091a8c20-e6b3-11e9-b8d1-05b1971c2cc0"
+    }
+  ]
+}

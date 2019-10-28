@@ -20,7 +20,8 @@ module.exports = {
         VUE_APP_VERSION_TIME: JSON.stringify((new Date()).toUTCString()),
         VUE_APP_PACKAGE_VERSION: JSON.stringify(package.version),
       }
-    })],
+    })
+    ],
     module: {
       rules: [
         {

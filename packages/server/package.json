@@ -20,7 +20,7 @@
     "docker:build": "docker build -t copper-server ."
   },
   "dependencies": {
-    "@csnext/cs-layer-server": "0.0.125",
+    "@csnext/cs-layer-server": "0.0.127-beta.11+461b220",
     "@mapbox/togeojson": "^0.16.0",
     "@nestjs/common": "^6.8.3",
     "@nestjs/core": "^6.8.3",

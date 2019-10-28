@@ -7,5 +7,29 @@
     }
   },
   "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 1,
+        "FUNCTIE": "VM",
+        "MONTAGEDATUM": "20080422",
+        "STATUS": "In Bedrijf",
+        "SUBNETTYPE": "Hoofdnet",
+        "UITVOERING": "Onbekend",
+        "TEKST_BEHEERKAART": "Onb",
+        "SPLITS": "NEE",
+        "featureTypeId": "powerstation_{state}",
+        "Name": 461980369,
+        "powerSupplyArea": "{\"type\":\"Polygon\",\"coordinates\":[[[4.978734,52.51583],[4.978507,52.515557],[4.978092,52.515454],[4.977739,52.516911],[4.97857,52.516482],[4.978734,52.51583]]]}"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.978583,
+          52.51618
+        ]
+      },
+      "id": "986aeeb0-e6b3-11e9-8f28-470c1e8702fd"
+    }
   ]
 }

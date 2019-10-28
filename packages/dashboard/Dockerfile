@@ -1,4 +1,4 @@
-FROM node:11 as builder
+FROM node:12 as builder
 RUN mkdir -p ./code
 COPY package.json /code/package.json
 WORKDIR /code

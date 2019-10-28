@@ -1,5 +1,5 @@
 import {IProject, ILayoutManagerConfig, IMenu, TimeDataSource} from '@csnext/cs-core';
-import {LayoutManager, MdWidget, LogDataSource} from '@csnext/cs-client';
+import {LayoutManager, LogDataSource, MdWidget} from '@csnext/cs-client';
 import {CsLogList, LogListOptions} from '@csnext/cs-log';
 import './assets/example.css';
 import './assets/copper.css';
@@ -12,7 +12,8 @@ import {RasterPaint} from 'mapbox-gl';
 import {ScenarioControl, ScenarioControlOptions} from './components/scenario-control/scenario-control';
 import {CapDetails} from './components/cap-details/cap-details';
 import {SimDetails} from './components/sim-details/sim-details';
-import { CsTimeline, TimelineWidgetOptions } from '@csnext/cs-timeline';
+import {CsTimeline, TimelineWidgetOptions} from '@csnext/cs-timeline';
+import {TimelineItem} from 'vis';
 
 Vue.component('cap-details', CapDetails);
 Vue.component('sim-details', SimDetails);
@@ -215,24 +216,22 @@ export const project: IProject = {
       layout: 'split-panel',
       datasource: 'project',
       menus: [
-        <IMenu>{
+        {
           id: 'filter',
           icon: 'filter_list',
           title: 'filter',
+          type: 'icon',
           component: MdWidget,
-          data: 'test',
-          enabled: false,
-          visible: false
-        },
-        <IMenu>{
+          data: 'test'
+        } as IMenu,
+        {
           id: 'color',
           icon: 'color_lens',
           title: 'person',
+          type: 'icon',
           component: MdWidget,
-          data: 'test',
-          enabled: true,
-          visible: true
-        }
+          data: 'test'
+        } as IMenu
       ],
       leftSidebar: {
         footer: {
@@ -360,6 +359,7 @@ export const project: IProject = {
             widgetBorder: 'timeline-border',
             logSource: 'caplog',
             timelineOptions: {
+              template: (item: TimelineItem, editedData?: TimelineItem) => item,
               editable: false,
               height: '100%',
               type: 'point',

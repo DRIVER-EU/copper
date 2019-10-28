@@ -29,21 +29,23 @@ export class Server {
     // Use express from this
     app.use((req: any, res: any, next: any) => {
       res.header('Access-Control-Allow-Origin', '*'); // Disable CORS (not for production)
+      res.header('Access-Control-Allow-Origin', 'http://localhost:8080'); // Disable CORS (not for production)
       res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
       res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+      res.header('Access-Control-Allow-Credentials', true);
       next();
     });
-    /*
-    NEST.JS also supports CORS:
-    const corsOptions = {
-      "origin": "*",
-      "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-      "preflightContinue": false,
-      "optionsSuccessStatus": 204,
+//     /*
+//     NEST.JS also supports CORS:
+//     const corsOptions = {
+//       "origin": "*",
+//       "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+//       "preflightContinue": false,
+//       "optionsSuccessStatus": 204,
 
-    }
-    app.enableCors(corsOptions); // Allows all clients
-*/
+//     }
+//     app.enableCors(corsOptions); // Allows all clients
+// */
 
     // Serve the public folder directory
     const publicDirectory: string = path.join(process.cwd(), 'public');

@@ -1,0 +1,110 @@
+{
+  "featureTypes": {
+    "main": {
+      "properties": {
+        "Naam concern": {
+          "title": "Naam concern",
+          "description": "Naam concern",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "ATAL-Medial (Stichting)"
+          ]
+        },
+        "Soort locatie": {
+          "title": "Soort locatie",
+          "description": "Soort locatie",
+          "type": "longtext",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Hoofdlocatie (Algemeen ziekenhuis)"
+          ]
+        },
+        "KvK": {
+          "title": "KvK",
+          "description": "KvK",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            55583261
+          ],
+          "legend": {}
+        },
+        "Aantal locaties": {
+          "title": "Aantal locaties",
+          "description": "Aantal locaties",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Locatie 1 van 1"
+          ]
+        },
+        "Straat": {
+          "title": "Straat",
+          "description": "Straat",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Jan Tooropstraat"
+          ]
+        },
+        "huisnummer": {
+          "title": "huisnummer",
+          "description": "huisnummer",
+          "type": "number",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            138
+          ],
+          "legend": {}
+        },
+        "postcode": {
+          "title": "postcode",
+          "description": "postcode",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "1061 AD "
+          ]
+        },
+        "plaatsnaam": {
+          "title": "plaatsnaam",
+          "description": "plaatsnaam",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "AMSTERDAM"
+          ]
+        },
+        "featureTypeId": {
+          "title": "featureTypeId",
+          "description": "featureTypeId",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "Ziekenhuis_{state}"
+          ]
+        },
+        "Name": {
+          "title": "Name",
+          "description": "Name",
+          "type": "text",
+          "count": 1,
+          "unique": 1,
+          "options": [
+            "ATAL-Medial (Stichting)"
+          ]
+        }
+      }
+    }
+  }
+}
