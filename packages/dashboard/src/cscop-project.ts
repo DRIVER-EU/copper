@@ -1,6 +1,7 @@
 import {IProject, ILayoutManagerConfig, IMenu, TimeDataSource} from '@csnext/cs-core';
-import {LayoutManager, LogDataSource, MdWidget} from '@csnext/cs-client';
+import {LayoutManager, LogDataSource} from '@csnext/cs-client';
 import {CsLogList, LogListOptions} from '@csnext/cs-log';
+import {CsMarkdown} from '@csnext/cs-markdown';
 import './assets/example.css';
 import './assets/copper.css';
 import * as translations from './assets/locales.json';
@@ -83,20 +84,19 @@ export const project: IProject = {
         type: 'raster',
         url: 'http://geoservices.knmi.nl/cgi-bin/RADNL_OPER_R___25PCPRR_L3.cgi?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=RADNL_OPER_R___25PCPRR_L3_COLOR&CRS=EPSG%3A3857&transparent=true',
         tileSize: 256
-      } as LayerSource,
+      } as any as LayerSource,
       luchtfoto: {
         title: "Lucht foto's actueel (25m)",
         type: 'raster',
         url: 'https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=Actueel_ortho25&CRS=EPSG%3A3857&transparent=true&styles=default',
         tileSize: 256
-      } as LayerSource,
+      } as any as LayerSource,
       hoogtekaart: {
         title: 'Hoogte Kaart (AHN3)',
         type: 'raster',
         url: 'https://geodata.nationaalgeoregister.nl/ahn3/wms?SERVICE=WMS&VERSION=1.3.0&bbox={bbox-epsg-3857}&REQUEST=GetMap&format=image/png&width=265&height=256&LAYERS=ahn3_5m_dsm&CRS=EPSG%3A3857&transparent=true&styles=default',
         tileSize: 256
-      } as LayerSource,
-
+      } as any as LayerSource,
       // https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts?layer=Actueel_ortho25&style=default&tilematrixset=EPSG%3A28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=13&TileCol=3724&TileRow=3782
       gemeenten: {
         title: 'Gemeenten',
@@ -117,7 +117,7 @@ export const project: IProject = {
     }),
     mainmap: new MapLayers(
       [
-        {source: 'gemeenten', type: 'line'} as GeojsonLayer,
+        {source: 'gemeenten', type: 'line'} as any as GeojsonLayer,
         // { source: 'sectoren', type: 'line', tags: ['evenement'] } as MapLayer,
         {
           source: 'buienradar',
@@ -135,23 +135,23 @@ export const project: IProject = {
               } as IWmsTimeExtensionOptions
             }
           ] as ILayerExtensionType[]
-        } as GeojsonLayer,
+        } as any as GeojsonLayer,
         {
           source: 'hoogtekaart',
           description: 'Hoogte kaart',
           color: 'darkblue',
           tags: ['basis kaarten'],
           type: 'raster'
-        } as GeojsonLayer,
+        } as any as GeojsonLayer,
         {
           source: 'luchtfoto',
           description: 'Luchtfoto',
           color: 'green',
           tags: ['basis kaarten'],
           type: 'raster'
-        } as GeojsonLayer
+        } as any as GeojsonLayer
       ],
-      'layers',
+      undefined, 
       [
         {
           id: 'event',
@@ -186,7 +186,7 @@ export const project: IProject = {
     width: 600,
     // floating: true,
     dashboard: {
-      widgets: [{component: MdWidget, data: 'right sidebar'}]
+      widgets: []
     }
   },
   menus: [
@@ -221,7 +221,7 @@ export const project: IProject = {
           icon: 'filter_list',
           title: 'filter',
           type: 'icon',
-          component: MdWidget,
+          component: CsMarkdown,
           data: 'test'
         } as IMenu,
         {
@@ -229,7 +229,7 @@ export const project: IProject = {
           icon: 'color_lens',
           title: 'person',
           type: 'icon',
-          component: MdWidget,
+          component: CsMarkdown,
           data: 'test'
         } as IMenu
       ],
@@ -399,7 +399,7 @@ export const project: IProject = {
       widgets: [
         {
           id: 'about-view',
-          component: MdWidget,
+          component: CsMarkdown,
           data: '## COPPER \n\n COPPER is a Common Operational Picture tool developed by TNO'
         }
       ]

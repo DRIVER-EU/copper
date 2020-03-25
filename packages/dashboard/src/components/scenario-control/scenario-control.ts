@@ -1,4 +1,4 @@
-import { WidgetBase, AppState } from '@csnext/cs-client';
+import { WidgetBase } from '@csnext/cs-client';
 import './scenario-control.css';
 import Component from 'vue-class-component';
 import Vue from 'vue';

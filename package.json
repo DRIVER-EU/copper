@@ -1,31 +1,31 @@
 {
   "name": "copper",
   "private": true,
+  "workspaces": ["packages/*"],
   "repository": {
     "type": "git",
     "url": "https://github.com/driver-eu/copper.git"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap && lerna run link",
+    "postinstall": "lerna bootstrap",
     "dev:server": "lerna run dev:server --parallel",
     "dev:client": "lerna run dev:client --parallel",
     "dev": "lerna run dev --parallel",
     "clean": "lerna run --parallel clean",
     "types": "./node_modules/.bin/typescript-json-schema.cmd packages/core/tsconfig.json ServerConfig *  -o ./schema/server.json",
     "build": "tsc -b packages",
-    "linkserver": "lerna run linkserver",
     "start:client": "lerna run start:client --parallel",
     "start:server": "nodemon ./packages/server/dist packages/server/dist/index.js",
     "linkcs": "lerna run linkcs",
-    "linkall": "yarn linkserver && yarn linkcs",
-    "rebuild": "yarn clean && yarn && yarn linkall && yarn dev",
+    "unlinkcs": "lerna run unlinkcs",
+    "rebuild": "yarn clean && yarn && yarn linkcs && yarn dev",
     "docker:build": "lerna run docker:build --parallel"
   },
   "devDependencies": {
-    "concurrently": "^4.1.2",
-    "lerna": "^3.16.4",
-    "nodemon": "^1.19.2",
-    "typescript-json-schema": "^0.40.0"
+    "concurrently": "^5.1.0",
+    "lerna": "^3.20.2",
+    "nodemon": "^2.0.2",
+    "typescript-json-schema": "^0.42.0"
   },
   "nodemonConfig": {
     "ignore": [

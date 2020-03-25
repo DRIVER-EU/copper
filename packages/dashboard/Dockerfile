@@ -1,4 +1,4 @@
-FROM node:12 as builder
+FROM node:12-stretch-slim as builder
 RUN mkdir -p ./code
 COPY package.json /code/package.json
 WORKDIR /code
@@ -14,7 +14,7 @@ ENV VUE_APP_COPPER_LOG_URL $VUE_APP_COPPER_LOG_URL
 ENV VUE_APP_COPPER_SOCKET_SERVER_URL $VUE_APP_COPPER_SOCKET_SERVER_URL
 RUN yarn build
 
-FROM node:11-stretch-slim
+FROM node:12-stretch-slim
 RUN yarn global add http-server
 RUN mkdir -p /copper
 COPY --from=builder /code/dist /copper

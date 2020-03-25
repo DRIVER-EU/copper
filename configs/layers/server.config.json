@@ -1272,6 +1272,7 @@
       "port": 8529
     }
   },
+  "socketFlushInterval": 1000,
   "serverUrl": "http://localhost:4000",
   "importRoot": "import/",
   "sourceRoot": "sources/",

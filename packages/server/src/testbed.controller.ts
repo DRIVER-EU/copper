@@ -148,7 +148,7 @@ export class TestbedController {
             this.socket.server.emit('time', this.getAdapterState());
           }
           break;
-        case 'system_timing':
+        case 'simulation_time_mgmt':
           log.info(`Received timing message with key ${stringify(message.key)}: ${stringify(message.value)}`);
           if (this.socket && this.socket.server) {
             this.socket.server.emit('time', this.getAdapterState());
@@ -578,17 +578,17 @@ export class TestbedController {
         if (layer !== undefined) {
           const f: Feature = {
             type: 'Feature',
-            id: unit.guid,
-            properties: unit,
+            id: unit.id,
+            properties: {...unit, updatedAt: (message.key as IDefaultKey).dateTimeSent},
             geometry: {
               type: 'Point',
               coordinates: [unit.location.longitude, unit.location.latitude]
             } as Point
           };
-          // console.log(JSON.stringify(unit));
+          console.log(JSON.stringify(unit));
           if (this.layers) {
             this.layers
-              .updateFeature(layer.id, f, unit.guid)
+              .updateFeature(layer.id, f, unit.id)
               .then(f => {
                 // console.log('Feature saved');
               })
@@ -879,9 +879,9 @@ export class TestbedController {
   private getAdapterState(): any {
     if (this.adapter.isConnected) {
       return {
-        time: this.adapter.trialTime.getTime(),
-        speed: this.adapter.trialTimeSpeed,
-        state: this.adapter.state,
+        time: this.adapter.simulationTime.getTime(),
+        speed: this.adapter.simulationSpeed,
+        state: this.adapter.timeState,
         elapsed: this.adapter.timeElapsed
       };
     } else {

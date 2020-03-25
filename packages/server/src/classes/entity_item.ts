@@ -53,7 +53,7 @@ export interface RescueLabel {
 }
 
 export interface Item {
-	guid: string;
+	id: string;
 	name: string;
 	owner: string;
 	location: Location;

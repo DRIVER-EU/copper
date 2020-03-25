@@ -1,9 +1,10 @@
 {
   "enabled": true,
   "topics": [
-    { "id": "simulation_request_unittransport", "type": "request-unittransport", "title": "request-unittransport", "offset": 0 },
+    { "id": "simulation_request_transport", "type": "request-unittransport", "title": "request-unittransport", "offset": 0 },
     { "id": "simulation_entity_item", "type": "entity-item", "title": "entity-item", "offset": 0 },
-    { "id": "sumo_AffectedArea", "type": "affected-area", "title": "affected-area", "offset": 0}
+    { "id": "simulation_request_startinject", "type": "request-startinject", "title": "request-startinject", "offset": 0 },
+    { "id": "simulation_affected_area", "type": "affected-area", "title": "affected-area", "offset": 0 }
   ],
   "oldtopics": [
     { "id": "keep-operational_flood_actual", "type": "geojson-external", "title": "operational flood", "offset": 20},
@@ -14,7 +15,7 @@
   "clientId": "ConsumerCOP",
   "fromOffset": false,
   "kafkaHost": "tb6.driver-testbed.eu:3561",
-  "schemaRegistry": "tb6.driver-testbed.eu:362",
+  "schemaRegistry": "tb6.driver-testbed.eu:3562",
   "kafkaHost": "localhost:3501",
   "schemaRegistry": "localhost:3502"
 }
