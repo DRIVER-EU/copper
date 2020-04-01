@@ -20,7 +20,7 @@
     "docker:build": "docker build -t drivereu/copper-server:latest ."
   },
   "dependencies": {
-    "@csnext/cs-layer-server": "^0.0.128-beta.28",
+    "@csnext/cs-layer-server": "^0.0.128-beta.33",
     "@mapbox/togeojson": "^0.16.0",
     "@nestjs/common": "^6.11.11",
     "@nestjs/core": "^6.11.11",

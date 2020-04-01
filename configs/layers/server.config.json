@@ -145,43 +145,47 @@
       "visible": true
     },
     {
-      "id": "chain_flood",
+      "id": "simulation_chain_flood",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "lightgray",
       "isLive": true,
       "tags": [
-        "chain"
+        "Chain effect sim"
       ],
       "isEditable": false,
       "tileSupport": false,
-      "source": "chain_flood.json",
-      "title": "Chain flood",
-      "sourceUrl": "http://localhost:4000/sources/chain_flood",
+      "source": "simulation_chain_flood.json",
+      "title": "Flood",
+      "sourceUrl": "http://localhost:4000/sources/simulation_chain_flood",
       "style": {
         "types": [],
-        "pointCircle": true,
+        "iconZoomLevel": 22,
+        "type": "fill",
         "mapbox": {
           "fillPaint": {
             "fill-color": "blue",
             "fill-opacity": 0.4
-          },
-          "circlePaint": {
-            "circle-radius": 8,
-            "circle-color": "yellow",
-            "circle-opacity": 0.6
           }
         }
       }
     },
     {
-      "id": "chain_power",
-      "source": "chain_power.json",
+      "id": "simulation_chain_power",
+      "source": "simulation_chain_power.json",
       "sourceType": "geojson",
-      "title": "Chain_power effects",
-      "sourceUrl": "http://localhost:4000/sources/chain_power",
+      "title": "Electricity stations",
+      "sourceUrl": "http://localhost:4000/sources/simulation_chain_power",
       "version": "0.0.1",
       "isLive": true,
+      "filter": [
+        "!=",
+        [
+          "get",
+          "featureTypeId"
+        ],
+        "AffectedArea"
+      ],
       "style": {
         "types": [
           "point"
@@ -221,10 +225,39 @@
       },
       "color": "lightgray",
       "tags": [
-        "chain"
+        "Chain effect sim"
       ],
-      "description": "chain_power",
-      "meta": "chain_power.meta.json"
+      "description": "simulation_chain_power",
+      "meta": "simulation_chain_power.meta.json"
+    },
+    {
+      "id": "simulation_chain_blackout",
+      "source": "simulation_chain_blackout.json",
+      "sourceType": "geojson",
+      "title": "Electricity blackout area",
+      "sourceUrl": "http://localhost:4000/sources/simulation_chain_blackout",
+      "version": "0.0.1",
+      "isLive": true,
+      "style": {
+        "types": [
+          "point"
+        ],
+        "iconZoomLevel": 22,
+        "type": "fill",
+        "mapbox": {
+          "fillPaint": {
+            "fill-color": "black",
+            "fill-opacity": 0.4
+          }
+        },
+        "pointCircle": true
+      },
+      "color": "lightgray",
+      "tags": [
+        "Chain effect sim"
+      ],
+      "description": "simulation_chain_blackout",
+      "meta": "simulation_chain_blackout.meta.json"
     },
     {
       "id": "lcms-geojson",
@@ -321,11 +354,11 @@
       "meta": "drawing.meta.json"
     },
     {
-      "id": "chain",
-      "source": "chain.json",
+      "id": "simulation_chain",
+      "source": "simulation_chain.json",
       "sourceType": "geojson",
       "title": "Chain effects",
-      "sourceUrl": "http://localhost:4000/sources/chain",
+      "sourceUrl": "http://localhost:4000/sources/simulation_chain",
       "version": "0.0.1",
       "isLive": true,
       "style": {
@@ -334,8 +367,8 @@
       },
       "color": "lightgray",
       "tags": [],
-      "description": "chain",
-      "meta": "chain.meta.json"
+      "description": "simulation_chain",
+      "meta": "simulation_chain.meta.json"
     },
     {
       "id": "ambassades",
@@ -368,7 +401,7 @@
       "tags": [
         "external"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -390,7 +423,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "ambulanceposten.meta.json"
+      "meta": "ambulanceposten.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "antenneregister",
@@ -428,7 +462,7 @@
       "tags": [
         "layer"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -450,7 +484,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "azc.meta.json"
+      "meta": "azc.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "brandweerkazernes",
@@ -496,7 +531,7 @@
       "tags": [
         "layer"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -565,7 +600,7 @@
       "tags": [
         "layer"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -588,7 +623,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "c2000masten.meta.json"
+      "meta": "c2000masten.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "clip",
@@ -617,7 +653,8 @@
           "fill"
         ]
       },
-      "meta": "gemeente.meta.json"
+      "meta": "gemeente.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "gemeentehuizen",
@@ -632,7 +669,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "gemeentehuizen.meta.json"
+      "meta": "gemeentehuizen.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "ggz",
@@ -647,7 +685,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "ggz.meta.json"
+      "meta": "ggz.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "ghz",
@@ -662,7 +701,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "ghz.meta.json"
+      "meta": "ghz.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "hoogspanningsleidingen",
@@ -676,7 +716,8 @@
           "line"
         ]
       },
-      "meta": "hoogspanningsleidingen.meta.json"
+      "meta": "hoogspanningsleidingen.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "hoogspanningsmasten",
@@ -691,7 +732,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "hoogspanningsmasten.meta.json"
+      "meta": "hoogspanningsmasten.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "inrichting_el_station",
@@ -706,7 +748,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "inrichting_el_station.meta.json"
+      "meta": "inrichting_el_station.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "ministeries",
@@ -737,7 +780,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "politievestigingen.meta.json"
+      "meta": "politievestigingen.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "project",
@@ -746,7 +790,10 @@
       "title": "project",
       "sourceUrl": "http://localhost:4000/sources/project",
       "version": "0.0.1",
-      "style": {}
+      "style": {
+        "types": []
+      },
+      "color": "lightgray"
     },
     {
       "id": "scholenonderwijs_bo",
@@ -761,7 +808,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "scholenonderwijs_bo.meta.json"
+      "meta": "scholenonderwijs_bo.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "scholenonderwijs_bo_spec",
@@ -776,7 +824,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "scholenonderwijs_bo_spec.meta.json"
+      "meta": "scholenonderwijs_bo_spec.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "scholenonderwijs_vo",
@@ -791,7 +840,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "scholenonderwijs_vo.meta.json"
+      "meta": "scholenonderwijs_vo.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "vluchtelingen",
@@ -833,7 +883,7 @@
       "tags": [
         " "
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -883,7 +933,7 @@
       "tags": [
         "layer"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -904,7 +954,8 @@
           "fill"
         ]
       },
-      "meta": "wegdeel_vlak_brug_beweegbaar.meta.json"
+      "meta": "wegdeel_vlak_brug_beweegbaar.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "wijk",
@@ -972,7 +1023,7 @@
       "tags": [
         "layer"
       ],
-      "color": "blue",
+      "color": "lightgray",
       "types": [
         "poi",
         "geojson"
@@ -994,7 +1045,8 @@
         ],
         "pointCircle": true
       },
-      "meta": "ziekenhuis.meta.json"
+      "meta": "ziekenhuis.meta.json",
+      "color": "lightgray"
     },
     {
       "id": "testlayer",
@@ -1192,7 +1244,7 @@
       "id": "flood actual",
       "sourceType": "geojson",
       "version": "0.0.1",
-      "color": "blue",
+      "color": "lightgray",
       "isLive": false,
       "tags": [
         "flooding"
@@ -1207,17 +1259,17 @@
       "externalUrl": "https://geoservice.dlr.de/eoc/zki/service/driver/wms"
     },
     {
-      "id": "chain_care",
+      "id": "simulation_chain_care",
       "sourceType": "geojson",
       "version": "0.0.1",
       "color": "lightgray",
       "isLive": true,
       "tags": [
-        "chain"
+        "Chain effect sim"
       ],
-      "source": "chain_care.json",
-      "title": "Chain_care effects",
-      "sourceUrl": "http://localhost:4000/sources/chain_care",
+      "source": "simulation_chain_care.json",
+      "title": "Care facilities",
+      "sourceUrl": "http://localhost:4000/sources/simulation_chain_care",
       "style": {
         "types": [
           "point"
@@ -1255,7 +1307,25 @@
           }
         }
       },
-      "meta": "chain_care.meta.json"
+      "meta": "simulation_chain_care.meta.json"
+    },
+    {
+      "id": "Search Layer",
+      "sourceType": "geojson",
+      "version": "0.0.1",
+      "color": "gray",
+      "isLive": false,
+      "tags": [],
+      "isEditable": false,
+      "tileSupport": false,
+      "title": "Search Layer",
+      "source": "people.json",
+      "types": [
+        "point"
+      ],
+      "description": "",
+      "sourceUrl": "http://localhost:4000/sources/Search Layer",
+      "style": {}
     }
   ],
   "sourcePath": "./sources/",

@@ -777,9 +777,14 @@ export class TestbedController {
     if (message.value && message.value.hasOwnProperty('data')) {
       if ((message.value['data'] as string).trim().startsWith('{')) {
         message.value['geojson'] = JSON.parse(message.value['data']);
+        if (tags && tags.length && tags[0].hasOwnProperty('duplicate-to')) {
+          const duplTo = tags[0]['duplicate-to'];
+          console.log(`Duplicate ${id} to ${duplTo}`);
+          this.parseGeojson(duplTo, message, tags);
+        }
         return this.parseGeojson(id, message, tags);
       }
-    }
+    }    
   }
 
   private async parseGeojsonExternal(id: string, message: IAdapterMessage, tags: string[] | undefined) {
@@ -827,6 +832,10 @@ export class TestbedController {
 
         if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.Polygon')) {
           feature.geometry = feature.geometry['eu.driver.model.geojson.Polygon'];
+        }
+
+        if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.MultiPolygon')) {
+          feature.geometry = feature.geometry['eu.driver.model.geojson.MultiPolygon'];
         }
 
         if (feature.geometry && feature.geometry.hasOwnProperty('eu.driver.model.geojson.LineString')) {
