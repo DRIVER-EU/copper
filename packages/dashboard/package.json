@@ -23,7 +23,7 @@
     "@csnext/cs-split-panel": "^0.0.128-beta.33",
     "@csnext/cs-timeline": "^0.0.128-beta.33",
     "@mapbox/mapbox-gl-draw": "^1.1.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chroma-js": "^2.1.0",
     "class-transformer": "^0.2.3",
     "core-js": "^2.6.11",
